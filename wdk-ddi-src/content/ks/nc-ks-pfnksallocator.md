@@ -46,7 +46,7 @@ req.typenames:
 ## -description
 
 
-Minidrivers can optionally supply a callback function of type <b>PFNKSALLOCATOR</b> as a parameter in calls to <a href="https://msdn.microsoft.com/library/windows/hardware/ff561733">KsEnableEventWithAllocator</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff564264">KsPropertyHandlerWithAllocator</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff563401">KsMethodHandlerWithAllocator</a>.
+Minidrivers can optionally supply a callback function of type <b>PFNKSALLOCATOR</b> as a parameter in calls to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksenableeventwithallocator">KsEnableEventWithAllocator</a>, <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-kspropertyhandlerwithallocator">KsPropertyHandlerWithAllocator</a>, and <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksmethodhandlerwithallocator">KsMethodHandlerWithAllocator</a>.
 
 
 ## -parameters
@@ -66,7 +66,7 @@ Specifies the size of buffer needed. This size covers all parameters in the requ
 
 ### -param InputOperation [in]
 
-Set to <b>TRUE</b> if this is an input operation, meaning that on successful return, the Irp-&gt;IoStatus.Information field will contain the number of bytes to copy back to the original input buffer.
+Set to <b>TRUE</b> if this is an input operation, meaning that on successful return, the Irp->IoStatus.Information field will contain the number of bytes to copy back to the original input buffer.
 
 
 ## -returns

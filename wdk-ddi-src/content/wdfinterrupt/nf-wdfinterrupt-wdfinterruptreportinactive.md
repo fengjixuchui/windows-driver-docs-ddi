@@ -81,14 +81,14 @@ Only drivers that implement functional state power management call <b>WdfInterru
 
 When a driver calls <b>WdfInterruptReportInactive</b>, the power management framework (PoFx) can then  perform related power management tasks.
 
-Typically, a driver calls <b>WdfInterruptReportInactive</b> from either its  <a href="https://msdn.microsoft.com/library/windows/hardware/hh406420">ComponentIdleConditionCallback</a> routine, or from <a href="https://msdn.microsoft.com/library/windows/hardware/hh450931">ComponentIdleStateCallback</a> when <i>State</i> is greater than zero  (indicating a low-power Fx state).
+Typically, a driver calls <b>WdfInterruptReportInactive</b> from either its  <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-po_fx_component_idle_condition_callback">ComponentIdleConditionCallback</a> routine, or from <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-po_fx_component_idle_state_callback">ComponentIdleStateCallback</a> when <i>State</i> is greater than zero  (indicating a low-power Fx state).
 
 If your driver calls this method on an operating system earlier than Windows 8, <a href="https://docs.microsoft.com/windows-hardware/drivers/wdf/using-kmdf-verifier">the framework's verifier</a> reports an error.
 
 
 #### Examples
 
-The following example shows how a driver might call <b>WdfInterruptReportInactive</b> from the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450931">ComponentIdleStateCallback</a> routine of a KMDF driver. The driver registers a single component by calling <a href="https://msdn.microsoft.com/library/windows/hardware/hh451097">WdfDeviceWdmAssignPowerFrameworkSettings</a>.
+The following example shows how a driver might call <b>WdfInterruptReportInactive</b> from the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-po_fx_component_idle_state_callback">ComponentIdleStateCallback</a> routine of a KMDF driver. The driver registers a single component by calling <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicewdmassignpowerframeworksettings">WdfDeviceWdmAssignPowerFrameworkSettings</a>.
 
 <div class="code"><span codelanguage=""><table>
 <tr>
@@ -107,7 +107,7 @@ MyComponentIdleStateCallback(
     PFDO_INTERRUPT_CONTEXT interruptContext;
 
     deviceData = FdoGetData((WDFDEVICE)Context);
-    interruptContext = InterruptGetData(deviceData-&gt;Interrupt);
+    interruptContext = InterruptGetData(deviceData->Interrupt);
 
     switch (State) {
         case 0:
@@ -123,16 +123,16 @@ MyComponentIdleStateCallback(
             //
             // Disable interrupt generation at hardware if needed.
             // 
-            WdfInterruptAcquireLock(deviceData-&gt;Interrupt);
+            WdfInterruptAcquireLock(deviceData->Interrupt);
             DisableInterruptInHardware();
-            WdfInterruptReleaseLock(deviceData-&gt;Interrupt);
+            WdfInterruptReleaseLock(deviceData->Interrupt);
 
             //
             // Report that interrupt is now inactive.
             //
-            WdfInterruptReportInactive(deviceData-&gt;Interrupt);
+            WdfInterruptReportInactive(deviceData->Interrupt);
 
-            interruptContext-&gt;ReportedInactive = TRUE;
+            interruptContext->ReportedInactive = TRUE;
 
         break;
 
@@ -151,7 +151,7 @@ MyComponentIdleStateCallback(
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439273">WdfInterruptReportActive</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfinterrupt/nf-wdfinterrupt-wdfinterruptreportactive">WdfInterruptReportActive</a>
  
 
  

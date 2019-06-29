@@ -56,7 +56,7 @@ The <code>SetValueKey</code> method replaces or creates a value entry under the 
 
 ### -param ValueName [in, optional]
 
-Pointer to a string containing the name of the value entry to set. The name string is specified by a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>. If the value entry has no name, set this parameter to <b>NULL</b>. If the caller specifies a name string but the given name is not unique relative to its containing key, the method replaces the data for an existing value entry.
+Pointer to a string containing the name of the value entry to set. The name string is specified by a structure of type <a href="https://docs.microsoft.com/windows/desktop/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a>. If the value entry has no name, set this parameter to <b>NULL</b>. If the caller specifies a name string but the given name is not unique relative to its containing key, the method replaces the data for an existing value entry.
 
 
 ### -param Type [in]
@@ -87,7 +87,7 @@ REG_RESOURCE_REQUIREMENTS_LIST
 
 REG_FULL_RESOURCE_DESCRIPTOR
 
-These parameter types are explained in <a href="https://msdn.microsoft.com/library/windows/hardware/ff567109">ZwSetValueKey</a>.
+These parameter types are explained in <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwsetvaluekey">ZwSetValueKey</a>.
 
 
 ### -param Data [in]
@@ -153,15 +153,15 @@ If the given key has no existing value entry with a name matching the given <i>V
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536965">IRegistryKey</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iregistrykey">IRegistryKey</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>
+<a href="https://docs.microsoft.com/windows/desktop/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567109">ZwSetValueKey</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwsetvaluekey">ZwSetValueKey</a>
  
 
  

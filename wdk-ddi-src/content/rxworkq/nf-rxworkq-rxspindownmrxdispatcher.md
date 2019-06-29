@@ -72,7 +72,7 @@ A pointer to the device object of the corresponding network mini-redirector driv
 
 
 
-The <b>RxSpinDownMRxDispatcher</b> routine will set a tear down request into the driver device object of the network mini-redirector driver (the <b>DispatcherContext.pTearDownEvent</b> member of the device object is set to <b>&amp;TearDownEvent</b>) and wait for the driver to tear down any outstanding worker threads. 
+The <b>RxSpinDownMRxDispatcher</b> routine will set a tear down request into the driver device object of the network mini-redirector driver (the <b>DispatcherContext.pTearDownEvent</b> member of the device object is set to <b>&TearDownEvent</b>) and wait for the driver to tear down any outstanding worker threads. 
 
 The <b>RxSpinDownMRxDispatcher</b> routine is also called internally by the <b>RxStopMiniRdr</b> and <b>RxpUnregisterMinirdr</b> routines.
 
@@ -84,11 +84,11 @@ The <b>RxSpinDownMRxDispatcher</b> routine is also called internally by the <b>R
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554398">RxDispatchToWorkerThread</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/rxworkq/nf-rxworkq-rxdispatchtoworkerthread">RxDispatchToWorkerThread</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554620">RxPostToWorkerThread</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/rxworkq/nf-rxworkq-rxposttoworkerthread">RxPostToWorkerThread</a>
  
 
  

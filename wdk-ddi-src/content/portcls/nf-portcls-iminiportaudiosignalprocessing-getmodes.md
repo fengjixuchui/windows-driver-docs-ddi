@@ -99,7 +99,7 @@ The following table presents and explains  the error messages than can be return
 </tr>
 <tr>
 <td>STATUS_INVALID_PARAMETER</td>
-<td>The value of the <i>Pin</i> parameter indicates a Pin ID that is &gt;= the number of pin factories on the filter. The pin index is zero-based, so for n pin factories on a filter, the highest index value should be n-1.</td>
+<td>The value of the <i>Pin</i> parameter indicates a Pin ID that is >= the number of pin factories on the filter. The pin index is zero-based, so for n pin factories on a filter, the highest index value should be n-1.</td>
 </tr>
 <tr>
 <td>STATUS_NOT_SUPPORTED</td>
@@ -116,7 +116,7 @@ The following table presents and explains  the error messages than can be return
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn457659">IMiniportAudioSignalProcessing</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iminiportaudiosignalprocessing">IMiniportAudioSignalProcessing</a>
  
 
  

@@ -66,7 +66,7 @@ None.
 
 ### -output-buffer
 
-The output buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains an <b> ACT_QUEUE_STATE</b>  structure. <b>ACT_QUEUE_STATE</b> is declared in <i>ehstorioctl.h</i> as the following.
+The output buffer at <b>Irp->AssociatedIrp.SystemBuffer</b> contains an <b> ACT_QUEUE_STATE</b>  structure. <b>ACT_QUEUE_STATE</b> is declared in <i>ehstorioctl.h</i> as the following.
 
 <div class="code"><span codelanguage=""><table>
 <tr>
@@ -138,7 +138,7 @@ One of the following values can be returned in the <b>Status</b> field.
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451430">IOCTL_EHSTOR_DEVICE_SET_QUEUE_STATE</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ehstorioctl/ni-ehstorioctl-ioctl_ehstor_device_set_queue_state">IOCTL_EHSTOR_DEVICE_SET_QUEUE_STATE</a>
  
 
  

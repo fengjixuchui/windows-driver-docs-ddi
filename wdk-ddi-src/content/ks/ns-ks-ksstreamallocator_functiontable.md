@@ -56,19 +56,19 @@ Clients can request the function table of a given allocator by sending a KSSTREA
 
 ### -field AllocateFrame
 
-Points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff567151">KStrAllocateFrame</a> routine.
+Points to a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nc-ks-pfnallocator_allocateframe">KStrAllocateFrame</a> routine.
 
 
 ### -field FreeFrame
 
-Points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff567174">KStrFreeFrame</a> routine.
+Points to a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nc-ks-pfnallocator_freeframe">KStrFreeFrame</a> routine.
 
 
 ## -remarks
 
 
 
-This property is only supported by allocators supporting the DISPATCH_LEVEL function interface. Allocators supporting this property must be able to allocate and free frames at IRQL &lt;= DISPATCH_LEVEL.
+This property is only supported by allocators supporting the DISPATCH_LEVEL function interface. Allocators supporting this property must be able to allocate and free frames at IRQL <= DISPATCH_LEVEL.
 
 Because the DISPATCH_LEVEL interface is closely associated with the IRP-based interface, acquiring the function table is likely to result in the creation of an internal notification event to allow pending I/O to be completed when frames are returned to the free list. When the handle to the allocator is closed, the function table pointers are invalid and the associated events are automatically disabled.
 
@@ -82,15 +82,15 @@ This property is only accessible from kernel-mode.
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565633">KSPROPERTY_STREAMALLOCATOR_FUNCTIONTABLE</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-streamallocator-functiontable">KSPROPERTY_STREAMALLOCATOR_FUNCTIONTABLE</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567151">KStrAllocateFrame</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nc-ks-pfnallocator_allocateframe">KStrAllocateFrame</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567174">KStrFreeFrame</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nc-ks-pfnallocator_freeframe">KStrFreeFrame</a>
  
 
  

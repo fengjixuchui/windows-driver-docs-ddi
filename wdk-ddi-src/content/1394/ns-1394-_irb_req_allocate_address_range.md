@@ -60,14 +60,14 @@ The caller must create this IRB as usual, but instead use the physical mapping r
 
 ### -field Mdl
 
-If non-<b>NULL</b>, points to the MDL that describes the application's buffer where asynchronous operations are to be read, written, or locked. The memory for the MDL must be allocated from nonpaged pool or locked down by means of a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff554664">MmProbeAndLockPages</a>. If the driver specifies <b>u.AllocateAddressRange.Mdl</b>, then <b>u.AllocateAddressRange.FifoSListHead</b> and <b>u.AllocateAddressRange.FifoSpinLock</b> must be <b>NULL</b>.
+If non-<b>NULL</b>, points to the MDL that describes the application's buffer where asynchronous operations are to be read, written, or locked. The memory for the MDL must be allocated from nonpaged pool or locked down by means of a call to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmprobeandlockpages">MmProbeAndLockPages</a>. If the driver specifies <b>u.AllocateAddressRange.Mdl</b>, then <b>u.AllocateAddressRange.FifoSListHead</b> and <b>u.AllocateAddressRange.FifoSpinLock</b> must be <b>NULL</b>.
 
 
 ### -field fulFlags
 
 Specifies whether the array entries in p1394AddressRange use big-endian byte order. If the caller specifies BIG_ENDIAN_ADDRESS_RANGE, the array entries are in big-endian byte order (the native byte order of the IEEE 1394 protocol), even if the local host is a little-endian machine. In order to specify a little-endian address range, the caller must explicitly guarantee that the BIG_ENDIAN_ADDRESS_RANGE flag is not set using a statement similar to the following:
 
-fulFlags = fulFlags &amp; ~(0x0ffffffff &amp; BIG_ENDIAN_ADDRESS_RANGE)
+fulFlags = fulFlags & ~(0x0ffffffff & BIG_ENDIAN_ADDRESS_RANGE)
 
 
 ### -field nLength
@@ -252,7 +252,7 @@ Number of addresses returned.
 
 Points to an array of ADDRESS_RANGE structures. The array must be large enough to hold the maximum number of structures the bus driver can return.
 
-If the driver specifies a required address offset, or if the driver does not provide any backing store, the bus driver only returns one address range. If the driver provides backing store in <b>u.AllocateAddressRange.Mdl</b> the bus driver segments the allocated addresses along physical memory boundaries. If the <b>MaxSegmentSize</b> of <b>u.AllocateAddressRange</b> is 0, or if <b>MaxSegmentSize</b> is bigger than the page size, the driver can use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540562">ADDRESS_AND_SIZE_TO_SPAN_PAGES</a> macro to determine the worst case. Otherwise, the maximum number of addresses ranges returned by the bus driver is <b>u.AllocateAddressRange.nLength</b> / <b>u.MaxSegmentSize</b>. If a nonzero value is specified for <b>MaxSegmentSize</b>, the value must be less than 64 KB (65,536 bytes). In other words, it must be less than or equal to 65,535 (0xFFFF) due to the fact that the address range size is stored in a 16-bit word.
+If the driver specifies a required address offset, or if the driver does not provide any backing store, the bus driver only returns one address range. If the driver provides backing store in <b>u.AllocateAddressRange.Mdl</b> the bus driver segments the allocated addresses along physical memory boundaries. If the <b>MaxSegmentSize</b> of <b>u.AllocateAddressRange</b> is 0, or if <b>MaxSegmentSize</b> is bigger than the page size, the driver can use the <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer">ADDRESS_AND_SIZE_TO_SPAN_PAGES</a> macro to determine the worst case. Otherwise, the maximum number of addresses ranges returned by the bus driver is <b>u.AllocateAddressRange.nLength</b> / <b>u.MaxSegmentSize</b>. If a nonzero value is specified for <b>MaxSegmentSize</b>, the value must be less than 64 KB (65,536 bytes). In other words, it must be less than or equal to 65,535 (0xFFFF) due to the fact that the address range size is stored in a 16-bit word.
 
 
 ### -field hAddressRange

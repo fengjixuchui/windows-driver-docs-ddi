@@ -51,7 +51,7 @@ req.typenames:
 
 
    The 
-  <b>WdfDmaTransactionStopSystemTransfer</b> method attempts to stop a system-mode DMA transfer after the framework has called <a href="https://msdn.microsoft.com/c01b94b2-aabf-47dd-952a-06e481579614">EvtProgramDma</a>.
+  <b>WdfDmaTransactionStopSystemTransfer</b> method attempts to stop a system-mode DMA transfer after the framework has called <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdmatransaction/nc-wdfdmatransaction-evt_wdf_program_dma">EvtProgramDma</a>.
 
 
 ## -parameters
@@ -83,18 +83,18 @@ A driver using bus-mastering  DMA is responsible for programming its own dedicat
 
 In contrast, a driver using system-mode DMA must rely on the hardware abstraction layer (HAL) to program the shared DMA controller.  When a driver calls <b>WdfDmaTransactionStopSystemTransfer</b>, the framework notifies the HAL that the transfer must be stopped and returns immediately.
 
-The framework next calls the driver's <a href="https://msdn.microsoft.com/C638A505-AAE1-48FC-B06B-F2F161ADC948">EvtDmaTransactionDmaTransferComplete</a> callback function, if the driver has provided one.  If not, the framework returns FALSE when the driver next calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff547039">WdfDmaTransactionDmaCompleted</a>.
+The framework next calls the driver's <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdmatransaction/nc-wdfdmatransaction-evt_wdf_dma_transaction_dma_transfer_complete">EvtDmaTransactionDmaTransferComplete</a> callback function, if the driver has provided one.  If not, the framework returns FALSE when the driver next calls <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactiondmacompleted">WdfDmaTransactionDmaCompleted</a>.
 
 If your driver calls this method on an operating system earlier than Windows 8, <a href="https://docs.microsoft.com/windows-hardware/drivers/wdf/using-kmdf-verifier">the framework's verifier</a> reports an error.
 
- For more information about system-mode DMA, see <a href="https://msdn.microsoft.com/CCC77C15-69CA-44CB-8DEB-29F3EAEA44F6">Supporting System-Mode DMA</a>.
+ For more information about system-mode DMA, see <a href="https://docs.microsoft.com/windows-hardware/drivers/wdf/supporting-system-mode-dma">Supporting System-Mode DMA</a>.
 
  For more information about canceling DMA transactions, see <a href="https://docs.microsoft.com/windows-hardware/drivers/wdf/canceling-dma-transactions">Canceling DMA Transactions</a>.
 
 
 #### Examples
 
-The following code example shows how a driver might call <b>WdfDmaTransactionStopSystemTransfer</b> from an <a href="https://msdn.microsoft.com/abe15fd9-620e-4c24-9a82-32d20a7e49cc">EvtTimerFunc</a> event callback function that it registers to be called if an I/O request times out.
+The following code example shows how a driver might call <b>WdfDmaTransactionStopSystemTransfer</b> from an <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdftimer/nc-wdftimer-evt_wdf_timer">EvtTimerFunc</a> event callback function that it registers to be called if an I/O request times out.
 
 <div class="code"><span codelanguage=""><table>
 <tr>
@@ -116,7 +116,7 @@ MyTimerFunc(
     // take care of running down cancellation.
     //
     if (BeginCompletion(requestContext, STATUS_IO_TIMEOUT, false)) {
-        WdfDmaTransactionStopSystemTransfer(requestContext-&gt;DmaTransaction);
+        WdfDmaTransactionStopSystemTransfer(requestContext->DmaTransaction);
     }
     
     AttemptRequestCompletion(requestContext, false);
@@ -135,17 +135,17 @@ BeginCompletion(
     // Grab the object lock and mark the beginning of 
     // completion.
     //
-    WdfSpinLockAcquire(RequestContext-&gt;Lock);
+    WdfSpinLockAcquire(RequestContext->Lock);
 
-    completionStarted = RequestContext-&gt;CompletionStarted;
-    RequestContext-&gt;CompletionStarted = true;
+    completionStarted = RequestContext->CompletionStarted;
+    RequestContext->CompletionStarted = true;
 
     if ((completionStarted == false) || 
         (ForceStatusUpdate == true)) {
-        RequestContext-&gt;CompletionStatus = CompletionStatus;
+        RequestContext->CompletionStatus = CompletionStatus;
     }
 
-    WdfSpinLockRelease(RequestContext-&gt;Lock);
+    WdfSpinLockRelease(RequestContext->Lock);
 
     return !completionStarted;
 }
@@ -159,14 +159,14 @@ AttemptRequestCompletion(
     LONG refCount;
 
     NT_ASSERTMSG("No thread has begun completion", 
-                 RequestContext-&gt;CompletionStarted == true);
+                 RequestContext->CompletionStarted == true);
 
     if (TransferComplete) {
         //
         // Unmark the request cancelable.  If that succeeds then drop the cancel reference
         //
-        if (WdfRequestUnmarkCancelable(RequestContext-&gt;Request) == STATUS_SUCCESS) {
-            refCount = InterlockedDecrement(&amp;(RequestContext-&gt;CompletionRefCount));
+        if (WdfRequestUnmarkCancelable(RequestContext->Request) == STATUS_SUCCESS) {
+            refCount = InterlockedDecrement(&(RequestContext->CompletionRefCount));
             NT_ASSERTMSGW(L"Reference count should not have gone to zero yet",
                           refCount != 0);
         }
@@ -174,16 +174,16 @@ AttemptRequestCompletion(
         //
         // Stop the timer if it's been started.
         //
-        if (RequestContext-&gt;TimerStarted == true) {
-            if (WdfTimerStop(RequestContext-&gt;Timer, FALSE) == TRUE) {
+        if (RequestContext->TimerStarted == true) {
+            if (WdfTimerStop(RequestContext->Timer, FALSE) == TRUE) {
                 //
                 // The timer was queued but won't ever run.  Drop its 
                 // reference count.
                 //
-                refCount = InterlockedDecrement(&amp;RequestContext-&gt;CompletionRefCount);
+                refCount = InterlockedDecrement(&RequestContext->CompletionRefCount);
                 NT_ASSERTMSG("Completion reference count should not reach zero until "
                              L"this routine calls AttemptRequestCompletion",
-                             refCount &gt; 0);
+                             refCount > 0);
             }
         }
     }
@@ -192,13 +192,13 @@ AttemptRequestCompletion(
     // Drop this caller's reference.  If that was the last one then 
     // complete the request.
     //
-    refCount = InterlockedDecrement(&amp;(RequestContext-&gt;CompletionRefCount));
+    refCount = InterlockedDecrement(&(RequestContext->CompletionRefCount));
 
     if (refCount == 0) {
         NT_ASSERTMSGW(L"Execution reference was released, but execution "
                       L"path did not set a completion status for the "
                       L"request",
-                      RequestContext-&gt;CompletionStatus != STATUS_PENDING);
+                      RequestContext->CompletionStatus != STATUS_PENDING);
         
         
         //
@@ -210,20 +210,20 @@ AttemptRequestCompletion(
         // At this point the timer has either expired or been successfully 
         // cancelled so there's no race with the timer routine.
         //
-        if (RequestContext-&gt;Timer != NULL) {
-            WdfObjectDelete(RequestContext-&gt;Timer);
-            RequestContext-&gt;Timer = NULL;
+        if (RequestContext->Timer != NULL) {
+            WdfObjectDelete(RequestContext->Timer);
+            RequestContext->Timer = NULL;
         }
 
-        WdfRequestComplete(RequestContext-&gt;Request, 
-                           RequestContext-&gt;CompletionStatus);
+        WdfRequestComplete(RequestContext->Request, 
+                           RequestContext->CompletionStatus);
     }
 }
 </pre>
 </td>
 </tr>
 </table></span></div>
-The following code example shows how a driver might call <b>WdfDmaTransactionStopSystemTransfer</b> from an <a href="https://msdn.microsoft.com/db54fa76-d3e0-4f8c-aa3f-bab268dd9b4d">EvtRequestCancel</a> callback function. The driver previously called <a href="https://msdn.microsoft.com/library/windows/hardware/ff549984">WdfRequestMarkCancelableEx</a> from its I/O request handler to register the callback.
+The following code example shows how a driver might call <b>WdfDmaTransactionStopSystemTransfer</b> from an <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nc-wdfrequest-evt_wdf_request_cancel">EvtRequestCancel</a> callback function. The driver previously called <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestmarkcancelableex">WdfRequestMarkCancelableEx</a> from its I/O request handler to register the callback.
 
 <div class="code"><span codelanguage=""><table>
 <tr>
@@ -248,24 +248,24 @@ MyRequestCancel(
         //
         // Cancel the DMA transaction.
         //
-        if (WdfDmaTransactionCancel(requestContext-&gt;DmaTransaction) == TRUE) {
+        if (WdfDmaTransactionCancel(requestContext->DmaTransaction) == TRUE) {
             //
             // The transaction was stopped before EvtProgramDma could be 
             // called.  Drop the I/O reference.
             // 
-            oldValue = InterlockedDecrement(&amp;requestContext-&gt;CompletionRefCount);
+            oldValue = InterlockedDecrement(&requestContext->CompletionRefCount);
             NT_ASSERTMSG("Completion reference count should not reach zero until "
                          L"this routine calls AttemptRequestCompletion",
-                         oldValue &gt; 0);
+                         oldValue > 0);
             NT_ASSERTMSG("Completion status should be cancelled", 
-                         requestContext-&gt;CompletionStatus == STATUS_CANCELLED);
+                         requestContext->CompletionStatus == STATUS_CANCELLED);
         }
         else {
             //
             // The transaction couldn't be stopped before EvtProgramDma.
             // Stop any running system DMA transfer.
             //
-            WdfDmaTransactionStopSystemTransfer(requestContext-&gt;DmaTransaction);
+            WdfDmaTransactionStopSystemTransfer(requestContext->DmaTransaction);
         }
     }
 
@@ -283,11 +283,11 @@ MyRequestCancel(
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451127">WdfDmaTransactionCancel</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactioncancel">WdfDmaTransactionCancel</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547027">WdfDmaTransactionCreate</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactioncreate">WdfDmaTransactionCreate</a>
  
 
  

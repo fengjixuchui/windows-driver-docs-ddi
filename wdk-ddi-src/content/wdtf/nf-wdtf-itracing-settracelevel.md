@@ -56,7 +56,7 @@ The <b>SetTraceLevel</b> method sets the tracing level for an object. Every obje
 
 ### -param Level [in]
 
-The new <a href="https://msdn.microsoft.com/library/windows/hardware/ff539616">TTraceLevel</a> value for this object.
+The new <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index">TTraceLevel</a> value for this object.
 
 
 ## -returns
@@ -72,11 +72,11 @@ The new <a href="https://msdn.microsoft.com/library/windows/hardware/ff539616">T
 
 
 
-For more information about tracing levels, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff539616">TTraceLevel</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff539512">ITracer</a>.
+For more information about tracing levels, see <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index">TTraceLevel</a> and <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index">ITracer</a>.
 
-Use the <a href="https://msdn.microsoft.com/d1bc1775-cb0f-468e-938b-b3ed95e80b5b">Trace_Default</a> level to set the object back to the settings that are defined in the registry for the object's co-class.
+Use the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index">Trace_Default</a> level to set the object back to the settings that are defined in the registry for the object's co-class.
 
-Because the <a href="https://msdn.microsoft.com/library/windows/hardware/ff538787">IAction</a> interface inherits from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff539519">ITracing</a> interface, all WDTF Actions will support <b>SetTraceLevel</b>. All of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff539628">WDTF core interfaces</a> should also support this method.
+Because the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdtf/nn-wdtf-iaction">IAction</a> interface inherits from the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index">ITracing</a> interface, all WDTF Actions will support <b>SetTraceLevel</b>. All of the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index">WDTF core interfaces</a> should also support this method.
 
 The following code example demonstrates how to use the <b>SetTraceLevel</b> method.
 
@@ -93,28 +93,28 @@ The following code example demonstrates how to use the <b>SetTraceLevel</b> meth
 '
 Set Action = CDROM.GetInterface("DeviceManagement")
  
-If Err.number &lt;&gt; 0 Then
-    WScript.Echo Space(4) &amp; "Failed to get interface DeviceManagement. Error Number:" &amp; Err.number
+If Err.number <> 0 Then
+    WScript.Echo Space(4) & "Failed to get interface DeviceManagement. Error Number:" & Err.number
 Else            
     '
     ' Set the tracing level to HIGH
     '
     Action.SetTraceLevel(Trace3_High)
-    If Err.number &lt;&gt; 0 Then
-        WScript.Echo Space(4) &amp; "Failed to set tracing level to 'High'. Error Number:" &amp; Err.number
+    If Err.number <> 0 Then
+        WScript.Echo Space(4) & "Failed to set tracing level to 'High'. Error Number:" & Err.number
     End If
 
     '
     ' Disable the CD-ROM
     '
-    WScript.Echo Space(4) &amp; "Trying to disable device..."
+    WScript.Echo Space(4) & "Trying to disable device..."
  
     Action.Disable()
  
-    If Err.number &lt;&gt; 0 Then
-        WScript.Echo Space(4) &amp; "Failed to disable the specified CDROM. Error     Number:" &amp; Err.number &amp; vbcrlf
+    If Err.number <> 0 Then
+        WScript.Echo Space(4) & "Failed to disable the specified CDROM. Error     Number:" & Err.number & vbcrlf
     Else
-        WScript.Echo Space(4) &amp; "Specified CDROM successfully disabled." &amp; vbcrlf
+        WScript.Echo Space(4) & "Specified CDROM successfully disabled." & vbcrlf
     End If
 End If</pre>
 </td>
@@ -131,12 +131,12 @@ End If</pre>
 <pre>IDevMan* pDevMan;        // DeviceManagement Action interface
 
 VARIANT vtEmpty;       // To be passed as a parameter to ITarget::GetInterface
-VariantInit(&amp;vtEmpty);
+VariantInit(&vtEmpty);
 
 //
 // Get DeviceManagement Action interface
 //
-hr = pCDROM-&gt;GetInterface(L"DeviceManagement", vtEmpty, vtEmpty, (IAction**)(&amp;pDevMan));
+hr = pCDROM->GetInterface(L"DeviceManagement", vtEmpty, vtEmpty, (IAction**)(&pDevMan));
 if(FAILED(hr))
 {
     _tprintf(_T("\n  Failed to get DeviceManagement Interface for specified CDROM Device. Error: 0x%x"), hr);
@@ -146,7 +146,7 @@ if(FAILED(hr))
 //
 // Set the trace level to High
 //
-hr = pDevMan-&gt;SetTraceLevel(Trace3_High);
+hr = pDevMan->SetTraceLevel(Trace3_High);
 if(FAILED(hr))
 {
     _tprintf(_T("\n  Failed to set tracing level to 'High'. Error: 0x%x"), hr);
@@ -157,7 +157,7 @@ if(FAILED(hr))
 //
 _tprintf(_T("\n  Trying to disable device..."));
 
-hr = pDevMan-&gt;Disable();
+hr = pDevMan->Disable();
 if(FAILED(hr))
 {
     _tprintf(_T("\n  Failed to disable the specified CDROM. Error: 0x%x"), hr);
@@ -177,15 +177,15 @@ else
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539512">ITracer</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index">ITracer</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539519">ITracing</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index">ITracing</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539616">TTraceLevel</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index">TTraceLevel</a>
  
 
  

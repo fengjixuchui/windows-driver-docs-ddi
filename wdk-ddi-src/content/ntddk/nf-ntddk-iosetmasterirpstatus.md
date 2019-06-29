@@ -56,12 +56,12 @@ The <b>IoSetMasterIrpStatus</b> routine conditionally replaces the <b>Status</b>
 
 ### -param MasterIrp [in, out]
 
-A pointer to the master <a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a>. For more information, see Remarks.
+A pointer to the master <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_irp">IRP</a>. For more information, see Remarks.
 
 
 ### -param Status [in]
 
-An NTSTATUS value to compare to the <b>Status</b> member of the <a href="https://msdn.microsoft.com/59147bd1-6cd7-4fbe-b7bc-52e09ab88576">I/O status block</a> in the master IRP.
+An NTSTATUS value to compare to the <b>Status</b> member of the <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/i-o-status-blocks">I/O status block</a> in the master IRP.
 
 
 ## -returns
@@ -83,7 +83,7 @@ On receipt of an IRP, a driver can create two or more subordinate IRPs to perfor
 
 Before the first call to <b>IoSetMasterIrpStatus</b>, the driver sets the <b>IoStatus.Status</b> member in the master IRP to STATUS_SUCCESS (or to STATUS_FT_READ_FROM_COPY in case it is expected). Next, as each subordinate IRP completes, the driver calls <b>IoSetMasterIrpStatus</b> to merge the status code from this IRP with the status code in the master IRP. In this call, the <i>PIRP</i> parameter points to the master IRP, and the <i>Status</i> parameter is set to the value of the <b>IoStatus.Status</b> member in the subordinate IRP.
 
-As a general rule, <b>IoSetMasterIrpStatus</b> replaces the status code in <i>PIRP</i>-&gt;<b>IoStatus.Status</b> with the <i>Status</i> value in the following cases:
+As a general rule, <b>IoSetMasterIrpStatus</b> replaces the status code in <i>PIRP</i>-><b>IoStatus.Status</b> with the <i>Status</i> value in the following cases:
 
 <ul>
 <li>The status value in *<i>PIRP</i> is STATUS_SUCCESS, and <i>Status</i> is an error code.</li>
@@ -99,7 +99,7 @@ There are two exceptions to the general rule. A <i>Status</i> value of STATUS_VE
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_irp">IRP</a>
  
 
  

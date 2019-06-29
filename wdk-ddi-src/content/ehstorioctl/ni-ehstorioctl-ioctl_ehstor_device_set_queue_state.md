@@ -56,7 +56,7 @@ The <b>IOCTL_EHSTOR_DEVICE_SET_QUEUE_STATE</b> request is sent by silo drivers a
 
 ### -input-buffer
 
-The input buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains an <b> ACT_QUEUE_STATE</b>  structure. <b>ACT_QUEUE_STATE</b> is declared in <i>ehstorioctl.h</i> as the following.
+The input buffer at <b>Irp->AssociatedIrp.SystemBuffer</b> contains an <b> ACT_QUEUE_STATE</b>  structure. <b>ACT_QUEUE_STATE</b> is declared in <i>ehstorioctl.h</i> as the following.
 
 <div class="code"><span codelanguage=""><table>
 <tr>
@@ -153,7 +153,7 @@ To prevent abuse of  the <b>IOCTL_EHSTOR_DEVICE_SET_QUEUE_STATE</b> request by a
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451417">IOCTL_EHSTOR_DEVICE_GET_QUEUE_STATE</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ehstorioctl/ni-ehstorioctl-ioctl_ehstor_device_get_queue_state">IOCTL_EHSTOR_DEVICE_GET_QUEUE_STATE</a>
  
 
  

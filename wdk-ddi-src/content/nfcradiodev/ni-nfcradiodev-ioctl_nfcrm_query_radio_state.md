@@ -67,7 +67,7 @@ None
 ### -output-buffer
 
 
-<a href="https://msdn.microsoft.com/414486ED-464D-4CAF-95C2-9AC59D608816"> NFCRM_RADIO_STATE structure</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/nfcradiodev/ns-nfcradiodev-_nfcrm_radio_state"> NFCRM_RADIO_STATE structure</a>
 
 
 
@@ -96,7 +96,7 @@ sizeof(NFCRM_RADIO_STATE)
 
 ### -status-block
 
-<b>Irp-&gt;IoStatus.Status</b> is set to <b>STATUS_SUCCESS</b> if the request is successful.
+<b>Irp->IoStatus.Status</b> is set to <b>STATUS_SUCCESS</b> if the request is successful.
 
 
 ## -remarks

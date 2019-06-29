@@ -82,11 +82,11 @@ On checked builds, <b>RxPurgeAllFobxs</b> causes the system to ASSERT for a numb
 
 <ul>
 <li>
-The <b>Flink</b> member of <i>RxScavenger-&gt;ClosePendingFobxsList</i> structure on the <b>RxDeviceObject</b> is <b>NULL</b>.
+The <b>Flink</b> member of <i>RxScavenger->ClosePendingFobxsList</i> structure on the <b>RxDeviceObject</b> is <b>NULL</b>.
 
 </li>
 <li>
-<i>Fobx-&gt;NodeTypeCode</i> is not RDBSS_NTC_FOBX.
+<i>Fobx->NodeTypeCode</i> is not RDBSS_NTC_FOBX.
 
 </li>
 <li>
@@ -102,15 +102,15 @@ The <b>Flink</b> and <b>Blink</b> members for a list entry are <b>NULL</b>.
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554679">RxPurgeRelatedFobxs</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/scavengr/nf-scavengr-rxpurgerelatedfobxs">RxPurgeRelatedFobxs</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554707">RxScavengeAllFobxs</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/rxprocs/nf-rxprocs-rxscavengeallfobxs">RxScavengeAllFobxs</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554713">RxScavengeFobxsForNetRoot</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/scavengr/nf-scavengr-rxscavengefobxsfornetroot">RxScavengeFobxsForNetRoot</a>
  
 
  

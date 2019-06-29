@@ -57,7 +57,7 @@ The <b>WdmlibIoConnectInterruptEx</b> function registers an interrupt-handling r
 
 ### -param Parameters [in, out]
 
-Pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff550541">IO_CONNECT_INTERRUPT_PARAMETERS</a> structure that specifies the device and interrupt-handling routine. On return,  <b>WdmlibIoConnectInterruptEx</b> updates this structure to hold information about the device's interrupts.
+Pointer to an <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_connect_interrupt_parameters">IO_CONNECT_INTERRUPT_PARAMETERS</a> structure that specifies the device and interrupt-handling routine. On return,  <b>WdmlibIoConnectInterruptEx</b> updates this structure to hold information about the device's interrupts.
 
 
 ## -returns
@@ -78,7 +78,7 @@ The function returns STATUS_SUCCESS on success, or the appropriate NTSTATUS erro
 </dl>
 </td>
 <td width="60%">
-The operation is invalid for the specified device. For example, <i>Parameters</i>-&gt;<b>Version</b> = CONNECT_LINE_BASED, and the system has assigned multiple interrupt messages to the device.
+The operation is invalid for the specified device. For example, <i>Parameters</i>-><b>Version</b> = CONNECT_LINE_BASED, and the system has assigned multiple interrupt messages to the device.
 
 </td>
 </tr>
@@ -100,7 +100,7 @@ The caller specified an invalid parameter. This error occurs, for example, when 
 </dl>
 </td>
 <td width="60%">
-The caller specified an invalid value for the <b>Version</b> member of the structure that <i>Parameters</i> points to. <i>Parameters</i>-&gt;<b>Version</b> must be one of CONNECT_LINE_BASED, CONNECT_MESSAGE_BASED, or CONNECT_FULLY_SPECIFIED.
+The caller specified an invalid value for the <b>Version</b> member of the structure that <i>Parameters</i> points to. <i>Parameters</i>-><b>Version</b> must be one of CONNECT_LINE_BASED, CONNECT_MESSAGE_BASED, or CONNECT_FULLY_SPECIFIED.
 
 </td>
 </tr>
@@ -111,7 +111,7 @@ The caller specified an invalid value for the <b>Version</b> member of the struc
 </dl>
 </td>
 <td width="60%">
-The caller specified an invalid value for the tenth member of the structure that <i>Parameters</i> points to. This error occurs, for example, when <i>Parameters</i>-&gt;<b>FullySpecified.ProcessorEnableMask</b> does not have any bits set.
+The caller specified an invalid value for the tenth member of the structure that <i>Parameters</i> points to. This error occurs, for example, when <i>Parameters</i>-><b>FullySpecified.ProcessorEnableMask</b> does not have any bits set.
 
 </td>
 </tr>
@@ -139,15 +139,15 @@ One of the arguments was not found. For example, the specified device has no int
 <b>WdmlibIoConnectInterruptEx</b>
            can be used to register an interrupt-handling routine for both traditional line-based interrupts (such as that supported by the PCI bus), and the newer message-signaled interrupts (such as that supported by PCI versions 2.2 and 3.0). 
 
-Drivers register an <a href="https://msdn.microsoft.com/library/windows/hardware/ff547958">InterruptService</a> routine for line-based interrupts, and an <a href="https://msdn.microsoft.com/library/windows/hardware/ff547940">InterruptMessageService</a> routine for message-signaled interrupts. For more information about how to specify the members of <i>Parameters</i> in each case, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff550541">IO_CONNECT_INTERRUPT_PARAMETERS</a>.
+Drivers register an <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-kservice_routine">InterruptService</a> routine for line-based interrupts, and an <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-kmessage_service_routine">InterruptMessageService</a> routine for message-signaled interrupts. For more information about how to specify the members of <i>Parameters</i> in each case, see <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_connect_interrupt_parameters">IO_CONNECT_INTERRUPT_PARAMETERS</a>.
 
-<b>WdmlibIoConnectInterruptEx</b> updates the members of <i>Parameters</i> to provide information about the device's interrupts. For more information about the information provided by <b>WdmlibIoConnectInterruptEx</b>, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff550541">IO_CONNECT_INTERRUPT_PARAMETERS</a>.
+<b>WdmlibIoConnectInterruptEx</b> updates the members of <i>Parameters</i> to provide information about the device's interrupts. For more information about the information provided by <b>WdmlibIoConnectInterruptEx</b>, see <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_connect_interrupt_parameters">IO_CONNECT_INTERRUPT_PARAMETERS</a>.
 
-Use <a href="https://msdn.microsoft.com/B6F8663C-3A13-45DA-80FE-CC8B9194D083">WdmlibIoDisconnectInterruptEx</a> to unregister a routine registered with <b>WdmlibIoConnectInterruptEx</b>.
+Use <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/iointex/nf-iointex-wdmlibiodisconnectinterruptex">WdmlibIoDisconnectInterruptEx</a> to unregister a routine registered with <b>WdmlibIoConnectInterruptEx</b>.
 
 The driver should not program its device to generate interrupts until it has connected its ISR. Thus, the ISR cannot fire before <b>WdmlibIoConnectInterruptEx</b> returns. However, there are certain devices, such as buttons, that are not programmable. For those devices, the driver should be prepared to handle the ISR as soon as it calls <b>WdmlibIoConnectInterruptEx</b>. The interrupt line may already be asserted when <b>WdmlibIoConnectInterruptEx</b> is called and can fire immediately after the line is enabled at the interrupt controller, before the <b>WdmlibIoConnectInterruptEx</b> call unwinds. 
 
-For more information about registering an interrupt-handling routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff560865">Registering an ISR</a>.
+For more information about registering an interrupt-handling routine, see <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/registering-an-isr">Registering an ISR</a>.
 
 
 
@@ -157,19 +157,19 @@ For more information about registering an interrupt-handling routine, see <a hre
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550541">IO_CONNECT_INTERRUPT_PARAMETERS</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_connect_interrupt_parameters">IO_CONNECT_INTERRUPT_PARAMETERS</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547940">InterruptMessageService</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-kmessage_service_routine">InterruptMessageService</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547958">InterruptService</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-kservice_routine">InterruptService</a>
 
 
 
-<a href="https://msdn.microsoft.com/B6F8663C-3A13-45DA-80FE-CC8B9194D083">WdmlibIoDisconnectInterruptEx</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/iointex/nf-iointex-wdmlibiodisconnectinterruptex">WdmlibIoDisconnectInterruptEx</a>
  
 
  

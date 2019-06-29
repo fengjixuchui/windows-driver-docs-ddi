@@ -55,7 +55,7 @@ The <b>D3DKMTUnlock</b> function unlocks a list of allocations.
 
 *pData* [in]
 
-A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548393">D3DKMT_UNLOCK</a> structure that describes a list of allocations to unlock.
+A pointer to a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/ns-d3dkmthk-_d3dkmt_unlock">D3DKMT_UNLOCK</a> structure that describes a list of allocations to unlock.
 
 ## -returns
 
@@ -93,7 +93,7 @@ HRESULT UnlockThree(D3DKMT_HANDLE hDevice,
     UnlockData.NumAllocations = 3;
     UnlockData.phAllocations = AllocationArray;
 
-    if (NT_SUCCESS((*pfnKTUnlock)(&amp;UnlockData))) {
+    if (NT_SUCCESS((*pfnKTUnlock)(&UnlockData))) {
         return S_OK;
     }
     return E_FAIL;
@@ -102,4 +102,4 @@ HRESULT UnlockThree(D3DKMT_HANDLE hDevice,
 
 ## -see-also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548393">D3DKMT_UNLOCK</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/ns-d3dkmthk-_d3dkmt_unlock">D3DKMT_UNLOCK</a>

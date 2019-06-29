@@ -55,7 +55,7 @@ The <b>D3DKMTGetSharedPrimaryHandle</b> function retrieves the global shared han
 
 *pData* [in, out]
 
-A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548070">D3DKMT_GETSHAREDPRIMARYHANDLE</a> structure that describes the parameters that are required to retrieve the shared handle.
+A pointer to a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/ns-d3dkmthk-_d3dkmt_getsharedprimaryhandle">D3DKMT_GETSHAREDPRIMARYHANDLE</a> structure that describes the parameters that are required to retrieve the shared handle.
 
 ## -returns
 
@@ -97,7 +97,7 @@ HRESULT OpenSharedPrimarySurface(D3DKMT_HANDLE hAdapter,
     GetHandleData.hAdapter = hAdapter;
     GetHandleData.VidPnSourceId = VidPnSourceId;
 
-    if (!NT_SUCCESS((*pfnKTGetSharedPrimaryHandle)(&amp;GetHandleData))) {
+    if (!NT_SUCCESS((*pfnKTGetSharedPrimaryHandle)(&GetHandleData))) {
         return E_FAIL;
     }
 
@@ -116,14 +116,14 @@ HRESULT OpenSharedPrimarySurface(D3DKMT_HANDLE hAdapter,
     CreateAllocation.pPrivateDriverData = NULL;
     CreateAllocation.PrivateDriverDataSize = 0;
     CreateAllocation.NumAllocations = 1;
-    CreateAllocation.pAllocationInfo = &amp;AllocationInfo;
+    CreateAllocation.pAllocationInfo = &AllocationInfo;
 
     AllocationInfo.hAllocation = NULL;
     AllocationInfo.pSystemMem = NULL;
     AllocationInfo.pPrivateDriverData = pPrivateData;
     AllocationInfo.PrivateDriverDataSize = PrivateDataSize;
 
-    if (NT_SUCCESS((*pfnKTCreateAllocation)(&amp;CreateAllocation))) {
+    if (NT_SUCCESS((*pfnKTCreateAllocation)(&CreateAllocation))) {
         *phResource = CreateAllocation.hResource;
         *phAllocation = AllocationInfo.hAllocation;
         return S_OK;
@@ -134,7 +134,7 @@ HRESULT OpenSharedPrimarySurface(D3DKMT_HANDLE hAdapter,
 
 ## -see-also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548070">D3DKMT_GETSHAREDPRIMARYHANDLE</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/ns-d3dkmthk-_d3dkmt_getsharedprimaryhandle">D3DKMT_GETSHAREDPRIMARYHANDLE</a>
  
 
  

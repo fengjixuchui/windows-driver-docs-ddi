@@ -93,7 +93,7 @@ A boolean value that indicates whether to arm the device for a wake signal (PME 
 
 
 
-Set to STATUS_SUCCESS if the request is successful. Otherwise, return appropriate a <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> code to indicate the error condition.
+Set to STATUS_SUCCESS if the request is successful. Otherwise, return appropriate a <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/ntstatus-values">NTSTATUS</a> code to indicate the error condition.
 
 
 
@@ -139,11 +139,11 @@ Virtualization_SetPowerState (
 
     deviceContext = (PDEVICE_CONTEXT) Context;
 
-    if (VfIndex &gt;= deviceContext-&gt;NumVFs)
+    if (VfIndex >= deviceContext->NumVFs)
     {
         TraceEvents(TRACE_LEVEL_ERROR, DBG_INTERFACE,
                 "VfIndex specified: %d was out of bounds. NumVFs: %d\n",
-                VfIndex, deviceContext-&gt;NumVFs);
+                VfIndex, deviceContext->NumVFs);
         return STATUS_INVALID_PARAMETER;
     }
 
@@ -165,10 +165,10 @@ Virtualization_SetPowerState (
         return STATUS_INVALID_PARAMETER;
     }
 
-    WdfWaitLockAcquire(deviceContext-&gt;PowerStateLock, NULL);
-    deviceContext-&gt;VfContext[VfIndex].VfPowerDeviceState = wdfPowerState;
-    deviceContext-&gt;VfContext[VfIndex].VfWake = Wake;
-    WdfWaitLockRelease(deviceContext-&gt;PowerStateLock);
+    WdfWaitLockAcquire(deviceContext->PowerStateLock, NULL);
+    deviceContext->VfContext[VfIndex].VfPowerDeviceState = wdfPowerState;
+    deviceContext->VfContext[VfIndex].VfWake = Wake;
+    WdfWaitLockRelease(deviceContext->PowerStateLock);
 
     return status;
 }

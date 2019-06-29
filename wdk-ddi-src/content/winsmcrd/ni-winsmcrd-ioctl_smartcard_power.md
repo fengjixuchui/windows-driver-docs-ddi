@@ -119,7 +119,7 @@ None.
 
 ### -status-block
 
-<b>Irp-&gt;IoStatus.Status</b> is set to <b>STATUS_SUCCESS</b> if the request is successful. Possible error codes are:
+<b>Irp->IoStatus.Status</b> is set to <b>STATUS_SUCCESS</b> if the request is successful. Possible error codes are:
 
 <table>
 <tr>
@@ -160,7 +160,7 @@ Virtual power is set to TRUE for COLD_RESET and WARM_RESET; otherwise, virtual p
 
 
 
-<a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/design-guide-smart-card">Smart card design guide</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/nfc/design-guide-smart-card">Smart card design guide</a>
  
 
  

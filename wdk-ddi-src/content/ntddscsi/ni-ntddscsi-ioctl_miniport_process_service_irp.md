@@ -59,7 +59,7 @@ This IOCTL is used by a user-mode application or kernel-mode driver that require
 
 ### -input-buffer
 
-The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains a user-defined structure. 
+The buffer at <b>Irp->AssociatedIrp.SystemBuffer</b> contains a user-defined structure. 
 
 
 ### -input-buffer-length
@@ -69,7 +69,7 @@ The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains a user-defined 
 
 ### -output-buffer
 
-Updated user-defined structures are returned in the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>.
+Updated user-defined structures are returned in the buffer at <b>Irp->AssociatedIrp.SystemBuffer</b>.
 
 
 ### -output-buffer-length
@@ -105,7 +105,7 @@ The <b>Information</b> field contains the number of bytes returned in the output
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557410">HwStorProcessServiceRequest</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nc-storport-hw_process_service_request">HwStorProcessServiceRequest</a>
  
 
  

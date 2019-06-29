@@ -111,7 +111,7 @@ A pointer to a caller-supplied variable in which this function writes the number
 A pointer to an NDIS_STRING type containing an initialized counted string, in the system-default
      character set, naming the file to be opened. For Windows 2000 and later drivers, this string contains
      Unicode characters. That is, for Windows 2000 and later, NDIS defines the NDIS_STRING type as a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> type.
+     <a href="https://docs.microsoft.com/windows/desktop/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> type.
 
 
 ### -param HighestAcceptableAddress [in]
@@ -136,20 +136,20 @@ None
 <b>NdisOpenFile</b> opens a disk file, typically a file the driver will later download to program an
     intelligent NIC. 
     <b>NdisOpenFile</b> also allocates storage to hold file contents for the driver's subsequent call to the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562785">NdisMapFile</a> function.
+    <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismapfile">NdisMapFile</a> function.
 
 A miniport driver should call 
     <b>NdisOpenFile</b> only from the 
-    <a href="https://msdn.microsoft.com/b146fa81-005b-4a6c-962d-4cb023ea790e">MiniportInitializeEx</a> function.
+    <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_initialize">MiniportInitializeEx</a> function.
 
 When 
     <b>NdisOpenFile</b> returns, the miniport driver can access file data by calling 
     <b>NdisMapFile</b>. It can call the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff564641">NdisUnmapFile</a> function to page out the file
+    <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisunmapfile">NdisUnmapFile</a> function to page out the file
     so it does not consume resources unnecessarily while the driver is not accessing the file data. When
     finished using the file, 
-    <a href="https://msdn.microsoft.com/b146fa81-005b-4a6c-962d-4cb023ea790e">MiniportInitializeEx</a> must call the    
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561645">NdisCloseFile</a> function.
+    <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_initialize">MiniportInitializeEx</a> must call the    
+    <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisclosefile">NdisCloseFile</a> function.
 
 
 
@@ -159,23 +159,23 @@ When
 
 
 
-<a href="https://msdn.microsoft.com/b146fa81-005b-4a6c-962d-4cb023ea790e">MiniportInitializeEx</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nc-ndis-miniport_initialize">MiniportInitializeEx</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561645">NdisCloseFile</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisclosefile">NdisCloseFile</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562785">NdisMapFile</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismapfile">NdisMapFile</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564641">NdisUnmapFile</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisunmapfile">NdisUnmapFile</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>
+<a href="https://docs.microsoft.com/windows/desktop/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a>
  
 
  

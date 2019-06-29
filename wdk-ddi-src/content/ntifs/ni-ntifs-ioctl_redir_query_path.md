@@ -64,7 +64,7 @@ On Windows Server 2003, Windows XP, and Windows 2000, remote file operations tha
 
 For network redirectors that conform to the Windows Vista redirector model, MUP is involved even when a mapped network drive is used. File operations performed on the mapped drive go through MUP to the network redirector. Note that in this case, MUP simply passes the operation to the network redirector that is involved.
 
-The IOCTL_REDIR_QUERY_PATH control code is sent to network redirectors that have registered with MUP as Universal Naming Convention (UNC) providers by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff547178">FsRtlRegisterUncProvider</a>. There can be multiple UNC providers registered with MUP. 
+The IOCTL_REDIR_QUERY_PATH control code is sent to network redirectors that have registered with MUP as Universal Naming Convention (UNC) providers by calling <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlregisteruncprovider">FsRtlRegisterUncProvider</a>. There can be multiple UNC providers registered with MUP. 
 
 The prefix resolution operation serves two purposes:
 <ul>
@@ -85,7 +85,7 @@ The provider and the prefix that it claimed are entered in a prefix cache that i
 
 ### -input-buffer
 
-<b>IrpSp-&gt;Parameters.DeviceIoControl.Type3InputBuffer</b> is set to a <b>QUERY_PATH_REQUEST</b> data structure that contains the request. 
+<b>IrpSp->Parameters.DeviceIoControl.Type3InputBuffer</b> is set to a <b>QUERY_PATH_REQUEST</b> data structure that contains the request. 
 
 <div class="code"><span codelanguage=""><table>
 <tr>
@@ -132,7 +132,7 @@ A pointer to the security context.
 
 </td>
 <td>
-A non-NULL terminated Unicode string of the form \&lt;server&gt;\&lt;share&gt;\&lt;path&gt;. The length of the string, in bytes, is specified by the <b>PathNameLength</b> member.
+A non-NULL terminated Unicode string of the form \<server>\<share>\<path>. The length of the string, in bytes, is specified by the <b>PathNameLength</b> member.
 
 </td>
 </tr>
@@ -151,7 +151,7 @@ A non-NULL terminated Unicode string of the form \&lt;server&gt;\&lt;share&gt;\&
 
 ### -output-buffer
 
-<b>IRP-&gt;UserBuffer</b> is set to a <b>QUERY_PATH_REQUEST</b> data structure that contains the response.
+<b>IRP->UserBuffer</b> is set to a <b>QUERY_PATH_REQUEST</b> data structure that contains the response.
 
 <div class="code"><span codelanguage=""><table>
 <tr>
@@ -260,18 +260,18 @@ Note that IOCTL_REDIR_QUERY_PATH is a METHOD_NEITHER IOCTL. This means that the 
 
 When a UNC provider receives an IOCTL_REDIR_QUERY_PATH request, it has to determine whether it can handle the UNC path specified in the <b>FilePathName</b> member of the <b>QUERY_PATH_REQUEST</b> structure. If so, it has to update the <b>LengthAccepted</b> member of the <b>QUERY_PATH_RESPONSE</b> structure with the length, in bytes, of the prefix it has claimed and complete the IRP with STATUS_SUCCESS. If the provider cannot handle the UNC path specified, it must fail the IOCTL_REDIR_QUERY_PATH request with an appropriate NTSTATUS error code and must not update the <b>LengthAccepted</b> member of the <b>QUERY_PATH_RESPONSE</b> structure. Providers must not modify any of the other members or the <b>FilePathName</b> string under any condition. 
 
-The length of the prefix claimed by the provider depends on an individual UNC provider. Most providers claim the \\&lt;servername&gt;\&lt;sharename &gt; part of a path of the form \\&lt;servername&gt;\&lt;sharename&gt;\&lt;path&gt;. For example, if a provider claimed \\server\public given a path \\server\public\dir1\dir2, all name-based operations for the prefix \\server\public (\server\public\file1, for example) will be routed to that provider automatically without any prefix resolution because the prefix is already in the prefix cache. However, a path with the prefix \server\marketing\presentation will go through prefix resolution.
+The length of the prefix claimed by the provider depends on an individual UNC provider. Most providers claim the \\<servername>\<sharename > part of a path of the form \\<servername>\<sharename>\<path>. For example, if a provider claimed \\server\public given a path \\server\public\dir1\dir2, all name-based operations for the prefix \\server\public (\server\public\file1, for example) will be routed to that provider automatically without any prefix resolution because the prefix is already in the prefix cache. However, a path with the prefix \server\marketing\presentation will go through prefix resolution.
 
 If a network redirector claims a server name (\\server, for example),all requests for shares on this server will go to this network redirector. This behavior is only acceptable if there is no possibility of another share on the same server being accessed by a different network redirector. For example, a network redirector that claims \\server of a UNC path will prevent access by other network redirectors to other shares on this server (WebDAV access to \\server\web, for example). 
 
 For more information, see the following sections in the Design Guide:
 
 
-<a href="https://msdn.microsoft.com/07c4a498-10c7-41b2-aaeb-73cab946f392">Support for UNC Naming and MUP</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ifs/support-for-unc-naming-and-mup">Support for UNC Naming and MUP</a>
 
 
 
-<a href="https://msdn.microsoft.com/8ca2f9bc-14f1-45d3-a397-f3e5459cf8ec">MUP Changes in Microsoft Windows Vista</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ifs/mup-changes-in-microsoft-windows-vista">MUP Changes in Microsoft Windows Vista</a>
 
 
 
@@ -286,11 +286,11 @@ For more information, see the following sections in the Design Guide:
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547184">FsRtlRegisterUncProviderEx</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlregisteruncproviderex">FsRtlRegisterUncProviderEx</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548320">IOCTL_REDIR_QUERY_PATH_EX</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ni-ntifs-ioctl_redir_query_path_ex">IOCTL_REDIR_QUERY_PATH_EX</a>
  
 
  

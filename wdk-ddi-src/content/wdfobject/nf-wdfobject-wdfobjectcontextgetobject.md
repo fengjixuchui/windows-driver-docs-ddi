@@ -61,7 +61,7 @@ The <b>WdfObjectContextGetObject</b> method returns a handle to the framework ob
 
 ### -param ContextPointer [in]
 
-A pointer to object context space. The driver can obtain this pointer by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff548749">WdfObjectGetTypedContext</a>.
+A pointer to object context space. The driver can obtain this pointer by calling <a href="https://docs.microsoft.com/windows-hardware/drivers/wdf/wdfobjectgettypedcontext">WdfObjectGetTypedContext</a>.
 
 
 ## -returns
@@ -79,6 +79,7 @@ A pointer to object context space. The driver can obtain this pointer by calling
 
 For more information about object context space, see <a href="https://docs.microsoft.com/windows-hardware/drivers/wdf/framework-object-context-space">Framework Object Context Space</a>. 
 
+For more information about the cleanup rules for a framework object hierarchy, see [Framework Object Life Cycle](https://docs.microsoft.com/windows-hardware/drivers/wdf/framework-object-life-cycle).
 
 #### Examples
 
@@ -104,7 +105,7 @@ device = WdfObjectContextGetObject(DeviceContext);</pre>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548749">WdfObjectGetTypedContext</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/wdf/wdfobjectgettypedcontext">WdfObjectGetTypedContext</a>
  
 
  

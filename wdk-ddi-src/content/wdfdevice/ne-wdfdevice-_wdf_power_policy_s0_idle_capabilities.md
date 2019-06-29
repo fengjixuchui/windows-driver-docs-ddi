@@ -74,16 +74,16 @@ The device can wake itself from a low-power state while the system is in its wor
 
 ### -field IdleUsbSelectiveSuspend
 
-The device is connected to a USB bus and supports <a href="https://msdn.microsoft.com/library/windows/hardware/ff540144">USB selective suspend</a>. Use this value if your USB-connected device supports both idling and waking itself while the computer is in its working state. If your USB device supports only idling, use <b>IdleCannotWakeFromS0</b>. (Drivers for USB devices must not specify <b>IdleCanWakeFromS0</b>.) See the code examples in the following Examples section.
+The device is connected to a USB bus and supports <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index">USB selective suspend</a>. Use this value if your USB-connected device supports both idling and waking itself while the computer is in its working state. If your USB device supports only idling, use <b>IdleCannotWakeFromS0</b>. (Drivers for USB devices must not specify <b>IdleCanWakeFromS0</b>.) See the code examples in the following Examples section.
 
-For Windows XP, the framework supports USB selective suspend only if the device's <a href="https://msdn.microsoft.com/library/windows/hardware/ff539241">USB_CONFIGURATION_DESCRIPTOR</a> structure shows that the device supports <a href="https://msdn.microsoft.com/b32375a9-0f34-474e-b3b9-7216b3d6665d">remote wakeup</a>. For Windows Vista and later versions of Windows, the framework supports USB selective suspend whether or not the device supports remote wakeup.
+For Windows XP, the framework supports USB selective suspend only if the device's <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbspec/ns-usbspec-_usb_configuration_descriptor">USB_CONFIGURATION_DESCRIPTOR</a> structure shows that the device supports <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index">remote wakeup</a>. For Windows Vista and later versions of Windows, the framework supports USB selective suspend whether or not the device supports remote wakeup.
 
 
 ## -remarks
 
 
 
-The <b>WDF_POWER_POLICY_S0_IDLE_CAPABILITIES</b> enumeration is used in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551270">WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS</a> structure. 
+The <b>WDF_POWER_POLICY_S0_IDLE_CAPABILITIES</b> enumeration is used in the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/ns-wdfdevice-_wdf_device_power_policy_idle_settings">WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS</a> structure. 
 
 
 #### Examples
@@ -98,10 +98,10 @@ The following code examples show how to enable idle support for a USB device. In
 </tr>
 <tr>
 <td>
-<pre>WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT(&amp;idleSettings,
+<pre>WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT(&idleSettings,
                                            IdleUsbSelectSuspend);
 status = WdfDeviceAssignS0IdleSettings(device,
-                                       &amp;idleSettings);
+                                       &idleSettings);
 if (status == STATUS_POWER_STATE_INVALID){
     //
     // The device probably does not support wake. 
@@ -109,7 +109,7 @@ if (status == STATUS_POWER_STATE_INVALID){
     //
     idleSettings.IdleCaps = IdleCannotWakeFromS0;
     status = WdfDeviceAssignS0IdleSettings(device,
-                                           &amp;IdleSettings);
+                                           &IdleSettings);
     if (!NT_SUCCESS(status) {...}
  }
 else {...}</pre>
@@ -124,7 +124,7 @@ else {...}</pre>
 </tr>
 <tr>
 <td>
-<pre>hr = pIWDFDevice2-&gt;AssignS0IdleSettings(IdleUsbSelectSuspend,
+<pre>hr = pIWDFDevice2->AssignS0IdleSettings(IdleUsbSelectSuspend,
                                         PowerDeviceD3,
                                         IDLEWAKE_TIMEOUT_MSEC,
                                         IdleAllowUserControl,
@@ -134,7 +134,7 @@ if (hr == HRESULT_FROM_NT(STATUS_POWER_STATE_INVALID)){
     // The device probably does not support wake. 
     // It might support idle without wake.
     //
-    hr = pIWDFDevice2-&gt;AssignS0IdleSettings(IdleCannotWakeFromS0,
+    hr = pIWDFDevice2->AssignS0IdleSettings(IdleCannotWakeFromS0,
                                          PowerDeviceD3,
                                          IDLEWAKE_TIMEOUT_MSEC,
                                          IdleAllowUserControl,
@@ -153,7 +153,7 @@ else {...}</pre>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551270">WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/ns-wdfdevice-_wdf_device_power_policy_idle_settings">WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS</a>
  
 
  

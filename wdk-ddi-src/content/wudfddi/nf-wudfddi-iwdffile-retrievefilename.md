@@ -98,7 +98,7 @@ The buffer at <i>pFileName</i> was <b>NULL</b>, the driver preset the variable a
 
 
 
-Your driver might call <b>RetrieveFileName</b> from its <a href="https://msdn.microsoft.com/library/windows/hardware/ff556841">IQueueCallbackCreate::OnCreateFile</a> callback function.  For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/wdf/using-device-interfaces-in-umdf-drivers">Using Device Interfaces in UMDF Drivers</a>.
+Your driver might call <b>RetrieveFileName</b> from its <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iqueuecallbackcreate-oncreatefile">IQueueCallbackCreate::OnCreateFile</a> callback function.  For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/wdf/using-device-interfaces-in-umdf-drivers">Using Device Interfaces in UMDF Drivers</a>.
 
 
 #### Examples
@@ -115,12 +115,12 @@ The following code example shows how to retrieve the name of a file.
     PWSTR fileName = NULL;
     ULONG index;
 
-    CComObject&lt;CUmdfHidFile&gt; *file = NULL;
+    CComObject<CUmdfHidFile> *file = NULL;
 
     HRESULT hr;
 
     // Get the length of the file name to allocate a buffer.
-    hr = WdfFile-&gt;RetrieveFileName(NULL, &amp;fileNameCch);
+    hr = WdfFile->RetrieveFileName(NULL, &fileNameCch);
     //
     // Allocate the buffer.
     //
@@ -138,7 +138,7 @@ The following code example shows how to retrieve the name of a file.
     //
     if (SUCCEEDED(hr))
     {
-        hr = WdfFile-&gt;RetrieveFileName(fileName, &amp;fileNameCch);
+        hr = WdfFile->RetrieveFileName(fileName, &fileNameCch);
     }</pre>
 </td>
 </tr>
@@ -151,7 +151,7 @@ The following code example shows how to retrieve the name of a file.
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558912">IWDFFile</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nn-wudfddi-iwdffile">IWDFFile</a>
  
 
  

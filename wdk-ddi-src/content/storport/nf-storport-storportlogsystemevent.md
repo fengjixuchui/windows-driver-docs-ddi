@@ -46,7 +46,7 @@ req.typenames:
 ## -description
 
 
-The StorPortLogSystemEvent routine gives miniport drivers full access to the capabilities of the Windows kernel event facility, enabling miniport drivers to create event log entries that are truly useful in troubleshooting storage issues. It provides a better alternative to the existing miniport driver event logging function, <a href="https://msdn.microsoft.com/library/windows/hardware/ff567426">StorPortLogError</a>.
+The StorPortLogSystemEvent routine gives miniport drivers full access to the capabilities of the Windows kernel event facility, enabling miniport drivers to create event log entries that are truly useful in troubleshooting storage issues. It provides a better alternative to the existing miniport driver event logging function, <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportlogerror">StorPortLogError</a>.
 
 
 ## -parameters
@@ -56,7 +56,7 @@ The StorPortLogSystemEvent routine gives miniport drivers full access to the cap
 
 ### -param HwDeviceExtension [in]
 
-A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport immediately after the miniport driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff567108">StorPortInitialize</a>. The port driver frees this memory when it removes the device.
+A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport immediately after the miniport driver calls <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportinitialize">StorPortInitialize</a>. The port driver frees this memory when it removes the device.
 
 
 ### -param LogDetails [in, out]
@@ -107,7 +107,7 @@ An invalid parameter was passed in.
 </dl>
 </td>
 <td width="60%">
-The call was made at IRQL &gt; DISPATCH_LEVEL.
+The call was made at IRQL > DISPATCH_LEVEL.
 
 </td>
 </tr>
@@ -129,7 +129,7 @@ There were insufficient system resources to complete the request.
 </dl>
 </td>
 <td width="60%">
-An unsupported (for example, more current) version of the STOR_LOG_EVENT_DETAILS structure was specified. When this is returned, LogDetails-&gt;InterfaceRevision is set to the latest supported version.
+An unsupported (for example, more current) version of the STOR_LOG_EVENT_DETAILS structure was specified. When this is returned, LogDetails->InterfaceRevision is set to the latest supported version.
 
 </td>
 </tr>
@@ -165,7 +165,7 @@ The log operation completed successfully.
 
 
 
-To understand how you may use custom error codes to best advantage, see  <a href="https://docs.microsoft.com/windows-hardware/drivers/storage/storport-event-log-extensions">Storport Error Log Extensions</a>. The StorPortLogSystemEvent routine must be called at IRQL &lt;= DISPATCH_LEVEL. If you pass in a more recent version of STOR_LOG_EVENT_DETAILS than  that supported by this build, this function changes the InterfaceRevision field to the latest supported version and returns STOR_STATUS_UNSUPPORTED_VERSION. The InterfaceRevision field of STOR_LOG_EVENT_DETAILS is a 32-bit value. However, only the three most-significant bytes are used for validation. The low byte is reserved to distinguish between compatible, minor variations of a particular version. For instance, a revision 0x00000101 structure is compatible with a Storport that implements revision 0x00000100 of the interface, although it is possible that some minor, noncritical functionality may be lost. If you specify a combined size of dump data and strings that exceeds the maximum allowed event log entry size, the integer pointed to by MaximumSize is set to the maximum allowed size of miniport dump data and strings, and STOR_INVALID_BUFFER_SIZE is returned. Although this function accepts ULONG values for the path, target, and LUN address specifiers, the values are truncated to UCHAR values because Storport internally only supports 8-bit values for these specifiers. 
+To understand how you may use custom error codes to best advantage, see  <a href="https://docs.microsoft.com/windows-hardware/drivers/storage/storport-event-log-extensions">Storport Error Log Extensions</a>. The StorPortLogSystemEvent routine must be called at IRQL <= DISPATCH_LEVEL. If you pass in a more recent version of STOR_LOG_EVENT_DETAILS than  that supported by this build, this function changes the InterfaceRevision field to the latest supported version and returns STOR_STATUS_UNSUPPORTED_VERSION. The InterfaceRevision field of STOR_LOG_EVENT_DETAILS is a 32-bit value. However, only the three most-significant bytes are used for validation. The low byte is reserved to distinguish between compatible, minor variations of a particular version. For instance, a revision 0x00000101 structure is compatible with a Storport that implements revision 0x00000100 of the interface, although it is possible that some minor, noncritical functionality may be lost. If you specify a combined size of dump data and strings that exceeds the maximum allowed event log entry size, the integer pointed to by MaximumSize is set to the maximum allowed size of miniport dump data and strings, and STOR_INVALID_BUFFER_SIZE is returned. Although this function accepts ULONG values for the path, target, and LUN address specifiers, the values are truncated to UCHAR values because Storport internally only supports 8-bit values for these specifiers. 
 
 
 
@@ -175,7 +175,7 @@ To understand how you may use custom error codes to best advantage, see  <a href
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567426">StorPortLogError</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportlogerror">StorPortLogError</a>
  
 
  

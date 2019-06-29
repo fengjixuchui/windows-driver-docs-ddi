@@ -46,7 +46,7 @@ req.typenames:
 ## -description
 
 
-The <b>KsPropertyHandlerWithAllocator </b>performs the same handling as <a href="https://msdn.microsoft.com/library/windows/hardware/ff564263">KsPropertyHandler</a>, with the same restrictions, but allows an optional allocator callback to be used to provide a buffer for the parameters. If used, the filter may need to free the buffer in some nonconventional manner. IRP_BUFFERED_IO and IRP_DEALLOCATE_BUFFER flags are not set when using a custom allocator.
+The <b>KsPropertyHandlerWithAllocator </b>performs the same handling as <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-kspropertyhandler">KsPropertyHandler</a>, with the same restrictions, but allows an optional allocator callback to be used to provide a buffer for the parameters. If used, the filter may need to free the buffer in some nonconventional manner. IRP_BUFFERED_IO and IRP_DEALLOCATE_BUFFER flags are not set when using a custom allocator.
 
 
 ## -parameters
@@ -90,7 +90,7 @@ Optionally contains the size of each KSPROPERTY_ITEM structure in the properties
 
 
 
-The <b>KsPropertyHandler </b>function returns STATUS_SUCCESS if successful, or an error specific to the property being handled if unsuccessful. The function sets the Irp-&gt;IoStatus.Information member, either through setting it to zero because of an internal error, or through a property handler setting it. The function does not set the lrp-&gt;IoStatus.Status member nor does it complete the IRP.
+The <b>KsPropertyHandler </b>function returns STATUS_SUCCESS if successful, or an error specific to the property being handled if unsuccessful. The function sets the Irp->IoStatus.Information member, either through setting it to zero because of an internal error, or through a property handler setting it. The function does not set the lrp->IoStatus.Status member nor does it complete the IRP.
 
 On 64-bit platforms, if the <i>PropertyItemSize</i> parameter is not a multiple of 8, STATUS_INVALID_PARAMETER is returned, and the call fails.
 
@@ -103,7 +103,7 @@ On 64-bit platforms, if the <i>PropertyItemSize</i> parameter is not a multiple 
 
 
 
-<i>KsPropertyHandlerWithAllocator</i> places a pointer to the relevant KSPROPERTY_ITEM structure in the <b>Irp-&gt;Tail.Overlay.DriverContext</b> parameter in the IRP. The minidriver can use the KSPROPERTY_ITEM_IRP_STORAGE macro, defined in <i>ks.h</i>, to access this pointer.
+<i>KsPropertyHandlerWithAllocator</i> places a pointer to the relevant KSPROPERTY_ITEM structure in the <b>Irp->Tail.Overlay.DriverContext</b> parameter in the IRP. The minidriver can use the KSPROPERTY_ITEM_IRP_STORAGE macro, defined in <i>ks.h</i>, to access this pointer.
 
 
 
@@ -113,11 +113,11 @@ On 64-bit platforms, if the <i>PropertyItemSize</i> parameter is not a multiple 
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561946">KsFastPropertyHandler</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksfastpropertyhandler">KsFastPropertyHandler</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564263">KsPropertyHandler</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-kspropertyhandler">KsPropertyHandler</a>
  
 
  

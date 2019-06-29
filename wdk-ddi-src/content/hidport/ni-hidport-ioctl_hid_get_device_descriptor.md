@@ -48,7 +48,7 @@ req.typenames:
 
 The IOCTL_HID_GET_DEVICE_DESCRIPTOR request obtains a HIDClass device's HID descriptor.
 
-For general information about HIDClass devices, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID Collections</a>. 
+For general information about HIDClass devices, see <a href="https://docs.microsoft.com/windows-hardware/drivers/hid/hid-collections">HID Collections</a>. 
 
 
 ## -ioctlparameters
@@ -58,7 +58,7 @@ For general information about HIDClass devices, see <a href="https://msdn.micros
 
 ### -input-buffer
 
-<b>Parameters.DeviceIoControl.OutputBufferLength</b> contains the length of the system-resident buffer provided at <b>Irp-&gt;UserBuffer</b>.
+<b>Parameters.DeviceIoControl.OutputBufferLength</b> contains the length of the system-resident buffer provided at <b>Irp->UserBuffer</b>.
 
 
 ### -input-buffer-length
@@ -68,7 +68,7 @@ The size of <b>OutputBufferLength</b>.
 
 ### -output-buffer
 
-The HID minidriver returns the device descriptor in the user buffer at <b>Irp-&gt;UserBuffer</b>.
+The HID minidriver returns the device descriptor in the user buffer at <b>Irp->UserBuffer</b>.
 
 
 ### -output-buffer-length
@@ -97,7 +97,7 @@ The size of the device descriptor.
 ### -status-block
 
 
-       HID minidrivers that carry out the I/O to the device set the following fields of <b>Irp-&gt;IoStatus</b>:
+       HID minidrivers that carry out the I/O to the device set the following fields of <b>Irp->IoStatus</b>:
 
 <ul>
 <li>
@@ -117,15 +117,15 @@ HID minidrivers that call other drivers with this IRP to carry out the I/O to th
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541064">IOCTL_GET_PHYSICAL_DESCRIPTOR</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hidclass/ni-hidclass-ioctl_get_physical_descriptor">IOCTL_GET_PHYSICAL_DESCRIPTOR</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541093">IOCTL_HID_GET_DEVICE_ATTRIBUTES</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hidport/ni-hidport-ioctl_hid_get_device_attributes">IOCTL_HID_GET_DEVICE_ATTRIBUTES</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541147">IOCTL_HID_GET_REPORT_DESCRIPTOR</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hidport/ni-hidport-ioctl_hid_get_report_descriptor">IOCTL_HID_GET_REPORT_DESCRIPTOR</a>
  
 
  

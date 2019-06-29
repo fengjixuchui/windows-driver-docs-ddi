@@ -66,7 +66,7 @@ The <b>D3DKMTOpenAdapterFromHdc</b> function maps a device context handle (HDC) 
 
 *pData* [in, out]
 
-A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548121">D3DKMT_OPENADAPTERFROMHDC</a> structure that describes the parameters that are required to perform the mapping.
+A pointer to a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/ns-d3dkmthk-_d3dkmt_openadapterfromhdc">D3DKMT_OPENADAPTERFROMHDC</a> structure that describes the parameters that are required to perform the mapping.
 
 
 ## -returns
@@ -102,11 +102,11 @@ HRESULT GetPrimaryAdapterHandle(HANDLE* phAdapter, UINT* pOutput)
 
     *phAdapter = NULL;
     *pOutput = 0;
-    memset(&amp;dd, 0, sizeof (dd));
+    memset(&dd, 0, sizeof (dd));
     dd.cb = sizeof dd;
 
-    for (i = 0; EnumDisplayDevicesA(NULL, i, &amp;dd, 0); ++i) {
-        if (dd.StateFlags &amp; DISPLAY_DEVICE_PRIMARY_DEVICE) {
+    for (i = 0; EnumDisplayDevicesA(NULL, i, &dd, 0); ++i) {
+        if (dd.StateFlags & DISPLAY_DEVICE_PRIMARY_DEVICE) {
             break;
         }
     }
@@ -117,7 +117,7 @@ HRESULT GetPrimaryAdapterHandle(HANDLE* phAdapter, UINT* pOutput)
     }
 
     OpenAdapterData.hDc = hdc;
-    if (NT_SUCCESS((*pfnKTOpenAdapterFromHdc)(&amp;OpenAdapterData))) {
+    if (NT_SUCCESS((*pfnKTOpenAdapterFromHdc)(&OpenAdapterData))) {
         DeleteDC(hdc);
         *phAdapter = OpenAdapterData.hAdapter;
         *pOutput = OpenAdapterData.VidPnSourceId;
@@ -131,5 +131,5 @@ HRESULT GetPrimaryAdapterHandle(HANDLE* phAdapter, UINT* pOutput)
 
 ## -see-also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548121">D3DKMT_OPENADAPTERFROMHDC</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/ns-d3dkmthk-_d3dkmt_openadapterfromhdc">D3DKMT_OPENADAPTERFROMHDC</a>
  

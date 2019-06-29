@@ -100,7 +100,7 @@ SensorsCxSensorCreate is implemented by the class extension and must be called b
 
 
 
-<div class="alert"><b>Note</b>  If pSensorAttributes-&gt;ParentObject is not set to NULL or FxDevice, then SensorsCxSensorCreate will fail. If pSensorAttributes-&gt;ParentObject is NULL, then the class extension (CX) will set it to FxDevice.</div>
+<div class="alert"><b>Note</b>  If pSensorAttributes->ParentObject is not set to NULL or FxDevice, then SensorsCxSensorCreate will fail. If pSensorAttributes->ParentObject is NULL, then the class extension (CX) will set it to FxDevice.</div>
 <div> </div>
  
 
@@ -116,7 +116,7 @@ The sensors class extension writes a set of properties for each sensor when Sens
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn957027">Enumeration properties</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/sensors/enumeration-properties">Enumeration properties</a>
 
 
 

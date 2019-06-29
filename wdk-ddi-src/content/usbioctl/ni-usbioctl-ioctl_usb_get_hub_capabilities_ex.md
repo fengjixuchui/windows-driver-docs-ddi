@@ -71,7 +71,7 @@ The <b>AssociatedIrp.SystemBuffer</b> member points to a user-allocated buffer.
 
 ### -output-buffer
 
-<b>AssociatedIrp.SystemBuffer</b> points to a user-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff539329">USB_HUB_CAPABILITIES_EX</a> structure. On output, this structure describes the hub capabilities. 
+<b>AssociatedIrp.SystemBuffer</b> points to a user-allocated <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbioctl/ns-usbioctl-_usb_hub_capabilities_ex">USB_HUB_CAPABILITIES_EX</a> structure. On output, this structure describes the hub capabilities. 
 
 
 ### -output-buffer-length
@@ -99,7 +99,7 @@ The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member indicates the si
 
 ### -status-block
 
-The USB stack sets <b>Irp-&gt;IoStatus.Status</b> to STATUS_SUCCESS if the request is successful. Otherwise, the USB stack sets <b>Status</b> to the appropriate error condition, such as STATUS_INVALID_PARAMETER or STATUS_INSUFFICIENT_RESOURCES. If the hub has not been started or is not functional, the request returns STATUS_UNSUCCESSFUL.
+The USB stack sets <b>Irp->IoStatus.Status</b> to STATUS_SUCCESS if the request is successful. Otherwise, the USB stack sets <b>Status</b> to the appropriate error condition, such as STATUS_INVALID_PARAMETER or STATUS_INSUFFICIENT_RESOURCES. If the hub has not been started or is not functional, the request returns STATUS_UNSUCCESSFUL.
 
 
 ## -see-also
@@ -107,7 +107,7 @@ The USB stack sets <b>Irp-&gt;IoStatus.Status</b> to STATUS_SUCCESS if the reque
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539329">USB_HUB_CAPABILITIES_EX</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbioctl/ns-usbioctl-_usb_hub_capabilities_ex">USB_HUB_CAPABILITIES_EX</a>
  
 
  

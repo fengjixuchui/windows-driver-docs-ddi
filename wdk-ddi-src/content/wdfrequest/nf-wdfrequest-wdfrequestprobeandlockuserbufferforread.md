@@ -146,7 +146,7 @@ There is insufficient memory to complete the operation.
 </table>
  
 
-This method might also return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
+This method might also return other <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/ntstatus-values">NTSTATUS values</a>.
 
 
 
@@ -164,26 +164,26 @@ Only a top-level driver can call the <b>WdfRequestProbeAndLockUserBufferForRead<
 
 The user input buffer typically contains information to be written to the device.
 
-The user-mode buffer that the <i>Buffer</i> parameter specifies can be the buffer that <a href="https://msdn.microsoft.com/library/windows/hardware/ff550022">WdfRequestRetrieveUnsafeUserInputBuffer</a> retrieves, or it can be a different user-mode input buffer. For example, an I/O control code that uses the buffered access method might pass a structure that contains an embedded pointer to a user-mode buffer. In such a case, the driver can use<b>WdfRequestProbeAndLockUserBufferForRead</b> to obtain a memory object for the buffer. 
+The user-mode buffer that the <i>Buffer</i> parameter specifies can be the buffer that <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestretrieveunsafeuserinputbuffer">WdfRequestRetrieveUnsafeUserInputBuffer</a> retrieves, or it can be a different user-mode input buffer. For example, an I/O control code that uses the buffered access method might pass a structure that contains an embedded pointer to a user-mode buffer. In such a case, the driver can use<b>WdfRequestProbeAndLockUserBufferForRead</b> to obtain a memory object for the buffer. 
 
 The buffer length that the <i>Length</i> parameter specifies must not be larger than the buffer's actual size. Otherwise, drivers can access memory outside of the buffer, which is a security risk.
 
-If <b>WdfRequestProbeAndLockUserBufferForRead</b> returns STATUS_SUCCESS, the driver receives a handle to a framework memory object that represents the user-mode buffer. To access the buffer, the driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff548715">WdfMemoryGetBuffer</a>.
+If <b>WdfRequestProbeAndLockUserBufferForRead</b> returns STATUS_SUCCESS, the driver receives a handle to a framework memory object that represents the user-mode buffer. To access the buffer, the driver must call <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfmemory/nf-wdfmemory-wdfmemorygetbuffer">WdfMemoryGetBuffer</a>.
 
 For more information about <b>WdfRequestProbeAndLockUserBufferForRead</b>, see <a href="https://docs.microsoft.com/windows-hardware/drivers/wdf/accessing-data-buffers-in-wdf-drivers">Accessing Data Buffers in Framework-Based Drivers</a>.
 
 
 #### Examples
 
-The following code example is a shortened version of the <a href="https://msdn.microsoft.com/b8bcea29-e404-490e-9d0c-02c96a5690ab">EvtIoInCallerContext</a> callback function that the <a href="https://docs.microsoft.com/windows-hardware/drivers/wdf/sample-kmdf-drivers">NONPNP</a> sample driver contains. When the callback function receives an I/O request, it determines if the request contains an I/O control code with a transfer type of METHOD_NEITHER. If the request does contain such an I/O control code, the function:
+The following code example is a shortened version of the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nc-wdfdevice-evt_wdf_io_in_caller_context">EvtIoInCallerContext</a> callback function that the <a href="https://docs.microsoft.com/windows-hardware/drivers/wdf/sample-kmdf-drivers">NONPNP</a> sample driver contains. When the callback function receives an I/O request, it determines if the request contains an I/O control code with a transfer type of METHOD_NEITHER. If the request does contain such an I/O control code, the function:
 
 <ol>
 <li>
-Calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff550022">WdfRequestRetrieveUnsafeUserInputBuffer</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff550024">WdfRequestRetrieveUnsafeUserOutputBuffer</a> to obtain the virtual addresses of the request's read and write buffers.
+Calls <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestretrieveunsafeuserinputbuffer">WdfRequestRetrieveUnsafeUserInputBuffer</a> and <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestretrieveunsafeuseroutputbuffer">WdfRequestRetrieveUnsafeUserOutputBuffer</a> to obtain the virtual addresses of the request's read and write buffers.
 
 </li>
 <li>
-Calls <b>WdfRequestProbeAndLockUserBufferForRead</b> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff549989">WdfRequestProbeAndLockUserBufferForWrite</a> to probe and lock the buffers and to obtain a handle to a framework memory object that represents each buffer.
+Calls <b>WdfRequestProbeAndLockUserBufferForRead</b> and <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestprobeandlockuserbufferforwrite">WdfRequestProbeAndLockUserBufferForWrite</a> to probe and lock the buffers and to obtain a handle to a framework memory object that represents each buffer.
 
 </li>
 </ol>
@@ -206,17 +206,17 @@ NonPnpEvtIoInCallerContext(
     size_t  inBufLen, outBufLen;
     PVOID  inBuf, outBuf;
 
-    WDF_REQUEST_PARAMETERS_INIT(&amp;params);
+    WDF_REQUEST_PARAMETERS_INIT(&params);
     WdfRequestGetParameters(
                             Request,
-                            &amp;params
+                            &params
                             );
 
     //
     // Check to see whether the driver received a METHOD_NEITHER I/O control code.
     // If not, just send the request back to the framework.
     //
-    if(!(params.Type == WdfRequestTypeDeviceControl &amp;&amp;
+    if(!(params.Type == WdfRequestTypeDeviceControl &&
             params.Parameters.DeviceIoControl.IoControlCode ==
                                     IOCTL_NONPNP_METHOD_NEITHER)) {
         status = WdfDeviceEnqueueRequest(
@@ -237,8 +237,8 @@ NonPnpEvtIoInCallerContext(
     status = WdfRequestRetrieveUnsafeUserInputBuffer(
                                                      Request,
                                                      0,
-                                                     &amp;inBuf,
-                                                     &amp;inBufLen
+                                                     &inBuf,
+                                                     &inBufLen
                                                      );
     if(!NT_SUCCESS(status)) {
         goto End;
@@ -246,8 +246,8 @@ NonPnpEvtIoInCallerContext(
     status = WdfRequestRetrieveUnsafeUserOutputBuffer(
                                                       Request,
                                                       0,
-                                                      &amp;outBuf,
-                                                      &amp;outBufLen
+                                                      &outBuf,
+                                                      &outBufLen
                                                       );
     if(!NT_SUCCESS(status)) {
        goto End;
@@ -258,12 +258,12 @@ NonPnpEvtIoInCallerContext(
     // driver can store handles to the memory objects that will
     // be created for input and output buffers.
     //
-    WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(&amp;attributes,
+    WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(&attributes,
                                         REQUEST_CONTEXT);
     status = WdfObjectAllocateContext(
                                       Request,
-                                      &amp;attributes,
-                                      &amp;reqContext
+                                      &attributes,
+                                      &reqContext
                                       );
     if(!NT_SUCCESS(status)) {
         goto End;
@@ -276,7 +276,7 @@ NonPnpEvtIoInCallerContext(
                                                      Request,
                                                      inBuf,
                                                      inBufLen,
-                                                     &amp;reqContext-&gt;InputMemoryBuffer
+                                                     &reqContext->InputMemoryBuffer
                                                      );
     if(!NT_SUCCESS(status)) {
         goto End;
@@ -286,7 +286,7 @@ NonPnpEvtIoInCallerContext(
                                                       Request,
                                                       outBuf,
                                                       outBufLen,
-                                                      &amp;reqContext-&gt;OutputMemoryBuffer
+                                                      &reqContext->OutputMemoryBuffer
                                                       );
     if(!NT_SUCCESS(status)) {
         goto End;
@@ -322,15 +322,15 @@ End:
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548715">WdfMemoryGetBuffer</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfmemory/nf-wdfmemory-wdfmemorygetbuffer">WdfMemoryGetBuffer</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549989">WdfRequestProbeAndLockUserBufferForWrite</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestprobeandlockuserbufferforwrite">WdfRequestProbeAndLockUserBufferForWrite</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550022">WdfRequestRetrieveUnsafeUserInputBuffer</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestretrieveunsafeuserinputbuffer">WdfRequestRetrieveUnsafeUserInputBuffer</a>
  
 
  

@@ -47,7 +47,7 @@ req.typenames:
 
 
 
-The <b>IOCTL_USB_GET_HUB_CAPABILITIES</b> I/O control request retrieves the capabilities of a USB hub. <b>Note</b>  This request is replaced by <a href="https://msdn.microsoft.com/library/windows/hardware/ff537314">IOCTL_USB_GET_HUB_CAPABILITIES_EX</a> in Windows Vista.
+The <b>IOCTL_USB_GET_HUB_CAPABILITIES</b> I/O control request retrieves the capabilities of a USB hub. <b>Note</b>  This request is replaced by <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbioctl/ni-usbioctl-ioctl_usb_get_hub_capabilities_ex">IOCTL_USB_GET_HUB_CAPABILITIES_EX</a> in Windows Vista.
 
 
 
@@ -73,12 +73,12 @@ None.
 
 ### -output-buffer
 
-The <b>AssociatedIrp.SystemBuffer</b> member points to a user-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff539326">USB_HUB_CAPABILITIES</a> structure that describes the hub capabilities. 
+The <b>AssociatedIrp.SystemBuffer</b> member points to a user-allocated <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbioctl/ns-usbioctl-_usb_hub_capabilities">USB_HUB_CAPABILITIES</a> structure that describes the hub capabilities. 
 
 
 ### -output-buffer-length
 
-The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member indicates the size, in bytes, of the output buffer in <b>SystemBuffer</b>. The output buffer size must be <code>&gt;= sizeof(USB_HUB_CAPABILITIES)</code>.
+The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member indicates the size, in bytes, of the output buffer in <b>SystemBuffer</b>. The output buffer size must be <code>>= sizeof(USB_HUB_CAPABILITIES)</code>.
 
 
 ### -in-out-buffer
@@ -101,7 +101,7 @@ The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member indicates the si
 
 ### -status-block
 
-The USB stack sets <b>Irp-&gt;IoStatus.Status</b> to STATUS_SUCCESS if the request is successful. Otherwise, the USB stack sets <b>Status</b> to the appropriate error condition, such as STATUS_INVALID_PARAMETER or STATUS_INSUFFICIENT_RESOURCES.
+The USB stack sets <b>Irp->IoStatus.Status</b> to STATUS_SUCCESS if the request is successful. Otherwise, the USB stack sets <b>Status</b> to the appropriate error condition, such as STATUS_INVALID_PARAMETER or STATUS_INSUFFICIENT_RESOURCES.
 
 
 ## -see-also
@@ -109,11 +109,11 @@ The USB stack sets <b>Irp-&gt;IoStatus.Status</b> to STATUS_SUCCESS if the reque
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537314">IOCTL_USB_GET_HUB_CAPABILITIES_EX</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbioctl/ni-usbioctl-ioctl_usb_get_hub_capabilities_ex">IOCTL_USB_GET_HUB_CAPABILITIES_EX</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539326">USB_HUB_CAPABILITIES</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbioctl/ns-usbioctl-_usb_hub_capabilities">USB_HUB_CAPABILITIES</a>
  
 
  

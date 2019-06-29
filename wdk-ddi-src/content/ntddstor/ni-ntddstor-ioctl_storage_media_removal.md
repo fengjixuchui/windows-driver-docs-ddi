@@ -49,7 +49,7 @@ req.typenames:
 
 Locks the device to prevent removal of the media. If the driver can prevent the media from being removed while the drive is in use, it disables or enables the mechanism that ejects media on a device - the caller has opened for read or write access.
 
-Unlike <a href="https://msdn.microsoft.com/library/windows/hardware/ff560540">IOCTL_STORAGE_EJECTION_CONTROL</a>, for which the driver tracks requests by caller, the driver ignores IOCTL_STORAGE_MEDIA_REMOVAL unlock requests only if its lock count is already zero, thereby allowing any caller to unlock the drive.
+Unlike <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ni-ntddstor-ioctl_storage_ejection_control">IOCTL_STORAGE_EJECTION_CONTROL</a>, for which the driver tracks requests by caller, the driver ignores IOCTL_STORAGE_MEDIA_REMOVAL unlock requests only if its lock count is already zero, thereby allowing any caller to unlock the drive.
 
 A driver for such a removable-media device that can support this IOCTL must do the following:
 
@@ -81,7 +81,7 @@ Prevent removal of the media unless all lock counts are zero.
 
 ### -input-buffer
 
-The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains a Boolean value, with <b>TRUE</b> indicating that the driver should lock the media in the drive.
+The buffer at <b>Irp->AssociatedIrp.SystemBuffer</b> contains a Boolean value, with <b>TRUE</b> indicating that the driver should lock the media in the drive.
 
 
 ### -input-buffer-length
@@ -127,7 +127,7 @@ The <b>Information</b> field is set to zero. The <b>Status</b> field is set to S
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560540">IOCTL_STORAGE_EJECTION_CONTROL</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ni-ntddstor-ioctl_storage_ejection_control">IOCTL_STORAGE_EJECTION_CONTROL</a>
  
 
  

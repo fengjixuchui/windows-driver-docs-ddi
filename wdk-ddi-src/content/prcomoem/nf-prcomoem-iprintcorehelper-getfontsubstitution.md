@@ -144,7 +144,7 @@ If an application attempts to print text that uses the TrueType font specified i
 
 A font is identified by its font face name, which appears in the <b>lfFaceName</b> member of the LOGFONT structure.
 
-To obtain a list of available fonts, create an information context for the current printer, and call SetGraphicsMode(hIC, GM_ADVANCED). Then enumerate device fonts by means of a call to EnumFontFamilies. The callback parameter (see EnumFontFamProc in the Microsoft Windows SDK documentation) of EnumFontFamilies should filter for device fonts by incrementing a counter for each font for which the bitwise AND result (FontType &amp; TRUETYPE_FONTTYPE) is nonzero.
+To obtain a list of available fonts, create an information context for the current printer, and call SetGraphicsMode(hIC, GM_ADVANCED). Then enumerate device fonts by means of a call to EnumFontFamilies. The callback parameter (see EnumFontFamProc in the Microsoft Windows SDK documentation) of EnumFontFamilies should filter for device fonts by incrementing a counter for each font for which the bitwise AND result (FontType & TRUETYPE_FONTTYPE) is nonzero.
 
 <div class="alert"><b>Note</b>  For more information about the structures and functions described previously, see the Windows SDK documentation.</div>
 <div> </div>
@@ -156,11 +156,11 @@ To obtain a list of available fonts, create an information context for the curre
 
 
 
-<a href="https://msdn.microsoft.com/db13410f-e4cb-4077-bb4b-7963e97b435c">IPrintCoreHelper</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nn-prcomoem-iprintcorehelper">IPrintCoreHelper</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552962">IPrintCoreHelper::SetFontSubstitution</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/prcomoem/nf-prcomoem-iprintcorehelper-setfontsubstitution">IPrintCoreHelper::SetFontSubstitution</a>
  
 
  

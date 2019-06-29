@@ -70,7 +70,7 @@ A handle to the display device (graphics context).
 
 *pData* [in]
 
-A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543285">D3DDDIARG_SETCONVOLUTIONKERNELMONO</a> structure that describes parameters for setting the monochrome convolution kernel.
+A pointer to a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/ns-d3dumddi-_d3dddiarg_setconvolutionkernelmono">D3DDDIARG_SETCONVOLUTIONKERNELMONO</a> structure that describes parameters for setting the monochrome convolution kernel.
 
 
 ## -returns
@@ -93,9 +93,9 @@ D3DTEXF_CONVOLUTIONMONO is a texture filter mode that is used for sampling monoc
 
 The following formula is used to perform the convolution:
 
-Result = Sum(i=0, i &lt;N<sub>v</sub>)[ (R<sub>i</sub>*(1 - alpha) + R<sub>i+1</sub>*alpha) * S)]
+Result = Sum(i=0, i <N<sub>v</sub>)[ (R<sub>i</sub>*(1 - alpha) + R<sub>i+1</sub>*alpha) * S)]
 
-Rₖ = Sum(j=0, j &lt;N<sub>u</sub>)[T<sub>k,j</sub>*(1 - beta) + T<sub>k,j+1</sub>*beta],  where 0 &lt; k &lt; N<sub>v</sub>
+Rₖ = Sum(j=0, j <N<sub>u</sub>)[T<sub>k,j</sub>*(1 - beta) + T<sub>k,j+1</sub>*beta],  where 0 < k < N<sub>v</sub>
 
 S = 1 / (N<sub>u</sub> * N<sub>v</sub>)
 
@@ -127,11 +127,11 @@ alpha = V<sub>f</sub> - truncate(V<sub>f</sub>)
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543285">D3DDDIARG_SETCONVOLUTIONKERNELMONO</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/ns-d3dumddi-_d3dddiarg_setconvolutionkernelmono">D3DDDIARG_SETCONVOLUTIONKERNELMONO</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/ns-d3dumddi-_d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a>
  
 
  

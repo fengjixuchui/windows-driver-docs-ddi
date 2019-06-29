@@ -58,7 +58,7 @@ The <b>SetPnpState</b> method turns on or off (or sets to the default state) the
 
 ### -param State [in]
 
-A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561434">WDF_PNP_STATE</a>-typed value that identifies the PnP property to set.
+A <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi_types/ne-wudfddi_types-_wdf_pnp_state">WDF_PNP_STATE</a>-typed value that identifies the PnP property to set.
 
 
 ### -param Value [in]
@@ -117,7 +117,7 @@ None
 
 
 
-Before the state of the PnP property that <b>SetPnpState</b> set can take effect, the driver must call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557010">IWDFDevice::CommitPnpState</a> method.
+Before the state of the PnP property that <b>SetPnpState</b> set can take effect, the driver must call the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfdevice-commitpnpstate">IWDFDevice::CommitPnpState</a> method.
 
 
 #### Examples
@@ -140,27 +140,27 @@ CUmdfHidDevice::OnCompletion(
 {
     ULONG_PTR bytesRead;
 
- if (!SUCCEEDED(WdfCompletionParams-&gt;GetCompletionStatus()))
+ if (!SUCCEEDED(WdfCompletionParams->GetCompletionStatus()))
     {
-        m_WdfDevice-&gt;SetPnpState(WdfPnpStateFailed, WdfTrue);
-        m_WdfDevice-&gt;CommitPnpState();
+        m_WdfDevice->SetPnpState(WdfPnpStateFailed, WdfTrue);
+        m_WdfDevice->CommitPnpState();
         return;
     }
 
     // Lock the device to prevent files from closing.
-    m_WdfDevice-&gt;AcquireLock();
+    m_WdfDevice->AcquireLock();
 
     // Retrieve the number of bytes that were read.
-    bytesRead = WdfCompletionParams-&gt;GetInformation();
+    bytesRead = WdfCompletionParams->GetInformation();
 
     // Process the reports.
-    ProcessInputReports((PBYTE) m_ReadMemory-&gt;GetDataBuffer(NULL), bytesRead);
+    ProcessInputReports((PBYTE) m_ReadMemory->GetDataBuffer(NULL), bytesRead);
 
-    m_WdfDevice-&gt;ReleaseLock();
+    m_WdfDevice->ReleaseLock();
 
     // Release the request.
     m_InterruptReadRequest = NULL;
-    WdfRequest-&gt;DeleteWdfObject();
+    WdfRequest->DeleteWdfObject();
 
     // Send a new request.
     SendInterruptPipeRead();
@@ -176,19 +176,19 @@ CUmdfHidDevice::OnCompletion(
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556917">IWDFDevice</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nn-wudfddi-iwdfdevice">IWDFDevice</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557010">IWDFDevice::CommitPnpState</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfdevice-commitpnpstate">IWDFDevice::CommitPnpState</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558834">IWDFDevice::GetPnpState</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfdevice-getpnpstate">IWDFDevice::GetPnpState</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561434">WDF_PNP_STATE</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi_types/ne-wudfddi_types-_wdf_pnp_state">WDF_PNP_STATE</a>
  
 
  

@@ -1,5 +1,5 @@
 ---
-UID: NF:wdm.IoCallDriver
+UID: NF:wdm.IofCallDriver
 title: IoCallDriver macro (wdm.h)
 description: The IoCallDriver routine sends an IRP to the driver associated with a specified device object.
 old-location: kernel\iocalldriver.htm
@@ -56,11 +56,11 @@ The <b>IoCallDriver</b> routine, wraps **IofCallDriver** that sends an IRP to th
 
 
 
-### -param a [in]
+### -param DeviceObject [in]
 
 See [**IofCallDriver**](nf-wdm-iofcalldriver.md).
 
-### -param b [in, out]
+### -param Irp [in, out]
 
 See [**IofCallDriver**](nf-wdm-iofcalldriver.md).
 
@@ -77,27 +77,27 @@ see [**IofCallDriver**](nf-wdm-iofcalldriver.md).
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548257">IoAllocateIrp</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioallocateirp">IoAllocateIrp</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548310">IoBuildAsynchronousFsdRequest</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iobuildasynchronousfsdrequest">IoBuildAsynchronousFsdRequest</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548318">IoBuildDeviceIoControlRequest</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iobuilddeviceiocontrolrequest">IoBuildDeviceIoControlRequest</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548330">IoBuildSynchronousFsdRequest</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iobuildsynchronousfsdrequest">IoBuildSynchronousFsdRequest</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549679">IoSetCompletionRoutine</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iosetcompletionroutine">IoSetCompletionRoutine</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559654">PoCallDriver</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-pocalldriver">PoCallDriver</a>
  
 
  

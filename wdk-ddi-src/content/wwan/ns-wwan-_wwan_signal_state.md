@@ -150,11 +150,11 @@ A coded value that represents a percentage range of error rates. For GSM-based d
 </tr>
 <tr>
 <td>
-&lt; 0.2
+< 0.2
 
 </td>
 <td>
-&lt; 0.01
+< 0.01
 
 </td>
 <td>
@@ -248,11 +248,11 @@ A coded value that represents a percentage range of error rates. For GSM-based d
 </tr>
 <tr>
 <td>
-&gt; 12.8
+> 12.8
 
 </td>
 <td>
-&gt; 8.0
+> 8.0
 
 </td>
 <td>
@@ -302,7 +302,7 @@ This member points to a list of [**WWAN_SIGNAL_STATE_EXT**](../wwan/ns-wwan-_wwa
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567931">NDIS_WWAN_SIGNAL_STATE</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_signal_state">NDIS_WWAN_SIGNAL_STATE</a>
  
 
  

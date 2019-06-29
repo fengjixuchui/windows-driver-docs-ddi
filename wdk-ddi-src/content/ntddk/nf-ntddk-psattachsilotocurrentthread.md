@@ -74,25 +74,18 @@ The previous silo that was attached to the current thread.
 
 The specified <i>Silo</i> is attached to the current thread so that it becomes the effective silo for the thread.
 
-The thread then operates within the namespace of the attached silo until <a href="https://msdn.microsoft.com/library/windows/hardware/mt735060">PsDetachSiloFromCurrentThread</a> is called.
+The thread then operates within the namespace of the attached silo until <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-psdetachsilofromcurrentthread">PsDetachSiloFromCurrentThread</a> is called.
 
 
 #### Examples
 
-<div class="code"><span codelanguage="ManagedCPlusPlus"><table>
-<tr>
-<th>C++</th>
-</tr>
-<tr>
-<td>
-<pre>PESILO PreviousSilo = PsAttachSiloToCurrentThread();
+```cpp
+PESILO PreviousSilo = PsAttachSiloToCurrentThread(SomeSilo);
 
 // Do work within the silo context
 
 PsDetachSiloFromCurrentThread(PreviousSilo);</pre>
-</td>
-</tr>
-</table></span></div>
+```
 
 
 
@@ -101,7 +94,7 @@ PsDetachSiloFromCurrentThread(PreviousSilo);</pre>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt735060">PsDetachSiloFromCurrentThread</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-psdetachsilofromcurrentthread">PsDetachSiloFromCurrentThread</a>
  
 
  

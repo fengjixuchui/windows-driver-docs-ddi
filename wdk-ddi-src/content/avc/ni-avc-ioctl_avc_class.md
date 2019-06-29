@@ -77,7 +77,7 @@ The GUID_AVC_CLASS interface supports all IOCTL_AVC_CLASS function codes, althou
 
 The IOCTL_AVC_CLASS function codes (and any restrictions) are described in each function code.
 
-For more information about IRPs and IOCTLs, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff546847">Handling IRPs</a>.
+For more information about IRPs and IOCTLs, see <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/handling-irps">Handling IRPs</a>.
 
 
 
@@ -125,7 +125,7 @@ For more information about IRPs and IOCTLs, see <a href="https://msdn.microsoft.
 
 ### -in-out-buffer
 
-<b>Parameters-&gt;Others.Argument1</b> points to either an AVC_COMMAND_IRB structure or AVC_MULTIFUNC_IRB structure. Both structures contain an AVC_IRB structure as a header, as illustrated in the following example:
+<b>Parameters->Others.Argument1</b> points to either an AVC_COMMAND_IRB structure or AVC_MULTIFUNC_IRB structure. Both structures contain an AVC_IRB structure as a header, as illustrated in the following example:
 
 <div class="code"><span codelanguage=""><table>
 <tr>
@@ -161,7 +161,7 @@ The AVC_IRB structure contains a single <b>Function</b> member. This member must
 
 The AVC_MULTIFUNC_IRB structure contains a union member that specifies the function I/O request block type-specific parameters for the function code. The parameters and their meanings are documented with each function code.
 
-<b>Parameters-&gt;Others.Argument1</b> points to the same AVC_COMMAND_IRB or AVC_MULTIFUNC_IRB structure that was passed as input. As part of completing the function, the subunit driver fills in certain submembers of the union within the structure with information for the driver. The returned information is documented with each request.
+<b>Parameters->Others.Argument1</b> points to the same AVC_COMMAND_IRB or AVC_MULTIFUNC_IRB structure that was passed as input. As part of completing the function, the subunit driver fills in certain submembers of the union within the structure with information for the driver. The returned information is documented with each request.
 
 
 ### -inout-buffer-length
@@ -175,14 +175,14 @@ The AVC_MULTIFUNC_IRB structure contains a union member that specifies the funct
 
 ### -status-block
 
-The information the AV/C protocol driver returns in the I/O Status Block (Irp-&gt;IoStatus.Status) is documented with each request.
+The information the AV/C protocol driver returns in the I/O Status Block (Irp->IoStatus.Status) is documented with each request.
 
 
 ## -remarks
 
 
 
-Most AV/C functions must be called IRQL = PASSIVE_LEVEL. A few may be called at IRQL &lt;= DISPATCH_LEVEL. The respective IRQL is documented in each AV/C function.
+Most AV/C functions must be called IRQL = PASSIVE_LEVEL. A few may be called at IRQL <= DISPATCH_LEVEL. The respective IRQL is documented in each AV/C function.
 
 
 
@@ -192,31 +192,31 @@ Most AV/C functions must be called IRQL = PASSIVE_LEVEL. A few may be called at 
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554140">AVC_COMMAND_IRB</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ns-avc-_avc_command_irb">AVC_COMMAND_IRB</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554145">AVC_FUNCTION</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ne-avc-_tagavc_function">AVC_FUNCTION</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554174">AVC_IRB</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ns-avc-_avc_irb">AVC_IRB</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554177">AVC_MULTIFUNC_IRB</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ns-avc-_avc_multifunc_irb">AVC_MULTIFUNC_IRB</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560783">IOCTL_AVC_BUS_RESET</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ni-avc-ioctl_avc_bus_reset">IOCTL_AVC_BUS_RESET</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560793">IOCTL_AVC_REMOVE_VIRTUAL_SUBUNIT_INFO</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ni-avc-ioctl_avc_remove_virtual_subunit_info">IOCTL_AVC_REMOVE_VIRTUAL_SUBUNIT_INFO</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560798">IOCTL_AVC_UPDATE_VIRTUAL_SUBUNIT_INFO</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ni-avc-ioctl_avc_update_virtual_subunit_info">IOCTL_AVC_UPDATE_VIRTUAL_SUBUNIT_INFO</a>
  
 
  

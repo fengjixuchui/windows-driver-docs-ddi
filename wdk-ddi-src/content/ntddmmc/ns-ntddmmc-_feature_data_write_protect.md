@@ -56,7 +56,7 @@ The FEATURE_DATA_WRITE_PROTECT structure contains information about the Write Pr
 
 ### -field Header
 
-Contains a <a href="https://msdn.microsoft.com/library/windows/hardware/ff553848">FEATURE_HEADER</a> structure with header information for this feature descriptor. 
+Contains a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddmmc/ns-ntddmmc-_feature_header">FEATURE_HEADER</a> structure with header information for this feature descriptor. 
 
 
 ### -field SupportsSWPPBit
@@ -66,7 +66,7 @@ Indicates, when set to 1, that the device supports set/release PWP status. If ad
 
 ### -field SupportsPersistentWriteProtect
 
-Indicates, when set to 1, that the device supports the persistent write protect bit of the time-out &amp; protect mode page. For more details on the write protect feature see the <i>SCSI Multimedia - 4 (MMC-4)</i> specification. 
+Indicates, when set to 1, that the device supports the persistent write protect bit of the time-out & protect mode page. For more details on the write protect feature see the <i>SCSI Multimedia - 4 (MMC-4)</i> specification. 
 
 
 ### -field WriteInhibitDCB
@@ -97,11 +97,11 @@ This structure holds data for the feature named "Write Protect" by the <i>MMC-3 
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553848">FEATURE_HEADER</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddmmc/ns-ntddmmc-_feature_header">FEATURE_HEADER</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553850">FEATURE_NUMBER</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddmmc/ne-ntddmmc-_feature_number">FEATURE_NUMBER</a>
  
 
  

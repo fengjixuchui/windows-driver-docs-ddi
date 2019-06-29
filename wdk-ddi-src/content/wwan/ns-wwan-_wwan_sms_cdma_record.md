@@ -77,11 +77,11 @@ A NULL-terminated string with a maximum length of 15 digits that represents a mo
 
 <ul>
 <li>
-"+ &lt;International Country Code&gt; &lt;Mobile Number&gt;\0"
+"+ <International Country Code> <Mobile Number>\0"
 
 </li>
 <li>
-"&lt;Mobile Number&gt;\0"
+"<Mobile Number>\0"
 
 </li>
 </ul>
@@ -181,15 +181,15 @@ The encoded content of the record that represents the SMS text message.
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571209">WWAN_MSG_STATUS</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wwan/ne-wwan-_wwan_msg_status">WWAN_MSG_STATUS</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571241">WWAN_SMS_CDMA_ENCODING</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wwan/ne-wwan-_wwan_sms_cdma_encoding">WWAN_SMS_CDMA_ENCODING</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571242">WWAN_SMS_CDMA_LANG</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wwan/ne-wwan-_wwan_sms_cdma_lang">WWAN_SMS_CDMA_LANG</a>
  
 
  

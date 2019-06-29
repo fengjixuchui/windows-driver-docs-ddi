@@ -48,7 +48,7 @@ req.typenames:
 
 <p class="CCE_Message">[Applies to KMDF and UMDF]</p>
 
-The <b>WdfObjectGetTypedContextWorker</b> method is reserved for internal use only. Use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548749">WdfObjectGetTypedContext</a> macro instead.
+The <b>WdfObjectGetTypedContextWorker</b> method is reserved for internal use only. Use the <a href="https://docs.microsoft.com/windows-hardware/drivers/wdf/wdfobjectgettypedcontext">WdfObjectGetTypedContext</a> macro instead.
 
 
 ## -parameters
@@ -61,3 +61,6 @@ The <b>WdfObjectGetTypedContextWorker</b> method is reserved for internal use on
 
 ### -param TypeInfo [in]
 
+## -remarks
+
+For more information about the cleanup rules for a framework object hierarchy, see [Framework Object Life Cycle](https://docs.microsoft.com/windows-hardware/drivers/wdf/framework-object-life-cycle).

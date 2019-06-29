@@ -81,14 +81,14 @@ If the driver sets this value to <b>FALSE</b>, the framework notifies the driver
 
 
 
-Your driver can call <b>RegisterRemoteInterfaceNotification</b> only if the callback interface that the driver previously passed to <a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a> supports the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556772">IPnpCallbackRemoteInterfaceNotification</a> interface.
+Your driver can call <b>RegisterRemoteInterfaceNotification</b> only if the callback interface that the driver previously passed to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfdriver-createdevice">IWDFDriver::CreateDevice</a> supports the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nn-wudfddi-ipnpcallbackremoteinterfacenotification">IPnpCallbackRemoteInterfaceNotification</a> interface.
 
 For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/wdf/using-device-interfaces-in-umdf-drivers">Using Device Interfaces in UMDF-based Drivers</a>.
 
 
 #### Examples
 
-The following code example shows how an <a href="https://msdn.microsoft.com/library/windows/hardware/ff554896">IDriverEntry::OnDeviceAdd</a> callback function can register for notification of the arrival of a device interface.
+The following code example shows how an <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-idriverentry-ondeviceadd">IDriverEntry::OnDeviceAdd</a> callback function can register for notification of the arrival of a device interface.
 
 <div class="code"><span codelanguage=""><table>
 <tr>
@@ -102,29 +102,29 @@ CMyDriver::OnDeviceAdd(
     __in IWDFDeviceInitialize  *FxDeviceInit
     )
 {
-    CComPtr&lt;IWDFDevice&gt; fxDevice;
+    CComPtr<IWDFDevice> fxDevice;
     HRESULT hr;
 
     //
     // Create a device object and obtain the IWDFDevice interface.
     //
-    hr = FxDriver-&gt;CreateDevice(FxDeviceInit,
+    hr = FxDriver->CreateDevice(FxDeviceInit,
                                 MyDeviceIUnknown,
-                                &amp;fxDevice);
+                                &fxDevice);
     if (FAILED(hr)) goto Error;
 
     //
     // Obtain the IWDFDevice2 interface from IWDFDevice.
     //
-    CComPtr&lt;IWDFDevice2&gt; fxDevice2;
+    CComPtr<IWDFDevice2> fxDevice2;
     if (FAILED(hr)) goto Error;
-    hr = fxDevice-&gt;QueryInterface(IID_PPV_ARGS(&amp;fxDevice2));
+    hr = fxDevice->QueryInterface(IID_PPV_ARGS(&fxDevice2));
     if (S_OK != hr) goto Error;
     //
     // Register for notification when a device interface
     // arrives.
     //
-    hr = fxDevice2-&gt;RegisterRemoteInterfaceNotification(&amp;GUID_DEVINTERFACE_TOASTER,
+    hr = fxDevice2->RegisterRemoteInterfaceNotification(&GUID_DEVINTERFACE_TOASTER,
                                                         true);
 ...
 }</pre>
@@ -139,11 +139,11 @@ CMyDriver::OnDeviceAdd(
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556775">IPnpCallbackRemoteInterfaceNotification::OnRemoteInterfaceArrival</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-ipnpcallbackremoteinterfacenotification-onremoteinterfacearrival">IPnpCallbackRemoteInterfaceNotification::OnRemoteInterfaceArrival</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556918">IWDFDevice2</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nn-wudfddi-iwdfdevice2">IWDFDevice2</a>
  
 
  

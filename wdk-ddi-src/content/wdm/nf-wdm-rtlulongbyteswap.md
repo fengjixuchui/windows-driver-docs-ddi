@@ -1,5 +1,5 @@
 ---
-UID: NF:wdm.RtlUlongByteSwap
+UID: NF:wdm.RtlUlongByteSwap~r1
 title: RtlUlongByteSwap macro (wdm.h)
 description: The RtlUlongByteSwap routine reverses the ordering of the four bytes in a 32-bit unsigned integer value.
 old-location: kernel\rtlulongbyteswap.htm
@@ -54,7 +54,7 @@ The <b>RtlUlongByteSwap</b> routine reverses the ordering of the four bytes in a
 
 
 
-### -param _x [in]
+### -param Source [in]
 
 A ULONG value to convert to a byte-swapped version.
 
@@ -71,7 +71,7 @@ A typical use of this routine is to convert a ULONG value from little-endian byt
 
 Use this routine instead of <b>ntohl</b> or <b>htonl</b>.
 
-To reverse the ordering of bytes in a USHORT value, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563016">RtlUshortByteSwap</a> routine. To reverse ordering of bytes in a ULONGLONG value, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562890">RtlUlonglongByteSwap</a> routine.
+To reverse the ordering of bytes in a USHORT value, use the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-rtlushortbyteswap">RtlUshortByteSwap</a> routine. To reverse ordering of bytes in a ULONGLONG value, use the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-rtlulonglongbyteswap">RtlUlonglongByteSwap</a> routine.
 
 
 
@@ -81,11 +81,11 @@ To reverse the ordering of bytes in a USHORT value, use the <a href="https://msd
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562890">RtlUlonglongByteSwap</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-rtlulonglongbyteswap">RtlUlonglongByteSwap</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563016">RtlUshortByteSwap</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-rtlushortbyteswap">RtlUshortByteSwap</a>
  
 
  

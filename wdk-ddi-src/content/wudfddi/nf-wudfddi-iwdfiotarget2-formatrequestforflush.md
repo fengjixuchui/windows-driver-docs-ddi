@@ -58,12 +58,12 @@ The <b>FormatRequestForFlush</b> method builds an I/O request for a flush operat
 
 ### -param pRequest [in]
 
-A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558985">IWDFIoRequest</a> interface of the request object that represents the I/O request. 
+A pointer to the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nn-wudfddi-iwdfiorequest">IWDFIoRequest</a> interface of the request object that represents the I/O request. 
 
 
 ### -param pFile [in, optional]
 
-A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558912">IWDFFile</a> interface of the file object that is associated with the I/O request. This parameter is optional and can be <b>NULL</b>, but it is required for the default I/O target.
+A pointer to the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nn-wudfddi-iwdffile">IWDFFile</a> interface of the file object that is associated with the I/O request. This parameter is optional and can be <b>NULL</b>, but it is required for the default I/O target.
 
 
 ## -returns
@@ -102,12 +102,12 @@ This method might return one of the other values that Winerror.h contains.
 
 Some drivers must flush cached buffers that exist in either a lower driver or the device. For example, drivers that exist in a driver stack for a serial device or a storage device might support this operation. 
 
-Use the <b>FormatRequestForFlush</b> method, followed by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559149">IWDFIoRequest::Send</a> method, to send flush requests either synchronously or asynchronously. 
+Use the <b>FormatRequestForFlush</b> method, followed by the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfiorequest-send">IWDFIoRequest::Send</a> method, to send flush requests either synchronously or asynchronously. 
 
 
 #### Examples
 
-The following code example is part of an <a href="https://msdn.microsoft.com/library/windows/hardware/ff556847">IQueueCallbackDefaultIoHandler::OnDefaultIoHandler</a> callback function. If the callback function receives a flush request, it sends the request to the device's default I/O target.
+The following code example is part of an <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iqueuecallbackdefaultiohandler-ondefaultiohandler">IQueueCallbackDefaultIoHandler::OnDefaultIoHandler</a> callback function. If the callback function receives a flush request, it sends the request to the device's default I/O target.
 
 <div class="code"><span codelanguage=""><table>
 <tr>
@@ -129,27 +129,27 @@ CMyQueue::OnDefaultIoHandler(
     //
     // Obtain the device, default I/O target, and file object.
     //
-    pQueue-&gt;GetDevice(&amp;pDevice);
-    pDevice-&gt;GetDefaultIoTarget(&amp;pTarget);
-    pRequest-&gt;GetFileObject(&amp;pFile);
+    pQueue->GetDevice(&pDevice);
+    pDevice->GetDefaultIoTarget(&pTarget);
+    pRequest->GetFileObject(&pFile);
 
-    if (WdfRequestFlushBuffers==pRequest-&gt;GetType())
+    if (WdfRequestFlushBuffers==pRequest->GetType())
     {
         // 
         // Declare an IWDFIoTarget2 interface pointer and obtain the
         // IWDFIoTarget2 interface from the IWDFIoTarget interface.
         //
-        CComQIPtr&lt;IWDFIoTarget2&gt; target2(pTarget);
+        CComQIPtr<IWDFIoTarget2> target2(pTarget);
 
         //
         // Format a flush request and send it to the I/O target.
         //
-        hr = target2-&gt;FormatRequestForFlush(pRequest, 
+        hr = target2->FormatRequestForFlush(pRequest, 
                                             pFile);
 
         if (SUCCEEDED(hr))
         {
-            hr = pRequest-&gt;Send(pTarget,
+            hr = pRequest->Send(pTarget,
                                 WDF_REQUEST_SEND_OPTION_SYNCHRONOUS,
                                 0);
         }
@@ -173,15 +173,15 @@ CMyQueue::OnDefaultIoHandler(
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556847">IQueueCallbackDefaultIoHandler::OnDefaultIoHandler</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iqueuecallbackdefaultiohandler-ondefaultiohandler">IQueueCallbackDefaultIoHandler::OnDefaultIoHandler</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559149">IWDFIoRequest::Send</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfiorequest-send">IWDFIoRequest::Send</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559175">IWDFIoTarget2</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nn-wudfddi-iwdfiotarget2">IWDFIoTarget2</a>
  
 
  

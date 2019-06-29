@@ -64,7 +64,7 @@ A handle to a display device (that is, the graphics context).
 
 *pData* [in]
 
-A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544274">D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT</a> structure that describes the synchronization objects and context DMA stream that signaling is set up on. 
+A pointer to a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/ns-d3dumddi-_d3dddicb_signalsynchronizationobject">D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT</a> structure that describes the synchronization objects and context DMA stream that signaling is set up on. 
 
 
 ## -returns
@@ -89,7 +89,7 @@ This function might also return other HRESULT values.
 
 
 
-<b>Direct3D Version 11 Note:  </b>For more information about how the driver calls <b>pfnSignalSynchronizationObjectCb</b>, see <a href="https://msdn.microsoft.com/014a5e44-f8c4-45c0-96e8-d82f37b8b28d">Changes from Direct3D 10</a>.
+<b>Direct3D Version 11 Note:  </b>For more information about how the driver calls <b>pfnSignalSynchronizationObjectCb</b>, see <a href="https://docs.microsoft.com/windows-hardware/drivers/display/changes-from-direct3d-10">Changes from Direct3D 10</a>.
 
 
 
@@ -107,7 +107,7 @@ HRESULT CD3DContext::SyncEngines(DWORD dwEngineReleasingControl, DWORD dwEngineA
     sSignalObject.hContext = m_sContexts[dwEngineReleasingControl].hContext;
     sSignalObject.ObjectCount = 1;
     sSignalObject.ObjectHandleArray[0] = m_hEngineSyncObject;
-    hr = m_d3dCallbacks.pfnSignalSynchronizationObjectCb(m_hD3D, &amp;sSignalObject);
+    hr = m_d3dCallbacks.pfnSignalSynchronizationObjectCb(m_hD3D, &sSignalObject);
     if (FAILED(hr)) {
         DBG_BREAK;
         return hr;
@@ -115,7 +115,7 @@ HRESULT CD3DContext::SyncEngines(DWORD dwEngineReleasingControl, DWORD dwEngineA
     sWaitObject.hContext = m_sContexts[dwEngineAcquiringControl].hContext;
     sWaitObject.ObjectCount = 1;
     sWaitObject.ObjectHandleArray[0] = m_hEngineSyncObject;
-    hr = m_d3dCallbacks.pfnWaitForSynchronizationObjectCb(m_hD3D, &amp;sWaitObject);
+    hr = m_d3dCallbacks.pfnWaitForSynchronizationObjectCb(m_hD3D, &sWaitObject);
     if (FAILED(hr)) {
         DBG_BREAK;        
     }
@@ -129,7 +129,7 @@ HRESULT CD3DContext::SyncEngines(DWORD dwEngineReleasingControl, DWORD dwEngineA
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544274">D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/ns-d3dumddi-_d3dddicb_signalsynchronizationobject">D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT</a>
  
 
  

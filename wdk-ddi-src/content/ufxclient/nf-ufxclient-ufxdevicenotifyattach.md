@@ -56,7 +56,7 @@ Notifies UFX that the device's  USB cable has been attached.
 
 ### -param UfxDevice [in]
 
-A handle to a UFX device object that the driver created by calling <a href="https://msdn.microsoft.com/library/windows/hardware/mt187951">UfxDeviceCreate</a>.
+A handle to a UFX device object that the driver created by calling <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ufxclient/nf-ufxclient-ufxdevicecreate">UfxDeviceCreate</a>.
 
 
 ## -returns
@@ -78,7 +78,7 @@ When the client driver calls <b>UfxDeviceNotifyAttach</b>, the USB function clas
 <li>Moves the device to the <i>Powered</i> state, as defined in the USB specification.</li>
 <li>Allows device enumeration to occur.</li>
 </ul>
-The client driver typically calls <b>UfxDeviceNotifyAttach</b> from its <a href="https://msdn.microsoft.com/d2d505e0-aeac-4871-8c60-d026b2833043">EvtInterruptDpc</a> callback function, as shown in the following example.
+The client driver typically calls <b>UfxDeviceNotifyAttach</b> from its <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfinterrupt/nc-wdfinterrupt-evt_wdf_interrupt_dpc">EvtInterruptDpc</a> callback function, as shown in the following example.
 
 <div class="code"><span codelanguage=""><table>
 <tr>
@@ -120,37 +120,37 @@ Arguments:
     WdfDevice = (WDFDEVICE) AssociatedObject;
     ControllerContext = DeviceGetControllerContext(WdfDevice);
 
-    WdfSpinLockAcquire(ControllerContext-&gt;DpcLock);
+    WdfSpinLockAcquire(ControllerContext->DpcLock);
 
-    WdfInterruptAcquireLock(ControllerContext-&gt;DeviceInterrupt);
-    Attached = ControllerContext-&gt;Attached;
-    GotAttachOrDetach = ControllerContext-&gt;GotAttachOrDetach;
-    ControllerContext-&gt;GotAttachOrDetach = FALSE;
-    WdfInterruptReleaseLock(ControllerContext-&gt;DeviceInterrupt);
+    WdfInterruptAcquireLock(ControllerContext->DeviceInterrupt);
+    Attached = ControllerContext->Attached;
+    GotAttachOrDetach = ControllerContext->GotAttachOrDetach;
+    ControllerContext->GotAttachOrDetach = FALSE;
+    WdfInterruptReleaseLock(ControllerContext->DeviceInterrupt);
 
     //
     // Handle attach/detach events
     //
     if (GotAttachOrDetach) {
-        if (Attached &amp;&amp; ControllerContext-&gt;WasAttached) {
+        if (Attached && ControllerContext->WasAttached) {
             //
             // We must have gotten at least one detach. Need to reset the state.
             //        
-            ControllerContext-&gt;RemoteWakeupRequested = FALSE;
-            ControllerContext-&gt;Suspended = FALSE;
-            UfxDeviceNotifyDetach(ControllerContext-&gt;UfxDevice);
+            ControllerContext->RemoteWakeupRequested = FALSE;
+            ControllerContext->Suspended = FALSE;
+            UfxDeviceNotifyDetach(ControllerContext->UfxDevice);
         }
 
         if (Attached) {
-            ControllerContext-&gt;RemoteWakeupRequested = FALSE;
-            ControllerContext-&gt;Suspended = FALSE;
-            UfxDeviceNotifyAttach(ControllerContext-&gt;UfxDevice);
+            ControllerContext->RemoteWakeupRequested = FALSE;
+            ControllerContext->Suspended = FALSE;
+            UfxDeviceNotifyAttach(ControllerContext->UfxDevice);
         }
     }
 
-    ControllerContext-&gt;WasAttached = Attached;
+    ControllerContext->WasAttached = Attached;
 
-    InterruptContext = DeviceInterruptGetContext(ControllerContext-&gt;DeviceInterrupt);
+    InterruptContext = DeviceInterruptGetContext(ControllerContext->DeviceInterrupt);
 
     //
     // #### TODO: Insert code to read and dispatch events from the controller ####
@@ -173,7 +173,7 @@ Arguments:
         break;
     }
 
-    WdfSpinLockRelease(ControllerContext-&gt;DpcLock);
+    WdfSpinLockRelease(ControllerContext->DpcLock);
 
     TraceExit();
 }</pre>

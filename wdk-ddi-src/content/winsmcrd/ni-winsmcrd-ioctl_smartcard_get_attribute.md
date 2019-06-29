@@ -103,7 +103,7 @@ The <b>IOCTL_SMARTCARD_GET_ATTRIBUTE</b>
 
 ### -status-block
 
-<b>Irp-&gt;IoStatus.Status</b> is set to <b>STATUS_SUCCESS</b> if the request is successful. Possible error codes are:
+<b>Irp->IoStatus.Status</b> is set to <b>STATUS_SUCCESS</b> if the request is successful. Possible error codes are:
 
 <table>
 <tr>
@@ -160,7 +160,7 @@ The driver must support CancelIo on this pended IOCTL.
 
 
 
-<a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/design-guide-smart-card">Smart card design guide</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/nfc/design-guide-smart-card">Smart card design guide</a>
  
 
  

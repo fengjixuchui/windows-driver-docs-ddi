@@ -56,12 +56,12 @@ The <b>PEP_ACPI_EXTENDED_ADDRESS</b> structure is used to report resource usage 
 
 ### -field Type
 
-A <a href="https://msdn.microsoft.com/library/windows/hardware/mt186693">PEP_ACPI_RESOURCE_TYPE</a> enumeration value describing this resource.
+A <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/pepfx/ne-pepfx-_pep_acpi_resource_type">PEP_ACPI_RESOURCE_TYPE</a> enumeration value describing this resource.
 
 
 ### -field Flags
 
-A <a href="https://msdn.microsoft.com/library/windows/hardware/mt186692">PEP_ACPI_RESOURCE_FLAGS</a> structure describing this resource.
+A <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/pepfx/ns-pepfx-_pep_acpi_resource_flags">PEP_ACPI_RESOURCE_FLAGS</a> structure describing this resource.
 
 
 ### -field ResourceFlags
@@ -362,7 +362,7 @@ secondary-side range can be found using the following function.
 <b>1</b> - Sparse translation: The primary-side memory address of any specific IO port within the
 secondary-side range can be found using the following function.
 
-<i>address = (((port &amp; 0xFFFc) &lt;&lt; 10) || (port &amp; 0xFFF)) + TranslationAddress</i>
+<i>address = (((port & 0xFFFc) << 10) || (port & 0xFFF)) + TranslationAddress</i>
 
 In the address used to access the IO port, bits 2 to 11 must be identical
 to bits 12 to 21, this gives four bytes of IO ports on each 4 KB page.

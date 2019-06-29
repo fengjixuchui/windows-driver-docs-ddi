@@ -86,15 +86,15 @@ If the operation is successful, the callback function must return STATUS_SUCCESS
 
 
 
-The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/mt188039">UcxEndpointCreate</a>
+The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucxendpoint/nf-ucxendpoint-ucxendpointcreate">UcxEndpointCreate</a>
  method.
 
-This callback function creates a UCX static streams object by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/mt188050">UcxStaticStreamsCreate</a>
- method. Only one UCX static streams object can be associated with a single endpoint.  The driver then calls <a href="https://msdn.microsoft.com/library/windows/hardware/mt188051">UcxStaticStreamsSetStreamInfo</a>
+This callback function creates a UCX static streams object by calling the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucxsstreams/nf-ucxsstreams-ucxstaticstreamscreate">UcxStaticStreamsCreate</a>
+ method. Only one UCX static streams object can be associated with a single endpoint.  The driver then calls <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucxsstreams/nf-ucxsstreams-ucxstaticstreamssetstreaminfo">UcxStaticStreamsSetStreamInfo</a>
  once per stream to create a queue for each stream.
 
 A static streams object is not enabled
-    until UCX calls the client driver's <a href="https://msdn.microsoft.com/library/windows/hardware/mt187832">EVT_UCX_ENDPOINT_STATIC_STREAMS_ENABLE</a> callback function.
+    until UCX calls the client driver's <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucxendpoint/nc-ucxendpoint-evt_ucx_endpoint_static_streams_enable">EVT_UCX_ENDPOINT_STATIC_STREAMS_ENABLE</a> callback function.
 
 
 #### Examples
@@ -120,23 +120,23 @@ Endpoint_EvtEndpointStaticStreamsAdd(
 
     TRY {
 
-        WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(&amp;wdfAttributes, STATIC_STREAMS_CONTEXT);
+        WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(&wdfAttributes, STATIC_STREAMS_CONTEXT);
 
         status = UcxStaticStreamsCreate(UcxEndpoint,
-                                        &amp;UcxStaticStreamsInit,
-                                        &amp;wdfAttributes,
-                                        &amp;ucxStaticStreams);
+                                        &UcxStaticStreamsInit,
+                                        &wdfAttributes,
+                                        &ucxStaticStreams);
         // … error handling …
 
-        for (i = 0, streamId = 1; i &lt; NumberOfStreams; i += 1, streamId += 1) {
+        for (i = 0, streamId = 1; i < NumberOfStreams; i += 1, streamId += 1) {
 
             // … create WDF queue …
 
-            STREAM_INFO_INIT(&amp;streamInfo,
+            STREAM_INFO_INIT(&streamInfo,
                              wdfQueue,
                              streamId);
 
-            UcxStaticStreamsSetStreamInfo(ucxStaticStreams, &amp;streamInfo);
+            UcxStaticStreamsSetStreamInfo(ucxStaticStreams, &streamInfo);
         }
 </pre>
 </td>

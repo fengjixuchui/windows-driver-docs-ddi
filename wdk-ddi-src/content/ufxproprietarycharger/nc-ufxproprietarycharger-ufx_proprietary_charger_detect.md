@@ -61,7 +61,7 @@ The filter driver's implementation to detect if a charger is attached  and get d
 
 ### -param DetectedCharger [out]
 
-A pointer to a     <a href="https://msdn.microsoft.com/library/windows/hardware/mt187979">UFX_PROPRIETARY_CHARGER</a> structure that the driver fills with charger information. 
+A pointer to a     <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ufxproprietarycharger/ns-ufxproprietarycharger-_ufx_proprietary_charger">UFX_PROPRIETARY_CHARGER</a> structure that the driver fills with charger information. 
 
 
 ## -returns
@@ -77,7 +77,7 @@ If the operation is successful, the callback function must return STATUS_SUCCESS
 
 
 
-To support handling of proprietary chargers, the USB lower filter driver must publish support. During the publishing process, the driver also registers its implementation of this  callback function. For more information, see <a href="https://msdn.microsoft.com/05D2B46A-282C-4B75-9F5C-2FC0AF344AB9">USB filter driver for supporting proprietary chargers</a>.
+To support handling of proprietary chargers, the USB lower filter driver must publish support. During the publishing process, the driver also registers its implementation of this  callback function. For more information, see <a href="https://docs.microsoft.com/previous-versions/windows/hardware/drivers/mt188012(v=vs.85)">USB filter driver for supporting proprietary chargers</a>.
 
 In this callback function, the driver assigns the charger a GUID and sets the minimum required Dx state when the device is connected for charging. 
 
@@ -107,18 +107,18 @@ UsbLowerFilter_ProprietaryChargerDetect(
 
 
     // Clear our event
-     KeClearEvent(&amp;PdcpContext&gt;AbortOperation);
+     KeClearEvent(&PdcpContext>AbortOperation);
 
 
     // Wait for a while
-     Timeout.QuadPart = WDF_REL_TIMEOUT_IN_MS(PdcpContext&gt;DetectionDelayInms);
+     Timeout.QuadPart = WDF_REL_TIMEOUT_IN_MS(PdcpContext>DetectionDelayInms);
 
     Status = KeWaitForSingleObject(
-        &amp;PdcpContext&gt;AbortOperation,
+        &PdcpContext>AbortOperation,
         Executive,
         KernelMode,
         FALSE,
-        &amp;Timeout);
+        &Timeout);
 
     switch (Status)
     {
@@ -134,12 +134,12 @@ UsbLowerFilter_ProprietaryChargerDetect(
         // Timed out, detection has completed successfully.
         // Check if we want to fail this.
 
-        if (PdcpContext&gt;RejectNextRequest)
+        if (PdcpContext>RejectNextRequest)
         {
-            PdcpContext-&gt;RejectNextRequest = FALSE;
+            PdcpContext->RejectNextRequest = FALSE;
             Status = STATUS_UNSUCCESSFUL;
         }
-        else if (!PdcpContext-&gt;PdcpChargerAttached)
+        else if (!PdcpContext->PdcpChargerAttached)
         {
             Status = STATUS_NOT_FOUND;
         }
@@ -155,9 +155,9 @@ UsbLowerFilter_ProprietaryChargerDetect(
 
     if (NT_SUCCESS(Status))
     {
-        PdcpContext-&gt;PdcpChargerDetected = TRUE;
-        DetectedCharger-&gt;ChargerId = GUID_USBFN_PROPRIETARY_CHARGER;
-        DetectedCharger-&gt;DxState = PowerDeviceD2;
+        PdcpContext->PdcpChargerDetected = TRUE;
+        DetectedCharger->ChargerId = GUID_USBFN_PROPRIETARY_CHARGER;
+        DetectedCharger->DxState = PowerDeviceD2;
     }
 
     return Status;
@@ -173,7 +173,7 @@ UsbLowerFilter_ProprietaryChargerDetect(
 
 
 
-<a href="https://msdn.microsoft.com/05D2B46A-282C-4B75-9F5C-2FC0AF344AB9">USB filter driver for supporting proprietary chargers</a>
+<a href="https://docs.microsoft.com/previous-versions/windows/hardware/drivers/mt188012(v=vs.85)">USB filter driver for supporting proprietary chargers</a>
  
 
  

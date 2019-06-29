@@ -46,13 +46,13 @@ req.typenames: SRIOV_PF_EVENT, *PSRIOV_PF_EVENT
 ##  Major Code:
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548649">IRP_MJ_DEVICE_CONTROL</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-device-control">IRP_MJ_DEVICE_CONTROL</a>
 
 ## -description
 
 
 The  request indicates that the virtualization stack wants to be notified when one of the events listed in
-<a href="https://msdn.microsoft.com/e2b40a9d-57e6-49b1-839a-d34acb108807">SRIOV_PF_EVENT</a> occurs.
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/pcivirt/ne-pcivirt-_sriov_pf_event">SRIOV_PF_EVENT</a> occurs.
 
 
 ## -ioctlparameters
@@ -60,7 +60,7 @@ The  request indicates that the virtualization stack wants to be notified when o
 
 ### -output-buffer
 
-A buffer that contains an <a href="https://msdn.microsoft.com/e2b40a9d-57e6-49b1-839a-d34acb108807">SRIOV_PF_EVENT</a>-type value that is filled by the  physical function (PF) driver when it completes the request.
+A buffer that contains an <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/pcivirt/ne-pcivirt-_sriov_pf_event">SRIOV_PF_EVENT</a>-type value that is filled by the  physical function (PF) driver when it completes the request.
 
 
 ### -output-buffer-length
@@ -70,7 +70,7 @@ A pointer to the variable, which is assigned the number of written bytes to the 
 
 ### -status-block
 
-<b>Irp-&gt;IoStatus.Status</b> is set to STATUS_SUCCESS if the request is successful. Otherwise, <b>Status</b> to the appropriate error condition as a <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> code.
+<b>Irp->IoStatus.Status</b> is set to STATUS_SUCCESS if the request is successful. Otherwise, <b>Status</b> to the appropriate error condition as a <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/ntstatus-values">NTSTATUS</a> code.
 
 
 ## -remarks
@@ -80,7 +80,7 @@ A pointer to the variable, which is assigned the number of written bytes to the 
 This IOCTL request is sent by the virtualization stack to the  PCI Express SR-IOV Physical Function (PF) driver that exposes GUID_DEVINTERFACE_VIRTUALIZABLE_DEVICE.
 
 The <b>IOCTL_SRIOV_NOTIFICATION</b> request is held in a queue by the PF driver until the request is either cancelled by sender or the device experiences one of the events listed in
-<a href="https://msdn.microsoft.com/e2b40a9d-57e6-49b1-839a-d34acb108807">SRIOV_PF_EVENT</a>. The driver then completes the pending request.
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/pcivirt/ne-pcivirt-_sriov_pf_event">SRIOV_PF_EVENT</a>. The driver then completes the pending request.
 
 
 If the PF driver receives this IOCTL request while processing a Plug and Play event  for which the driver has not yet completed a notification, it should complete the IOCTL request immediately with the event details in the output buffer.  Otherwise, the driver should queue the request until either it is cancelled or a Plug and Play event that requires notification occurs.
@@ -97,7 +97,7 @@ case IOCTL_SRIOV_NOTIFICATION:
             "IOCTL_SRIOV_NOTIFICATION:\n");
 
         status = WdfRequestForwardToIoQueue(Request,
-                                            fdoContext-&gt;NotificationQueue);
+                                            fdoContext->NotificationQueue);
         if (!NT_SUCCESS(status))
         {
             // not able to push it into manual queue, too bad.
@@ -148,18 +148,18 @@ Return Value:
 
     PAGED_CODE();
 
-    WdfWaitLockAcquire(DeviceContext-&gt;PnpStateLock, NULL);
+    WdfWaitLockAcquire(DeviceContext->PnpStateLock, NULL);
 
-    queue = DeviceContext-&gt;NotificationQueue;
-    if (DeviceContext-&gt;PnpEventNew
-        &amp;&amp; NT_SUCCESS(WdfIoQueueRetrieveNextRequest(queue, &amp;request)))
+    queue = DeviceContext->NotificationQueue;
+    if (DeviceContext->PnpEventNew
+        && NT_SUCCESS(WdfIoQueueRetrieveNextRequest(queue, &request)))
     {
-        NT_ASSERT(DeviceContext-&gt;PnpEventPending != FALSE);
-        DeviceContext-&gt;PnpEventNew = FALSE;
+        NT_ASSERT(DeviceContext->PnpEventPending != FALSE);
+        DeviceContext->PnpEventNew = FALSE;
 
         status = WdfRequestRetrieveOutputBuffer(request,
                                                 sizeof(*notification),
-                                                &amp;notification,
+                                                &notification,
                                                 NULL);
         if (!NT_SUCCESS(status))
         {
@@ -171,14 +171,14 @@ Return Value:
         {
             TraceEvents(TRACE_LEVEL_VERBOSE, DBG_IOCTL, "Retrieved IoQueue request buffer (notification)\n");
 
-            *notification = DeviceContext-&gt;PnpEventCode;
+            *notification = DeviceContext->PnpEventCode;
             WdfRequestCompleteWithInformation(request,
                                               STATUS_SUCCESS,
                                               sizeof(*notification));
         }
     }
 
-    WdfWaitLockRelease(DeviceContext-&gt;PnpStateLock);
+    WdfWaitLockRelease(DeviceContext->PnpStateLock);
 
     return;
 }

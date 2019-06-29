@@ -61,7 +61,7 @@ A handle to a UCX object that represents the root hub.
 
 ### -param Request [in]
 
-A structure of type <a href="https://msdn.microsoft.com/AA71D015-B047-497C-A9E1-32E5E73AD0C2">_ROOTHUB_20PORT_INFO</a>.
+A structure of type <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucxroothub/ns-ucxroothub-_roothub_20port_info">_ROOTHUB_20PORT_INFO</a>.
 
 
 ## -returns
@@ -77,10 +77,10 @@ This callback function does not return a value.
 
 
 
-The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/mt188048">UcxRootHubCreate</a>
+The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="https://docs.microsoft.com/previous-versions/windows/hardware/drivers/mt188048(v=vs.85)">UcxRootHubCreate</a>
  method.
 
- The <b>PortInfoArray</b> array of the <a href="https://msdn.microsoft.com/FBFDF368-8DB9-4ACE-851D-6A178FB3E019">_ROOTHUB_20PORTS_INFO</a> structure
+ The <b>PortInfoArray</b> array of the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucxroothub/ns-ucxroothub-_roothub_20ports_info">_ROOTHUB_20PORTS_INFO</a> structure
     contains a list of USB 2.0 ports that the root hub supports.
 
 The client driver returns completion status in <i>Request</i> and in the USBD_STATUS
@@ -114,25 +114,25 @@ RootHub_EvtRootHubGet20PortInfo(
 
     ucxRootHubContext = GetUcxRootHubContext(UcxRootHub);
 
-    WDF_REQUEST_PARAMETERS_INIT(&amp;wdfRequestParams);
-    WdfRequestGetParameters(Request, &amp;wdfRequestParams);
+    WDF_REQUEST_PARAMETERS_INIT(&wdfRequestParams);
+    WdfRequestGetParameters(Request, &wdfRequestParams);
 
     rootHub20PortsInfo = (PROOTHUB_20PORTS_INFO)wdfRequestParams.Parameters.Others.Arg1;
 
-    if (rootHub20PortsInfo-&gt;Size &lt; sizeof(ROOTHUB_20PORTS_INFO)) {
-        DbgTrace(TL_ERROR, RootHub, "Invalid ROOTHUB_20PORTS_INFO Size %d", rootHub20PortsInfo-&gt;Size);
+    if (rootHub20PortsInfo->Size < sizeof(ROOTHUB_20PORTS_INFO)) {
+        DbgTrace(TL_ERROR, RootHub, "Invalid ROOTHUB_20PORTS_INFO Size %d", rootHub20PortsInfo->Size);
         status = STATUS_INVALID_PARAMETER;
         goto RootHub_EvtRootHubGet20PortInfoEnd;
     }
 
-    if (rootHub20PortsInfo-&gt;NumberOfPorts != ucxRootHubContext-&gt;NumberOf20Ports) {
-        DbgTrace(TL_ERROR, RootHub, "Invalid ROOTHUB_20PORTS_INFO NumberOfPorts %d", rootHub20PortsInfo-&gt;NumberOfPorts);
+    if (rootHub20PortsInfo->NumberOfPorts != ucxRootHubContext->NumberOf20Ports) {
+        DbgTrace(TL_ERROR, RootHub, "Invalid ROOTHUB_20PORTS_INFO NumberOfPorts %d", rootHub20PortsInfo->NumberOfPorts);
         status = STATUS_INVALID_PARAMETER;
         goto RootHub_EvtRootHubGet20PortInfoEnd;
     }
 
-    if (rootHub20PortsInfo-&gt;PortInfoSize &lt; sizeof(ROOTHUB_20PORT_INFO)) {
-        DbgTrace(TL_ERROR, RootHub, "Invalid ROOTHUB_20PORT_INFO Size %d", rootHub20PortsInfo-&gt;PortInfoSize);
+    if (rootHub20PortsInfo->PortInfoSize < sizeof(ROOTHUB_20PORT_INFO)) {
+        DbgTrace(TL_ERROR, RootHub, "Invalid ROOTHUB_20PORT_INFO Size %d", rootHub20PortsInfo->PortInfoSize);
         status = STATUS_INVALID_PARAMETER;
         goto RootHub_EvtRootHubGet20PortInfoEnd;
     }
@@ -140,8 +140,8 @@ RootHub_EvtRootHubGet20PortInfo(
     //
     // Return static root hub 2.0 port information.
     //
-    rootHub20PortsInfo-&gt;PortInfoArray[0]-&gt;PortNumber = ROOTHUB_20_PORT_PORT_NUMBER;
-    rootHub20PortsInfo-&gt;PortInfoArray[0]-&gt;Removable = TriStateTrue;
+    rootHub20PortsInfo->PortInfoArray[0]->PortNumber = ROOTHUB_20_PORT_PORT_NUMBER;
+    rootHub20PortsInfo->PortInfoArray[0]->Removable = TriStateTrue;
 
     status = STATUS_SUCCESS;
 
@@ -162,7 +162,7 @@ RootHub_EvtRootHubGet20PortInfoEnd:
 
 
 
-<a href="https://msdn.microsoft.com/FBFDF368-8DB9-4ACE-851D-6A178FB3E019">_ROOTHUB_20PORTS_INFO</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucxroothub/ns-ucxroothub-_roothub_20ports_info">_ROOTHUB_20PORTS_INFO</a>
  
 
  

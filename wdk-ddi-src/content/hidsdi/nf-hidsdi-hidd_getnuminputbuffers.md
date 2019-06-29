@@ -5,7 +5,7 @@ description: The HidD_GetNumInputBuffers routine returns the current size, in nu
 old-location: hid\hidd_getnuminputbuffers.htm
 tech.root: hid
 ms.assetid: f9ed28a5-835c-47c8-b9cf-888785013b69
-ms.date: 04/30/2018
+ms.date: 06/19/2019
 ms.keywords: HidD_GetNumInputBuffers, HidD_GetNumInputBuffers routine [Human Input Devices], hid.hidd_getnuminputbuffers, hidfunc_addf7040-0b62-45bc-8b43-1aa0157924e8.xml, hidsdi/HidD_GetNumInputBuffers
 ms.topic: function
 req.header: hidsdi.h
@@ -46,7 +46,7 @@ req.typenames:
 ## -description
 
 
-The <b>HidD_GetNumInputBuffers</b> routine returns the current size, in number of reports, of the ring buffer that the HID class driver uses to queue input reports from a specified <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection</a>.
+The <b>HidD_GetNumInputBuffers</b> routine returns the current size, in number of reports, of the ring buffer that the HID class driver uses to queue input reports from a specified <a href="https://docs.microsoft.com/windows-hardware/drivers/hid/top-level-collections">top-level collection</a>.
 
 
 ## -parameters
@@ -68,7 +68,7 @@ Pointer to a caller-allocated variable that the routine uses to return the maxim
 
 
 
-<b>HidD_GetNumInputBuffers</b> returns <b>TRUE</b> if it succeeds; otherwise, it returns <b>FALSE</b>.
+<b>HidD_GetNumInputBuffers</b> returns <b>TRUE</b> if it succeeds; otherwise, it returns <b>FALSE</b>. Use [**GetLastError**](https://docs.microsoft.com/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) to get extended error information.
 
 
 
@@ -77,9 +77,9 @@ Pointer to a caller-allocated variable that the routine uses to return the maxim
 
 
 
-Only user-mode applications can call <b>HidD_GetNumInputBuffers</b>. Kernel-mode drivers can use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541058">IOCTL_GET_NUM_DEVICE_INPUT_BUFFERS</a> request.
+Only user-mode applications can call <b>HidD_GetNumInputBuffers</b>. Kernel-mode drivers can use the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hidclass/ni-hidclass-ioctl_get_num_device_input_buffers">IOCTL_GET_NUM_DEVICE_INPUT_BUFFERS</a> request.
 
-For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID Collections</a>. 
+For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/hid/hid-collections">HID Collections</a>. 
 
 
 
@@ -89,15 +89,15 @@ For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539686">HidD_SetNumInputBuffers</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hidsdi/nf-hidsdi-hidd_setnuminputbuffers">HidD_SetNumInputBuffers</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541058">IOCTL_GET_NUM_DEVICE_INPUT_BUFFERS</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hidclass/ni-hidclass-ioctl_get_num_device_input_buffers">IOCTL_GET_NUM_DEVICE_INPUT_BUFFERS</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542087">IOCTL_SET_NUM_DEVICE_INPUT_BUFFERS</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hidclass/ni-hidclass-ioctl_set_num_device_input_buffers">IOCTL_SET_NUM_DEVICE_INPUT_BUFFERS</a>
  
 
  

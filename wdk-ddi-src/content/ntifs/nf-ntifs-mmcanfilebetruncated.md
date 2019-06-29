@@ -95,7 +95,7 @@ There is a mapped view of file's data section within the truncation range determ
 
 </li>
 <li>
-One or more users hold references to the data section for the file, and <i>NewFileSize</i> &lt;= the current file size.
+One or more users hold references to the data section for the file, and <i>NewFileSize</i> <= the current file size.
 
 </li>
 </ul>
@@ -111,7 +111,7 @@ One or more users hold references to the data section for the file, and <i>NewFi
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549808">MmFlushImageSection</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-mmflushimagesection">MmFlushImageSection</a>
  
 
  

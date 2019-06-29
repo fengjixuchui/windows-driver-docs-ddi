@@ -58,7 +58,7 @@ The <b>IOCTL_NFCSE_SUBSCRIBE_FOR_EVENT</b>
 ### -input-buffer
 
 
-<a href="https://msdn.microsoft.com/1ADA8430-86B4-4885-B20A-EBA8CDAC5449"> SECURE_ELEMENT_EVENT_SUBSCRIPTION_INFO</a> structure.
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/nfcsedev/ns-nfcsedev-_secure_element_event_subscription_info"> SECURE_ELEMENT_EVENT_SUBSCRIPTION_INFO</a> structure.
 
 
 
@@ -105,7 +105,7 @@ None
 
 ### -status-block
 
-<b>Irp-&gt;IoStatus.Status</b> is set to <b>STATUS_SUCCESS</b> if the request is successful. Possible error codes are:
+<b>Irp->IoStatus.Status</b> is set to <b>STATUS_SUCCESS</b> if the request is successful. Possible error codes are:
 
 <table>
 <tr>

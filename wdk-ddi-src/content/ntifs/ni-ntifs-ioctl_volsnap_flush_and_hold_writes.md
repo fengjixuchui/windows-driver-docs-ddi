@@ -58,7 +58,7 @@ When a file system such as NTFS receives IOCTL_VOLSNAP_FLUSH_AND_HOLD_WRITES, th
 
 ### -input-buffer
 
-<b>IrpSp-&gt;Parameters.DeviceIoControl.IoControlCode</b> is set to IOCTL_VOLSNAP_FLUSH_AND_HOLD_WRITES. 
+<b>IrpSp->Parameters.DeviceIoControl.IoControlCode</b> is set to IOCTL_VOLSNAP_FLUSH_AND_HOLD_WRITES. 
 
 
 ### -input-buffer-length
@@ -153,7 +153,7 @@ If this is a read-only volume, then there is normally nothing that a file system
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548649">IRP_MJ_DEVICE_CONTROL</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-device-control">IRP_MJ_DEVICE_CONTROL</a>
  
 
  

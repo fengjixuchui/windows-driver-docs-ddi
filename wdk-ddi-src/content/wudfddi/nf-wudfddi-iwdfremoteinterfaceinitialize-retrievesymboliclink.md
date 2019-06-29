@@ -123,7 +123,7 @@ For more information about the <b>RetrieveSymbolicLink</b> method, see <a href="
 
 #### Examples
 
-The following code example shows how a driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556775">IPnpCallbackRemoteInterfaceNotification::OnRemoteInterfaceArrival</a> callback function can determine the length of device interface's symbolic link name, allocate a buffer for the name, and then retrieve the name.
+The following code example shows how a driver's <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-ipnpcallbackremoteinterfacenotification-onremoteinterfacearrival">IPnpCallbackRemoteInterfaceNotification::OnRemoteInterfaceArrival</a> callback function can determine the length of device interface's symbolic link name, allocate a buffer for the name, and then retrieve the name.
 
 <div class="code"><span codelanguage=""><table>
 <tr>
@@ -139,16 +139,16 @@ CMyDevice::OnRemoteInterfaceArrival(
 {
     HRESULT hr;
     INT BufferSize;
-    hr= FxRemoteInterfaceInit-&gt;RetrieveSymbolicLink(NULL,
-                                                    &amp;BufferSize);
+    hr= FxRemoteInterfaceInit->RetrieveSymbolicLink(NULL,
+                                                    &BufferSize);
     if (FAILED(hr)) goto Error;
-    hr = FxDriver-&gt;CreateWdfMemory(BufferSize, 
+    hr = FxDriver->CreateWdfMemory(BufferSize, 
                                    NULL, 
                                    FxRemoteInterface, 
-                                   &amp;FxSymLinkBuffer);
+                                   &FxSymLinkBuffer);
     if (FAILED(hr)) goto Error;
-    hr= FxRemoteInterfaceInit-&gt;RetrieveSymbolicLink(FxSymLinkBuffer-&gt;GetDataBuffer(NULL),
-                                                    &amp;BufferSize);
+    hr= FxRemoteInterfaceInit->RetrieveSymbolicLink(FxSymLinkBuffer->GetDataBuffer(NULL),
+                                                    &BufferSize);
     if (FAILED(hr)) goto Error;
 ...
 Error:
@@ -165,11 +165,11 @@ Error:
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560232">IWDFRemoteInterfaceInitialize</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nn-wudfddi-iwdfremoteinterfaceinitialize">IWDFRemoteInterfaceInitialize</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560238">IWDFRemoteInterfaceInitialize::GetInterfaceGuid</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nf-wudfddi-iwdfremoteinterfaceinitialize-getinterfaceguid">IWDFRemoteInterfaceInitialize::GetInterfaceGuid</a>
  
 
  

@@ -71,12 +71,12 @@ The page code for the VPD third party copy page. This page code is defined as 0x
 
 ### -field PageLength
 
-The length, in bytes, of the VPD page. For offload data transfer on Windows, <b>PageLength</b> must be &gt;= 0x24.
+The length, in bytes, of the VPD page. For offload data transfer on Windows, <b>PageLength</b> must be >= 0x24.
 
 
 ### -field ThirdPartyCopyDescriptors
 
-Support descriptors for copy operations. On Windows systems, <b>ThirdPartyCopyDescriptors</b>  will contain one descriptor formatted as a <a href="https://msdn.microsoft.com/library/windows/hardware/hh967745">WINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR</a> structure.
+Support descriptors for copy operations. On Windows systems, <b>ThirdPartyCopyDescriptors</b>  will contain one descriptor formatted as a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/scsi/ns-scsi-_windows_block_device_token_limits_descriptor">WINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR</a> structure.
 
 
 ## -remarks
@@ -93,7 +93,7 @@ All multibyte values are in big endian format. Prior to evaluation, these values
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh967745">WINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/scsi/ns-scsi-_windows_block_device_token_limits_descriptor">WINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR</a>
  
 
  

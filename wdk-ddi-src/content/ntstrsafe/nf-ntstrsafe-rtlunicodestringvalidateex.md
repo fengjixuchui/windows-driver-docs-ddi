@@ -47,7 +47,7 @@ req.typenames:
 ## -description
 
 
-The <b>RtlUnicodeStringValidateEx</b> function validates the contents of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> structure.
+The <b>RtlUnicodeStringValidateEx</b> function validates the contents of a <a href="https://docs.microsoft.com/windows/desktop/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> structure.
 
 
 ## -parameters
@@ -112,14 +112,14 @@ This <i>error</i> status means that the function received an invalid input param
 If STRSAFE_IGNORE_NULLS is not set in dwFlags, <b>RtlUnicodeStringValidateEx</b> returns the STATUS_INVALID_PARAMETER value when one of the following occurs:
 
 <ul>
-<li><i>SourceString</i>-&gt;<b>Length</b> % sizeof(WCHAR) does not equal zero.</li>
-<li><i>SourceString</i>-&gt;<b>MaximumLength</b> % sizeof(WCHAR) does not equal zero.</li>
-<li><i>SourceString</i>-&gt;<b>Length</b> is greater than <i>SourceString</i>-&gt;<b>MaximumLength</b>.</li>
-<li><i>SourceString</i>-&gt;<b>MaximumLength</b> is greater than NTSTRSAFE_UNICODE_STRING_MAX_CCH * sizeof(WCHAR).</li>
-<li><i>SourceString</i>-&gt;<b>Buffer</b> equals <b>NULL</b> but <i>SourceString</i>-&gt;Length or <i>SourceString</i>-&gt;<b>MaximumLength</b> does not equal zero.</li>
+<li><i>SourceString</i>-><b>Length</b> % sizeof(WCHAR) does not equal zero.</li>
+<li><i>SourceString</i>-><b>MaximumLength</b> % sizeof(WCHAR) does not equal zero.</li>
+<li><i>SourceString</i>-><b>Length</b> is greater than <i>SourceString</i>-><b>MaximumLength</b>.</li>
+<li><i>SourceString</i>-><b>MaximumLength</b> is greater than NTSTRSAFE_UNICODE_STRING_MAX_CCH * sizeof(WCHAR).</li>
+<li><i>SourceString</i>-><b>Buffer</b> equals <b>NULL</b> but <i>SourceString</i>->Length or <i>SourceString</i>-><b>MaximumLength</b> does not equal zero.</li>
 <li>An invalid flag is specified for <i>dwFlags</i>.</li>
 </ul>
-For information about how to test NTSTATUS values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565436">Using NTSTATUS Values</a>.
+For information about how to test NTSTATUS values, see <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/using-ntstatus-values">Using NTSTATUS Values</a>.
 
 
 
@@ -130,7 +130,7 @@ For information about how to test NTSTATUS values, see <a href="https://msdn.mic
 
 The <i>SourceString</i> pointer cannot be <b>NULL</b> unless the STRSAFE_IGNORE_NULLS flag is set.
 
-For more information about the safe string functions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565508">Using Safe String Functions</a>. 
+For more information about the safe string functions, see <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/using-safe-string-functions">Using Safe String Functions</a>. 
 
 
 
@@ -140,11 +140,11 @@ For more information about the safe string functions, see <a href="https://msdn.
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562977">RtlUnicodeStringValidate</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntstrsafe/nf-ntstrsafe-rtlunicodestringvalidate">RtlUnicodeStringValidate</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>
+<a href="https://docs.microsoft.com/windows/desktop/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a>
  
 
  

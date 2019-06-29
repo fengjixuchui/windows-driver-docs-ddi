@@ -109,8 +109,8 @@ If either the host controller or the device operates at low speed, the period of
 <td>Supported.</td>
 </tr>
 <tr>
-<td>&gt; 255</td>
-<td>Polling intervals &gt; 255 are forbidden by the USB specification.</td>
+<td>> 255</td>
+<td>Polling intervals > 255 are forbidden by the USB specification.</td>
 <td></td>
 </tr>
 </table>
@@ -162,8 +162,8 @@ For devices and host controllers that can operate at full speed, the period is m
 <td>Not supported.</td>
 </tr>
 <tr>
-<td>&gt; 255</td>
-<td>Polling intervals &gt; 255 are forbidden by the USB specification.</td>
+<td>> 255</td>
+<td>Polling intervals > 255 are forbidden by the USB specification.</td>
 <td></td>
 <td></td>
 </tr>
@@ -222,8 +222,8 @@ For devices and host controllers that can operate at high speed, the period is m
 <td>Not supported.</td>
 </tr>
 <tr>
-<td>&gt; 255</td>
-<td>Polling intervals &gt; 255 are forbidden by the USB specification.</td>
+<td>> 255</td>
+<td>Polling intervals > 255 are forbidden by the USB specification.</td>
 <td></td>
 <td></td>
 </tr>
@@ -238,15 +238,15 @@ The mappings in the preceding tables between periods and polling intervals are v
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index">USB Structures</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538943">UsbBuildGetDescriptorRequest</a>
+<a href="https://docs.microsoft.com/previous-versions/ff538943(v=vs.85)">UsbBuildGetDescriptorRequest</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540357">_URB_CONTROL_DESCRIPTOR_REQUEST</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usb/ns-usb-_urb_control_descriptor_request">_URB_CONTROL_DESCRIPTOR_REQUEST</a>
  
 
  

@@ -95,7 +95,7 @@ The following code example obtains the number of objects in a specified collecti
 <pre>ULONG count;
 
 count = WdfCollectionGetCount(CollectionHandle);
-for (i = 0; i &lt; count; i++) {
+for (i = 0; i < count; i++) {
     ObjectHandle = WdfCollectionGetItem(
                                         CollectionHandle,
                                         i
@@ -115,7 +115,7 @@ for (i = 0; i &lt; count; i++) {
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545770">WdfCollectionGetItem</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfcollection/nf-wdfcollection-wdfcollectiongetitem">WdfCollectionGetItem</a>
  
 
  

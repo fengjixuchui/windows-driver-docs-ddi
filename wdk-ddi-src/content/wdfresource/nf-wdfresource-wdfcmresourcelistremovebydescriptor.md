@@ -64,7 +64,7 @@ A handle to a framework resource-list object that represents a list of hardware 
 
 ### -param Descriptor [in]
 
-A pointer to an <a href="https://msdn.microsoft.com/96bf7bab-b8f5-439c-8717-ea6956ed0213">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure that describes a hardware resource.
+A pointer to an <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_cm_partial_resource_descriptor">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure that describes a hardware resource.
 
 
 ## -returns
@@ -113,7 +113,7 @@ MyEvtDeviceRemoveAddedResources(
     pDevExt = DeviceGetExtension(Device);
     count = WdfCmResourceListGetCount(ResourcesRaw);
 
-    for (i = 0; i &lt; count; i++) {
+    for (i = 0; i < count; i++) {
         PCM_PARTIAL_RESOURCE_DESCRIPTOR descriptor;
 
         descriptor = WdfCmResourceListGetDescriptor(
@@ -121,12 +121,12 @@ MyEvtDeviceRemoveAddedResources(
                                                     i
                                                     );
 
-        if (descriptor-&gt;Type != CmResourceTypePort) {
+        if (descriptor->Type != CmResourceTypePort) {
             continue;
         }
 
-        if (descriptor-&gt;u.Port.Start.QuadPart &lt; pDevExt-&gt;Ranges[0].MinAddress ||
-             descriptor-&gt;u.Port.Start.QuadPart &gt; pDevExt-&gt;Ranges[0].MaxAddress)
+        if (descriptor->u.Port.Start.QuadPart < pDevExt->Ranges[0].MinAddress ||
+             descriptor->u.Port.Start.QuadPart > pDevExt->Ranges[0].MaxAddress)
         {
             WdfCmResourceListRemoveByDescriptor(
                                                 ResourcesRaw,
@@ -154,11 +154,11 @@ MyEvtDeviceRemoveAddedResources(
 
 
 
-<a href="https://msdn.microsoft.com/96bf7bab-b8f5-439c-8717-ea6956ed0213">CM_PARTIAL_RESOURCE_DESCRIPTOR</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_cm_partial_resource_descriptor">CM_PARTIAL_RESOURCE_DESCRIPTOR</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545704">WdfCmResourceListRemove</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfresource/nf-wdfresource-wdfcmresourcelistremove">WdfCmResourceListRemove</a>
  
 
  

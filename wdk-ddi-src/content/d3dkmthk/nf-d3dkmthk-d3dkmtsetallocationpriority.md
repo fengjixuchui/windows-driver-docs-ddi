@@ -55,7 +55,7 @@ The <b>D3DKMTSetAllocationPriority</b> function sets the priority level of a res
 
 *pData* [in]
 
-A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548262">D3DKMT_SETALLOCATIONPRIORITY</a> structure that contains information for setting the priority level of a resource or list of allocations.
+A pointer to a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/ns-d3dkmthk-_d3dkmt_setallocationpriority">D3DKMT_SETALLOCATIONPRIORITY</a> structure that contains information for setting the priority level of a resource or list of allocations.
 
 ## -returns
 
@@ -82,12 +82,12 @@ VOID SetResourcePriority(D3DKMT_HANDLE hDevice, D3DKMT_HANDLE hResource, UINT ui
     SetAllocationPriorityData.hResource = hResource;
     SetAllocationPriorityData.phAllocationList = NULL;
     SetAllocationPriorityData.AllocationCount = 0;
-    SetAllocationPriorityData.Priorities = &amp;uiPriority;    
+    SetAllocationPriorityData.Priorities = &uiPriority;    
 
-    (*pfnKTSetAllocationPriority)(&amp;SetAllocationPriorityData);
+    (*pfnKTSetAllocationPriority)(&SetAllocationPriorityData);
 }
 ```
 
 ## -see-also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548262">D3DKMT_SETALLOCATIONPRIORITY</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmthk/ns-d3dkmthk-_d3dkmt_setallocationpriority">D3DKMT_SETALLOCATIONPRIORITY</a>

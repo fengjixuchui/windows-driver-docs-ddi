@@ -69,12 +69,12 @@ None.
 
 ### -output-buffer
 
-The driver returns the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567966">TAPE_GET_POSITION</a> data in the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>. 
+The driver returns the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddtape/ns-ntddtape-_tape_get_position">TAPE_GET_POSITION</a> data in the buffer at <b>Irp->AssociatedIrp.SystemBuffer</b>. 
 
 
 ### -output-buffer-length
 
-<b>Parameters.DeviceIoControl.OutputBufferLength</b> in the I/O stack location indicates the size, in bytes, of the parameter buffer, which must be &gt;= <b>sizeof</b>(TAPE_GET_POSITION).
+<b>Parameters.DeviceIoControl.OutputBufferLength</b> in the I/O stack location indicates the size, in bytes, of the parameter buffer, which must be >= <b>sizeof</b>(TAPE_GET_POSITION).
 
 
 ### -in-out-buffer
@@ -105,15 +105,15 @@ The <b>Information</b> field is set to the number of bytes returned. The <b>Stat
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567966">TAPE_GET_POSITION</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddtape/ns-ntddtape-_tape_get_position">TAPE_GET_POSITION</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567975">TAPE_STATUS</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/minitape/ne-minitape-_tape_status">TAPE_STATUS</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567946">TapeMiniGetPosition</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/minitape/nc-minitape-tape_process_command_routine">TapeMiniGetPosition</a>
  
 
  

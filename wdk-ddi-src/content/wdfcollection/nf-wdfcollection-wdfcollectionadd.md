@@ -94,7 +94,7 @@ The specified object could not be added to the specified collection.
 </table>
  
 
-This method might also return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
+This method might also return other <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/ntstatus-values">NTSTATUS values</a>.
 
 A bug check occurs if the driver supplies an invalid object handle.
 
@@ -105,7 +105,7 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 
 
-The <b>WdfCollectionAdd</b> method appends the specified object to the end of the set of objects that the collection contains. When <b>WdfCollectionAdd</b> adds an object to a collection, it increments the object's reference count. Your driver can call <a href="https://msdn.microsoft.com/library/windows/hardware/ff545784">WdfCollectionRemove</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff545792">WdfCollectionRemoveItem</a> to remove the object and decrement its reference count. 
+The <b>WdfCollectionAdd</b> method appends the specified object to the end of the set of objects that the collection contains. When <b>WdfCollectionAdd</b> adds an object to a collection, it increments the object's reference count. Your driver can call <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfcollection/nf-wdfcollection-wdfcollectionremove">WdfCollectionRemove</a> or <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfcollection/nf-wdfcollection-wdfcollectionremoveitem">WdfCollectionRemoveItem</a> to remove the object and decrement its reference count. 
 
 For more information about object collections, see <a href="https://docs.microsoft.com/windows-hardware/drivers/wdf/framework-object-collections">Framework Object Collections</a>.
 
@@ -125,26 +125,26 @@ NTSTATUS  status;
 WDFCOLLECTION  hCollection = NULL;
 WDFREQUEST  subRequest = NULL;
 
-WDF_OBJECT_ATTRIBUTES_INIT(&amp;attributes);
+WDF_OBJECT_ATTRIBUTES_INIT(&attributes);
 attributes.ParentObject = Request;
 status = WdfCollectionCreate(
-                             &amp;attributes,
-                             &amp;hCollection
+                             &attributes,
+                             &hCollection
                              );
 if (!NT_SUCCESS(status)) {
     goto Exit;
 }
 
-for (i = 0; i &lt; numSubRequests; i++) {
-    WDF_OBJECT_ATTRIBUTES_INIT(&amp;attributes);
+for (i = 0; i < numSubRequests; i++) {
+    WDF_OBJECT_ATTRIBUTES_INIT(&attributes);
     WDF_OBJECT_ATTRIBUTES_SET_CONTEXT_TYPE(
-                                           &amp;attributes,
+                                           &attributes,
                                            SUB_REQUEST_CONTEXT
                                            );
     status = WdfRequestCreate(
-                              &amp;attributes,
-                              WdfUsbTargetDeviceGetIoTarget(deviceContext-&gt;WdfUsbTargetDevice),
-                              &amp;subRequest
+                              &attributes,
+                              WdfUsbTargetDeviceGetIoTarget(deviceContext->WdfUsbTargetDevice),
+                              &subRequest
                               );
     if (!NT_SUCCESS(status)) {
         goto Exit;
@@ -169,15 +169,15 @@ for (i = 0; i &lt; numSubRequests; i++) {
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545747">WdfCollectionCreate</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfcollection/nf-wdfcollection-wdfcollectioncreate">WdfCollectionCreate</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545784">WdfCollectionRemove</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfcollection/nf-wdfcollection-wdfcollectionremove">WdfCollectionRemove</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545792">WdfCollectionRemoveItem</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfcollection/nf-wdfcollection-wdfcollectionremoveitem">WdfCollectionRemoveItem</a>
  
 
  

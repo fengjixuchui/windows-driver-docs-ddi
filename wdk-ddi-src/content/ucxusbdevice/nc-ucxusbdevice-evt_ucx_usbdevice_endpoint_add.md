@@ -56,7 +56,7 @@ The client driver's implementation that UCX calls to add a new endpoint for a US
 
 ### -param UcxController [in]
 
- A handle to the UCX controller that the client driver received in a previous call to  the <a href="https://msdn.microsoft.com/library/windows/hardware/mt188033">UcxControllerCreate</a> method.
+ A handle to the UCX controller that the client driver received in a previous call to  the <a href="https://docs.microsoft.com/previous-versions/windows/hardware/drivers/mt188033(v=vs.85)">UcxControllerCreate</a> method.
 
 
 ### -param UcxUsbDevice [in]
@@ -99,9 +99,9 @@ If the operation is successful, the callback function must return STATUS_SUCCESS
 
 
 
-The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/mt188052">UcxUsbDeviceCreate</a> method.
+The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucxusbdevice/nf-ucxusbdevice-ucxusbdevicecreate">UcxUsbDeviceCreate</a> method.
 
-The callback function calls <a href="https://msdn.microsoft.com/library/windows/hardware/mt188039">UcxEndpointCreate</a> to create a new endpoint object and register endpoint object callback functions.
+The callback function calls <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucxendpoint/nf-ucxendpoint-ucxendpointcreate">UcxEndpointCreate</a> to create a new endpoint object and register endpoint object callback functions.
 
 Then, the callback  function typically creates a WDF queue associated with the endpoint
     object.   The  queue does not receive any requests until the class extension
@@ -143,7 +143,7 @@ Endpoint_EvtUcxUsbDeviceEndpointAdd(
     UNREFERENCED_PARAMETER(UsbEndpointDescriptorBufferLength);
     UNREFERENCED_PARAMETER(SuperSpeedEndpointCompanionDescriptor);
 
-    UCX_ENDPOINT_EVENT_CALLBACKS_INIT(&amp;ucxEndpointEventCallbacks,
+    UCX_ENDPOINT_EVENT_CALLBACKS_INIT(&ucxEndpointEventCallbacks,
                                       Endpoint_EvtUcxEndpointPurge,
                                       Endpoint_EvtUcxEndpointStart,
                                       Endpoint_EvtUcxEndpointAbort,
@@ -154,16 +154,16 @@ Endpoint_EvtUcxUsbDeviceEndpointAdd(
                                       Endpoint_EvtUcxEndpointStaticStreamsDisable,
                                       Endpoint_EvtUcxEndpointEnableForwardProgress);
 
-    UcxEndpointInitSetEventCallbacks(UcxEndpointInit, &amp;ucxEndpointEventCallbacks);
+    UcxEndpointInitSetEventCallbacks(UcxEndpointInit, &ucxEndpointEventCallbacks);
 
-    WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(&amp;objectAttributes, UCX_ENDPOINT_CONTEXT);
+    WDF_OBJECT_ATTRIBUTES_INIT_CONTEXT_TYPE(&objectAttributes, UCX_ENDPOINT_CONTEXT);
 
     ucxControllerContext = GetUcxControllerContext(UcxController);
 
     status = UcxEndpointCreate(UcxUsbDevice,
-        &amp;UcxEndpointInit,
-        &amp;objectAttributes,
-        &amp;ucxEndpoint);
+        &UcxEndpointInit,
+        &objectAttributes,
+        &ucxEndpoint);
 
     if (!NT_SUCCESS(status)) {
         DbgTrace(TL_ERROR, Endpoint, "UcxEndpoint Failed %!STATUS!", status);
@@ -174,22 +174,22 @@ Endpoint_EvtUcxUsbDeviceEndpointAdd(
 
     ucxEndpointContext = GetUcxEndpointContext(ucxEndpoint);
 
-    ucxEndpointContext-&gt;IsDefault = FALSE;
-    ucxEndpointContext-&gt;MaxPacketSize = MAX_PACKET_SIZE;
+    ucxEndpointContext->IsDefault = FALSE;
+    ucxEndpointContext->MaxPacketSize = MAX_PACKET_SIZE;
 
-    WDF_IO_QUEUE_CONFIG_INIT(&amp;queueConfig, WdfIoQueueDispatchManual);
+    WDF_IO_QUEUE_CONFIG_INIT(&queueConfig, WdfIoQueueDispatchManual);
 
-    status = WdfIoQueueCreate(ucxControllerContext-&gt;WdfDevice,
-        &amp;queueConfig,
+    status = WdfIoQueueCreate(ucxControllerContext->WdfDevice,
+        &queueConfig,
         WDF_NO_OBJECT_ATTRIBUTES,
-        &amp;ucxEndpointContext-&gt;IoQueue);
+        &ucxEndpointContext->IoQueue);
 
     if (!NT_SUCCESS(status)) {
         DbgTrace(TL_ERROR, Endpoint, "WdfIoQueueCreate Failed %!STATUS!", status);
         goto EvtUsbDeviceEndpointAddEnd;
     }
 
-    UcxEndpointSetWdfIoQueue(ucxEndpoint, ucxEndpointContext-&gt;IoQueue);
+    UcxEndpointSetWdfIoQueue(ucxEndpoint, ucxEndpointContext->IoQueue);
 
 EvtUsbDeviceEndpointAddEnd:
 
@@ -206,23 +206,23 @@ EvtUsbDeviceEndpointAddEnd:
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt188037">UcxDefaultEndpointInitSetEventCallbacks</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucxendpoint/nf-ucxendpoint-ucxdefaultendpointinitseteventcallbacks">UcxDefaultEndpointInitSetEventCallbacks</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt188039">UcxEndpointCreate</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucxendpoint/nf-ucxendpoint-ucxendpointcreate">UcxEndpointCreate</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt188052">UcxUsbDeviceCreate</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ucxusbdevice/nf-ucxusbdevice-ucxusbdevicecreate">UcxUsbDeviceCreate</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552360">WDF_IO_QUEUE_CONFIG_INIT</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfio/nf-wdfio-wdf_io_queue_config_init">WDF_IO_QUEUE_CONFIG_INIT</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547401">WdfIoQueueCreate</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfio/nf-wdfio-wdfioqueuecreate">WdfIoQueueCreate</a>
  
 
  

@@ -47,9 +47,9 @@ req.typenames:
 
 
 
-Determines whether the media has changed on a removable-media device that the caller has opened for read or write access. If read or write access to the device is not necessary, the caller can improve performance by opening the device with FILE_READ_ATTRIBUTES and issuing an<a href="https://msdn.microsoft.com/library/windows/hardware/ff560538">IOCTL_STORAGE_CHECK_VERIFY2</a> request instead. 
+Determines whether the media has changed on a removable-media device that the caller has opened for read or write access. If read or write access to the device is not necessary, the caller can improve performance by opening the device with FILE_READ_ATTRIBUTES and issuing an<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ni-ntddstor-ioctl_storage_check_verify2">IOCTL_STORAGE_CHECK_VERIFY2</a> request instead. 
 
-For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563916">Supporting Removable Media</a>.
+For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/supporting-removable-media">Supporting Removable Media</a>.
 
 
 
@@ -71,14 +71,14 @@ None.
 
 ### -output-buffer
 
-Optionally, for disk and CD-ROM devices, <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> points to a buffer to receive the media change count. The driver fills this buffer only if <b>Parameters.DeviceIoControl.OutputBufferLength</b> was nonzero and the return value is STATUS_SUCCESS. The media change count is a ULONG indicating how many times the media has changed since the driver started.
+Optionally, for disk and CD-ROM devices, <b>Irp->AssociatedIrp.SystemBuffer</b> points to a buffer to receive the media change count. The driver fills this buffer only if <b>Parameters.DeviceIoControl.OutputBufferLength</b> was nonzero and the return value is STATUS_SUCCESS. The media change count is a ULONG indicating how many times the media has changed since the driver started.
 
 Otherwise, this request has no output.
 
 
 ### -output-buffer-length
 
-Optionally, for disk and CD-ROM devices, <b>Parameters.DeviceIoControl.OutputBufferLength</b> in the I/O stack location of the IRP indicates the size, in bytes, of a buffer, which must be &gt;= <b>sizeof</b>(ULONG). This field is zero if the optional buffer is not specified.
+Optionally, for disk and CD-ROM devices, <b>Parameters.DeviceIoControl.OutputBufferLength</b> in the I/O stack location of the IRP indicates the size, in bytes, of a buffer, which must be >= <b>sizeof</b>(ULONG). This field is zero if the optional buffer is not specified.
 
 Otherwise, this request has no input.
 
@@ -103,7 +103,7 @@ Otherwise, this request has no input.
 
 ### -status-block
 
-If a disk or CD-ROM driver has no indication that the media has changed, the driver sets the <b>Status</b> field to STATUS_SUCCESS. In addition, if the optional media change buffer was specified, the driver returns the media change count in the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> and sets the <b>Information</b> field to <b>sizeof</b>(ULONG). If the optional media change buffer was not specified, the driver sets <b>Information</b> to zero.
+If a disk or CD-ROM driver has no indication that the media has changed, the driver sets the <b>Status</b> field to STATUS_SUCCESS. In addition, if the optional media change buffer was specified, the driver returns the media change count in the buffer at <b>Irp->AssociatedIrp.SystemBuffer</b> and sets the <b>Information</b> field to <b>sizeof</b>(ULONG). If the optional media change buffer was not specified, the driver sets <b>Information</b> to zero.
 
 If the driver detects that the media has changed and the volume is mounted (VPB_MOUNTED is set in the VPB), it must: 
 
@@ -151,7 +151,7 @@ For a tape driver, the <b>Information</b> field is set to zero and the <b>Status
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560538">IOCTL_STORAGE_CHECK_VERIFY2</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ni-ntddstor-ioctl_storage_check_verify2">IOCTL_STORAGE_CHECK_VERIFY2</a>
  
 
  

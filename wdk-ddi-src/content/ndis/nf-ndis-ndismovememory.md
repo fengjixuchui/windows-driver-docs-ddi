@@ -84,7 +84,7 @@ Both
     <i>Destination</i> are virtual addresses.
 
 If either address falls within a range of device memory that was mapped with 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/hh975119">NdisMMapIoSpace</a>, a miniport driver should
+    <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/ndis-ndismmapiospace">NdisMMapIoSpace</a>, a miniport driver should
     call one of the 
     <b>Ndis..MappedMemory</b> functions instead of 
     <b>NdisMoveMemory</b>.
@@ -97,7 +97,7 @@ The range specified by
 Callers of 
     <b>NdisMoveMemory</b> can run at any IRQL if the given 
     <i>Source</i> and 
-    <i>Destination</i> are resident. Otherwise, callers must be running at IRQL &lt; DISPATCH_LEVEL, as, for
+    <i>Destination</i> are resident. Otherwise, callers must be running at IRQL < DISPATCH_LEVEL, as, for
     example if either address is on the stack.
 
 
@@ -108,12 +108,12 @@ Callers of
 
 
 
-<a href="https://msdn.microsoft.com/aac4049c-a876-4bbb-ba3b-fa36c299e1c7">
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisallocatememorywithtagpriority">
    NdisAllocateMemoryWithTagPriority</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh975119">NdisMMapIoSpace</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/ndis-ndismmapiospace">NdisMMapIoSpace</a>
  
 
  

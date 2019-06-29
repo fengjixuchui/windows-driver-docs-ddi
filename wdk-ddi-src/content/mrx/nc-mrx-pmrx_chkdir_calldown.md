@@ -96,7 +96,7 @@ This remote directory does not exist.
 
 
 
-<i>MRxIsValidDirectory</i> is called as part of create or open request processing for the remaining name string beyond the V_NET_ROOT structure, if the <b>IrpSp-&gt;Parameters.Create.Options</b> member has the FILE_CREATE_TREE_CONNECTION bit set on. 
+<i>MRxIsValidDirectory</i> is called as part of create or open request processing for the remaining name string beyond the V_NET_ROOT structure, if the <b>IrpSp->Parameters.Create.Options</b> member has the FILE_CREATE_TREE_CONNECTION bit set on. 
 
 
 
@@ -106,51 +106,51 @@ This remote directory does not exist.
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550755">MRxQueryDirectory</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ifs/mrxquerydirectory">MRxQueryDirectory</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550759">MRxQueryEaInfo</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ifs/mrxqueryeainfo">MRxQueryEaInfo</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550770">MRxQueryFileInfo</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ifs/mrxqueryfileinfo">MRxQueryFileInfo</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550773">MRxQueryQuotaInfo</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ifs/mrxqueryquotainfo">MRxQueryQuotaInfo</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550776">MRxQuerySdInfo</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ifs/mrxquerysdinfo">MRxQuerySdInfo</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550782">MRxQueryVolumeInfo</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ifs/mrxqueryvolumeinfo">MRxQueryVolumeInfo</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550786">MRxSetEaInfo</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ifs/mrxseteainfo">MRxSetEaInfo</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550790">MRxSetFileInfo</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ifs/mrxsetfileinfo">MRxSetFileInfo</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550796">MRxSetFileInfoAtCleanup</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ifs/mrxsetfileinfoatcleanup">MRxSetFileInfoAtCleanup</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550800">MRxSetQuotaInfo</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ifs/mrxsetquotainfo">MRxSetQuotaInfo</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550805">MRxSetSdInfo</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ifs/mrxsetsdinfo">MRxSetSdInfo</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550810">MRxSetVolumeInfo</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ifs/mrxsetvolumeinfo">MRxSetVolumeInfo</a>
  
 
  

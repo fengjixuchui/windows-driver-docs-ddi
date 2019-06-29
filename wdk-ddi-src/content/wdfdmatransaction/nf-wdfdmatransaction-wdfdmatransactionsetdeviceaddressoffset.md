@@ -66,7 +66,7 @@ A handle to a DMA transaction object that specifies the transaction to modify.
 
 ### -param Offset [in]
 
-The offset of the register, from the <b>DeviceAddress</b> specified in <a href="https://msdn.microsoft.com/library/windows/hardware/hh439495">WDF_DMA_SYSTEM_PROFILE_CONFIG</a>, to or from which DMA should be performed.
+The offset of the register, from the <b>DeviceAddress</b> specified in <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdmaenabler/ns-wdfdmaenabler-_wdf_dma_system_profile_config">WDF_DMA_SYSTEM_PROFILE_CONFIG</a>, to or from which DMA should be performed.
 
 
 ## -returns
@@ -106,7 +106,7 @@ The following code example initializes a DMA transaction.  It then sets the offs
 <tr>
 <td>
 <pre>status = WdfDmaTransactionInitialize(
-                                     RequestContext-&gt;DmaTransaction,
+                                     RequestContext->DmaTransaction,
                                      EvtProgramDma,
                                      direction,
                                      mdl,
@@ -119,18 +119,18 @@ if(!NT_SUCCESS(status)) {
 }
 
 WdfDmaTransactionSetDeviceAddressOffset(
-                                        RequestContext-&gt;DmaTransaction,
+                                        RequestContext->DmaTransaction,
                                         READ_DATA_REGISTER_OFFSET
                                         );
 
 WdfDmaTransactionSetTransferCompleteCallback(
-                                             RequestContext-&gt;DmaTransaction,
+                                             RequestContext->DmaTransaction,
                                              EvtDmaTransactionDmaTransferComplete,
                                              RequestContext
                                              );
 
 status = WdfDmaTransactionExecute(
-                                  RequestContext-&gt;DmaTransaction, 
+                                  RequestContext->DmaTransaction, 
                                   RequestContext );
 
 if(!NT_SUCCESS(status)) {
@@ -142,7 +142,7 @@ return status;
 Complete:
 
 WdfDmaTransactionRelease(
-                         RequestContext-&gt;DmaTransaction
+                         RequestContext->DmaTransaction
                          );</pre>
 </td>
 </tr>
@@ -155,7 +155,7 @@ WdfDmaTransactionRelease(
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439495">WDF_DMA_SYSTEM_PROFILE_CONFIG</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdmaenabler/ns-wdfdmaenabler-_wdf_dma_system_profile_config">WDF_DMA_SYSTEM_PROFILE_CONFIG</a>
  
 
  

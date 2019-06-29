@@ -48,7 +48,7 @@ req.typenames:
 
 This function sets the enumeration properties of a sensor.
 
- For more information about sensor properties, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn957027">Enumeration properties</a>.
+ For more information about sensor properties, see <a href="https://docs.microsoft.com/windows-hardware/drivers/sensors/enumeration-properties">Enumeration properties</a>.
 
 
 ## -parameters
@@ -63,7 +63,7 @@ A reference to a sensor object.
 
 ### -param pSensorConfig [in]
 
-A list of enumeration properties. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn957096">SENSOR_CONFIG</a>.
+A list of enumeration properties. For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorscx/ns-sensorscx-_sensor_config">SENSOR_CONFIG</a>.
 
 
 ## -returns
@@ -78,11 +78,11 @@ STATUS_SUCCESS is returned when the function completes successfully.
 
 </li>
 <li>
-STATUS_INVALID_PARAMETER is returned if any of the _In_ parameters are NULL or the <b>pSensorConfig-&gt;pEnumerationList-&gt;Count</b> variable is 0 or too big.
+STATUS_INVALID_PARAMETER is returned if any of the _In_ parameters are NULL or the <b>pSensorConfig->pEnumerationList->Count</b> variable is 0 or too big.
 
 </li>
 <li>
-STATUS_BUFFER_TOO_SMALL is returned if the <b>pSensorConfig</b> buffer is smaller than the size of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn957096">SENSOR_CONFIG</a> structure.
+STATUS_BUFFER_TOO_SMALL is returned if the <b>pSensorConfig</b> buffer is smaller than the size of the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorscx/ns-sensorscx-_sensor_config">SENSOR_CONFIG</a> structure.
 
 </li>
 <li>

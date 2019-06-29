@@ -61,7 +61,7 @@ A pointer to the hardware device extension for the host bus adapter (HBA).
 
 ### -param TimerHandle [in]
 
-A pointer to an opaque buffer for the timer context returned by <a href="https://msdn.microsoft.com/library/windows/hardware/hh451483">StorPortInitializeTimer</a>.
+A pointer to an opaque buffer for the timer context returned by <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportinitializetimer">StorPortInitializeTimer</a>.
 
 
 ### -param TimerCallback [in]
@@ -141,7 +141,7 @@ The timer context object, <i>TimerHandle</i>, is invalid.
 </dl>
 </td>
 <td width="60%">
-A previous timer request is active. <i>TimerValue</i> &gt; 0 and <i>TimerCallback</i> has not been called.
+A previous timer request is active. <i>TimerValue</i> > 0 and <i>TimerCallback</i> has not been called.
 
 </td>
 </tr>
@@ -166,7 +166,7 @@ The timer request was successfully scheduled.
 
 
 
-The <b>StorPortRequestTimer</b> routine is callable at any IRQL. However, if the routine is called when IRQL &gt; DISPATCH_LEVEL, the timer's scheduling is deferred until IRQL &lt;= DISPATCH_LEVEL.
+The <b>StorPortRequestTimer</b> routine is callable at any IRQL. However, if the routine is called when IRQL > DISPATCH_LEVEL, the timer's scheduling is deferred until IRQL <= DISPATCH_LEVEL.
 
 
 
@@ -176,19 +176,19 @@ The <b>StorPortRequestTimer</b> routine is callable at any IRQL. However, if the
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557426">HwStorTimer</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nc-storport-hw_timer">HwStorTimer</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451476">StorPortFreeTimer</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportfreetimer">StorPortFreeTimer</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451483">StorPortInitializeTimer</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportinitializetimer">StorPortInitializeTimer</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567433">StorPortNotification</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportnotification">StorPortNotification</a>
  
 
  

@@ -56,7 +56,7 @@ The <b>FltLoadFilter</b> routine dynamically loads a minifilter driver into the 
 
 ### -param FilterName [in]
 
-Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> structure containing the service name for the minifilter driver. 
+Pointer to a <a href="https://docs.microsoft.com/windows/desktop/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> structure containing the service name for the minifilter driver. 
 
 
 ## -returns
@@ -126,7 +126,7 @@ No matching minifilter driver was found. This is an error code.
 
 A minifilter driver that has a dependency on another minifilter driver can load that minifilter driver by calling <b>FltLoadFilter</b>. 
 
-To unload the supporting minifilter driver, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff544602">FltUnloadFilter</a>. 
+To unload the supporting minifilter driver, call <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltunloadfilter">FltUnloadFilter</a>. 
 
 
 
@@ -136,11 +136,11 @@ To unload the supporting minifilter driver, call <a href="https://msdn.microsoft
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544602">FltUnloadFilter</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltunloadfilter">FltUnloadFilter</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>
+<a href="https://docs.microsoft.com/windows/desktop/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a>
  
 
  

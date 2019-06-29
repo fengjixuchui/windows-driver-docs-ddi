@@ -68,7 +68,7 @@ None
 ### -output-buffer
 
 
-<a href="https://msdn.microsoft.com/D1F9588B-02D9-49B0-B45F-AF5C140D74E4"> SECURE_ELEMENT_NFCC_CAPABILITIES</a> containing NFC controller capabilities.
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/nfcsedev/ns-nfcsedev-_secure_element_nfcc_capabilities"> SECURE_ELEMENT_NFCC_CAPABILITIES</a> containing NFC controller capabilities.
 
 
 ### -output-buffer-length
@@ -96,7 +96,7 @@ sizeof(SECURE_ELEMENT_NFCC_CAPABILITIES)
 
 ### -status-block
 
-<b>Irp-&gt;IoStatus.Status</b> is set to <b>STATUS_SUCCESS</b> if the request is successful. Possible error codes are:
+<b>Irp->IoStatus.Status</b> is set to <b>STATUS_SUCCESS</b> if the request is successful. Possible error codes are:
 
 <table>
 <tr>

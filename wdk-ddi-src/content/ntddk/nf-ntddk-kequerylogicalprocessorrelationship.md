@@ -56,7 +56,7 @@ The <b>KeQueryLogicalProcessorRelationship</b> routine gets information about th
 
 ### -param ProcessorNumber [in, optional]
 
-A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff559913">PROCESSOR_NUMBER</a> structure that identifies the logical processor for which the caller requests relationship information. To request information about <u>all</u> logical processors in the system, set this parameter to <b>NULL</b>. 
+A pointer to a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/miniport/ns-miniport-_processor_number">PROCESSOR_NUMBER</a> structure that identifies the logical processor for which the caller requests relationship information. To request information about <u>all</u> logical processors in the system, set this parameter to <b>NULL</b>. 
 
 
 ### -param RelationshipType [in]
@@ -162,12 +162,12 @@ The following code example gets processor relationship information for all the l
     NTSTATUS Status;
     PSYSTEM_LOGICAL_PROCESSOR_INFORMATION_EX Info = NULL;
     ULONG BufferSize = 0;
-    Status = KeQueryLogicalProcessorRelationship(NULL, RelationAll, NULL, &amp;BufferSize);
+    Status = KeQueryLogicalProcessorRelationship(NULL, RelationAll, NULL, &BufferSize);
 
-    NT_ASSERT(Status == STATUS_INFO_LENGTH_MISMATCH &amp;&amp; BufferSize &gt; 0);
+    NT_ASSERT(Status == STATUS_INFO_LENGTH_MISMATCH && BufferSize > 0);
 
     //
-    // Allocate buffer (assume IRQL &lt;= APC_LEVEL).
+    // Allocate buffer (assume IRQL <= APC_LEVEL).
     //
     Info = ExAllocatePoolWithTag(PagedPool, BufferSize, ' gaT');
     if (Info == NULL)
@@ -180,7 +180,7 @@ The following code example gets processor relationship information for all the l
     //
     if (NT_SUCCESS(Status))
     {
-        Status = KeQueryLogicalProcessorRelationship(NULL, RelationAll, Info, &amp;BufferSize);
+        Status = KeQueryLogicalProcessorRelationship(NULL, RelationAll, Info, &BufferSize);
     }</pre>
 </td>
 </tr>
@@ -200,7 +200,7 @@ The NT_ASSERT macro is defined in the Wdm.h header file. The NT_SUCCESS macro is
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559913">PROCESSOR_NUMBER</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/miniport/ns-miniport-_processor_number">PROCESSOR_NUMBER</a>
 
 
 

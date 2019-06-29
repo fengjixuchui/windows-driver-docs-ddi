@@ -88,7 +88,7 @@ The value passed in the <i>PipeIndex</i> argument is invalid.
 
 The type of the pipe specified by the <i>PipeIndex</i> argument represents an invalid type of pipe.
 
-The current IRQL &gt;= DISPATCH_LEVEL.
+The current IRQL >= DISPATCH_LEVEL.
 
 </td>
 </tr>
@@ -112,7 +112,7 @@ The current IRQL &gt;= DISPATCH_LEVEL.
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568605">USBCAMD_INTERFACE</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbcamdi/ns-usbcamdi-usbcamd_interface">USBCAMD_INTERFACE</a>
  
 
  

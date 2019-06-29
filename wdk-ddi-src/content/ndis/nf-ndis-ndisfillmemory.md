@@ -76,7 +76,7 @@ The value to fill the buffer.
 
 Callers of 
     <b>NdisFillMemory</b> can be running at any IRQL, provided that the 
-    <i>Destination</i> buffer is resident. If the buffer is pageable, a caller must be running at IRQL &lt;
+    <i>Destination</i> buffer is resident. If the buffer is pageable, a caller must be running at IRQL <
     DISPATCH_LEVEL.
 
 
@@ -87,11 +87,11 @@ Callers of
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561846">RtlEqualMemory</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-rtlequalmemory">RtlEqualMemory</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563610">RtlZeroMemory</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-rtlzeromemory">RtlZeroMemory</a>
  
 
  

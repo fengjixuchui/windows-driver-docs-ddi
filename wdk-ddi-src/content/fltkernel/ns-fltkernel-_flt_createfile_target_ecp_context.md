@@ -46,7 +46,7 @@ req.typenames: FLT_CREATEFILE_TARGET_ECP_CONTEXT, *PFLT_CREATEFILE_TARGET_ECP_CO
 ## -description
 
 
-The <b>FLT_CREATEFILE_TARGET_ECP_CONTEXT</b> structure is an extra create parameter (ECP) used to return reparse target information back to the caller of <a href="https://msdn.microsoft.com/library/windows/hardware/ff541939">FltCreateFileEx2</a>.
+The <b>FLT_CREATEFILE_TARGET_ECP_CONTEXT</b> structure is an extra create parameter (ECP) used to return reparse target information back to the caller of <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltcreatefileex2">FltCreateFileEx2</a>.
 
 
 ## -struct-fields
@@ -84,7 +84,7 @@ Flags controlling the reparse operation. This value can be either 0 or the follo
 </dl>
 </td>
 <td width="60%">
-Request that the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541939">FltCreateFileEx2</a> attempt a reparse operation when a target is not found with the original file information.
+Request that the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltcreatefileex2">FltCreateFileEx2</a> attempt a reparse operation when a target is not found with the original file information.
 
 </td>
 </tr>
@@ -96,13 +96,13 @@ Request that the <a href="https://msdn.microsoft.com/library/windows/hardware/ff
 
 
 
-When a caller of <a href="https://msdn.microsoft.com/library/windows/hardware/ff541939">FltCreateFileEx2</a> wishes to  enable reparsing for a volume target, a <b>FLT_CREATEFILE_TARGET_ECP_CONTEXT</b> can be included as an ECP to the ECP list in the <i>DriverContext</i> parameter.  If this ECP is present, <b>FltCreateFileEx2</b> will adjust the target device for the create operation and attempt to find a filtered instance  of a volume appropriate for the given file information. If the filter manager does not find a corresponding instance for the caller on the target volume, it will set the <b>Volume</b> and  <b>FileNameInformation</b> members of <b>FLT_CREATEFILE_TARGET_ECP_CONTEXT</b> for the new target. The caller can then use this information to decide how best to proceed.
+When a caller of <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltcreatefileex2">FltCreateFileEx2</a> wishes to  enable reparsing for a volume target, a <b>FLT_CREATEFILE_TARGET_ECP_CONTEXT</b> can be included as an ECP to the ECP list in the <i>DriverContext</i> parameter.  If this ECP is present, <b>FltCreateFileEx2</b> will adjust the target device for the create operation and attempt to find a filtered instance  of a volume appropriate for the given file information. If the filter manager does not find a corresponding instance for the caller on the target volume, it will set the <b>Volume</b> and  <b>FileNameInformation</b> members of <b>FLT_CREATEFILE_TARGET_ECP_CONTEXT</b> for the new target. The caller can then use this information to decide how best to proceed.
 
-If the caller of <a href="https://msdn.microsoft.com/library/windows/hardware/ff541939">FltCreateFileEx2</a> intends to handle the reparse operation itself, the <b>FLTTCFL_AUTO_REPARSE</b> flag is cleared from the <b>Flags</b> member. In this case, <b>FltCreateFileEx2</b> will place the initial target adjustment information in the ECP and then will return, ending the file create attempt.
+If the caller of <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltcreatefileex2">FltCreateFileEx2</a> intends to handle the reparse operation itself, the <b>FLTTCFL_AUTO_REPARSE</b> flag is cleared from the <b>Flags</b> member. In this case, <b>FltCreateFileEx2</b> will place the initial target adjustment information in the ECP and then will return, ending the file create attempt.
 
- If  the values in <b>Instance</b>, <b>Volume</b>, or <b>FileNameInformation</b> are set in an acknowledged ECP, they are referenced objects. A caller of <a href="https://msdn.microsoft.com/library/windows/hardware/ff541939">FltCreateFileEx2</a> is responsible for calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff543378">FltObjectDereference</a> for <b>Instance</b> and <b>Volume</b>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff544320">FltReleaseFileNameInformation</a> for <b>FileNameInformation</b>.
+ If  the values in <b>Instance</b>, <b>Volume</b>, or <b>FileNameInformation</b> are set in an acknowledged ECP, they are referenced objects. A caller of <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltcreatefileex2">FltCreateFileEx2</a> is responsible for calling <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltobjectdereference">FltObjectDereference</a> for <b>Instance</b> and <b>Volume</b>, and <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltreleasefilenameinformation">FltReleaseFileNameInformation</a> for <b>FileNameInformation</b>.
 
-The following example routine demonstrates how a minifilter can call <a href="https://msdn.microsoft.com/library/windows/hardware/ff541939">FltCreateFileEx2</a> with <b>FLT_CREATEFILE_TARGET_ECP_CONTEXT</b> to handle a reparse to a different volume when required to find a file target.
+The following example routine demonstrates how a minifilter can call <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltcreatefileex2">FltCreateFileEx2</a> with <b>FLT_CREATEFILE_TARGET_ECP_CONTEXT</b> to handle a reparse to a different volume when required to find a file target.
 
 <div class="code"><span codelanguage=""><table>
 <tr>
@@ -157,7 +157,7 @@ Return Value:
     fileNameInformation = NULL;
     status = STATUS_SUCCESS;
 
-    InitializeObjectAttributes( &amp;objAttr,
+    InitializeObjectAttributes( &objAttr,
                                 FileName,
                                 OBJ_KERNEL_HANDLE,
                                 NULL,
@@ -173,7 +173,7 @@ Return Value:
                                Handle,
                                FileObject,
                                FILE_READ_DATA|FILE_WRITE_DATA,
-                               &amp;objAttr,
+                               &objAttr,
                                IoStatus,
                                NULL,
                                0,
@@ -187,7 +187,7 @@ Return Value:
 
     if (!NT_SUCCESS(status)) {
 
-        if ((status != STATUS_INVALID_DEVICE_OBJECT_PARAMETER) &amp;&amp;
+        if ((status != STATUS_INVALID_DEVICE_OBJECT_PARAMETER) &&
             (status != STATUS_MOUNT_POINT_NOT_RESOLVED)) {
 
             goto CrossVolumeCreateExit;
@@ -211,18 +211,18 @@ Return Value:
 
     status = FltAllocateExtraCreateParameterList( Filter,
                                                   0,
-                                                  &amp;ecpList );
+                                                  &ecpList );
     if (!NT_SUCCESS( status )) {
         goto CrossVolumeCreateExit;
     }
 
     status = FltAllocateExtraCreateParameter( Filter,
-                                              &amp;GUID_ECP_FLT_CREATEFILE_TARGET,
+                                              &GUID_ECP_FLT_CREATEFILE_TARGET,
                                               sizeof(FLT_CREATEFILE_TARGET_ECP_CONTEXT),
                                               0,
                                               NULL,
                                               POOL_TAG,
-                                              &amp;ecpContext );
+                                              &ecpContext );
 
     if (!NT_SUCCESS( status )) {
         goto CrossVolumeCreateExit;
@@ -237,11 +237,11 @@ Return Value:
     //  Instance parameter.
     //
 
-    ecpContext-&gt;Flags = FLTTCFL_AUTO_REPARSE;
+    ecpContext->Flags = FLTTCFL_AUTO_REPARSE;
 
-    ecpContext-&gt;Instance = NULL;
-    ecpContext-&gt;Volume = NULL;
-    ecpContext-&gt;FileNameInformation = NULL;
+    ecpContext->Instance = NULL;
+    ecpContext->Volume = NULL;
+    ecpContext->FileNameInformation = NULL;
 
     status = FltInsertExtraCreateParameter( Filter,
                                             ecpList,
@@ -250,10 +250,10 @@ Return Value:
         goto CrossVolumeCreateExit;
     }
 
-    IoInitializeDriverCreateContext( &amp;myCreateContext );
+    IoInitializeDriverCreateContext( &myCreateContext );
     myCreateContext.ExtraCreateParameter = ecpList;
 
-    InitializeObjectAttributes( &amp;objAttr,
+    InitializeObjectAttributes( &objAttr,
                                 FileName,
                                 OBJ_KERNEL_HANDLE,
                                 NULL,
@@ -264,7 +264,7 @@ Return Value:
                                Handle,
                                FileObject,
                                FILE_READ_DATA|FILE_WRITE_DATA,
-                               &amp;objAttr,
+                               &objAttr,
                                IoStatus,
                                NULL,
                                0,
@@ -274,11 +274,11 @@ Return Value:
                                NULL,
                                0,
                                IO_IGNORE_SHARE_ACCESS_CHECK,
-                               &amp;myCreateContext );
+                               &myCreateContext );
 
     if (!NT_SUCCESS(status)) {
 
-        if ((status != STATUS_INVALID_DEVICE_OBJECT_PARAMETER) &amp;&amp;
+        if ((status != STATUS_INVALID_DEVICE_OBJECT_PARAMETER) &&
             (status != STATUS_MOUNT_POINT_NOT_RESOLVED)) {
 
             goto CrossVolumeCreateExit;
@@ -312,9 +312,9 @@ Return Value:
     //  ECP.
     //
 
-    if (ecpContext-&gt;Volume != NULL) {
-        FltObjectDereference( ecpContext-&gt;Volume );
-        ecpContext-&gt;Volume = NULL;
+    if (ecpContext->Volume != NULL) {
+        FltObjectDereference( ecpContext->Volume );
+        ecpContext->Volume = NULL;
     }
 
     //
@@ -326,13 +326,13 @@ Return Value:
     //  demonstrate derefing the instance for the general case.
     //
 
-    if (ecpContext-&gt;Instance != NULL) {
-        FltObjectDereference( ecpContext-&gt;Instance );
-        ecpContext-&gt;Instance = NULL;
+    if (ecpContext->Instance != NULL) {
+        FltObjectDereference( ecpContext->Instance );
+        ecpContext->Instance = NULL;
     }
 
-    fileNameInformation = ecpContext-&gt;FileNameInformation;
-    ecpContext-&gt;FileNameInformation = NULL;
+    fileNameInformation = ecpContext->FileNameInformation;
+    ecpContext->FileNameInformation = NULL;
 
     //
     //  Tell filter manager to not handle the cross-volume
@@ -341,7 +341,7 @@ Return Value:
     //  instance on another volume.
     //
 
-    ecpContext-&gt;Flags = 0;
+    ecpContext->Flags = 0;
 
     //
     //  Reinitialize the targeting ECP to it can be reused.
@@ -349,11 +349,11 @@ Return Value:
 
     FltPrepareToReuseEcp( Filter, ecpContext );
 
-    IoInitializeDriverCreateContext( &amp;myCreateContext );
+    IoInitializeDriverCreateContext( &myCreateContext );
     myCreateContext.ExtraCreateParameter = ecpList;
 
-    InitializeObjectAttributes( &amp;objAttr,
-                                &amp;fileNameInformation-&gt;Name,
+    InitializeObjectAttributes( &objAttr,
+                                &fileNameInformation->Name,
                                 OBJ_KERNEL_HANDLE,
                                 NULL,
                                 NULL );
@@ -363,7 +363,7 @@ Return Value:
                                Handle,
                                FileObject,
                                FILE_READ_DATA|FILE_WRITE_DATA,
-                               &amp;objAttr,
+                               &objAttr,
                                IoStatus,
                                NULL,
                                0,
@@ -373,11 +373,11 @@ Return Value:
                                NULL,
                                0,
                                IO_IGNORE_SHARE_ACCESS_CHECK,
-                               &amp;myCreateContext );
+                               &myCreateContext );
 
     if (!NT_SUCCESS(status)) {
 
-        if ((status != STATUS_INVALID_DEVICE_OBJECT_PARAMETER) &amp;&amp;
+        if ((status != STATUS_INVALID_DEVICE_OBJECT_PARAMETER) &&
             (status != STATUS_MOUNT_POINT_NOT_RESOLVED)) {
 
             goto CrossVolumeCreateExit;
@@ -406,25 +406,25 @@ Return Value:
 
 CrossVolumeCreateExit:
 
-    if (ecpContext != NULL &amp;&amp; 
+    if (ecpContext != NULL && 
         FltIsEcpAcknowledged( Filter, ecpContext)) {
 
         FltRemoveExtraCreateParameter( Filter,
                                        ecpList,
-                                       &amp;GUID_ECP_FLT_CREATEFILE_TARGET,
-                                       &amp;ecpContext,
+                                       &GUID_ECP_FLT_CREATEFILE_TARGET,
+                                       &ecpContext,
                                        NULL );
 
-        if (ecpContext-&gt;Instance != NULL) {
-            FltObjectDereference( ecpContext-&gt;Instance );
+        if (ecpContext->Instance != NULL) {
+            FltObjectDereference( ecpContext->Instance );
         }
 
-        if (ecpContext-&gt;Volume != NULL) {
-            FltObjectDereference( ecpContext-&gt;Volume );
+        if (ecpContext->Volume != NULL) {
+            FltObjectDereference( ecpContext->Volume );
         }
 
-        if (ecpContext-&gt;FileNameInformation != NULL) {
-            FltReleaseFileNameInformation( ecpContext-&gt;FileNameInformation );
+        if (ecpContext->FileNameInformation != NULL) {
+            FltReleaseFileNameInformation( ecpContext->FileNameInformation );
         }
 
         FltFreeExtraCreateParameter( Filter, ecpContext );
@@ -452,15 +452,15 @@ CrossVolumeCreateExit:
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff541939">FltCreateFileEx2</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltcreatefileex2">FltCreateFileEx2</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543378">FltObjectDereference</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltobjectdereference">FltObjectDereference</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544320">FltReleaseFileNameInformation</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fltkernel/nf-fltkernel-fltreleasefilenameinformation">FltReleaseFileNameInformation</a>
  
 
  

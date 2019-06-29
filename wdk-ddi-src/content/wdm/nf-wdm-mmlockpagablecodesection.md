@@ -82,7 +82,7 @@ Make the same subset of driver routines available for paging out when they have 
 
 <ul>
 <li>
-The driver has code paths that might not be needed while the system is running, but, if they are needed, the driver's code must be resident because it runs in an arbitrary thread context or at IRQL &gt;= DISPATCH_LEVEL.
+The driver has code paths that might not be needed while the system is running, but, if they are needed, the driver's code must be resident because it runs in an arbitrary thread context or at IRQL >= DISPATCH_LEVEL.
 
 </li>
 <li>
@@ -122,7 +122,7 @@ Never make an ISR pageable. It is possible for a device driver to receive a spur
 
 </li>
 <li>
-Never make a DPC routine pageable if the driver cannot control when the DPC is queued, such as any <i>DpcForIsr</i> or <i>CustomDpc</i> routine that might be queued from an ISR. In general, driver routines that run at IRQL &gt;= DISPATCH_LEVEL and that can be called in an arbitrary thread context or in response to a random external event should not be made pageable.
+Never make a DPC routine pageable if the driver cannot control when the DPC is queued, such as any <i>DpcForIsr</i> or <i>CustomDpc</i> routine that might be queued from an ISR. In general, driver routines that run at IRQL >= DISPATCH_LEVEL and that can be called in an arbitrary thread context or in response to a random external event should not be made pageable.
 
 </li>
 <li>
@@ -134,7 +134,7 @@ Note that routines in a pageable section marked with the compiler directive <b>#
 
 The memory manager maintains an internal lock count on any driver's pageable section. Calls to <b>MmLockPagableCodeSection</b> increment this count and the reciprocal <b>MmUnlockPagableImageSection</b> decrements the count. A driver's pageable section is not available to be paged out unless this count is zero.
 
-For more information about creating pageable code sections, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff554346">Making Drivers Pageable</a>. 
+For more information about creating pageable code sections, see <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/making-drivers-pageable">Making Drivers Pageable</a>. 
 
 
 
@@ -144,23 +144,23 @@ For more information about creating pageable code sections, see <a href="https:/
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554607">MmLockPagableDataSection</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmlockpagabledatasection">MmLockPagableDataSection</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554610">MmLockPagableSectionByHandle</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-mmlockpagablesectionbyhandle">MmLockPagableSectionByHandle</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554650">MmPageEntireDriver</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmpageentiredriver">MmPageEntireDriver</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554680">MmResetDriverPaging</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmresetdriverpaging">MmResetDriverPaging</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556377">MmUnlockPagableImageSection</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmunlockpagableimagesection">MmUnlockPagableImageSection</a>
  
 
  

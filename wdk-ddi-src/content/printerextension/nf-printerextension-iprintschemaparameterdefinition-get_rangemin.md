@@ -59,9 +59,9 @@ This property is read-only.
 
 
 
-For the <b>PrintSchemaParameterDataType_Integer</b> data type, the value returned by  <b>RangeMin</b> maps to the &lt;psf:MinValue&gt; property value of the Print Schema parameter definition. This minimum value shows the minimum integer value that the driver supports.
+For the <b>PrintSchemaParameterDataType_Integer</b> data type, the value returned by  <b>RangeMin</b> maps to the <psf:MinValue> property value of the Print Schema parameter definition. This minimum value shows the minimum integer value that the driver supports.
 
-For the <b>PrintSchemaParameterDataType_NumericString</b> and <b>PrintSchemaParameterDataType_String</b>  data types, this maps to the &lt;psf:MinLength&gt; property value of the Print Schema parameter definition. This minimum value shows the minimum length of string that the driver supports.
+For the <b>PrintSchemaParameterDataType_NumericString</b> and <b>PrintSchemaParameterDataType_String</b>  data types, this maps to the <psf:MinLength> property value of the Print Schema parameter definition. This minimum value shows the minimum length of string that the driver supports.
 
 
 
@@ -71,7 +71,7 @@ For the <b>PrintSchemaParameterDataType_NumericString</b> and <b>PrintSchemaPara
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn465890">IPrintSchemaParameterDefinition</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nn-printerextension-iprintschemaparameterdefinition">IPrintSchemaParameterDefinition</a>
  
 
  

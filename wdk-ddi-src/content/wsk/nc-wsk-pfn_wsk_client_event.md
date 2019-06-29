@@ -60,7 +60,7 @@ The
 
 A pointer to the context value that was specified by the 
      <i>WskClientNpi</i> parameter passed to the 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571143">WskRegister</a> function.
+     <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/nf-wsk-wskregister">WskRegister</a> function.
 
 
 ### -param EventType
@@ -141,12 +141,12 @@ The additional information that is contained in the buffer that is pointed to by
 If a WSK application does not implement a 
     <i>WskClientEvent</i> event callback function, it should set the 
     <i>WskClientEvent</i> member of the 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571159">WSK_CLIENT_DISPATCH</a> structure to <b>NULL</b>
+    <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/ns-wsk-_wsk_client_dispatch">WSK_CLIENT_DISPATCH</a> structure to <b>NULL</b>
     before it calls 
-    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571143">WskRegister</a>.
+    <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/nf-wsk-wskregister">WskRegister</a>.
 
 The WSK subsystem calls a WSK application's 
-    <i>WskClientEvent</i> event callback function at IRQL &lt;= DISPATCH_LEVEL.
+    <i>WskClientEvent</i> event callback function at IRQL <= DISPATCH_LEVEL.
 
 A WSK application's <i>WskClientEvent</i> event callback function must not wait for completion of other WSK requests in the context of WSK completion or event callback functions. The callback can initiate other WSK requests (assuming that it doesn't spend too much time at DISPATCH_LEVEL), but it must not wait for their completion even when the callback is called at IRQL = PASSIVE_LEVEL.
 
@@ -158,11 +158,11 @@ A WSK application's <i>WskClientEvent</i> event callback function must not wait 
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571159">WSK_CLIENT_DISPATCH</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/ns-wsk-_wsk_client_dispatch">WSK_CLIENT_DISPATCH</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571143">WskRegister</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wsk/nf-wsk-wskregister">WskRegister</a>
  
 
  

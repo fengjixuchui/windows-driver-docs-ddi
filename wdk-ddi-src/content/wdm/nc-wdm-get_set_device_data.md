@@ -56,12 +56,12 @@ The <i>GetBusData</i> routine reads data from the device's configuration space.
 
 ### -param Context [in]
 
-A pointer to interface-specific context information. The caller passes the value that is passed as the <b>Context</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540707">BUS_INTERFACE_STANDARD</a> structure for the interface.
+A pointer to interface-specific context information. The caller passes the value that is passed as the <b>Context</b> member of the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_bus_interface_standard">BUS_INTERFACE_STANDARD</a> structure for the interface.
 
 
 ### -param DataType [in]
 
-The type of bus data to read. For more information, see the discussion of the <i>WhichSpace</i> parameter in <a href="https://msdn.microsoft.com/library/windows/hardware/ff551727">IRP_MN_READ_CONFIG</a>. 
+The type of bus data to read. For more information, see the discussion of the <i>WhichSpace</i> parameter in <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-read-config">IRP_MN_READ_CONFIG</a>. 
 
 
 ### -param Buffer [in]
@@ -105,7 +105,7 @@ Depending on the value of the <i>DataType</i> parameter, the <i>GetBusData</i> r
 
 </td>
 <td>
-&lt;= DIRQL
+<= DIRQL
 
 </td>
 </tr>
@@ -115,7 +115,7 @@ Depending on the value of the <i>DataType</i> parameter, the <i>GetBusData</i> r
 
 </td>
 <td>
-&lt;= APC_LEVEL
+<= APC_LEVEL
 
 </td>
 </tr>
@@ -127,7 +127,7 @@ Depending on the value of the <i>DataType</i> parameter, the <i>GetBusData</i> r
 
 </td>
 <td>
-&lt;= DISPATCH_LEVEL
+<= DISPATCH_LEVEL
 
 </td>
 </tr>
@@ -139,7 +139,7 @@ Depending on the value of the <i>DataType</i> parameter, the <i>GetBusData</i> r
 
 </td>
 <td>
-&lt;= DISPATCH_LEVEL
+<= DISPATCH_LEVEL
 
 </td>
 </tr>
@@ -149,7 +149,7 @@ Depending on the value of the <i>DataType</i> parameter, the <i>GetBusData</i> r
 
 </td>
 <td>
-&lt;= DIRQL
+<= DIRQL
 
 </td>
 </tr>
@@ -160,11 +160,11 @@ The following remarks apply to drivers for PCI Express (PCIe) virtual functions 
 
 <ul>
 <li>
-Drivers for PCIe VFs should call the <i>GetBusData</i> routine at IRQL &lt;= APC_LEVEL.
+Drivers for PCIe VFs should call the <i>GetBusData</i> routine at IRQL <= APC_LEVEL.
 
 </li>
 <li>
-In order to read PCI Configuration data for the VF at IRQL = DISPATCH_LEVEL, the driver must issue I/O requests of <a href="https://msdn.microsoft.com/library/windows/hardware/ff551727">IRP_MN_READ_CONFIG</a>.
+In order to read PCI Configuration data for the VF at IRQL = DISPATCH_LEVEL, the driver must issue I/O requests of <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-read-config">IRP_MN_READ_CONFIG</a>.
 
 </li>
 </ul>
@@ -176,11 +176,11 @@ In order to read PCI Configuration data for the VF at IRQL = DISPATCH_LEVEL, the
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540707">BUS_INTERFACE_STANDARD</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_bus_interface_standard">BUS_INTERFACE_STANDARD</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551727">IRP_MN_READ_CONFIG</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-read-config">IRP_MN_READ_CONFIG</a>
  
 
  

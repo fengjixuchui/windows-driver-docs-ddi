@@ -49,7 +49,7 @@ req.typenames:
 The
   <b>NdisInitializeReadWriteLock</b> function initializes a read or write lock variable of type 
   <b>NDIS_RW_LOCK</b>.
-<div class="alert"><b>Note</b>  The read-write lock interface is deprecated for NDIS 6.20 and later drivers, which should use <a href="https://msdn.microsoft.com/library/windows/hardware/ff561615">NdisAllocateRWLock</a> instead of <b>NdisInitializeReadWriteLock</b>.</div><div> </div>
+<div class="alert"><b>Note</b>  The read-write lock interface is deprecated for NDIS 6.20 and later drivers, which should use <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisallocaterwlock">NdisAllocateRWLock</a> instead of <b>NdisInitializeReadWriteLock</b>.</div><div> </div>
 
 ## -parameters
 
@@ -114,12 +114,12 @@ Each lock that a driver initializes does one of the following:
 <ul>
 <li>
 Protects a discrete set of shared resources from simultaneous write and read access by driver
-      threads that run at IRQL &lt;= DISPATCH_LEVEL.
+      threads that run at IRQL <= DISPATCH_LEVEL.
 
 </li>
 <li>
 Exposes a discrete set of shared resources to simultaneous read access by driver threads that run at
-      IRQL &lt;= DISPATCH_LEVEL.
+      IRQL <= DISPATCH_LEVEL.
 
 </li>
 </ul>

@@ -80,8 +80,8 @@ The number of bytes to be compared.
     irrelevant.
 
 Callers of 
-    <b>NdisEqualMemory</b> can be running at IRQL &lt;= DISPATCH_LEVEL if both memory blocks are resident. If
-    either block is pageable, callers must be running at IRQL &lt; DISPATCH_LEVEL.
+    <b>NdisEqualMemory</b> can be running at IRQL <= DISPATCH_LEVEL if both memory blocks are resident. If
+    either block is pageable, callers must be running at IRQL < DISPATCH_LEVEL.
 
 
 
@@ -91,24 +91,24 @@ Callers of
 
 
 
-<a href="https://msdn.microsoft.com/aac4049c-a876-4bbb-ba3b-fa36c299e1c7">
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisallocatememorywithtagpriority">
    NdisAllocateMemoryWithTagPriority</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562577">NdisFreeMemory</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfreememory">NdisFreeMemory</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561808">RtlCopyMemory</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-rtlcopymemory">RtlCopyMemory</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561870">RtlFillMemory</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-rtlfillmemory">RtlFillMemory</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563610">RtlZeroMemory</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-rtlzeromemory">RtlZeroMemory</a>
  
 
  

@@ -1,7 +1,7 @@
 ---
 UID: NF:ks.KsCreateDefaultAllocatorEx
 title: KsCreateDefaultAllocatorEx function (ks.h)
-description: Creates a default allocator that uses the specified memory pool and associates the IoGetCurrentIrpStackLocation(pIrp)-&gt;FileObject with this allocator using an internal dispatch table (KSDISPATCH_TABLE).
+description: Creates a default allocator that uses the specified memory pool and associates the IoGetCurrentIrpStackLocation(pIrp)->FileObject with this allocator using an internal dispatch table (KSDISPATCH_TABLE).
 old-location: stream\kscreatedefaultallocatorex.htm
 tech.root: stream
 ms.assetid: 63b2d9a3-7f8e-4c03-8c0c-a4555c27e39c
@@ -47,7 +47,7 @@ req.typenames:
 ## -description
 
 
-Creates a default allocator that uses the specified memory pool and associates the <i>IoGetCurrentIrpStackLocation(pIrp)-&gt;FileObject</i> with this allocator using an internal dispatch table (KSDISPATCH_TABLE).
+Creates a default allocator that uses the specified memory pool and associates the <i>IoGetCurrentIrpStackLocation(pIrp)->FileObject</i> with this allocator using an internal dispatch table (KSDISPATCH_TABLE).
 
 
 ## -parameters
@@ -98,7 +98,7 @@ Returns STATUS_SUCCESS, else an error on default allocator creation failure. Doe
 
 
 
-Before calling this routine, the <b>KSCREATE_ITEM_IRP_STORAGE(Irp)</b> macro should return a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563479">KSOBJECT_CREATE_ITEM</a> structure that is the create item for this allocator. <b>KsCreateDefaultAllocatorEx</b> sets <b>FsContext</b> to point to the return value of this macro. As such, <b>FsContext</b> can later be used for security descriptor queries or changes.
+Before calling this routine, the <b>KSCREATE_ITEM_IRP_STORAGE(Irp)</b> macro should return a pointer to the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksobject_create_item">KSOBJECT_CREATE_ITEM</a> structure that is the create item for this allocator. <b>KsCreateDefaultAllocatorEx</b> sets <b>FsContext</b> to point to the return value of this macro. As such, <b>FsContext</b> can later be used for security descriptor queries or changes.
 
 You can find <b>KSCREATE_ITEM_IRP_STORAGE(Irp)</b> and related macros in <i>ks.h</i>.
 

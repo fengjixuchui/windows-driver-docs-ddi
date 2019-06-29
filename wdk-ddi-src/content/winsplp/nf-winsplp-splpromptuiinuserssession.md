@@ -66,7 +66,7 @@ Specifies the print job.
 
 ### -param pUIParams [in]
 
-Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff562645">SHOWUIPARAMS</a> structure that contains values that determine the appearance and behavior of the message box.
+Pointer to a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/ns-winsplp-showuiparams">SHOWUIPARAMS</a> structure that contains values that determine the appearance and behavior of the message box.
 
 
 ### -param pResponse [out]
@@ -87,7 +87,7 @@ On success, the <code>SplPromptUIInUsersSession</code> function returns <b>TRUE<
 
 
 
-If <i>pUIParams</i> -&gt;<b>bWait</b> is <b>FALSE</b>, this function returns immediately without waiting for the user's response. In that case, *<i>pResponse</i> is set to IDASYNC. 
+If <i>pUIParams</i> -><b>bWait</b> is <b>FALSE</b>, this function returns immediately without waiting for the user's response. In that case, *<i>pResponse</i> is set to IDASYNC. 
 
 If you plan to use this function in a driver intended to run under Windows 2000, you must load spoolss.dll by a call to the <b>LoadLibrary</b> function, and then find the address of this function within that DLL by a call to the <b>GetProcAddress</b> function. (<b>LoadLibrary</b> and <b>GetProcAddress</b> are described in the Microsoft Windows SDK documentation.) If the call to <b>GetProcAddress</b> fails, you must use an alternative mechanism to display user interface elements.
 
@@ -99,11 +99,11 @@ If you plan to use this function in a driver intended to run under Windows 2000,
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562645">SHOWUIPARAMS</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/ns-winsplp-showuiparams">SHOWUIPARAMS</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562677">SplIsSessionZero</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-splissessionzero">SplIsSessionZero</a>
  
 
  

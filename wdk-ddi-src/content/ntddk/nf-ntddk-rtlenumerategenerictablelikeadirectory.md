@@ -56,7 +56,7 @@ The <b>RtlEnumerateGenericTableLikeADirectory</b> routine returns the elements o
 
 ### -param Table [in]
 
-A pointer to the Adelson-Velsky/Landis (AVL) table (<a href="https://msdn.microsoft.com/library/windows/hardware/ff553327">RTL_AVL_TABLE</a>) that will be enumerated.
+A pointer to the Adelson-Velsky/Landis (AVL) table (<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/ns-ntddk-_rtl_avl_table">RTL_AVL_TABLE</a>) that will be enumerated.
 
 
 ### -param MatchFunction [in, optional]
@@ -93,8 +93,8 @@ for (ptr = NULL; ptr != NULL;  ) {
   // Value returned in RestartKey will be passed back in
   // on following call (iteration):
   ptr = RtlEnumerateGenericTableLikeADirectory(
-      &amp;MyTable, NULL, NULL, TRUE, &amp;RestartKey,
-      &amp;DeleteCount, &amp;Buffer, sizeof(LONG) );
+      &MyTable, NULL, NULL, TRUE, &RestartKey,
+      &DeleteCount, &Buffer, sizeof(LONG) );
       ...
   // The value output in RestartKey will still be in
   // RestartKey when the
@@ -152,7 +152,7 @@ By default, the operating system uses splay trees to implement generic tables, b
 </table></span></div>
 If RTL_USE_AVL_TABLES is not defined, you must use the AVL form of the generic table routines. 
 
-Callers of <b>RtlEnumerateGenericTableLikeADirectory</b> must be running at IRQL &lt;= APC_LEVEL if either of the following conditions holds:
+Callers of <b>RtlEnumerateGenericTableLikeADirectory</b> must be running at IRQL <= APC_LEVEL if either of the following conditions holds:
 
 <ul>
 <li>
@@ -172,15 +172,15 @@ The caller-supplied <i>MatchFunction</i> contains pageable code.
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552243">RtlEnumerateGenericTable</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-rtlenumerategenerictable">RtlEnumerateGenericTable</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552247">RtlEnumerateGenericTableWithoutSplaying</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-rtlenumerategenerictablewithoutsplaying">RtlEnumerateGenericTableWithoutSplaying</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552297">RtlGetElementGenericTable</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-rtlgetelementgenerictable">RtlGetElementGenericTable</a>
  
 
  

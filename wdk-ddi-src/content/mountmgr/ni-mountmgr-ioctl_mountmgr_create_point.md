@@ -46,7 +46,7 @@ req.typenames:
 ## -description
 
 
-The mount manager clients can use this IOCTL to request that the mount manager create a persistent symbolic link name for the indicated volume. For a discussion of the various sorts of persistent symbolic links managed by the mount manager, see <a href="https://msdn.microsoft.com/fb37f862-70d6-4514-b481-16f664346422">Supporting Mount Manager Requests in a Storage Class Driver</a>.
+The mount manager clients can use this IOCTL to request that the mount manager create a persistent symbolic link name for the indicated volume. For a discussion of the various sorts of persistent symbolic links managed by the mount manager, see <a href="https://docs.microsoft.com/windows-hardware/drivers/storage/supporting-mount-manager-requests-in-a-storage-class-driver">Supporting Mount Manager Requests in a Storage Class Driver</a>.
 
 The input to this request is the persistent symbolic link name to be created and a name that is already valid for purposes of identifying the volume. The name given for purposes of identifying the volume can be of any type: a unique volume name, a symbolic link name, or a nonpersistent device name. If the new persistent name is not already in use, the call will succeed and the mount manager database will be modified to reflect that the new persistent name belongs to the volume. If the mount manager database already contains the new persistent name but the volume that owns that name is not in the system, this call will overwrite ownership of the given persistent name.
 
@@ -56,7 +56,7 @@ The mount manager enforces a policy of at most one persistent drive letter per v
 
 If IOCTL_MOUNTMGR_CREATE_POINT specifies a drive letter, the drive letter must be upper case.
 
-Note that a client can discover whether the mount manager has received the MOUNTDEV_MOUNTED_DEVICE_GUID device interface notification for its volume by querying the mount manager with <a href="https://msdn.microsoft.com/library/windows/hardware/ff560474">IOCTL_MOUNTMGR_QUERY_POINTS</a>.
+Note that a client can discover whether the mount manager has received the MOUNTDEV_MOUNTED_DEVICE_GUID device interface notification for its volume by querying the mount manager with <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mountmgr/ni-mountmgr-ioctl_mountmgr_query_points">IOCTL_MOUNTMGR_QUERY_POINTS</a>.
 
 In this pseudocode sample, a mount manager client uses IOCTL_MOUNTMGR_CREATE_POINT to send the mount manager a device object name and its corresponding symbolic link:
 <div class="code"><span codelanguage=""><table>
@@ -68,43 +68,43 @@ In this pseudocode sample, a mount manager client uses IOCTL_MOUNTMGR_CREATE_POI
 <pre>    // The persistent symbolic link is a drive letter in
     // this case:
     wsprintf(dosBuffer, L"\\DosDevices\\%C:", DriveLetter);
-    RtlInitUnicodeString(&amp;dosName, dosBuffer);
+    RtlInitUnicodeString(&dosName, dosBuffer);
     // The nonpersistent volume (device) object name is
     // formed using the volume number as a suffix
     wsprintf(ntBuffer, L"\\Device\\HarddiskVolume%D", 
-                       Extension-&gt;VolumeNumber);
-    RtlInitUnicodeString(&amp;ntName, ntBuffer);
+                       Extension->VolumeNumber);
+    RtlInitUnicodeString(&ntName, ntBuffer);
     createPointSize = sizeof(MOUNTMGR_CREATE_POINT_INPUT) +
                       dosName.Length + ntName.Length;
     // Allocate a header with length and offset information
     createPoint = (PMOUNTMGR_CREATE_POINT_INPUT)
                   ExAllocatePool(PagedPool, 
                   createPointSize);
-    createPoint-&gt;SymbolicLinkNameOffset = 
+    createPoint->SymbolicLinkNameOffset = 
                   sizeof(MOUNTMGR_CREATE_POINT_INPUT);
-    createPoint-&gt;SymbolicLinkNameLength = dosName.Length;
-    createPoint-&gt;DeviceNameOffset = 
-        createPoint -&gt; SymbolicLinkNameOffset +
-        createPoint -&gt; SymbolicLinkNameLength;
-    createPoint-&gt;DeviceNameLength = ntName.Length;
+    createPoint->SymbolicLinkNameLength = dosName.Length;
+    createPoint->DeviceNameOffset = 
+        createPoint -> SymbolicLinkNameOffset +
+        createPoint -> SymbolicLinkNameLength;
+    createPoint->DeviceNameLength = ntName.Length;
     RtlCopyMemory((PCHAR) createPoint + 
-                  createPoint -&gt; SymbolicLinkNameOffset,
+                  createPoint -> SymbolicLinkNameOffset,
                   dosName.Buffer, dosName.Length);
     RtlCopyMemory((PCHAR) createPoint + 
-                  createPoint-&gt;DeviceNameOffset,
+                  createPoint->DeviceNameOffset,
                   ntName.Buffer, ntName.Length);
     // Use the name of the mount manager device object
     // defined in mountmgr.h (MOUNTMGR_DEVICE_NAME) to
     // obtain a pointer to the mount manager.
-    RtlInitUnicodeString(&amp;name, MOUNTMGR_DEVICE_NAME);
-    status = IoGetDeviceObjectPointer(&amp;name,
+    RtlInitUnicodeString(&name, MOUNTMGR_DEVICE_NAME);
+    status = IoGetDeviceObjectPointer(&name,
                               FILE_READ_ATTRIBUTES, 
-                              &amp;fileObject, &amp;deviceObject);
-    KeInitializeEvent(&amp;event, NotificationEvent, FALSE);
+                              &fileObject, &deviceObject);
+    KeInitializeEvent(&event, NotificationEvent, FALSE);
     irp = IoBuildDeviceIoControlRequest(
             IOCTL_MOUNTMGR_CREATE_POINT,
             deviceObject, createPoint, createPointSize, 
-            NULL, 0, FALSE, &amp;event, &amp;ioStatus);
+            NULL, 0, FALSE, &event, &ioStatus);
     // Send the irp to the mount manager requesting
     // that a new mount point (persistent symbolic link)
     // be created for the indicated volume.
@@ -120,7 +120,7 @@ In this pseudocode sample, a mount manager client uses IOCTL_MOUNTMGR_CREATE_POI
 
 ### -input-buffer
 
-The mount point manager places a header, defined as the structure <a href="https://msdn.microsoft.com/library/windows/hardware/ff562275">MOUNTMGR_CREATE_POINT_INPUT</a> in <i>Mountmgr.h</i>, at the beginning of the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>. The mount manager inserts the newly-assigned persistent symbolic link name at the address pointed to by the <i>SymbolicLinkNameOffset</i> member of this structure, and it inserts the nonpersistent device name at the address pointed to by the <i>DeviceNameOffset</i> member of this structure. 
+The mount point manager places a header, defined as the structure <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mountmgr/ns-mountmgr-_mountmgr_create_point_input">MOUNTMGR_CREATE_POINT_INPUT</a> in <i>Mountmgr.h</i>, at the beginning of the buffer at <b>Irp->AssociatedIrp.SystemBuffer</b>. The mount manager inserts the newly-assigned persistent symbolic link name at the address pointed to by the <i>SymbolicLinkNameOffset</i> member of this structure, and it inserts the nonpersistent device name at the address pointed to by the <i>DeviceNameOffset</i> member of this structure. 
 
 
 ### -input-buffer-length
@@ -168,7 +168,7 @@ If <b>InputBufferLength</b> is less than <b>sizeof</b>(MOUNTMGR_CREATE_POINT_INP
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562275">MOUNTMGR_CREATE_POINT_INPUT</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mountmgr/ns-mountmgr-_mountmgr_create_point_input">MOUNTMGR_CREATE_POINT_INPUT</a>
  
 
  

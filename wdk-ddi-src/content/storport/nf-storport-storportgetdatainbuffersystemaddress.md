@@ -110,7 +110,7 @@ The pointer value in <i>SystemAddress</i> is NULL.
 </dl>
 </td>
 <td width="60%">
-The current IRQL is &gt; DISPATCH_LEVEL.
+The current IRQL is > DISPATCH_LEVEL.
 
 </td>
 </tr>
@@ -136,11 +136,11 @@ A system address can not be assigned.
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj553718">StorPortGetDataInBufferMdl</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportgetdatainbuffermdl">StorPortGetDataInBufferMdl</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj553719">StorPortGetDataInBufferScatterGatherList</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportgetdatainbufferscattergatherlist">StorPortGetDataInBufferScatterGatherList</a>
  
 
  

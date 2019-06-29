@@ -56,7 +56,7 @@ Writes to USB device registers, using the control pipe.
 
 ### -input-buffer
 
-Pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff542924">IO_BLOCK</a> structure.
+Pointer to an <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbscan/ns-usbscan-_io_block">IO_BLOCK</a> structure.
 
 
 ### -input-buffer-length
@@ -94,7 +94,7 @@ Zero.
 
 ### -status-block
 
-<b>Irp-&gt;IoStatus.Status</b> is set to STATUS_SUCCESS if the request is successful. Otherwise, <b>Status</b> to the appropriate error condition as a <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> code. 
+<b>Irp->IoStatus.Status</b> is set to STATUS_SUCCESS if the request is successful. Otherwise, <b>Status</b> to the appropriate error condition as a <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/ntstatus-values">NTSTATUS</a> code. 
 
 
 ## -remarks
@@ -104,9 +104,9 @@ Zero.
 <h3><a id="ddk_ioctl_write_registers_si"></a><a id="DDK_IOCTL_WRITE_REGISTERS_SI"></a>DeviceIoControl Parameters</h3>
 
 
-When the <b>DeviceloControl</b> function is called with the IOCTL_WRITE_REGISTERS I/O control code, the caller must specify the address of an <a href="https://msdn.microsoft.com/library/windows/hardware/ff542924">IO_BLOCK</a> structure as the function's <i>lpInBuffer</i> parameter.
+When the <b>DeviceloControl</b> function is called with the IOCTL_WRITE_REGISTERS I/O control code, the caller must specify the address of an <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbscan/ns-usbscan-_io_block">IO_BLOCK</a> structure as the function's <i>lpInBuffer</i> parameter.
 
-Using the IO_BLOCK contents, the kernel-mode driver creates a <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a> that contains a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540393">_URB_CONTROL_VENDOR_OR_CLASS_REQUEST</a> structure.
+Using the IO_BLOCK contents, the kernel-mode driver creates a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usb/ns-usb-_urb">URB</a> that contains a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usb/ns-usb-_urb_control_vendor_or_class_request">_URB_CONTROL_VENDOR_OR_CLASS_REQUEST</a> structure.
 
 The following table indicates the values assigned to _URB_CONTROL_VENDOR_OR_CLASS_REQUEST structure members.
 
@@ -131,7 +131,7 @@ The following table indicates the values assigned to _URB_CONTROL_VENDOR_OR_CLAS
 
 </td>
 <td>
-<i>pIoBlock</i>-&gt;<b>uLength</b>
+<i>pIoBlock</i>-><b>uLength</b>
 
 </td>
 </tr>
@@ -141,7 +141,7 @@ The following table indicates the values assigned to _URB_CONTROL_VENDOR_OR_CLAS
 
 </td>
 <td>
-<i>pIoBlock</i>-&gt;<b>pbyData</b>
+<i>pIoBlock</i>-><b>pbyData</b>
 
 </td>
 </tr>
@@ -171,7 +171,7 @@ The following table indicates the values assigned to _URB_CONTROL_VENDOR_OR_CLAS
 
 </td>
 <td>
-(<i>pIoBlock</i>-&gt;<b>uLength</b> &gt; 1) ? 0x04 : 0x0C
+(<i>pIoBlock</i>-><b>uLength</b> > 1) ? 0x04 : 0x0C
 
 </td>
 </tr>
@@ -181,7 +181,7 @@ The following table indicates the values assigned to _URB_CONTROL_VENDOR_OR_CLAS
 
 </td>
 <td>
-(SHORT)<i>pIoBlock</i>-&gt;<b>uOffset</b>
+(SHORT)<i>pIoBlock</i>-><b>uOffset</b>
 
 </td>
 </tr>
@@ -191,14 +191,14 @@ The following table indicates the values assigned to _URB_CONTROL_VENDOR_OR_CLAS
 
 </td>
 <td>
-<i>pIoBlock</i>-&gt;<b>uIndex</b>
+<i>pIoBlock</i>-><b>uIndex</b>
 
 </td>
 </tr>
 </table>
  
 
-For more information, see <a href="https://msdn.microsoft.com/f9216d3c-4930-4c26-8eac-6ee500b038e0">Accessing Kernel-Mode Drivers for Still Image Devices</a>.
+For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/image/accessing-kernel-mode-drivers-for-still-image-devices">Accessing Kernel-Mode Drivers for Still Image Devices</a>.
 
 <div class="code"><span codelanguage=""><table>
 <tr>
@@ -215,7 +215,7 @@ IoBlock.uOffset = (BYTE)byOffset;
 IoBlock.uLength = (BYTE)byNbOfReg;
 IoBlock.pbyData = pbyData;
 
-memset(&amp;overlapped, 0, sizeof(OVERLAPPED));
+memset(&overlapped, 0, sizeof(OVERLAPPED));
 overlapped.hEvent = 
     CreateEvent(NULL,    // pointer to security attributes
                          // WIN95 ignores this parameter
@@ -225,12 +225,12 @@ overlapped.hEvent =
 
 bRet = DeviceIoControl( DeviceHandle,
                         (DWORD) IOCTL_WRITE_REGISTERS,
-                        &amp;IoBlock,
+                        &IoBlock,
                         sizeof(IO_BLOCK),
                         NULL,
                         0,
-                        &amp;cbRet,
-                        &amp;overlapped);
+                        &cbRet,
+                        &overlapped);
 
 if( bRet == TRUE )
 {

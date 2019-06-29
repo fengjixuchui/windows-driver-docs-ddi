@@ -66,7 +66,7 @@ A handle to a framework device object.
 
 ### -param DeviceState [in]
 
-A pointer to a driver-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff551284">WDF_DEVICE_STATE</a> structure that contains the device's state information.
+A pointer to a driver-allocated <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/ns-wdfdevice-_wdf_device_state">WDF_DEVICE_STATE</a> structure that contains the device's state information.
 
 
 ## -returns
@@ -99,11 +99,11 @@ The following code example informs the PnP manager that a specified device is di
 <td>
 <pre>WDF_DEVICE_STATE    deviceState;
 
-WDF_DEVICE_STATE_INIT (&amp;deviceState);
+WDF_DEVICE_STATE_INIT (&deviceState);
 deviceState.Disabled = WdfTrue;
 WdfDeviceSetDeviceState (
                          Device,
-                         &amp;deviceState
+                         &deviceState
                          );</pre>
 </td>
 </tr>
@@ -116,7 +116,7 @@ WdfDeviceSetDeviceState (
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551286">WDF_DEVICE_STATE_INIT</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdf_device_state_init">WDF_DEVICE_STATE_INIT</a>
  
 
  

@@ -56,7 +56,7 @@ The KSOBJECT_CREATE_ITEM structure is used to look up the string passed to a cre
 
 ### -field Create
 
-Contains the create dispatch function for this particular base object class. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff544174">DRIVER_OBJECT</a> for the signature of this function type.
+Contains the create dispatch function for this particular base object class. See <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_driver_object">DRIVER_OBJECT</a> for the signature of this function type.
 
 
 ### -field Context
@@ -71,7 +71,7 @@ Points to a Unicode string that identifies the object class. This is the string 
 
 ### -field SecurityDescriptor
 
-Contains a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563689">SECURITY_DESCRIPTOR</a> for this type of object, otherwise <b>NULL</b>. If security is used, this must be freed when the object type is no longer used. This must use pool memory, and cannot be shared, as it may be replaced. If this is modified, the <b>Flags</b> element is updated. Optional.
+Contains a pointer to a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_security_descriptor">SECURITY_DESCRIPTOR</a> for this type of object, otherwise <b>NULL</b>. If security is used, this must be freed when the object type is no longer used. This must use pool memory, and cannot be shared, as it may be replaced. If this is modified, the <b>Flags</b> element is updated. Optional.
 
 
 ### -field Flags
@@ -121,7 +121,7 @@ Indicates that this create item does not allow any parameters to be passed, and 
 
 
 
-A pointer to the KSOBJECT_CREATE_ITEM structure is placed in the <b>DriverContext</b> member of <b>Irp-&gt;Tail.Overlay</b> before the object is created. You can access this pointer by using the KSCREATE_ITEM_IRP_STORAGE macro. This macro and related macros are included in <i>ks.h</i>.
+A pointer to the KSOBJECT_CREATE_ITEM structure is placed in the <b>DriverContext</b> member of <b>Irp->Tail.Overlay</b> before the object is created. You can access this pointer by using the KSCREATE_ITEM_IRP_STORAGE macro. This macro and related macros are included in <i>ks.h</i>.
 
 The minidriver might retrieve this pointer when creating a new object to examine the <b>Context</b> field.
 
@@ -133,15 +133,15 @@ The minidriver might retrieve this pointer when creating a new object to examine
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560958">KsAllocateDeviceHeader</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksallocatedeviceheader">KsAllocateDeviceHeader</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560972">KsAllocateObjectHeader</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksallocateobjectheader">KsAllocateObjectHeader</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562531">KsFilterFactoryAddCreateItem</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksfilterfactoryaddcreateitem">KsFilterFactoryAddCreateItem</a>
  
 
  

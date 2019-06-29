@@ -71,7 +71,7 @@ None.
 
 ### -output-buffer
 
-The <b>AssociatedIrp.SystemBuffer</b> member specifies the address of a caller-allocated buffer that contains a <a href="https://msdn.microsoft.com/library/windows/hardware/ff539325">USB_HCD_DRIVERKEY_NAME</a> structure. On output, this structure holds the driver key name. For more information, see Remarks.
+The <b>AssociatedIrp.SystemBuffer</b> member specifies the address of a caller-allocated buffer that contains a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbioctl/ns-usbioctl-_usb_hcd_driverkey_name">USB_HCD_DRIVERKEY_NAME</a> structure. On output, this structure holds the driver key name. For more information, see Remarks.
 
 
 ### -output-buffer-length
@@ -99,7 +99,7 @@ The size of this buffer is specified in the <b>Parameters.DeviceIoControl.Output
 
 ### -status-block
 
-The USB stack sets <b>Irp-&gt;IoStatus.Status</b> to STATUS_SUCCESS if the request is successful. Otherwise, the USB stack sets <b>Status</b> to the appropriate error condition, such as STATUS_INVALID_PARAMETER or STATUS_INSUFFICIENT_RESOURCES.
+The USB stack sets <b>Irp->IoStatus.Status</b> to STATUS_SUCCESS if the request is successful. Otherwise, the USB stack sets <b>Status</b> to the appropriate error condition, such as STATUS_INVALID_PARAMETER or STATUS_INSUFFICIENT_RESOURCES.
 
 
 ## -remarks
@@ -109,10 +109,10 @@ The USB stack sets <b>Irp-&gt;IoStatus.Status</b> to STATUS_SUCCESS if the reque
 To get the driver key name in  the registry, you must perform the following tasks: 
 
 <ol>
-<li>Declare a variable of the type <a href="https://msdn.microsoft.com/library/windows/hardware/ff539325">USB_HCD_DRIVERKEY_NAME</a>.</li>
-<li>Send an <b>IOCTL_GET_HCD_DRIVERKEY_NAME</b> request by specifying the address and size of the variable in the output parameters. On return, the <b>ActualLength</b> member of  <a href="https://msdn.microsoft.com/library/windows/hardware/ff539325">USB_HCD_DRIVERKEY_NAME</a> contains the length required to allocate a buffer to hold a <b>USB_HCD_DRIVERKEY_NAME</b> that is populated with the driver key name.</li>
-<li>Allocate memory for a buffer to hold a <a href="https://msdn.microsoft.com/library/windows/hardware/ff539325">USB_HCD_DRIVERKEY_NAME</a> structure. The size of the buffer  must be  the received <b>ActualLength</b> value.</li>
-<li>Send an <b>IOCTL_GET_HCD_DRIVERKEY_NAME</b> request by passing a pointer to the allocated buffer and its size in the output parameters. On return, the <b>DriverKeyName</b> member of  <a href="https://msdn.microsoft.com/library/windows/hardware/ff539325">USB_HCD_DRIVERKEY_NAME</a> is a null-terminated Unicode string that contains the name of the driver key associated with the host controller driver. </li>
+<li>Declare a variable of the type <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbioctl/ns-usbioctl-_usb_hcd_driverkey_name">USB_HCD_DRIVERKEY_NAME</a>.</li>
+<li>Send an <b>IOCTL_GET_HCD_DRIVERKEY_NAME</b> request by specifying the address and size of the variable in the output parameters. On return, the <b>ActualLength</b> member of  <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbioctl/ns-usbioctl-_usb_hcd_driverkey_name">USB_HCD_DRIVERKEY_NAME</a> contains the length required to allocate a buffer to hold a <b>USB_HCD_DRIVERKEY_NAME</b> that is populated with the driver key name.</li>
+<li>Allocate memory for a buffer to hold a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbioctl/ns-usbioctl-_usb_hcd_driverkey_name">USB_HCD_DRIVERKEY_NAME</a> structure. The size of the buffer  must be  the received <b>ActualLength</b> value.</li>
+<li>Send an <b>IOCTL_GET_HCD_DRIVERKEY_NAME</b> request by passing a pointer to the allocated buffer and its size in the output parameters. On return, the <b>DriverKeyName</b> member of  <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbioctl/ns-usbioctl-_usb_hcd_driverkey_name">USB_HCD_DRIVERKEY_NAME</a> is a null-terminated Unicode string that contains the name of the driver key associated with the host controller driver. </li>
 </ol>
 The following example code shows how to send the <b>IOCTL_GET_HCD_DRIVERKEY_NAME</b> I/O control request.
 
@@ -152,9 +152,9 @@ BOOL GetHCDDriverKeyName (HANDLE  HCD)
         IOCTL_GET_HCD_DRIVERKEY_NAME,
         NULL,
         0,
-        &amp;driverKeyName,
+        &driverKeyName,
         sizeof(driverKeyName),
-        &amp;nBytes,
+        &nBytes,
         NULL);
 
     if (!success) 
@@ -166,7 +166,7 @@ BOOL GetHCDDriverKeyName (HANDLE  HCD)
     //2. Get the length of the driver key name.
     nBytes = driverKeyName.ActualLength;
 
-    if (nBytes &lt;= sizeof(driverKeyName)) 
+    if (nBytes <= sizeof(driverKeyName)) 
     {
         printf("Incorrect length received by IOCTL_GET_HCD_DRIVERKEY_NAME.\n");
         goto GetHCDDriverKeyNameDone;
@@ -190,7 +190,7 @@ BOOL GetHCDDriverKeyName (HANDLE  HCD)
         0,
         driverKeyNameW,
         nBytes,
-        &amp;nBytes,
+        &nBytes,
         NULL);
 
     if (!success) 
@@ -200,7 +200,7 @@ BOOL GetHCDDriverKeyName (HANDLE  HCD)
     }
 
     // print the driver key name. 
-    printf("Driver Key Name: %s.\n", driverKeyNameW-&gt;DriverKeyName);
+    printf("Driver Key Name: %s.\n", driverKeyNameW->DriverKeyName);
 
 
 GetHCDDriverKeyNameDone:
@@ -229,7 +229,7 @@ GetHCDDriverKeyNameDone:
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539325">USB_HCD_DRIVERKEY_NAME</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/usbioctl/ns-usbioctl-_usb_hcd_driverkey_name">USB_HCD_DRIVERKEY_NAME</a>
  
 
  

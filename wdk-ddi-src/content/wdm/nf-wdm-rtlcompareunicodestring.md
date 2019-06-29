@@ -94,7 +94,7 @@ If <b>TRUE</b>, case should be ignored when doing the comparison.
 <tr>
 <td width="40%">
 <dl>
-<dt><b>&lt; Zero</b></dt>
+<dt><b>< Zero</b></dt>
 </dl>
 </td>
 <td width="60%">
@@ -105,7 +105,7 @@ If <b>TRUE</b>, case should be ignored when doing the comparison.
 <tr>
 <td width="40%">
 <dl>
-<dt><b>&gt; Zero </b></dt>
+<dt><b>> Zero </b></dt>
 </dl>
 </td>
 <td width="60%">
@@ -124,11 +124,11 @@ If <b>TRUE</b>, case should be ignored when doing the comparison.
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561781">RtlCompareString</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-rtlcomparestring">RtlCompareString</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561852">RtlEqualString</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-rtlequalstring">RtlEqualString</a>
  
 
  

@@ -101,7 +101,7 @@ The index of the BAR (between 0 and 5).
 
 
 
-Return STATUS_SUCCESS if the operation succeeds. Otherwise, return an appropriate <a href="https://msdn.microsoft.com/7792201b-63bb-4db5-803d-2af02893d505">NTSTATUS</a> error code.
+Return STATUS_SUCCESS if the operation succeeds. Otherwise, return an appropriate <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/ntstatus-values">NTSTATUS</a> error code.
 
 
 
@@ -143,9 +143,9 @@ Virtualization_GetResourceForBar(
         "VFIndex = %d, BarIndex = %d\n",
         VfIndex, BarIndex);
 
-    NT_ASSERT(BarIndex &lt; PCI_TYPE0_BAR_COUNT);
+    NT_ASSERT(BarIndex < PCI_TYPE0_BAR_COUNT);
 
-    if(VfIndex &gt;= deviceContext-&gt;NumVFs)
+    if(VfIndex >= deviceContext->NumVFs)
     {
         NT_ASSERT(FALSE);
         return STATUS_INVALID_DEVICE_REQUEST;
@@ -156,14 +156,14 @@ Virtualization_GetResourceForBar(
     // to the output descriptor.
     //
 
-    *Resource = deviceContext-&gt;AssignedVfBarResources[BarIndex];
+    *Resource = deviceContext->AssignedVfBarResources[BarIndex];
 
-    if(Resource-&gt;Type == CmResourceTypeMemory ||
-       Resource-&gt;Type == CmResourceTypeMemoryLarge)
+    if(Resource->Type == CmResourceTypeMemory ||
+       Resource->Type == CmResourceTypeMemoryLarge)
     {
-        NT_ASSERT((Resource-&gt;u.Memory.Length % deviceContext-&gt;NumVFs) == 0);
-        Resource-&gt;u.Memory.Length /= deviceContext-&gt;NumVFs;
-        Resource-&gt;u.Memory.Start.QuadPart += (Resource-&gt;u.Memory.Length * VfIndex);
+        NT_ASSERT((Resource->u.Memory.Length % deviceContext->NumVFs) == 0);
+        Resource->u.Memory.Length /= deviceContext->NumVFs;
+        Resource->u.Memory.Start.QuadPart += (Resource->u.Memory.Length * VfIndex);
     }
 
     return STATUS_SUCCESS;

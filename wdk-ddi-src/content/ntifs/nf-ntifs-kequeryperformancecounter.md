@@ -1,7 +1,7 @@
 ---
 UID: NF:ntifs.KeQueryPerformanceCounter
 title: KeQueryPerformanceCounter function (ntifs.h)
-description: The KeQueryPerformanceCounter routine retrieves the current value and frequency of the performance counter.Use KeQueryPerformanceCounter to acquire high resolution (&lt;1us) time stamps for time interval measurements.
+description: The KeQueryPerformanceCounter routine retrieves the current value and frequency of the performance counter.Use KeQueryPerformanceCounter to acquire high resolution (<1us) time stamps for time interval measurements.
 old-location: kernel\kequeryperformancecounter.htm
 tech.root: ifsk
 ms.assetid: ee1dbd20-5502-4448-b39a-4629ddc73d01
@@ -102,11 +102,11 @@ For more info about this function and its usage, see [Acquiring high-resolution 
 
 
 
-[QueryPerformanceCounter](https://msdn.microsoft.com/library/windows/desktop/ms644904(v=vs.85).aspx)
+[QueryPerformanceCounter](https://docs.microsoft.com/windows/desktop/api/profileapi/nf-profileapi-queryperformancecounter)
 
 
 
-[QueryPerformanceFrequency](https://msdn.microsoft.com/library/windows/desktop/ms644905(v=vs.85).aspx)
+[QueryPerformanceFrequency](https://docs.microsoft.com/windows/desktop/api/profileapi/nf-profileapi-queryperformancefrequency)
  
 
  

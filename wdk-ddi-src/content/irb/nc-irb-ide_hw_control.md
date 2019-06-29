@@ -47,7 +47,7 @@ req.typenames:
 
 
 The <i>IdeHwControl</i> miniport driver routine notifies the miniport driver about Plug and Play (PnP) and power events.
-<div class="alert"><b>Note</b>  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
+<div class="alert"><b>Note</b>  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://docs.microsoft.com/windows-hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://docs.microsoft.com/windows-hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## -parameters
 
@@ -61,7 +61,7 @@ A pointer to the channel extension.
 
 ### -param ControlAction [in]
 
-Contains an enumerator value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff559082">IDE_CONTROL_ACTION</a> that indicates the control action to perform. 
+Contains an enumerator value of type <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/irb/ne-irb-ide_control_action">IDE_CONTROL_ACTION</a> that indicates the control action to perform. 
 
 
 ### -param Parameters [in, out]
@@ -123,14 +123,14 @@ The port driver makes sure that there is no outstanding I/O on the channel befor
 
 <ul>
 <li>
-Add a power policy setting scheme into the miniport driver's INF file. A GUID is needed to present a miniport driver-defined power policy. For more information about the power settings directive, see <a href="https://msdn.microsoft.com/0231ba90-5de4-4f5a-83bb-0f73be4b23ae">INF AddPowerSetting Directive</a>. More information about the GUIDs can be found at <a href="https://msdn.microsoft.com/library/windows/hardware/mt608265">Disk settings</a>.
+Add a power policy setting scheme into the miniport driver's INF file. A GUID is needed to present a miniport driver-defined power policy. For more information about the power settings directive, see <a href="https://docs.microsoft.com/windows-hardware/drivers/install/inf-addpowersetting-directive">INF AddPowerSetting Directive</a>. More information about the GUIDs can be found at <a href="https://docs.microsoft.com/windows-hardware/customize/power-settings/disk-settings">Disk settings</a>.
 
 </li>
 <li>When the miniport driver routine <i>IdeHwControl</i> is called with control action <b>IdeStart</b>:<dl>
 <dd>Check the SupportedAdvances.AdvancedChannelConfigurationSupported field in the ChannelConfiguration structure.</dd>
-<dd>Check the AdvancedChannelConfiguration-&gt;Present.VendorDefinedPower field in the ChannelConfiguration structure.</dd>
+<dd>Check the AdvancedChannelConfiguration->Present.VendorDefinedPower field in the ChannelConfiguration structure.</dd>
 <dd>If the values of the two fields listed previously are both <b>TRUE</b>, this version of the ATA port driver supports vendor-defined power management.</dd>
-<dd>If vendor-defined power management is supported by the ATA port driver, the miniport driver can register for special power management handling by setting the AdvancedChannelConfiguration-&gt;VendorDefinedPower.ValidGuids and AdvancedChannelConfiguration-&gt;VendorDefinedPower.Guid[] fields (the latter should be the GUID of the power policy in the miniport driver's INF file).</dd>
+<dd>If vendor-defined power management is supported by the ATA port driver, the miniport driver can register for special power management handling by setting the AdvancedChannelConfiguration->VendorDefinedPower.ValidGuids and AdvancedChannelConfiguration->VendorDefinedPower.Guid[] fields (the latter should be the GUID of the power policy in the miniport driver's INF file).</dd>
 </dl>
 </li>
 <li>
@@ -151,7 +151,7 @@ After vendor-defined power management is registered, the miniport driver will be
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550165">AtaPortGetUncachedExtension</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/irb/nf-irb-ataportgetuncachedextension">AtaPortGetUncachedExtension</a>
  
 
  

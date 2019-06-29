@@ -81,7 +81,7 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 
 
-For more information about <b>WdfRequestGetRequestorMode</b>, see <a href="https://msdn.microsoft.com/a686ea00-6987-480a-a4ce-892e1efbed87">Obtaining Information About an I/O Request</a>.
+For more information about <b>WdfRequestGetRequestorMode</b>, see <a href="https://docs.microsoft.com/windows-hardware/drivers/wdf/obtaining-information-about-an-i-o-request">Obtaining Information About an I/O Request</a>.
 
 
 #### Examples
@@ -99,8 +99,8 @@ The following code example is from the <a href="https://docs.microsoft.com/windo
 // perform the following check to make sure the source address 
 // in the packet is the same as the current MAC address of the NIC.
 //
-if ((WdfRequestGetRequestorMode(Request) == UserMode) &amp;&amp; 
-    !NPROT_MEM_CMP(pEthHeader-&gt;SrcAddr, pOpenContext-&gt;CurrentAddress, NPROT_MAC_ADDR_LEN))
+if ((WdfRequestGetRequestorMode(Request) == UserMode) && 
+    !NPROT_MEM_CMP(pEthHeader->SrcAddr, pOpenContext->CurrentAddress, NPROT_MAC_ADDR_LEN))
 {
     DEBUGP(DL_WARN, ("Write: Failing with invalid Source address"));
     NtStatus = STATUS_INVALID_PARAMETER;

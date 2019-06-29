@@ -1,7 +1,7 @@
 ---
 UID: NF:printerextension.IPrintSchemaTicket2.GetParameterInitializer
 title: IPrintSchemaTicket2::GetParameterInitializer (printerextension.h)
-description: The GetParameterInitializer method retrieves the IPrintSchemaParameterInitializer object, and it represents the &lt;psf:ParameterInit&gt; element in the PrintTicket XML.
+description: The GetParameterInitializer method retrieves the IPrintSchemaParameterInitializer object, and it represents the <psf:ParameterInit> element in the PrintTicket XML.
 old-location: print\iprintschematicket2_getparameterinitializer.htm
 tech.root: print
 ms.assetid: E5403359-A757-4530-B17B-C80E8A45AA92
@@ -46,7 +46,7 @@ req.typenames:
 ## -description
 
 
-The <b>GetParameterInitializer</b> method retrieves the <a href="https://msdn.microsoft.com/library/windows/hardware/dn454557">IPrintSchemaParameterInitializer</a> object, and it  represents the &lt;psf:ParameterInit&gt; element in the PrintTicket XML.
+The <b>GetParameterInitializer</b> method retrieves the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nn-printerextension-iprintschemaparameterinitializer">IPrintSchemaParameterInitializer</a> object, and it  represents the <psf:ParameterInit> element in the PrintTicket XML.
 
 The keyword name and keyword namespace URI specify the <b>IPrintSchemaParameterInitializer</b> object to be retrieved.
 
@@ -68,7 +68,7 @@ The keyword namespace URI.
 
 ### -param ppParameterInitializer [out, retval]
 
-The <a href="https://msdn.microsoft.com/library/windows/hardware/dn454557">IPrintSchemaParameterInitializer</a> object.
+The <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nn-printerextension-iprintschemaparameterinitializer">IPrintSchemaParameterInitializer</a> object.
 
 
 ## -returns
@@ -85,11 +85,11 @@ The <b>GetParameterInitializer</b> method returns an <b>HRESULT</b> value. If th
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn454557">IPrintSchemaParameterInitializer</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nn-printerextension-iprintschemaparameterinitializer">IPrintSchemaParameterInitializer</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn454560">IPrintSchematicket2</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nn-printerextension-iprintschematicket2">IPrintSchematicket2</a>
  
 
  

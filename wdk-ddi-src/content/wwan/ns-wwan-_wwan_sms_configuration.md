@@ -65,11 +65,11 @@ The number can be in any of the following formats:
 
 <ul>
 <li>
-"+ &lt;International Country Code&gt; &lt;SMS Service Center Number&gt;\0"
+"+ <International Country Code> <SMS Service Center Number>\0"
 
 </li>
 <li>
-"&lt;SMS Service Center Number&gt;\0"
+"<SMS Service Center Number>\0"
 
 </li>
 </ul>
@@ -109,11 +109,11 @@ Miniport drivers need to fill in this data structure only when processing
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567935">NDIS_WWAN_SMS_CONFIGURATION</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_sms_configuration">NDIS_WWAN_SMS_CONFIGURATION</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff571247">WWAN_SMS_FORMAT</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wwan/ne-wwan-_wwan_sms_format">WWAN_SMS_FORMAT</a>
  
 
  

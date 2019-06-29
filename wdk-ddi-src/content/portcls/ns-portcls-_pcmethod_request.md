@@ -56,12 +56,12 @@ The PCMETHOD_REQUEST structure specifies a method request.
 
 ### -field MajorTarget
 
-Pointer to the <a href="https://msdn.microsoft.com/33f1d79a-33fc-4ce5-a372-e08bda378332">IUnknown</a> interface of a miniport object that supports the method set and method specified by <b>MethodItem</b>.
+Pointer to the <a href="https://docs.microsoft.com/windows/desktop/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface of a miniport object that supports the method set and method specified by <b>MethodItem</b>.
 
 
 ### -field MinorTarget
 
-Pointer to an <a href="https://msdn.microsoft.com/33f1d79a-33fc-4ce5-a372-e08bda378332">IUnknown</a> interface of a stream object associated with <b>MajorTarget</b>. If the request does not specify a minor target, set this member to <b>NULL</b>.
+Pointer to an <a href="https://docs.microsoft.com/windows/desktop/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface of a stream object associated with <b>MajorTarget</b>. If the request does not specify a minor target, set this member to <b>NULL</b>.
 
 
 ### -field Node
@@ -71,7 +71,7 @@ Specifies the node ID of the target node for the request. If the target is not a
 
 ### -field MethodItem
 
-Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537704">PCMETHOD_ITEM</a> structure that describes a method supported by a filter, pin, or node.
+Pointer to a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/ns-portcls-pcmethod_item">PCMETHOD_ITEM</a> structure that describes a method supported by a filter, pin, or node.
 
 
 ### -field Verb
@@ -89,7 +89,7 @@ PCMETHOD_ITEM_FLAG_BASICSUPPORT
 
 </td>
 <td>
-Returns basic support information about the method specified by <b>MethodItem</b>-&gt;<b>Id</b>.
+Returns basic support information about the method specified by <b>MethodItem</b>-><b>Id</b>.
 
 </td>
 </tr>
@@ -99,7 +99,7 @@ PCMETHOD_ITEM_FLAG_SEND
 
 </td>
 <td>
-Executes the method specified by <b>MethodItem</b>-&gt;<b>Id</b>. The client should conform to the basic-support information for the method.
+Executes the method specified by <b>MethodItem</b>-><b>Id</b>. The client should conform to the basic-support information for the method.
 
 </td>
 </tr>
@@ -109,7 +109,7 @@ PCMETHOD_ITEM_FLAG_SETSUPPORT
 
 </td>
 <td>
-Returns information about support for the method set specified by <b>MethodItem</b>-&gt;<b>Set</b>.
+Returns information about support for the method set specified by <b>MethodItem</b>-><b>Set</b>.
 
 </td>
 </tr>
@@ -121,7 +121,7 @@ Returns information about support for the method set specified by <b>MethodItem<
 
 
 
-This is the structure that the port driver passes to the miniport driver's method-handler routine. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff537704">PCMETHOD_ITEM</a> structure contains a pointer to a method handler that takes a PCMETHOD_REQUEST pointer as its single call parameter.
+This is the structure that the port driver passes to the miniport driver's method-handler routine. The <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/ns-portcls-pcmethod_item">PCMETHOD_ITEM</a> structure contains a pointer to a method handler that takes a PCMETHOD_REQUEST pointer as its single call parameter.
 
 The WDM audio subsystem does not currently support method requests.
 
@@ -133,11 +133,11 @@ The WDM audio subsystem does not currently support method requests.
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537695">PCFILTER_NODE</a>
+<a href="https://docs.microsoft.com/previous-versions/ff537695(v=vs.85)">PCFILTER_NODE</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537704">PCMETHOD_ITEM</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/ns-portcls-pcmethod_item">PCMETHOD_ITEM</a>
  
 
  

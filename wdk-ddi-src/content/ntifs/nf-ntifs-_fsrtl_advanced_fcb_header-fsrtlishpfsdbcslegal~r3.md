@@ -93,7 +93,7 @@ HPFS file names must obey the following rules:
 
 <ol>
 <li>
-The following characters are illegal in HPFS file names: 0x0000 - 0x001F, " (quotation marks), / (slash), : (colon), &lt; (less-than sign), &gt; (greater-than sign), ? (question mark), | (vertical bar or pipe), * (asterisk)
+The following characters are illegal in HPFS file names: 0x0000 - 0x001F, " (quotation marks), / (slash), : (colon), < (less-than sign), > (greater-than sign), ? (question mark), | (vertical bar or pipe), * (asterisk)
 
 </li>
 <li>
@@ -109,7 +109,7 @@ HPFS file names are case-preserving, but not case insensitive. Lowercase file na
 
 </li>
 </ol>
-For information about other string-handling routines, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563884">Strings</a>.
+For information about other string-handling routines, see <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index">Strings</a>.
 
 
 
@@ -119,7 +119,7 @@ For information about other string-handling routines, see <a href="https://msdn.
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540605">ANSI_STRING</a>
+<a href="https://docs.microsoft.com/windows/desktop/api/ntdef/ns-ntdef-_string">ANSI_STRING</a>
  
 
  

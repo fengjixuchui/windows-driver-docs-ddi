@@ -126,7 +126,7 @@ The size of the destination buffer that the <i>DestinationOffset</i> parameter s
 </table>
  
 
-This method also might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
+This method also might return other <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/ntstatus-values">NTSTATUS values</a>.
 
 A bug check occurs if the driver supplies an invalid object handle.
 
@@ -143,7 +143,7 @@ The framework verifies that the destination buffer is large enough to receive th
 
 For more information about framework memory objects, see <a href="https://docs.microsoft.com/windows-hardware/drivers/wdf/using-memory-buffers">Using Memory Buffers</a>.
 
-If the source or destination buffer was allocated from the pageable memory pool, the <b>WdfMemoryCopyFromBuffer</b> method must be called at IRQL &lt;= APC_LEVEL. Otherwise, the method can be called at any IRQL.
+If the source or destination buffer was allocated from the pageable memory pool, the <b>WdfMemoryCopyFromBuffer</b> method must be called at IRQL <= APC_LEVEL. Otherwise, the method can be called at any IRQL.
 
 
 #### Examples
@@ -161,7 +161,7 @@ NTSTATUS  status;
 
 status = WdfRequestRetrieveOutputMemory(
                                         Request,
-                                        &amp;memoryBuffer
+                                        &memoryBuffer
                                         );
 if (!NT_SUCCESS(status)) {
     goto Error;
@@ -169,7 +169,7 @@ if (!NT_SUCCESS(status)) {
 status = WdfMemoryCopyFromBuffer(
                                  memoryBuffer,
                                  0,
-                                 deviceContext-&gt;Buffer,
+                                 deviceContext->Buffer,
                                  Length
                                  );
 if (!NT_SUCCESS(status)) {
@@ -186,11 +186,11 @@ if (!NT_SUCCESS(status)) {
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548703">WdfMemoryCopyToBuffer</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfmemory/nf-wdfmemory-wdfmemorycopytobuffer">WdfMemoryCopyToBuffer</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550019">WdfRequestRetrieveOutputMemory</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestretrieveoutputmemory">WdfRequestRetrieveOutputMemory</a>
  
 
  

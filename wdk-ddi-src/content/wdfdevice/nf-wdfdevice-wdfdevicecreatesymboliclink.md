@@ -66,7 +66,7 @@ A handle to a framework device object.
 
 ### -param SymbolicLinkName [in]
 
-A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> structure that contains a user-visible name for the device.
+A pointer to a <a href="https://docs.microsoft.com/windows/desktop/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> structure that contains a user-visible name for the device.
 
 
 ## -returns
@@ -94,7 +94,7 @@ The system cannot allocate space to store the device name.
 </table>
  
 
-The method might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
+The method might return other <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/ntstatus-values">NTSTATUS values</a>.
 
 A bug check occurs if the driver supplies an invalid object handle.
 
@@ -112,7 +112,7 @@ If the device is removed unexpectedly (surprise-removed), the framework removes 
 
 #### Examples
 
-The following code example from a KMDF driver creates an <a href="https://msdn.microsoft.com/9be6da8f-0641-4a67-9443-8e2056335bef">MS-DOS device name</a> that an application can use to access a device.
+The following code example from a KMDF driver creates an <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/ms-dos-device-names">MS-DOS device name</a> that an application can use to access a device.
 
 <div class="code"><span codelanguage=""><table>
 <tr>
@@ -126,7 +126,7 @@ NTSTATUS  status;
 
 status = WdfDeviceCreateSymbolicLink(
                                      controlDevice,
-                                     &amp;dosDeviceName
+                                     &dosDeviceName
                                      );
 if (!NT_SUCCESS(status)) {
     goto Error;
@@ -148,7 +148,7 @@ NTSTATUS  status;
 
 status = WdfDeviceCreateSymbolicLink(
                                      controlDevice,
-                                     &amp;dosDeviceName
+                                     &dosDeviceName
                                      );
 if (!NT_SUCCESS(status)) {
     goto Error;
@@ -156,7 +156,7 @@ if (!NT_SUCCESS(status)) {
 </td>
 </tr>
 </table></span></div>
-For information about global and local <b>\DosDevices</b> namespaces, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff554302">Local and Global MS-DOS Device Names</a>.
+For information about global and local <b>\DosDevices</b> namespaces, see <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/local-and-global-ms-dos-device-names">Local and Global MS-DOS Device Names</a>.
 
 
 
@@ -166,7 +166,7 @@ For information about global and local <b>\DosDevices</b> namespaces, see <a hre
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>
+<a href="https://docs.microsoft.com/windows/desktop/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a>
  
 
  

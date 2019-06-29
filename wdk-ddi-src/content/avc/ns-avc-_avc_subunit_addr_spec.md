@@ -89,7 +89,7 @@ Informs Device Manager that the PDO list has changed. This causes a 1394 bus res
 
 ### -field SubunitAddress
 
-A Subunit Address encoded according to Section 5.3.3 of the AV/C Digital Interface Command Set General Specification, Rev 3.0. This specification can be found at the <a href="https://go.microsoft.com/fwlink/p/?linkid=8728">1394 Trade Association</a> website. The ID part (<b>SubunitAddress</b>[0] &amp; 0x7) represents the max ID (not the count of subunits), so to enumerate a single tuner subunit, you would specify 0x28 (0x5 &lt;&lt; 3). This struct supports extended subunit addresses (just allocate a bigger struct and pass the actual length with the IOCTL).
+A Subunit Address encoded according to Section 5.3.3 of the AV/C Digital Interface Command Set General Specification, Rev 3.0. This specification can be found at the <a href="https://go.microsoft.com/fwlink/p/?linkid=8728">1394 Trade Association</a> website. The ID part (<b>SubunitAddress</b>[0] & 0x7) represents the max ID (not the count of subunits), so to enumerate a single tuner subunit, you would specify 0x28 (0x5 << 3). This struct supports extended subunit addresses (just allocate a bigger struct and pass the actual length with the IOCTL).
 
 
 ## -see-also
@@ -97,7 +97,7 @@ A Subunit Address encoded according to Section 5.3.3 of the AV/C Digital Interfa
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560783">IOCTL_AVC_BUS_RESET</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/avc/ni-avc-ioctl_avc_bus_reset">IOCTL_AVC_BUS_RESET</a>
  
 
  
