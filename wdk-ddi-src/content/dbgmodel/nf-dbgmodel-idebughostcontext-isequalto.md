@@ -5,6 +5,8 @@ description: Returns whether two IDebugHostContext objects are equal by value.
 ms.assetid: f0b782ca-f7b8-4521-9e2b-dd5afd5adeee
 ms.date: 09/20/2018
 ms.topic: method
+f1_keywords:
+ - "dbgmodel/IDebugHostContext.IsEqualTo"
 ms.keywords: IDebugHostContext::IsEqualTo, IsEqualTo, IDebugHostContext.IsEqualTo, IDebugHostContext::IsEqualTo, IDebugHostContext.IsEqualTo
 req.header: dbgmodel.h
 req.include-header:
@@ -43,7 +45,7 @@ ms.custom: RS5
 
 ## -description
 
-Returns whether two IDebugHostContext objects are equal by value.  Note that there is no requirement for a debug host to have interface pointer equality for two contexts which are equivalent.  The actual contexts can be compared through this method.
+Returns whether two [IDebugHostContext](nn-dbgmodel-idebughostcontext.md) objects are equal by value.  Note that there is no requirement for a debug host to have interface pointer equality for two contexts which are equivalent.  The actual contexts can be compared through this method.
 
 ## -parameters
 

@@ -8,6 +8,8 @@ ms.assetid: 10d169bc-4476-4d7f-8eeb-49941c12a7a0
 ms.date: 02/26/2018
 ms.keywords: DFDeviceObjectChildListRef_9e96421e-d818-4c2e-a46b-03db44980414.xml, WdfChildListAddOrUpdateChildDescriptionAsPresent, WdfChildListAddOrUpdateChildDescriptionAsPresent method, kmdf.wdfchildlistaddorupdatechilddescriptionaspresent, wdf.wdfchildlistaddorupdatechilddescriptionaspresent, wdfchildlist/WdfChildListAddOrUpdateChildDescriptionAsPresent
 ms.topic: function
+f1_keywords:
+ - "wdfchildlist/WdfChildListAddOrUpdateChildDescriptionAsPresent"
 req.header: wdfchildlist.h
 req.include-header: Wdf.h
 req.target-type: Universal
@@ -175,13 +177,8 @@ For more information about child lists, see <a href="https://docs.microsoft.com/
 
 The following code example is based on code that the <a href="https://go.microsoft.com/fwlink/p/?linkid=256131">kmdf_fx2</a> sample contains. The example adds child descriptions to a device's default child list. It retrieves switch settings that the driver previously stored in a device object's context space and then calls <b>WdfChildListAddOrUpdateChildDescriptionAsPresent</b> for each switch that is set.
 
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>PDEVICE_CONTEXT  pDeviceContext;
+```cpp
+PDEVICE_CONTEXT  pDeviceContext;
 WDFCHILDLIST  list;
 UCHAR  i;
 NTSTATUS  status;
@@ -210,11 +207,8 @@ for (i = 0; i < RTL_BITS_OF(UCHAR); i++) {
         }
     }
 }
-WdfChildListEndScan(list);</pre>
-</td>
-</tr>
-</table></span></div>
-
+WdfChildListEndScan(list);
+```
 
 
 ## -see-also

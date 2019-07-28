@@ -5,6 +5,8 @@ description: For the "i"-th generic argument to the generic/template, this retur
 ms.assetid: 8038e101-f14b-4762-8deb-6acdc0fe28cc
 ms.date: 09/20/2018
 ms.topic: method
+f1_keywords:
+ - "dbgmodel/IDebugHostType2.GetGenericArgumentAt"
 ms.keywords: IDebugHostType2::GetGenericArgumentAt, GetGenericArgumentAt, IDebugHostType2.GetGenericArgumentAt, IDebugHostType2::GetGenericArgumentAt, IDebugHostType2.GetGenericArgumentAt
 req.header: dbgmodel.h
 req.include-header:
@@ -42,7 +44,7 @@ ms.custom: RS5
 
 
 ## -description
-For the "i"-th generic argument to the generic/template, this returns a new IDebugHostSymbol  which represents that argument.  For templates, this is most often an IDebugHostType; however --  it may be an IDebugHostConstant for non-template type arguments.  
+For the "i"-th generic argument to the generic/template, this returns a new [IDebugHostSymbol](nn-dbgmodel-idebughostsymbol.md)  which represents that argument.  For templates, this is most often an [IDebugHostType](nn-dbgmodel-idebughosttype.md); however --  it may be an [IDebugHostConstant](nn-dbgmodel-idebughostconstant.md) for non-template type arguments.  
 
 Note that it is possible for some compiler generated generics and templates that this method  will fail.
 

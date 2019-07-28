@@ -8,6 +8,8 @@ ms.assetid: d033364c-19ba-4091-a9d2-e9afee5ab7dc
 ms.author: windowsdriverdev
 ms.date: 3/21/19
 ms.topic: struct
+f1_keywords:
+ - "ntddstor/STORAGE_PROTOCOL_SPECIFIC_DATA_EXT"
 ms.keywords: STORAGE_PROTOCOL_SPECIFIC_DATA_EXT, STORAGE_PROTOCOL_SPECIFIC_DATA_EXT, *PSTORAGE_PROTOCOL_SPECIFIC_DATA_EXT, 
 req.header: ntddstor.h
 req.include-header:
@@ -62,7 +64,7 @@ Sub-value of the protocol data value.
 
 ### -field ProtocolDataOffset
 
-The offset of the data buffer that is from the beginning of this structure. The typical value is **sizeof**(STORAGE_PROTOCOL_SPECIFIC_DATA_EXT).
+The offset of the data buffer from the beginning of this structure. The typical value is **sizeof**(STORAGE_PROTOCOL_SPECIFIC_DATA_EXT).
 
 ### -field ProtocolDataLength
 

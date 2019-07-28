@@ -5,6 +5,8 @@ description: The EnumerateReferences method enumerates the set of names and refe
 ms.assetid: 7959dcc0-5da5-4952-bb98-d7c41950ba35
 ms.date: 09/12/2018
 ms.topic: method
+f1_keywords:
+ - "dbgmodel/IDataModelNameBinder.EnumerateReferences"
 ms.keywords: IDataModelNameBinder::EnumerateReferences, EnumerateReferences, IDataModelNameBinder.EnumerateReferences, IDataModelNameBinder::EnumerateReferences, IDataModelNameBinder.EnumerateReferences
 req.header: dbgmodel.h
 req.include-header:
@@ -42,7 +44,7 @@ ms.custom: RS5
 
 
 ## -description
-The EnumerateReferences method enumerates the set of names and references to them which will bind against the object according to the rules of the BindReference method. Unlike the EnumerateKeys, EnumerateValues, and similar methods on IModelObject which may return multiple names with the same value (for base classes, parent models, and the like), this enumerator will only return the specific set of names which will bind with BindValue and BindReference. Names will never be duplicated. Note that there is a significantly higher cost of enumerating an object via the name binder than calling the IModelObject methods. 
+The EnumerateReferences method enumerates the set of names and references to them which will bind against the object according to the rules of the BindReference method. Unlike the EnumerateKeys, EnumerateValues, and similar methods on [IModelObject](nn-dbgmodel-imodelobject.md) which may return multiple names with the same value (for base classes, parent models, and the like), this enumerator will only return the specific set of names which will bind with BindValue and BindReference. Names will never be duplicated. Note that there is a significantly higher cost of enumerating an object via the name binder than calling the [IModelObject](nn-dbgmodel-imodelobject.md) methods. 
 
 ## -parameters
 

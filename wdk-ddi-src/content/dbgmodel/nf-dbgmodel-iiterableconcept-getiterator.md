@@ -5,6 +5,8 @@ description: The GetIterator method on the iterable concept returns an iterator 
 ms.assetid: 1060b1b8-8a7c-4548-8e87-0449275bd071
 ms.date: 09/19/2018
 ms.topic: method
+f1_keywords:
+ - "dbgmodel/IIterableConcept.GetIterator"
 ms.keywords: IIterableConcept::GetIterator, GetIterator, IIterableConcept.GetIterator, IIterableConcept::GetIterator, IIterableConcept.GetIterator
 req.header: dbgmodel.h
 req.include-header:
@@ -51,7 +53,7 @@ The GetIterator method on the iterable concept returns an iterator interface whi
 The instance (this pointer) for which to acquire an iterator.
 
 ### -param iterator
-An implementation of IModelIterator which iterates the instance object is returned here.
+An implementation of [IModelIterator](nn-dbgmodel-imodeliterator.md) which iterates the instance object is returned here.
 
 
 ## -returns

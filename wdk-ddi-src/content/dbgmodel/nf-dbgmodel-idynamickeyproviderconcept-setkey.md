@@ -5,6 +5,8 @@ description: The SetKey method on a dynamic key provider is effectively an overr
 ms.assetid: 8ab2d7b7-8e07-45d8-9de1-e04de3c0f448
 ms.date: 09/19/2018
 ms.topic: method
+f1_keywords:
+ - "dbgmodel/IDynamicKeyProviderConcept.SetKey"
 ms.keywords: IDynamicKeyProviderConcept::SetKey, SetKey, IDynamicKeyProviderConcept.SetKey, IDynamicKeyProviderConcept::SetKey, IDynamicKeyProviderConcept.SetKey
 req.header: dbgmodel.h
 req.include-header:
@@ -43,7 +45,7 @@ ms.custom: RS5
 
 ## -description
 
-The SetKey method on a dynamic key provider is effectively an override of the SetKey method on IModelObject. This sets a key in the dynamic provider. It is effectively the creation of a new property on the provider. Note that a provider which does not support any notion of something like the creation of expando properties should return E_NOTIMPL here. 
+The SetKey method on a dynamic key provider is effectively an override of the SetKey method on [IModelObject](nn-dbgmodel-imodelobject.md). This sets a key in the dynamic provider. It is effectively the creation of a new property on the provider. Note that a provider which does not support any notion of something like the creation of expando properties should return E_NOTIMPL here. 
 
 ## -parameters
 

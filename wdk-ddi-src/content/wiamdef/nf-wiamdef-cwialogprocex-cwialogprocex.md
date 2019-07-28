@@ -8,6 +8,8 @@ ms.assetid: D4004501-2DA5-416C-A29B-C0084CF34DC9
 ms.date: 05/03/2018
 ms.keywords: CWiaLogProcEx, CWiaLogProcEx interface [Imaging Devices],CWiaLogProcEx method, CWiaLogProcEx method [Imaging Devices], CWiaLogProcEx method [Imaging Devices],CWiaLogProcEx interface, CWiaLogProcEx.CWiaLogProcEx, CWiaLogProcEx::CWiaLogProcEx, image.cwialogprocex_cwialogprocex, wiamdef/CWiaLogProcEx::CWiaLogProcEx
 ms.topic: method
+f1_keywords:
+ - "wiamdef/CWiaLogProcEx.CWiaLogProcEx"
 req.header: wiamdef.h
 req.include-header: Wiamdef.h
 req.target-type: Windows
@@ -42,76 +44,42 @@ req.typenames:
 
 # CWiaLogProcEx::CWiaLogProcEx
 
-
 ## -description
 
-
-The <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-cwialogproc-~cwialogproc">CWiaLogProcEx</a> constructor is called when the function or method being logged is entered.
-
+The [CWiaLogProcEx](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-cwialogproc-~cwialogproc) constructor is called when the function or method being logged is entered.
 
 ## -parameters
 
-
-
-
 ### -param pIWiaLog
-
-
-
 
 ### -param ResourceID
 
-Defines the <b>INT</b> parameter <i>ResourceID</i>.
-
+Defines the **INT** parameter *ResourceID*.
 
 ### -param DetailLevel
 
-Defines the <b>INT</b> parameter <i>DetailLevel</i>.
-
+Defines the **INT** parameter *DetailLevel*.
 
 ### -param pszMsg
 
-
-
-
 ### -param lMethodId
-
-
-
-
-
 
 #### - *pIWiaLogEx
 
-Defines the <b>IWiaLogEx</b> parameter <i>*pIWiaLog</i>.
-
+Defines the **IWiaLogEx** parameter **pIWiaLog*.
 
 #### - *pszMsg
 
-Defines the <b>CHAR</b> parameter <i>*pszMsg</i>.
-
+Defines the **CHAR** parameter **pszMsg*.
 
 #### - lMethodId = 0
 
-Defines the <b>LONG</b> parameter <i>lMethodId</i>.
-
+Defines the **LONG** parameter *lMethodId*.
 
 ## -returns
 
-
-
 This method does not return a value.
-
-
-
 
 ## -see-also
 
-
-
-
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-cwialogprocex-cwialogprocex">CWiaLogProcEx</a>
- 
-
- 
-
+[CWiaLogProcEx](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-cwialogprocex-cwialogprocex)

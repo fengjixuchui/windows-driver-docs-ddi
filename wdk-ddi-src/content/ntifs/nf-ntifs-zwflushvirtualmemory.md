@@ -1,5 +1,5 @@
 ---
-UID: NF:ntifs.ZwFlushVirtualMemory
+UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.ZwFlushVirtualMemory
 title: ZwFlushVirtualMemory function (ntifs.h)
 description: The ZwFlushVirtualMemory routine flushes a range of virtual addresses within the virtual address space of a specified process which map to a data file back out to the data file if they have been modified.
 old-location: kernel\zwflushvirtualmemory.htm
@@ -8,6 +8,8 @@ ms.assetid: 86e04896-2921-4f77-9bee-283ceb9a66bc
 ms.date: 04/30/2018
 ms.keywords: NtFlushVirtualMemory, ZwFlushVirtualMemory, ZwFlushVirtualMemory routine [Kernel-Mode Driver Architecture], k111_536d2679-dc41-490f-be7b-171e0208a1fd.xml, kernel.zwflushvirtualmemory, ntifs/NtFlushVirtualMemory, ntifs/ZwFlushVirtualMemory
 ms.topic: function
+f1_keywords:
+ - "ntifs/ZwFlushVirtualMemory"
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal

@@ -1,5 +1,5 @@
 ---
-UID: NF:ntifs.CcCopyRead
+UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.CcCopyRead
 title: CcCopyRead function (ntifs.h)
 description: The CcCopyRead routine copies data from a cached file to a user buffer.
 old-location: ifsk\cccopyread.htm
@@ -8,6 +8,8 @@ ms.assetid: ab095bc4-b896-4c8b-a778-714952fd41d4
 ms.date: 04/16/2018
 ms.keywords: CcCopyRead, CcCopyRead routine [Installable File System Drivers], ccref_76dde6ff-ccd7-4d90-a744-9d2c05624b00.xml, ifsk.cccopyread, ntifs/CcCopyRead
 ms.topic: function
+f1_keywords:
+ - "ntifs/CcCopyRead"
 req.header: ntifs.h
 req.include-header: Ntifs.h, FltKernel.h
 req.target-type: Universal

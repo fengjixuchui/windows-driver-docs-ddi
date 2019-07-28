@@ -8,6 +8,8 @@ ms.assetid: 0809a013-9977-44fc-b800-576b4fd983e8
 ms.date: 05/02/2018
 ms.keywords: FwpsInjectTransportReceiveAsync0, FwpsInjectTransportReceiveAsync0 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsInjectTransportReceiveAsync0, netvista.fwpsinjecttransportreceiveasync0, wfp_ref_2_funct_3_fwps_I_2d92a340-1ab7-4eb2-b0c4-47ce8de3daa4.xml
 ms.topic: function
+f1_keywords:
+ - "fwpsk/FwpsInjectTransportReceiveAsync0"
 req.header: fwpsk.h
 req.include-header: Fwpsk.h
 req.target-type: Universal
@@ -276,6 +278,8 @@ To allow IPsec to process inbound packets first, the callout that inspects the t
     <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/fwpsk/nf-fwpsk-fwpsgetpacketlistsecurityinformation0">
     FwpsGetPacketListSecurityInformation0</a> function. The callout driver must wait for the packet to be
     detunneled and then should intercept it at the transport layer or at a forward layer.
+
+Due to the TCP protocol locking semantics, TCP can only be injected Out of Band at any transport layer or equivalent layer, so FwpsInjectTransportReceiveAsync0 and FwpsInjectTransportSendAsync0 must be queued and run by a DPC.
 
 This function can be called from one of the following transport layers if the
     <b>FWPS_METADATA_FIELD_ALE_CLASSIFY_REQUIRED</b> metadata flag is not set:

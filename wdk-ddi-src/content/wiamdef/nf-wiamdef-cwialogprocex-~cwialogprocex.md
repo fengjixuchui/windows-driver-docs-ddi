@@ -8,6 +8,8 @@ ms.assetid: FD0C52E0-0E77-4F4C-AA38-E0D610AF3CD0
 ms.date: 05/03/2018
 ms.keywords: CWiaLogProcEx interface [Imaging Devices],~CWiaLogProcEx method, CWiaLogProcEx.~CWiaLogProcEx, CWiaLogProcEx::~CWiaLogProcEx, image.cwialogprocex__cwialogprocex, wiamdef/CWiaLogProcEx::~CWiaLogProcEx, ~CWiaLogProcEx, ~CWiaLogProcEx method [Imaging Devices], ~CWiaLogProcEx method [Imaging Devices],CWiaLogProcEx interface
 ms.topic: method
+f1_keywords:
+ - "wiamdef/CWiaLogProcEx.~CWiaLogProcEx"
 req.header: wiamdef.h
 req.include-header: Wiamdef.h
 req.target-type: Windows
@@ -42,38 +44,16 @@ req.typenames:
 
 # CWiaLogProcEx::~CWiaLogProcEx
 
-
 ## -description
 
-
-The<b>~CWiaLogProcEx</b> destructor is called when the function or method being logged is exited.
-
+The **~CWiaLogProcEx** destructor is called when the function or method being logged is exited.
 
 ## -parameters
 
-
-
-
-
-
-
-
 ## -returns
-
-
 
 This method does not return a value.
 
-
-
-
 ## -see-also
 
-
-
-
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-cwialogprocex-cwialogprocex">CWiaLogProcEx</a>
- 
-
- 
-
+[CWiaLogProcEx](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-cwialogprocex-cwialogprocex)

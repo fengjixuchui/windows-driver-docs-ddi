@@ -5,6 +5,8 @@ description: If a given data model is registered under a default name via the Re
 ms.assetid: 963ade84-243f-419e-979e-6f8aed2ff596
 ms.date: 09/21/2018
 ms.topic: method
+f1_keywords:
+ - "dbgmodel/IDataModelConcept.GetName"
 ms.keywords: IDataModelConcept::GetName, GetName, IDataModelConcept.GetName, IDataModelConcept::GetName, IDataModelConcept.GetName
 req.header: dbgmodel.h
 req.include-header:
@@ -43,7 +45,7 @@ ms.custom: RS5
 
 ## -description
 
-If a given data model is registered under a default name via the RegisterNamedModel method, the registered data model's IDataModelConcept interface must return that name from this method. Note that it is perfectly legitimate for a model to be registered under multiple names (the default or best one should be returned here). A model may be completely unnamed (so long as it is not registered under a name). In such circumstances, the GetName method should return E_NOTIMPL. 
+If a given data model is registered under a default name via the RegisterNamedModel method, the registered data model's [IDataModelConcept](nn-dbgmodel-idatamodelconcept.md) interface must return that name from this method. Note that it is perfectly legitimate for a model to be registered under multiple names (the default or best one should be returned here). A model may be completely unnamed (so long as it is not registered under a name). In such circumstances, the GetName method should return E_NOTIMPL. 
 
 ## -parameters
 

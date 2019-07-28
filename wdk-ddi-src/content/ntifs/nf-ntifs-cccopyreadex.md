@@ -1,5 +1,5 @@
 ---
-UID: NF:ntifs.CcCopyReadEx
+UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.CcCopyReadEx
 title: CcCopyReadEx function (ntifs.h)
 description: The CcCopyReadEx routine copies data from a cached file to a user buffer. The I/O byte count for the operation is charged to the issuing thread.
 old-location: ifsk\cccopyreadex.htm
@@ -8,6 +8,8 @@ ms.assetid: 4108EB7A-F8FB-4FA5-8426-BB434E89AF06
 ms.date: 04/16/2018
 ms.keywords: CcCopyReadEx, CcCopyReadEx routine [Installable File System Drivers], ifsk.cccopyreadex, ntifs/CcCopyReadEx
 ms.topic: function
+f1_keywords:
+ - "ntifs/CcCopyReadEx"
 req.header: ntifs.h
 req.include-header: Ntifs.h, FltKernel.h
 req.target-type: Universal

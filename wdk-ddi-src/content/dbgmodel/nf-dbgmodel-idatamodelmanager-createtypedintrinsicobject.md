@@ -5,6 +5,8 @@ description: The CreateTypedintrinsicObject method is similar to the CreateIntri
 ms.assetid: 389a450e-6cea-408e-aeaa-ff90b572158c
 ms.date: 07/17/2018
 ms.topic: method
+f1_keywords:
+ - "dbgmodel/IDataModelManager.CreateTypedIntrinsicObject"
 ms.keywords: IDataModelManager::CreateTypedIntrinsicObject, CreateTypedIntrinsicObject, IDataModelManager.CreateTypedIntrinsicObject, IDataModelManager::CreateTypedIntrinsicObject, IDataModelManager.CreateTypedIntrinsicObject
 req.header: dbgmodel.h
 req.include-header:
@@ -47,13 +49,13 @@ The CreateTypedintrinsicObject method is similar to the CreateIntrinsicObject me
 ## -parameters
 
 ### -param intrinsicData
-A VARIANT containing the value which is going to be boxd inside an IModelObject container. Note that this method does not support VT_UNKNOWN constructs. Anything passed to this method must be expressable as ObjectIntrinsic.
+A VARIANT containing the value which is going to be boxd inside an [IModelObject](nn-dbgmodel-imodelobject.md) container. Note that this method does not support VT_UNKNOWN constructs. Anything passed to this method must be expressable as ObjectIntrinsic.
 
 ### -param type
 The native/language type of the value.
 
 ### -param object
-The newly boxed value (as an IModelObject) will be returned here.
+The newly boxed value (as an [IModelObject](nn-dbgmodel-imodelobject.md)) will be returned here.
 
 
 ## -returns

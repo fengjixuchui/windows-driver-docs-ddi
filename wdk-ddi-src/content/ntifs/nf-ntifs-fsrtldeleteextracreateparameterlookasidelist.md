@@ -1,5 +1,5 @@
 ---
-UID: NF:ntifs.FsRtlDeleteExtraCreateParameterLookasideList
+UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.FsRtlDeleteExtraCreateParameterLookasideList
 title: FsRtlDeleteExtraCreateParameterLookasideList function (ntifs.h)
 description: The FsRtlDeleteExtraCreateParameterLookasideList routine frees an extra create parameter (ECP) lookaside list.
 old-location: ifsk\fsrtldeleteextracreateparameterlookasidelist.htm
@@ -8,6 +8,8 @@ ms.assetid: 786635b4-db99-4b35-9fb5-23233997d091
 ms.date: 04/16/2018
 ms.keywords: FsRtlDeleteExtraCreateParameterLookasideList, FsRtlDeleteExtraCreateParameterLookasideList routine [Installable File System Drivers], fsrtlref_43144ea3-5cbc-43ce-b3f8-4101b1e3aeaa.xml, ifsk.fsrtldeleteextracreateparameterlookasidelist, ntifs/FsRtlDeleteExtraCreateParameterLookasideList
 ms.topic: function
+f1_keywords:
+ - "ntifs/FsRtlDeleteExtraCreateParameterLookasideList"
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal

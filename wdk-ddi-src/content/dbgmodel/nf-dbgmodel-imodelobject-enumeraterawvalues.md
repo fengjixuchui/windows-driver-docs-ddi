@@ -5,6 +5,8 @@ description: The EnumerateRawValues method enumerates all native children (field
 ms.assetid: 950019c9-1e39-46bd-be75-fa7fbf52d7da
 ms.date: 07/20/2018
 ms.topic: method
+f1_keywords:
+ - "dbgmodel/IModelObject.EnumerateRawValues"
 ms.keywords: IModelObject::EnumerateRawValues, EnumerateRawValues, IModelObject.EnumerateRawValues, IModelObject::EnumerateRawValues, IModelObject.EnumerateRawValues
 req.header: dbgmodel.h
 req.include-header:
@@ -54,7 +56,7 @@ Indicates the kind of native symbol to fetch (e.g.: a base class or a data membe
 An optional set of flags specifying the behavior of the search for the native construct.
 
 ### -param enumerator
-An enumerator which will enumerate every native child of the kind specified by the kind argument as an IRawEnumerator interface. 
+An enumerator which will enumerate every native child of the kind specified by the kind argument as an [IRawEnumerator](nn-dbgmodel-irawenumerator.md) interface. 
 
 
 ## -returns

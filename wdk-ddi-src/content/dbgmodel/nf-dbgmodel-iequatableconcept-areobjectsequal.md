@@ -5,6 +5,8 @@ description: Compares this object to another (of arbitrary type) for equality.  
 ms.assetid: 846d56f6-e5e2-411d-ae4b-5dc1e31e3221
 ms.date: 09/26/2018
 ms.topic: method
+f1_keywords:
+ - "dbgmodel/IEquatableConcept.AreObjectsEqual"
 ms.keywords: IEquatableConcept::AreObjectsEqual, AreObjectsEqual, IEquatableConcept.AreObjectsEqual, IEquatableConcept::AreObjectsEqual, IEquatableConcept.AreObjectsEqual
 req.header: dbgmodel.h
 req.include-header:
@@ -44,7 +46,7 @@ ms.custom: RS5
 ## -description
 
 Compares this object to another (of arbitrary type) for equality.  If the comparison cannot be performed, E_NOT_SET should be returned.
-IEquatableConcept is typically implemented by the object creators.  To compare objects consider using IModelObject::IsEqualTo or IModelObject::Compare.
+[IEquatableConcept](nn-dbgmodel-iequatableconcept.md) is typically implemented by the object creators.  To compare objects consider using [IModelObject](nn-dbgmodel-imodelobject.md)::IsEqualTo or [IModelObject](nn-dbgmodel-imodelobject.md)::Compare.
 
 ## -parameters
 
@@ -64,7 +66,7 @@ This method returns HRESULT which indicates success or failure.
 
 ## -remarks
 
-Generally speaking, you will implement (but not necessarily consume) IEquatableConcept.  It can be easier to call IModelObject::IsEqualTo or IModelObject::Compare and let those methods manage the concept fetch.
+Generally speaking, you will implement (but not necessarily consume) [IEquatableConcept](nn-dbgmodel-iequatableconcept.md).  It can be easier to call [IModelObject](nn-dbgmodel-imodelobject.md)::IsEqualTo or [IModelObject](nn-dbgmodel-imodelobject.md)::Compare and let those methods manage the concept fetch.
 
 
 ## -see-also

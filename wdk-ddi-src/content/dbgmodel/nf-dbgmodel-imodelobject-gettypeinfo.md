@@ -5,6 +5,8 @@ description: The GetTypeInfo method will return the native type of the given obj
 ms.assetid: 15543aee-79aa-45e7-ad7a-017eab0e7d74
 ms.date: 06/10/2019
 ms.topic: method
+f1_keywords:
+ - "dbgmodel/IModelObject.GetTypeInfo"
 ms.keywords: IModelObject::GetTypeInfo, GetTypeInfo, IModelObject.GetTypeInfo, IModelObject::GetTypeInfo, IModelObject.GetTypeInfo
 req.header: dbgmodel.h
 req.include-header:
@@ -48,7 +50,7 @@ The GetTypeInfo method will return the native type of the given object. If the o
 
 ### -param type
 
-The native type of the object represented by the this pointer will be returned here as an IDebugHostType interface.
+The native type of the object represented by the this pointer will be returned here as an [IDebugHostType](nn-dbgmodel-idebughosttype.md) interface.
 
 ## -returns
 

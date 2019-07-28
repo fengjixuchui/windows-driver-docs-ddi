@@ -5,6 +5,8 @@ description: An (IDebugHostSymbol derived) interface to a public symbol (address
 ms.assetid: 18775b1d-4efc-422c-8920-21de383fb5b9
 ms.date: 07/13/2018
 ms.topic: interface
+f1_keywords:
+ - "dbgmodel/IDebugHostPublic"
 req.header: dbgmodel.h
 req.include-header:
 req.target-type:
@@ -37,13 +39,13 @@ ms.custom: RS5
 
 ## -description
 
-An (IDebugHostSymbol derived) interface to a public symbol (address/name only).
+An ([IDebugHostSymbol](nn-dbgmodel-idebughostsymbol.md) derived) interface to a public symbol (address/name only).
 
 Represents a symbol within the publics table of a PDB. This does not have type information associated with it. It is a name and address.
 
 
 ## -inheritance
-IDebugHostPublic interits from IDebugHostSymbol. 
+IDebugHostPublic interits from [IDebugHostSymbol](nn-dbgmodel-idebughostsymbol.md). 
 ## -members
 
 <p>IDebugHostPublic has these methods.</p>

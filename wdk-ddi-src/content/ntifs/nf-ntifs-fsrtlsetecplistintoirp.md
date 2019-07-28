@@ -1,5 +1,5 @@
 ---
-UID: NF:ntifs.FsRtlSetEcpListIntoIrp
+UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.FsRtlSetEcpListIntoIrp
 title: FsRtlSetEcpListIntoIrp function (ntifs.h)
 description: The FsRtlSetEcpListIntoIrp routine attaches an extra create parameter (ECP) context structure list to an IRP_MJ_CREATE operation.
 old-location: ifsk\fsrtlsetecplistintoirp.htm
@@ -8,6 +8,8 @@ ms.assetid: 370da53a-3c20-4e45-8732-8f08aa2d96ae
 ms.date: 04/16/2018
 ms.keywords: FsRtlSetEcpListIntoIrp, FsRtlSetEcpListIntoIrp routine [Installable File System Drivers], fsrtlref_b292fe42-cbfa-430d-abca-528482cecbed.xml, ifsk.fsrtlsetecplistintoirp, ntifs/FsRtlSetEcpListIntoIrp
 ms.topic: function
+f1_keywords:
+ - "ntifs/FsRtlSetEcpListIntoIrp"
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal

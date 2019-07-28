@@ -5,6 +5,8 @@ description: The GetTargetInfo method is effectively a combination of the GetLoc
 ms.assetid: 01e44c1d-a96d-4195-a767-d959cccb005c
 ms.date: 08/09/2018
 ms.topic: method
+f1_keywords:
+ - "dbgmodel/IModelObject.GetTargetInfo"
 ms.keywords: IModelObject::GetTargetInfo, GetTargetInfo, IModelObject.GetTargetInfo, IModelObject::GetTargetInfo, IModelObject.GetTargetInfo
 req.header: dbgmodel.h
 req.include-header:
@@ -51,7 +53,7 @@ The GetTargetInfo method is effectively a combination of the GetLocation and Get
 The abstract location of the native object represented by the this pointer will be returned here.
 
 ### -param type
-The native type of the object represented by the this pointer will be returned here as an IDebugHostType interface.
+The native type of the object represented by the this pointer will be returned here as an [IDebugHostType](nn-dbgmodel-idebughosttype.md) interface.
 
 
 ## -returns

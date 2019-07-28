@@ -5,6 +5,8 @@ description: A reference to a key on a data model object.
 ms.assetid: f92f8963-479b-4f90-abef-5ad227e8781c
 ms.date: 07/16/2018
 ms.topic: interface
+f1_keywords:
+ - "dbgmodel/IModelKeyReference"
 req.header: dbgmodel.h
 req.include-header:
 req.target-type:
@@ -97,7 +99,7 @@ IModelKeyReference interits from IUnknown.
 
 **Key References** 
 
-A key reference is, in essence, a handle to a key on a particular object. A client can retrieve such handle via methods such as GetKeyReference and use the handle later to get or set the value of the key without necessarily holding onto the original object. This type of object is an implementation of the IModelKeyReference or IModelKeyReference2 interface which is boxed into an IModelObject. The model object will return a kind of ObjectKeyReference when queried and then intrinsic value is a VT_UNKNOWN which is guaranteed to be queryable for IModelKeyReference. In process, it is guaranteed to be statically castable to IModelKeyReference. 
+A key reference is, in essence, a handle to a key on a particular object. A client can retrieve such handle via methods such as GetKeyReference and use the handle later to get or set the value of the key without necessarily holding onto the original object. This type of object is an implementation of the IModelKeyReference or [IModelKeyReference2](nn-dbgmodel-imodelkeyreference2.md) interface which is boxed into an [IModelObject](nn-dbgmodel-imodelobject.md). The model object will return a kind of ObjectKeyReference when queried and then intrinsic value is a VT_UNKNOWN which is guaranteed to be queryable for IModelKeyReference. In process, it is guaranteed to be statically castable to IModelKeyReference. 
 
 ## -see-also
 

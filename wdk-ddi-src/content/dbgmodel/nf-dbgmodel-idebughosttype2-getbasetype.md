@@ -5,6 +5,8 @@ description: If the type is a derivative of another single type (e.g. as MyStruc
 ms.assetid: 8d74a4b7-78d4-42e6-8435-dd0993f7fbb3
 ms.date: 09/20/2018
 ms.topic: method
+f1_keywords:
+ - "dbgmodel/IDebugHostType2.GetBaseType"
 ms.keywords: IDebugHostType2::GetBaseType, GetBaseType, IDebugHostType2.GetBaseType, IDebugHostType2::GetBaseType, IDebugHostType2.GetBaseType
 req.header: dbgmodel.h
 req.include-header:
@@ -45,7 +47,7 @@ ms.custom: RS5
 
 If the type is a derivative of another single type (e.g.: as MyStruct * is derived from MyStruct'), the GetBaseType method returns the base type of the derivation. For pointers, this returns the type pointed to. For arrays, this returns what the array is an array of. If the type is not such a derivative type, an error is returned. 
 
-Note that this method has nothing to do with C++ (or other linguistic) base classes. Such are symbols (IDebugHostBaseClass) which can be enumerated from the derived class via a call to the EnumerateChildren method. 
+Note that this method has nothing to do with C++ (or other linguistic) base classes. Such are symbols ([IDebugHostBaseClass](nn-dbgmodel-idebughostbaseclass.md)) which can be enumerated from the derived class via a call to the EnumerateChildren method. 
 
 ## -parameters
 

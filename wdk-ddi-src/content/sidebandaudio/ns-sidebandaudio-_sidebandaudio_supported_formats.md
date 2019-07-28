@@ -5,6 +5,8 @@ description: Describes the formats supported by the Audio Endpoint.
 ms.assetid: 3aaefd01-561e-42be-859c-240f1305b266
 ms.date: 09/07/2018
 ms.topic: struct
+f1_keywords:
+ - "sidebandaudio/_SIDEBANDAUDIO_SUPPORTED_FORMATS"
 ms.keywords: _SIDEBANDAUDIO_SUPPORTED_FORMATS, SIDEBANDAUDIO_SUPPORTED_FORMATS, *PSIDEBANDAUDIO_SUPPORTED_FORMATS, 
 req.header: sidebandaudio.h
 req.include-header:
@@ -57,3 +59,5 @@ Array of pointers of KSDATAFORMAT.
 
 ## -see-also
 [sidebandaudio.h](index.md)
+
+[IOCTL_SBAUD_GET_SUPPORTED_FORMATS](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sidebandaudio/ni-sidebandaudio-ioctl_sbaud_get_supported_formats)

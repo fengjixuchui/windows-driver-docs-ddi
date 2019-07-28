@@ -8,10 +8,12 @@ ms.assetid: bfef9d54-fcd5-436b-b3ec-8cd3b8f38360
 ms.date: 05/03/2018
 ms.keywords: "*PWIAS_CHANGED_VALUE_INFO, PWIAS_CHANGED_VALUE_INFO, PWIAS_CHANGED_VALUE_INFO structure pointer [Imaging Devices], WIAS_CHANGED_VALUE_INFO, WIAS_CHANGED_VALUE_INFO structure [Imaging Devices], _WIAS_CHANGED_VALUE_INFO, image.wias_changed_value_info, wiamindr_lh/PWIAS_CHANGED_VALUE_INFO, wiamindr_lh/WIAS_CHANGED_VALUE_INFO, wiastrct_0c1c5e66-1f26-471f-9916-117460b6a373.xml"
 ms.topic: struct
+f1_keywords:
+ - "wiamindr_lh/WIAS_CHANGED_VALUE_INFO"
 req.header: wiamindr_lh.h
 req.include-header: Wiamindr.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Me and in Windows XP and later versions of the Windows operating systems.
+req.target-min-winverclnt:
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -42,22 +44,15 @@ req.typenames: WIAS_CHANGED_VALUE_INFO, *PWIAS_CHANGED_VALUE_INFO
 
 # _WIAS_CHANGED_VALUE_INFO structure
 
-
 ## -description
-
 
 The WIAS_CHANGED_VALUE_INFO structure is used to store the current and previous values of a property.
 
-
 ## -struct-fields
-
-
-
 
 ### -field bChanged
 
-Is a Boolean that indicates whether a property has changed. That is, if the property's current value is different from its value before <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvvalidateitemproperties">IWiaMiniDrv::drvValidateItemProperties</a> was called. Upon return from one of the <b>wiasGetChangedValue</b><i>Xxx</i> functions, this member is <b>TRUE</b> if the property changed, and <b>FALSE</b> if the property did not change. 
-
+Is a Boolean that indicates whether a property has changed. That is, if the property's current value is different from its value before [IWiaMiniDrv::drvValidateItemProperties](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvvalidateitemproperties) was called. Upon return from one of the **wiasGetChangedValue**_Xxx_ functions, this member is **TRUE** if the property changed, and **FALSE** if the property did not change.
 
 ### -field vt
 
@@ -81,89 +76,40 @@ VT_CLSID
 
 VT_BSTR
 
-See the PROPVARIANT structure in the Microsoft Windows SDK documentation for more information.
-
+See the [PROPVARIANT](https://docs.microsoft.com/windows/win32/api/propidl/ns-propidl-tagpropvariant) structure for more information.
 
 ### -field Old
 
-
 ### -field Old.lVal
-
- 
-
 
 ### -field Old.fltVal
 
- 
-
-
 ### -field Old.bstrVal
-
- 
-
 
 ### -field Old.guidVal
 
- 
-
-
 ### -field Current
-
 
 ### -field Current.lVal
 
- 
-
-
 ### -field Current.fltVal
-
- 
-
 
 ### -field Current.bstrVal
 
- 
-
-
 ### -field Current.guidVal
-
- 
-
-
-
 
 ## -remarks
 
-
-
-The <b>wiasGetChangedValue</b><i>Xxx</i> functions, use this structure to determine whether a property of a certain type has been changed by an application. These functions are used when the minidriver performs property validation, which occurs within the body of <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvvalidateitemproperties">IWiaMiniDrv::drvValidateItemProperties</a>.
-
-
-
+The **wiasGetChangedValue**_Xxx_ functions, use this structure to determine whether a property of a certain type has been changed by an application. These functions are used when the minidriver performs property validation, which occurs within the body of [IWiaMiniDrv::drvValidateItemProperties](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvvalidateitemproperties).
 
 ## -see-also
 
+[IWiaMiniDrv::drvValidateItemProperties](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvvalidateitemproperties)
 
+[wiasGetChangedValueFloat](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wiasgetchangedvaluefloat)
 
+[wiasGetChangedValueGuid](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wiasgetchangedvalueguid)
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvvalidateitemproperties">IWiaMiniDrv::drvValidateItemProperties</a>
+[wiasGetChangedValueLong](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wiasgetchangedvaluelong)
 
-
-
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wiasgetchangedvaluefloat">wiasGetChangedValueFloat</a>
-
-
-
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wiasgetchangedvalueguid">wiasGetChangedValueGuid</a>
-
-
-
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wiasgetchangedvaluelong">wiasGetChangedValueLong</a>
-
-
-
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wiasgetchangedvaluestr">wiasGetChangedValueStr</a>
- 
-
- 
-
+[wiasGetChangedValueStr](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-wiasgetchangedvaluestr)

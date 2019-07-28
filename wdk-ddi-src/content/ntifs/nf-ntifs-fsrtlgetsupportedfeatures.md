@@ -1,5 +1,5 @@
 ---
-UID: NF:ntifs.FsRtlGetSupportedFeatures
+UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.FsRtlGetSupportedFeatures
 title: FsRtlGetSupportedFeatures function (ntifs.h)
 description: The FsRtlGetSupportedFeatures routine returns the supported features of a volume attached to the specified device object.
 old-location: ifsk\fsrtlgetsupportedfeatures.htm
@@ -8,6 +8,8 @@ ms.assetid: 24852B9A-5156-41BB-87F9-81B147A85AC2
 ms.date: 04/16/2018
 ms.keywords: FsRtlGetSupportedFeatures, FsRtlGetSupportedFeatures routine [Installable File System Drivers], SUPPORTED_FS_FEATURES_OFFLOAD_READ, SUPPORTED_FS_FEATURES_OFFLOAD_WRITE, ifsk.fsrtlgetsupportedfeatures, ntifs/FsRtlGetSupportedFeatures
 ms.topic: function
+f1_keywords:
+ - "ntifs/FsRtlGetSupportedFeatures"
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal

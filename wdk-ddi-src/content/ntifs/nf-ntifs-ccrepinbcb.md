@@ -1,5 +1,5 @@
 ---
-UID: NF:ntifs.CcRepinBcb
+UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.CcRepinBcb
 title: CcRepinBcb function (ntifs.h)
 description: The CcRepinBcb routine pins a buffer control block (BCB) an additional time to prevent it from being freed by a subsequent call to CcUnpinData.
 old-location: ifsk\ccrepinbcb.htm
@@ -8,6 +8,8 @@ ms.assetid: 81c2446e-8f11-4146-8da5-17fc451c2729
 ms.date: 04/16/2018
 ms.keywords: CcRepinBcb, CcRepinBcb routine [Installable File System Drivers], ccref_5aacfd67-3d6c-4be6-9bfa-5b85772ce32f.xml, ifsk.ccrepinbcb, ntifs/CcRepinBcb
 ms.topic: function
+f1_keywords:
+ - "ntifs/CcRepinBcb"
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal

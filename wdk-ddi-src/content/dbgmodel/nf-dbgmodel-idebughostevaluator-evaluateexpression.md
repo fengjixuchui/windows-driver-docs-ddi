@@ -5,6 +5,8 @@ description: The EvaluateExpression method allows requests the debug host to eva
 ms.assetid: 3a5d84d6-39ba-46c0-a4e7-4e8134aa1b1a
 ms.date: 09/12/2018
 ms.topic: method
+f1_keywords:
+ - "dbgmodel/IDebugHostEvaluator.EvaluateExpression"
 ms.keywords: IDebugHostEvaluator::EvaluateExpression, EvaluateExpression, IDebugHostEvaluator.EvaluateExpression, IDebugHostEvaluator::EvaluateExpression, IDebugHostEvaluator.EvaluateExpression
 req.header: dbgmodel.h
 req.include-header:
@@ -43,7 +45,7 @@ ms.custom: RS5
 
 ## -description
 
-The EvaluateExpression method allows requests the debug host to evaluate a language (e.g.: C++) expression and return the resulting value of that expression evaluation boxed as an IModelObject. This particular variant of the method only allows language constructs. Any additional functionality which is presented within the expression evaluator of the debug host that is not present in the language (e.g.: LINQ query methods) is turned off for the evaluation. 
+The EvaluateExpression method allows requests the debug host to evaluate a language (e.g.: C++) expression and return the resulting value of that expression evaluation boxed as an [IModelObject](nn-dbgmodel-imodelobject.md). This particular variant of the method only allows language constructs. Any additional functionality which is presented within the expression evaluator of the debug host that is not present in the language (e.g.: LINQ query methods) is turned off for the evaluation. 
 
 Because this method only uses things which are defined by the language being debugged, this method is portable and safe to use from host to host. A debug host which implements debugging for a particular language should evaluate an expression via this method in the same way as any other host which debugs the same language. As such, this is the preferred method for doing expression evaluation. 
 

@@ -8,10 +8,12 @@ ms.assetid: e340eb98-34d4-49e7-92cd-4f57d8b6efb8
 ms.date: 05/03/2018
 ms.keywords: IWiaLog_3b27b46f-be2e-4fdb-ba65-32fe41c71142.xml, WIAS_HRESULT, WIAS_HRESULT macro [Imaging Devices], image.wias_hresult, wiamdef/WIAS_HRESULT
 ms.topic: macro
+f1_keywords:
+ - "wiamdef/WIAS_HRESULT"
 req.header: wiamdef.h
 req.include-header: Wiautil.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the operating system.
+req.target-min-winverclnt:
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -56,7 +58,7 @@ The WIAS_HRESULT macro writes a diagnostic message to the *Wiatrace.log* file.
 
 ## -remarks
 
-This macro is the recommended way to output HRESULTS on Windows Vista.
+This macro is the recommended way to output HRESULTS.
 
 ## -see-also
 

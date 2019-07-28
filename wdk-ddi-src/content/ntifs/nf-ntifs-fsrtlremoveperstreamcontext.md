@@ -1,5 +1,5 @@
 ---
-UID: NF:ntifs.FsRtlRemovePerStreamContext
+UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.FsRtlRemovePerStreamContext
 title: FsRtlRemovePerStreamContext function (ntifs.h)
 description: FsRtlRemovePerStreamContext removes a per-stream context structure from the list of per-stream contexts associated with a file stream.
 old-location: ifsk\fsrtlremoveperstreamcontext.htm
@@ -8,6 +8,8 @@ ms.assetid: 4b046cfa-8f38-4910-8cb3-125395292bd2
 ms.date: 04/16/2018
 ms.keywords: FsRtlRemovePerStreamContext, FsRtlRemovePerStreamContext function [Installable File System Drivers], fsrtlref_904bd4dd-c254-4762-8af6-dcc49aaa5c92.xml, ifsk.fsrtlremoveperstreamcontext, ntifs/FsRtlRemovePerStreamContext
 ms.topic: function
+f1_keywords:
+ - "ntifs/FsRtlRemovePerStreamContext"
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal

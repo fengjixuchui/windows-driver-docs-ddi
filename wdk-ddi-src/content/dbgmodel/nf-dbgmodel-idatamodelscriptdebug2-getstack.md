@@ -5,6 +5,8 @@ description: The GetStack method gets the current call stack at the break positi
 ms.assetid: 5f780a6c-c765-4b6f-baa9-d8367bfdbbec
 ms.date: 08/21/2018
 ms.topic: method
+f1_keywords:
+ - "dbgmodel/IDataModelScriptDebug2.GetStack"
 ms.keywords: IDataModelScriptDebug2::GetStack, GetStack, IDataModelScriptDebug2.GetStack, IDataModelScriptDebug2::GetStack, IDataModelScriptDebug2.GetStack
 req.header: dbgmodel.h
 req.include-header:
@@ -48,7 +50,7 @@ The GetStack method gets the current call stack at the break position. This meth
 
 ### -param stack
 
-A component implementing IDataModelScriptDebugStack is returned here representing the call stack state at the position of the break.
+A component implementing [IDataModelScriptDebugStack](nn-dbgmodel-idatamodelscriptdebugstack.md) is returned here representing the call stack state at the position of the break.
 
 ## -returns
 

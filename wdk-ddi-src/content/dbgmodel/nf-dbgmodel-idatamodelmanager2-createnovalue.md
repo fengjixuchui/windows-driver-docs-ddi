@@ -5,6 +5,8 @@ description: The CreateNoValue method creates a "no value" object, boxes it into
 ms.assetid: 2533e73e-a094-4e55-8c33-b52384037932
 ms.date: 09/11/2018
 ms.topic: method
+f1_keywords:
+ - "dbgmodel/IDataModelManager2.CreateNoValue"
 ms.keywords: IDataModelManager2::CreateNoValue, CreateNoValue, IDataModelManager2.CreateNoValue, IDataModelManager2::CreateNoValue, IDataModelManager2.CreateNoValue
 req.header: dbgmodel.h
 req.include-header:
@@ -43,13 +45,13 @@ ms.custom: RS5
 
 ## -description
 
-The CreateNoValue method creates a "no value" object, boxes it into an IModelObject, and returns it. The returned model object has a kind of ObjectNoValue. 
+The CreateNoValue method creates a "no value" object, boxes it into an [IModelObject](nn-dbgmodel-imodelobject.md), and returns it. The returned model object has a kind of ObjectNoValue. 
 
 A "no value" object has several semantic meanings: 
 
 - (Depending on language), it can be considered the semantic equivalent of void, null, or undefined
 - Any property accessor's GetValue method which returns success and a resulting "no value" object is indicating that the particular property has no value for the given instance and should be treated as if the property did not exist for that particular instance.
-- Data model methods which do not semantically have a return value use this as a sentinel to indicate such (as a method must return a valid IModelObject).
+- Data model methods which do not semantically have a return value use this as a sentinel to indicate such (as a method must return a valid [IModelObject](nn-dbgmodel-imodelobject.md)).
 
 
 ## -parameters

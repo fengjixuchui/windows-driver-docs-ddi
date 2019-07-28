@@ -5,6 +5,8 @@ description: For any given type, this returns a new IDebugHostType which is a po
 ms.assetid: 52c9d51f-bda3-4599-904e-cd7fa27b0bfc
 ms.date: 09/20/2018
 ms.topic: method
+f1_keywords:
+ - "dbgmodel/IDebugHostType2.CreatePointerTo"
 ms.keywords: IDebugHostType2::CreatePointerTo, CreatePointerTo, IDebugHostType2.CreatePointerTo, IDebugHostType2::CreatePointerTo, IDebugHostType2.CreatePointerTo
 req.header: dbgmodel.h
 req.include-header:
@@ -43,7 +45,7 @@ ms.custom: RS5
 
 ## -description
 
-For any given type, this returns a new IDebugHostType which is a pointer to this type.
+For any given type, this returns a new [IDebugHostType](nn-dbgmodel-idebughosttype.md) which is a pointer to this type.
 The kind of pointer is supplied by the "kind" argument.
 
 ## -parameters

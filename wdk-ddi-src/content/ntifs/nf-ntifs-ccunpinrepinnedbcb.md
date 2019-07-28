@@ -1,5 +1,5 @@
 ---
-UID: NF:ntifs.CcUnpinRepinnedBcb
+UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.CcUnpinRepinnedBcb
 title: CcUnpinRepinnedBcb function (ntifs.h)
 description: The CcUnpinRepinnedBcb routine unpins a repinned buffer control block (BCB).
 old-location: ifsk\ccunpinrepinnedbcb.htm
@@ -8,6 +8,8 @@ ms.assetid: 96a35574-87dc-4a2f-aaef-616096839f3f
 ms.date: 04/16/2018
 ms.keywords: CcUnpinRepinnedBcb, CcUnpinRepinnedBcb routine [Installable File System Drivers], ccref_72300deb-bf8a-4f2a-b594-69ccb01cff56.xml, ifsk.ccunpinrepinnedbcb, ntifs/CcUnpinRepinnedBcb
 ms.topic: function
+f1_keywords:
+ - "ntifs/CcUnpinRepinnedBcb"
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal

@@ -1,5 +1,5 @@
 ---
-UID: NF:ntifs.CcCopyWrite
+UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.CcCopyWrite
 title: CcCopyWrite function (ntifs.h)
 description: The CcCopyWrite routine copies data from a user buffer to a cached file.
 old-location: ifsk\cccopywrite.htm
@@ -8,6 +8,8 @@ ms.assetid: 100fec4a-eebe-4a4d-b322-09afbe68ec5c
 ms.date: 04/16/2018
 ms.keywords: CcCopyWrite, CcCopyWrite routine [Installable File System Drivers], ccref_97ca67a6-e212-42bb-8998-be458c792f7b.xml, ifsk.cccopywrite, ntifs/CcCopyWrite
 ms.topic: function
+f1_keywords:
+ - "ntifs/CcCopyWrite"
 req.header: ntifs.h
 req.include-header: Ntifs.h, FltKernel.h
 req.target-type: Universal

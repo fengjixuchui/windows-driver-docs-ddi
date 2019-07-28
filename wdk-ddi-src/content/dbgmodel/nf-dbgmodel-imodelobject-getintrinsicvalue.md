@@ -5,6 +5,8 @@ description: The GetIntrinsicValue method returns the thing which is boxed insid
 ms.assetid: 95a2f002-c6d9-48c2-9c7f-86df732a0584
 ms.date: 08/09/2018
 ms.topic: method
+f1_keywords:
+ - "dbgmodel/IModelObject.GetIntrinsicValue"
 ms.keywords: IModelObject::GetIntrinsicValue, GetIntrinsicValue, IModelObject.GetIntrinsicValue, IModelObject::GetIntrinsicValue, IModelObject.GetIntrinsicValue
 req.header: dbgmodel.h
 req.include-header:
@@ -43,13 +45,13 @@ ms.custom: RS5
 
 ## -description
 
-The GetIntrinsicValue method returns the thing which is boxed inside an IModelObject. This method may only legally be called on IModelObject interfaces which represent a boxed intrinsic or a particular interface which is boxed. It cannot be called on native objects, no value objects, synthetic objects, and reference objects. 
+The GetIntrinsicValue method returns the thing which is boxed inside an [IModelObject](nn-dbgmodel-imodelobject.md). This method may only legally be called on [IModelObject](nn-dbgmodel-imodelobject.md) interfaces which represent a boxed intrinsic or a particular interface which is boxed. It cannot be called on native objects, no value objects, synthetic objects, and reference objects. 
 
 ## -parameters
 
 ### -param intrinsicData
 
-The value boxed inside the IModelObject is returned here. The pointer must point to a VARIANT structure which does not contain a freeable value. It is the responsibility of the caller to clear this VARIANT with VariantClear when finished with it.
+The value boxed inside the [IModelObject](nn-dbgmodel-imodelobject.md) is returned here. The pointer must point to a VARIANT structure which does not contain a freeable value. It is the responsibility of the caller to clear this VARIANT with VariantClear when finished with it.
 
 
 ## -returns

@@ -5,6 +5,8 @@ description: The EnumerateLocals method returns a variable set for all local var
 ms.assetid: c538a07f-cd0c-44a5-897a-2e35920685d5
 ms.date: 09/10/2018
 ms.topic: method
+f1_keywords:
+ - "dbgmodel/IDataModelScriptDebugStackFrame.EnumerateLocals"
 ms.keywords: IDataModelScriptDebugStackFrame::EnumerateLocals, EnumerateLocals, IDataModelScriptDebugStackFrame.EnumerateLocals, IDataModelScriptDebugStackFrame::EnumerateLocals, IDataModelScriptDebugStackFrame.EnumerateLocals
 req.header: dbgmodel.h
 req.include-header:
@@ -43,7 +45,7 @@ ms.custom: RS5
 
 ## -description
 
-The EnumerateLocals method returns a variable set (represented by an IDataModelScriptDebugVariableSetEnumerator interface) for all local variables which are in scope in the context of the stack frame represented by the IDataModelScriptDebugStackFrame interface on which this method was called. 
+The EnumerateLocals method returns a variable set (represented by an [IDataModelScriptDebugVariableSetEnumerator](nn-dbgmodel-idatamodelscriptdebugvariablesetenumerator.md) interface) for all local variables which are in scope in the context of the stack frame represented by the [IDataModelScriptDebugStackFrame](nn-dbgmodel-idatamodelscriptdebugstackframe.md) interface on which this method was called. 
 
 Note that if there are multiple definitions of a single variable where an inner scope eclipses an outer scope, only a single definition should be returned -- the definition which is in scope at the code position represented by the frame. 
 

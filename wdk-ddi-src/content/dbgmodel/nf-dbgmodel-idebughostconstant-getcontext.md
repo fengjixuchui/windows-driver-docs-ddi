@@ -5,6 +5,8 @@ description: The GetContext method returns the context where the symbol is valid
 ms.assetid: 97791b67-24ec-45e3-aa45-2c4eacd5ec89
 ms.date: 09/10/2018
 ms.topic: method
+f1_keywords:
+ - "dbgmodel/IDebugHostConstant.GetContext"
 ms.keywords: IDebugHostConstant::GetContext, GetContext, IDebugHostConstant.GetContext, IDebugHostConstant::GetContext, IDebugHostConstant.GetContext
 req.header: dbgmodel.h
 req.include-header:
@@ -42,7 +44,7 @@ ms.custom: RS5
 
 
 ## -description
-The GetContext method returns the context where the symbol is valid. While this will represent things such as the debug target and process/address space in which the symbol exists, it may not be as specific as a context retrieved from other means (e.g.: from an IModelObject). 
+The GetContext method returns the context where the symbol is valid. While this will represent things such as the debug target and process/address space in which the symbol exists, it may not be as specific as a context retrieved from other means (e.g.: from an [IModelObject](nn-dbgmodel-imodelobject.md)). 
 
 ## -parameters
 

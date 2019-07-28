@@ -5,6 +5,8 @@ description: The GetNext method moves the enumerator to the next variable in the
 ms.assetid: 3e5b85ef-4766-42e5-a300-14f5271f1c2d
 ms.date: 09/10/2018
 ms.topic: method
+f1_keywords:
+ - "dbgmodel/IDataModelScriptDebugVariableSetEnumerator.GetNext"
 ms.keywords: IDataModelScriptDebugVariableSetEnumerator::GetNext, GetNext, IDataModelScriptDebugVariableSetEnumerator.GetNext, IDataModelScriptDebugVariableSetEnumerator::GetNext, IDataModelScriptDebugVariableSetEnumerator.GetNext
 req.header: dbgmodel.h
 req.include-header:
@@ -51,7 +53,7 @@ The GetNext method moves the enumerator to the next variable in the set and retu
 The name of the variable in the set is returned here as a string allocated by the SysAllocString function. The caller is responsible for freeing the returned string via SysFreeString.
 
 ### -param variableValue
-The current value of the variable is returned here. The value must be marshaled out to an IModelObject representation. Every property or other construct on the IModelObject must be able to be acquired while the debugger is in a break state.
+The current value of the variable is returned here. The value must be marshaled out to an [IModelObject](nn-dbgmodel-imodelobject.md) representation. Every property or other construct on the [IModelObject](nn-dbgmodel-imodelobject.md) must be able to be acquired while the debugger is in a break state.
 
 ### -param variableMetadata
 Optional metadata about the variable and its presentation may be returned here.

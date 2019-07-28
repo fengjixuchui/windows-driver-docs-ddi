@@ -5,6 +5,8 @@ description: The GetKind method returns what kind of object is boxed inside the 
 ms.assetid: 859277b5-e121-4f1c-a1aa-12c2aef4b673
 ms.date: 06/10/2019
 ms.topic: method
+f1_keywords:
+ - "dbgmodel/IModelObject.GetKind"
 ms.keywords: IModelObject::GetKind, GetKind, IModelObject.GetKind, IModelObject::GetKind, IModelObject.GetKind
 req.header: dbgmodel.h
 req.include-header:
@@ -43,7 +45,7 @@ ms.custom: RS5
 
 ## -description
 
-The GetKind method returns what kind of object is boxed inside the IModelObject. Such kind is defined by the [ModelObjectKind enumeration](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/ne-dbgmodel-modelobjectkind).
+The GetKind method returns what kind of object is boxed inside the [IModelObject](nn-dbgmodel-imodelobject.md). Such kind is defined by the [ModelObjectKind enumeration](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/ne-dbgmodel-modelobjectkind).
 
 ## -parameters
 

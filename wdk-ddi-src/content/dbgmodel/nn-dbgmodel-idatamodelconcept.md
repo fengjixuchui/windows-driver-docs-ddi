@@ -5,6 +5,8 @@ description: Any object which represents a data model which is registered under 
 ms.assetid: f7e0a833-b878-454e-8741-816375c68110
 ms.date: 07/13/2018
 ms.topic: interface
+f1_keywords:
+ - "dbgmodel/IDataModelConcept"
 req.header: dbgmodel.h
 req.include-header:
 req.target-type:
@@ -37,7 +39,7 @@ ms.custom: RS5
 
 ## -description
 
-Any object which represents a data model which is registered under a name or  is registered for a particular type signature must implement this concept and add it to the data model  object via IModelObject::SetConcept.
+Any object which represents a data model which is registered under a name or  is registered for a particular type signature must implement this concept and add it to the data model  object via [IModelObject](nn-dbgmodel-imodelobject.md)::SetConcept.
 
 Clients which create data models implement this interface.  It is most frequently consumed by the data model manager itself.
 

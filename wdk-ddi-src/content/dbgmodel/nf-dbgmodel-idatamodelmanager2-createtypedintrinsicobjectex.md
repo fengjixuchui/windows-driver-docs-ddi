@@ -5,6 +5,8 @@ description: The CreateTypedIntrinsicObjectEx method is semantically similar to 
 ms.assetid: 4a5450f4-d14d-41bb-b0ac-520fe1dc49f7
 ms.date: 09/11/2018
 ms.topic: method
+f1_keywords:
+ - "dbgmodel/IDataModelManager2.CreateTypedIntrinsicObjectEx"
 ms.keywords: IDataModelManager2::CreateTypedIntrinsicObjectEx, CreateTypedIntrinsicObjectEx, IDataModelManager2.CreateTypedIntrinsicObjectEx, IDataModelManager2::CreateTypedIntrinsicObjectEx, IDataModelManager2.CreateTypedIntrinsicObjectEx
 req.header: dbgmodel.h
 req.include-header:
@@ -51,13 +53,13 @@ The CreateTypedIntrinsicObjectEx method is semantically similar to the CreateTyp
 The context which should be associated with the newly created object. If this is not specified, the context of the object will inherit from the context of the type argument. The special value USE_CURRENT_HOST_CONTEXT can also be passed indicating that the context should be the current UI context of the debugger.
 
 ### -param intrinsicData
-A VARIANT containing the value which is going to be boxd inside an IModelObject container. Note that this method does not support VT_UNKNOWN constructs. Anything passed to this method must be expressable as ObjectIntrinsic
+A VARIANT containing the value which is going to be boxd inside an [IModelObject](nn-dbgmodel-imodelobject.md) container. Note that this method does not support VT_UNKNOWN constructs. Anything passed to this method must be expressable as ObjectIntrinsic
 
 ### -param type
 The native/language type of the value.
 
 ### -param object
-The newly boxed value (as an IModelObject) will be returned here.
+The newly boxed value (as an [IModelObject](nn-dbgmodel-imodelobject.md)) will be returned here.
 
 
 ## -returns

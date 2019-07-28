@@ -5,6 +5,8 @@ description: TA binder which converts one instance method on a class to a read-o
 ms.assetid: c59ee365-d2da-4352-8311-a4a1d27fabdc
 ms.date: 09/28/2018
 ms.topic: function
+f1_keywords:
+ - "dbgmodel/BindReadOnlyProperty"
 ms.keywords: BindReadOnlyProperty
 req.header: dbgmodel.h
 req.include-header:
@@ -54,11 +56,11 @@ Usage: BindProperty(get_lambda)
 ## -parameters
 
 ### -param getFunctor
-A functor of signature (PCWSTR, IModelObject *, IModelObject **) which will act as the getter for the newly created read-only property accessor.
+A functor of signature (PCWSTR, [IModelObject](nn-dbgmodel-imodelobject.md) *, [IModelObject](nn-dbgmodel-imodelobject.md) **) which will act as the getter for the newly created read-only property accessor.
 
 
 ## -returns
-This function returns Microsoft::WRL::ComPtr<IModelPropertyAccessor>.
+This function returns Microsoft::WRL::ComPtr<[IModelPropertyAccessor](nn-dbgmodel-imodelpropertyaccessor.md)>.
 ## -remarks
 
 ## -see-also

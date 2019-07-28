@@ -1,5 +1,5 @@
 ---
-UID: NF:ntifs.FsRtlFreeExtraCreateParameterList
+UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.FsRtlFreeExtraCreateParameterList
 title: FsRtlFreeExtraCreateParameterList function (ntifs.h)
 description: The FsRtlFreeExtraCreateParameterList routine frees an extra create parameter (ECP) list structure.
 old-location: ifsk\fsrtlfreeextracreateparameterlist.htm
@@ -8,6 +8,8 @@ ms.assetid: 0d2f1204-0874-4ede-9931-be6f2dbc3c47
 ms.date: 04/16/2018
 ms.keywords: FsRtlFreeExtraCreateParameterList, FsRtlFreeExtraCreateParameterList routine [Installable File System Drivers], fsrtlref_909d50be-4f8d-47dc-ad00-03d3f9eb4533.xml, ifsk.fsrtlfreeextracreateparameterlist, ntifs/FsRtlFreeExtraCreateParameterList
 ms.topic: function
+f1_keywords:
+ - "ntifs/FsRtlFreeExtraCreateParameterList"
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal

@@ -5,6 +5,8 @@ description: An (IDebugHostSymbol derived) interface to a particular type.
 ms.assetid: f4fb5043-a364-45f6-9d87-43850ac0f140
 ms.date: 07/13/2018
 ms.topic: interface
+f1_keywords:
+ - "dbgmodel/IDebugHostType"
 req.header: dbgmodel.h
 req.include-header:
 req.target-type:
@@ -37,13 +39,13 @@ ms.custom: RS5
 
 ## -description
 
-An (IDebugHostSymbol derived) interface to a particular type.
+An ([IDebugHostSymbol](nn-dbgmodel-idebughostsymbol.md) derived) interface to a particular type.
 
-A given language/native type is described by the IDebugHostType2 or IDebugHostType interfaces. Note that some of the methods on these interfaces only apply for specific kinds of types.
+A given language/native type is described by the [IDebugHostType2](nn-dbgmodel-idebughosttype2.md) or IDebugHostType interfaces. Note that some of the methods on these interfaces only apply for specific kinds of types.
 
 
 ## -inheritance
-IDebugHostType interits from IDebugHostSymbol. 
+IDebugHostType interits from [IDebugHostSymbol](nn-dbgmodel-idebughostsymbol.md). 
 ## -members
 
 <p>IDebugHostType has these methods.</p>

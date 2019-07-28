@@ -5,6 +5,8 @@ description: The GetLocationKind method returns what kind of location the symbol
 ms.assetid: 1abb0b33-9501-4f44-b9ff-1b01f3cd05ad
 ms.date: 09/10/2018
 ms.topic: method
+f1_keywords:
+ - "dbgmodel/IDebugHostData.GetLocationKind"
 ms.keywords: IDebugHostData::GetLocationKind, GetLocationKind, IDebugHostData.GetLocationKind, IDebugHostData::GetLocationKind, IDebugHostData.GetLocationKind
 req.header: dbgmodel.h
 req.include-header:
@@ -43,7 +45,7 @@ ms.custom: RS5
 
 ## -description
 
-The GetLocationKind method returns what kind of location the symbol is at according to the LocationKind enumeration. The description of this enumeration can be found in the documentation for IDebugHostField. 
+The GetLocationKind method returns what kind of location the symbol is at according to the LocationKind enumeration. The description of this enumeration can be found in the documentation for [IDebugHostField](nn-dbgmodel-idebughostfield.md). 
 
 ## -parameters
 

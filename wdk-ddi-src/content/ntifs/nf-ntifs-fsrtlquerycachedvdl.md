@@ -1,5 +1,5 @@
 ---
-UID: NF:ntifs.FsRtlQueryCachedVdl
+UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.FsRtlQueryCachedVdl
 title: FsRtlQueryCachedVdl function (ntifs.h)
 description: The current valid data length (VDL) for a cached file is retrieved with the FsRtlQueryCachedVdl routine.
 old-location: ifsk\fsrtlquerycachedvdl.htm
@@ -8,6 +8,8 @@ ms.assetid: 5D4F3D70-6E2B-4B2E-91A4-6852AF8FEAD0
 ms.date: 04/16/2018
 ms.keywords: FsRtlQueryCachedVdl, FsRtlQueryCachedVdl routine [Installable File System Drivers], ifsk.fsrtlquerycachedvdl, ntifs/FsRtlQueryCachedVdl
 ms.topic: function
+f1_keywords:
+ - "ntifs/FsRtlQueryCachedVdl"
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal

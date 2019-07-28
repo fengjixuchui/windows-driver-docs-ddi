@@ -5,6 +5,8 @@ description: The AddParentModel method adds a new parent model to the given obje
 ms.assetid: 9e84b804-6d72-41e1-a548-edf726c669fc
 ms.date: 08/08/2018
 ms.topic: method
+f1_keywords:
+ - "dbgmodel/IModelObject.AddParentModel"
 ms.keywords: IModelObject::AddParentModel, AddParentModel, IModelObject.AddParentModel, IModelObject::AddParentModel, IModelObject.AddParentModel
 req.header: dbgmodel.h
 req.include-header:
@@ -53,12 +55,12 @@ instance->GetKeyValue("someKey", &pValue, nullptr);
 
 will end up changing the context/this pointer from instance to newContext before calling someKey's GetValue method since the access to someKey passed through the context adjustor. 
 
-Any IModelObject which is added as a parent model to another object must individually support the IDataModelConcept concept. Failure to implement this concept may result in the AddParentModel method call failing. 
+Any [IModelObject](nn-dbgmodel-imodelobject.md) which is added as a parent model to another object must individually support the [IDataModelConcept](nn-dbgmodel-idatamodelconcept.md) concept. Failure to implement this concept may result in the AddParentModel method call failing. 
 
 ## -parameters
 
 ### -param model
-An IModelObject which will be added to the parent model chain of the given object. This IModelObject must individually support the IDataModelConcept concept.
+An [IModelObject](nn-dbgmodel-imodelobject.md) which will be added to the parent model chain of the given object. This [IModelObject](nn-dbgmodel-imodelobject.md) must individually support the [IDataModelConcept](nn-dbgmodel-idatamodelconcept.md) concept.
 
 ### -param contextObject
 If the data model has a context adjustment associated with it, the adjusted context (or a property accessor which returns the adjusted context) may be passed here.

@@ -1,5 +1,5 @@
 ---
-UID: NF:ntifs.ZwDuplicateObject
+UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.ZwDuplicateObject
 title: ZwDuplicateObject function (ntifs.h)
 description: The ZwDuplicateObject routine creates a handle that is a duplicate of the specified source handle.
 old-location: kernel\zwduplicateobject.htm
@@ -8,6 +8,8 @@ ms.assetid: 9a922379-b439-4f94-9eb1-7c229318382c
 ms.date: 04/30/2018
 ms.keywords: NtDuplicateObject, ZwDuplicateObject, ZwDuplicateObject routine [Kernel-Mode Driver Architecture], kernel.zwduplicateobject, ntifs/NtDuplicateObject, ntifs/ZwDuplicateObject
 ms.topic: function
+f1_keywords:
+ - "ntifs/ZwDuplicateObject"
 req.header: ntifs.h
 req.include-header: Ntdef.h, Ntifs.h, Fltkernel.h
 req.target-type: Universal

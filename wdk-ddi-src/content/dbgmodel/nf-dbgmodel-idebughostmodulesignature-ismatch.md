@@ -5,6 +5,8 @@ description: The IsMatch method compares a particular module against a signature
 ms.assetid: eaef18a0-1bbb-4248-a65d-e81ef486c2fa
 ms.date: 09/18/2018
 ms.topic: method
+f1_keywords:
+ - "dbgmodel/IDebugHostModuleSignature.IsMatch"
 ms.keywords: IDebugHostModuleSignature::IsMatch, IsMatch, IDebugHostModuleSignature.IsMatch, IDebugHostModuleSignature::IsMatch, IDebugHostModuleSignature.IsMatch
 req.header: dbgmodel.h
 req.include-header:
@@ -43,7 +45,7 @@ ms.custom: RS5
 
 ## -description
 
-The IsMatch method compares a particular module (as given by an IDebugHostModule symbol) against a signature, comparing the module name and version to the name and version range indicated in the signature. An indication of whether the given module symbol matches the signature is returned. 
+The IsMatch method compares a particular module (as given by an [IDebugHostModule](nn-dbgmodel-idebughostmodule.md) symbol) against a signature, comparing the module name and version to the name and version range indicated in the signature. An indication of whether the given module symbol matches the signature is returned. 
 
 ## -parameters
 

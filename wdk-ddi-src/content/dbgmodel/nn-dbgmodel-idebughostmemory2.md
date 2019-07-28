@@ -5,6 +5,8 @@ description: The memory access interface to the underlying debugger.
 ms.assetid: f34471dc-175b-46e3-aeec-18841184e940
 ms.date: 06/11/2019
 ms.topic: interface
+f1_keywords:
+ - "dbgmodel/IDebugHostMemory2"
 req.header: dbgmodel.h
 req.include-header:
 req.target-type:
@@ -42,7 +44,7 @@ The memory access interface to the underlying debugger.
 This version 2 of the interface supports all of the previous methods with identical signatures and includes additional new methods that provide added functionality. The new methods are listed in the header at the end of the section for that interface.
 
 ## -inheritance
-IDebugHostMemory2 interits from IDebugHostMemory. 
+IDebugHostMemory2 interits from [IDebugHostMemory](nn-dbgmodel-idebughostmemory.md). 
 ## -members
 
 <p>IDebugHostMemory2 has these methods.</p>

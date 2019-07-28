@@ -5,6 +5,8 @@ description: The SetKeyValue method on a key reference behaves as the SetKeyValu
 ms.assetid: adb5bf4c-161a-4bbc-82b8-a23dcf101b55
 ms.date: 08/14/2018
 ms.topic: method
+f1_keywords:
+ - "dbgmodel/IModelKeyReference.SetKeyValue"
 ms.keywords: IModelKeyReference::SetKeyValue, SetKeyValue, IModelKeyReference.SetKeyValue, IModelKeyReference::SetKeyValue, IModelKeyReference.SetKeyValue
 req.header: dbgmodel.h
 req.include-header:
@@ -43,7 +45,7 @@ ms.custom: RS5
 
 ## -description
 
-The SetKeyValue method on a key reference behaves as the SetKeyValue method on IModelObject would. It will assign the value of the key. If the original key was a property accessor, this will call the underlying SetValue method on the property accessor rather than replacing the property accessor itself. 
+The SetKeyValue method on a key reference behaves as the SetKeyValue method on [IModelObject](nn-dbgmodel-imodelobject.md) would. It will assign the value of the key. If the original key was a property accessor, this will call the underlying SetValue method on the property accessor rather than replacing the property accessor itself. 
 
 ## -parameters
 

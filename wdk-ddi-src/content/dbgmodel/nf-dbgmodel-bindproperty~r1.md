@@ -5,6 +5,8 @@ description:  A binder which converts two lambdas to a read/write property acces
 ms.assetid: 5bb97697-3462-4fcc-9306-e8741fc6003e
 ms.date: 09/28/2018
 ms.topic: function
+f1_keywords:
+ - "dbgmodel/BindProperty"
 ms.keywords: BindProperty
 req.header: dbgmodel.h
 req.include-header:
@@ -51,13 +53,13 @@ Usage: BindProperty(get_lambda, set_lambda)
 ## -parameters
 
 ### -param getFunctor
-A functor of signature (PCWSTR, IModelObject *, IModelObject **) which will act as the getter for the newly created property accessor.
+A functor of signature (PCWSTR, [IModelObject](nn-dbgmodel-imodelobject.md) *, [IModelObject](nn-dbgmodel-imodelobject.md) **) which will act as the getter for the newly created property accessor.
 
 ### -param setFunctor
-A functor of signature (PCWSTR, IModelObject *, IModelObject *) which will act as the setter for the newly created property accessor.
+A functor of signature (PCWSTR, [IModelObject](nn-dbgmodel-imodelobject.md) *, [IModelObject](nn-dbgmodel-imodelobject.md) *) which will act as the setter for the newly created property accessor.
 
 ## -returns
-This function returns Microsoft::WRL::ComPtr<IModelPropertyAccessor>.
+This function returns Microsoft::WRL::ComPtr<[IModelPropertyAccessor](nn-dbgmodel-imodelpropertyaccessor.md)>.
 
 ## -remarks
 

@@ -5,6 +5,8 @@ description: The symbols interface to the underlying debugger.
 ms.assetid: 9a26c85b-fc46-4a01-864d-c9c2fe51f9b3
 ms.date: 07/13/2018
 ms.topic: interface
+f1_keywords:
+ - "dbgmodel/IDebugHostSymbols"
 req.header: dbgmodel.h
 req.include-header:
 req.target-type:
@@ -39,7 +41,7 @@ ms.custom: RS5
 
 The symbols interface to the underlying debugger.
 
-The IDebugHostSymbols interface is the main starting point to access symbols in the debug target. This interface can be queried from an instance of IDebugHost. 
+The IDebugHostSymbols interface is the main starting point to access symbols in the debug target. This interface can be queried from an instance of [IDebugHost](nn-dbgmodel-idebughost.md). 
 
 
 ## -inheritance

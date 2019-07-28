@@ -5,6 +5,8 @@ description: The EnumerateKeyValues method is the first method a client will tur
 ms.assetid: e1452944-0567-4b3d-a892-fc3e45ae34af
 ms.date: 07/20/2018
 ms.topic: method
+f1_keywords:
+ - "dbgmodel/IModelObject.EnumerateKeyValues"
 ms.keywords: IModelObject::EnumerateKeyValues, EnumerateKeyValues, IModelObject.EnumerateKeyValues, IModelObject::EnumerateKeyValues, IModelObject.EnumerateKeyValues
 req.header: dbgmodel.h
 req.include-header:
@@ -48,7 +50,7 @@ The EnumerateKeyValues method is the first method a client will turn to in order
 ## -parameters
 
 ### -param enumerator
-An enumerator for all keys on the object (and all of its parent models) and their values and metadata is returned in this argument as an IKeyEnumerator.
+An enumerator for all keys on the object (and all of its parent models) and their values and metadata is returned in this argument as an [IKeyEnumerator](nn-dbgmodel-ikeyenumerator.md).
 
 ## -returns
 This method returns HRESULT that indicates success or failure.

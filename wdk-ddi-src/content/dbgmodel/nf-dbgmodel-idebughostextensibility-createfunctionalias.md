@@ -5,6 +5,8 @@ description: The CreateFunctionAlias method creates a "function alias", a "quick
 ms.assetid: 73d90254-12bd-478b-a80e-57d15ea88ca8
 ms.date: 06/11/2019
 ms.topic: method
+f1_keywords:
+ - "dbgmodel/IDebugHostExtensibility.CreateFunctionAlias"
 ms.keywords: IDebugHostExtensibility::CreateFunctionAlias, CreateFunctionAlias, IDebugHostExtensibility.CreateFunctionAlias, IDebugHostExtensibility::CreateFunctionAlias, IDebugHostExtensibility.CreateFunctionAlias
 req.header: dbgmodel.h
 req.include-header:
@@ -58,7 +60,7 @@ For Debugging Tools for Windows, a function alias:
 The (quick) name of the alias being created/registered.
 
 ### -param functionObject
-A data model method (an IModelMethod boxed into an IModelObject) which implements the functionality of the function alias.
+A data model method (an [IModelMethod](nn-dbgmodel-imodelmethod.md) boxed into an [IModelObject](nn-dbgmodel-imodelobject.md)) which implements the functionality of the function alias.
 
 
 ## -returns

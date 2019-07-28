@@ -5,6 +5,8 @@ description: The GetExtension method returns the file extension for scripts mana
 ms.assetid: e9f079fa-3ce1-4a05-a46e-f5b5268d2a6f
 ms.date: 08/20/2018
 ms.topic: method
+f1_keywords:
+ - "dbgmodel/IDataModelScriptProvider.GetExtension"
 ms.keywords: IDataModelScriptProvider::GetExtension, GetExtension, IDataModelScriptProvider.GetExtension, IDataModelScriptProvider::GetExtension, IDataModelScriptProvider.GetExtension
 req.header: dbgmodel.h
 req.include-header:
@@ -45,7 +47,7 @@ ms.custom: RS5
 
 The GetExtension method returns the file extension for scripts managed by this provider (without the dot) as a string allocated via the SysAllocString method. The debugger application hosting the data model (with scripting support) will delegate opening of script files with this extension to the script provider. The caller is responsible for freeing the returned string via SysFreeString. Examples of strings which might be returned from this method are "js" or "NatVis". 
 
-No two script providers may return the same file extension (case insensitive). A provider which wishes to handle multiple file extensions must implement multiple IDataModelScriptProvider interfaces and provide unique names and file extensions to the script manager via the implementation of these methods. 
+No two script providers may return the same file extension (case insensitive). A provider which wishes to handle multiple file extensions must implement multiple [IDataModelScriptProvider](nn-dbgmodel-idatamodelscriptprovider.md) interfaces and provide unique names and file extensions to the script manager via the implementation of these methods. 
 
 
 ## -parameters

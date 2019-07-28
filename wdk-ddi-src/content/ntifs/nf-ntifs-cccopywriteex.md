@@ -1,5 +1,5 @@
 ---
-UID: NF:ntifs.CcCopyWriteEx
+UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.CcCopyWriteEx
 title: CcCopyWriteEx function (ntifs.h)
 description: The CcCopyWriteEx routine copies data from a user buffer to a cached file. The I/O byte count for the operation is charged to the issuing thread.
 old-location: ifsk\cccopywriteex.htm
@@ -8,6 +8,8 @@ ms.assetid: A8945F1C-56CF-494F-9E50-11C7A713E5F0
 ms.date: 04/16/2018
 ms.keywords: CcCopyWriteEx, CcCopyWriteEx routine [Installable File System Drivers], ifsk.cccopywriteex, ntifs/CcCopyWriteEx
 ms.topic: function
+f1_keywords:
+ - "ntifs/CcCopyWriteEx"
 req.header: ntifs.h
 req.include-header: Ntifs.h, FltKernel.h
 req.target-type: Universal

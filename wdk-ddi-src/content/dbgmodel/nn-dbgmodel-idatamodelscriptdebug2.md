@@ -5,6 +5,8 @@ description: An optional interface on scripts (objects which implement IDataMode
 ms.assetid: 29d61401-a385-4f5e-bda3-81ee79f5c5f8
 ms.date: 06/11/2019
 ms.topic: interface
+f1_keywords:
+ - "dbgmodel/IDataModelScriptDebug2"
 req.header: dbgmodel.h
 req.include-header:
 req.target-type:
@@ -37,12 +39,12 @@ ms.custom: RS5
 
 ## -description
 
-An optional interface on scripts (objects which implement IDataModelScript).  If this interface is supported, the script provider has a debug engine capable of some limited form of 'script debugging'.  This may include stepping, setting breakpoints, inspecting data, etc...
+An optional interface on scripts (objects which implement [IDataModelScript](nn-dbgmodel-idatamodelscript.md)).  If this interface is supported, the script provider has a debug engine capable of some limited form of 'script debugging'.  This may include stepping, setting breakpoints, inspecting data, etc...
 
 This version 2 of the interface supports all of the previous methods with identical signatures and includes additional new methods that provide added functionality. The new methods are listed in the header at the end of the section for that interface.
 
 ## -inheritance
-IDataModelScriptDebug2 interits from IDataModelScriptDebug. 
+IDataModelScriptDebug2 interits from [IDataModelScriptDebug](nn-dbgmodel-idatamodelscriptdebug.md). 
 ## -members
 
 <p>IDataModelScriptDebug2 has these methods.</p>
@@ -111,7 +113,7 @@ IDataModelScriptDebug2 interits from IDataModelScriptDebug.
 
 ## -remarks
 
-The infrastructure for script providers in the data model also provides a concept around debugging scripts. Any script that wishes to expose debugging capabilities to the debug host and the debugger application hosting the data model can do so by having debuggable scripts implement the IDataModelScriptDebug interface in addition to the IDataModelScript interface. The presence of this interface on the script indicates to the infrastructure that it is debuggable. 
+The infrastructure for script providers in the data model also provides a concept around debugging scripts. Any script that wishes to expose debugging capabilities to the debug host and the debugger application hosting the data model can do so by having debuggable scripts implement the [IDataModelScriptDebug](nn-dbgmodel-idatamodelscriptdebug.md) interface in addition to the [IDataModelScript](nn-dbgmodel-idatamodelscript.md) interface. The presence of this interface on the script indicates to the infrastructure that it is debuggable. 
 
 ## -see-also
 

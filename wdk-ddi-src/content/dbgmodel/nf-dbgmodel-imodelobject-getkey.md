@@ -5,6 +5,8 @@ description: The GetKey method will get the value of (and the metadata associate
 ms.assetid: 533111d9-50cd-4bd3-8807-6c9be2374fba
 ms.date: 08/09/2018
 ms.topic: method
+f1_keywords:
+ - "dbgmodel/IModelObject.GetKey"
 ms.keywords: IModelObject::GetKey, GetKey, IModelObject.GetKey, IModelObject::GetKey, IModelObject.GetKey
 req.header: dbgmodel.h
 req.include-header:
@@ -43,7 +45,7 @@ ms.custom: RS5
 
 ## -description
 
-The GetKey method will get the value of (and the metadata associated with) a given key by name. Most clients should utilize the GetKeyValue method instead. If the key is a property accessor, calling this method will return the property accessor (an IModelPropertyAccessor interface) boxed into an IModelObject. Unlike, GetKeyValue, this method will not automatically resolve the underlying value of the key by calling the GetValue method. That responsibility is the caller's. 
+The GetKey method will get the value of (and the metadata associated with) a given key by name. Most clients should utilize the GetKeyValue method instead. If the key is a property accessor, calling this method will return the property accessor (an [IModelPropertyAccessor](nn-dbgmodel-imodelpropertyaccessor.md) interface) boxed into an [IModelObject](nn-dbgmodel-imodelobject.md). Unlike, GetKeyValue, this method will not automatically resolve the underlying value of the key by calling the GetValue method. That responsibility is the caller's. 
 
 ## -parameters
 

@@ -5,6 +5,8 @@ description: If a given stack frame is a transition point as determined by the I
 ms.assetid: 8fbefa8a-9675-485e-8065-062ad7ad3a50
 ms.date: 09/10/2018
 ms.topic: method
+f1_keywords:
+ - "dbgmodel/IDataModelScriptDebugStackFrame.GetTransition"
 ms.keywords: IDataModelScriptDebugStackFrame::GetTransition, GetTransition, IDataModelScriptDebugStackFrame.GetTransition, IDataModelScriptDebugStackFrame::GetTransition, IDataModelScriptDebugStackFrame.GetTransition
 req.header: dbgmodel.h
 req.include-header:
@@ -43,9 +45,9 @@ ms.custom: RS5
 
 ## -description
 
-If a given stack frame is a transition point as determined by the IsTransition method (see the documentation there for a definition of transition points), the GetTransition method returns information about the transition. In particular, this method returns the previous script -- the one which made a call into the script represented by the stack segment containing this IDataModelScriptDebugStackFrame. 
+If a given stack frame is a transition point as determined by the IsTransition method (see the documentation there for a definition of transition points), the GetTransition method returns information about the transition. In particular, this method returns the previous script -- the one which made a call into the script represented by the stack segment containing this [IDataModelScriptDebugStackFrame](nn-dbgmodel-idatamodelscriptdebugstackframe.md). 
 
-In addition to returning the IDataModelScript interface for the previous script, this call is expected to make an attempt to determine whether the transition is contiguous or not. A contiguous transition is one where one script/provider directly called another (ignoring whatever proxy/stub code may exist to facilitate communication between script contexts). A non-contiguous transition is one where there is intermediate code -- either native or another script/provider which cannot be detected -- in between. 
+In addition to returning the [IDataModelScript](nn-dbgmodel-idatamodelscript.md) interface for the previous script, this call is expected to make an attempt to determine whether the transition is contiguous or not. A contiguous transition is one where one script/provider directly called another (ignoring whatever proxy/stub code may exist to facilitate communication between script contexts). A non-contiguous transition is one where there is intermediate code -- either native or another script/provider which cannot be detected -- in between. 
 
 An example of a contiguous transition stack (where all properties are extensions on the same object): 
 - [Script1] get firstProperty() { return 42; }

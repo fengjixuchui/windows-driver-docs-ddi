@@ -5,6 +5,8 @@ description: The GetValue method returns the value of the constant packed into a
 ms.assetid: 8cf871cc-c21e-44ee-bd5a-bf3b4b1ad7b4
 ms.date: 10/03/2018
 ms.topic: method
+f1_keywords:
+ - "dbgmodel/IDebugHostConstant.GetValue"
 ms.keywords: IDebugHostConstant::GetValue, GetValue, IDebugHostConstant.GetValue, IDebugHostConstant::GetValue, IDebugHostConstant.GetValue
 req.header: dbgmodel.h
 req.include-header:
@@ -43,7 +45,7 @@ ms.custom: RS5
 ## -description
 The GetValue method returns the value of the constant packed into a VARIANT. 
 
-It is important to note that the GetType method on IDebugHostSymbol may return a specific type symbol for the constant. In such cases, there is no guarantee that the packing of the constant value as defined by the type symbol is the same as the packing as returned by the GetValue method here. 
+It is important to note that the GetType method on [IDebugHostSymbol](nn-dbgmodel-idebughostsymbol.md) may return a specific type symbol for the constant. In such cases, there is no guarantee that the packing of the constant value as defined by the type symbol is the same as the packing as returned by the GetValue method here. 
 
 ## -parameters
 

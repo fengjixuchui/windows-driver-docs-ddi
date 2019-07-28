@@ -5,6 +5,8 @@ description: The GetNamespaceObject method returns an object into which the scri
 ms.assetid: 10b093f4-f047-4710-8bbe-aa9ce3973021
 ms.date: 09/10/2018
 ms.topic: method
+f1_keywords:
+ - "dbgmodel/IDataModelScriptHostContext.GetNamespaceObject"
 ms.keywords: IDataModelScriptHostContext::GetNamespaceObject, GetNamespaceObject, IDataModelScriptHostContext.GetNamespaceObject, IDataModelScriptHostContext::GetNamespaceObject, IDataModelScriptHostContext.GetNamespaceObject
 req.header: dbgmodel.h
 req.include-header:
@@ -43,7 +45,7 @@ ms.custom: RS5
 
 ## -description
 
-The GetNamespaceObject method returns an object into which the script provider can place any bridges between the data model and the script. It is here, for instance, that the script provider might place data model method objects (IModelMethod interfaces boxed into IModelObject) whose implementation calls into correspondingly named functions in the script. 
+The GetNamespaceObject method returns an object into which the script provider can place any bridges between the data model and the script. It is here, for instance, that the script provider might place data model method objects ([IModelMethod](nn-dbgmodel-imodelmethod.md) interfaces boxed into [IModelObject](nn-dbgmodel-imodelobject.md)) whose implementation calls into correspondingly named functions in the script. 
 
 ## -parameters
 

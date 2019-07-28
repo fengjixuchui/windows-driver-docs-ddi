@@ -8,10 +8,12 @@ ms.assetid: 2959c470-1da7-4396-a591-7a356379f9de
 ms.date: 05/03/2018
 ms.keywords: IWiaLog_bac21803-be4c-4ce0-a241-b9380cb627ab.xml, WIAS_LWARNING, WIAS_LWARNING macro [Imaging Devices], image.wias_lwarning, wiamdef/WIAS_LWARNING
 ms.topic: macro
+f1_keywords:
+ - "wiautil/WIAS_LWARNING"
 req.header: wiautil.h
 req.include-header: Wiautil.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Me, Windows XP, and later. Obsolete for Windows Vista and later.
+req.target-min-winverclnt: Obsolete. Do not use.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -44,7 +46,7 @@ req.typenames:
 
 ## -description
 
-The WIAS_LWARNING macro is obsolete for Windows Vista and later.
+The WIAS_LWARNING macro is obsolete.
 
 The WIAS_LWARNING macro writes a diagnostic WIA_WARNING message to the log file.
 
@@ -70,7 +72,7 @@ The following is an example of how the macro can be used:
 WIAS_LWARNING(g_pIWiaLog, WIALOG_NO_RESOURCE_ID, ("MyClass::MyMethod, This is my text and my lValue = %d", lValue));
 ```
   
-Please note that it does not write to the new log file used in Windows Vista and later.
+Please note that the WIAS_LWARNING macro is obsolete and does not write to the log file used in modern Windows operation systems.
 
 ## -see-also
 

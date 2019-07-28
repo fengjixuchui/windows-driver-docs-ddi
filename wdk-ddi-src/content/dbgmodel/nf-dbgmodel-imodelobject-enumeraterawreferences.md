@@ -5,6 +5,8 @@ description: The EnumerateRawReferences method enumerates references to all nati
 ms.assetid: fe0e5bc3-e852-4755-81b5-e169365b3064
 ms.date: 08/08/2018
 ms.topic: method
+f1_keywords:
+ - "dbgmodel/IModelObject.EnumerateRawReferences"
 ms.keywords: IModelObject::EnumerateRawReferences, EnumerateRawReferences, IModelObject.EnumerateRawReferences, IModelObject::EnumerateRawReferences, IModelObject.EnumerateRawReferences
 req.header: dbgmodel.h
 req.include-header:
@@ -54,7 +56,7 @@ Indicates the kind of native symbol to fetch (e.g.: a base class or a data membe
 An optional set of flags specifying the behavior of the search for the native construct.
 
 ### -param enumerator
-An enumerator which will enumerate a reference (an object that is a ObjectTargetObjectReference style object) to every native child of the kind specified by the kind argument as an IRawEnumerator interface. 
+An enumerator which will enumerate a reference (an object that is a ObjectTargetObjectReference style object) to every native child of the kind specified by the kind argument as an [IRawEnumerator](nn-dbgmodel-irawenumerator.md) interface. 
 
 
 ## -returns

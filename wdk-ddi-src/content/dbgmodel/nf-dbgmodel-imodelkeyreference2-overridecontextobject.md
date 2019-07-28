@@ -5,6 +5,8 @@ description: The OverrideContextObject method is an method which is used to perm
 ms.assetid: bb28b47c-7311-4572-9d87-0331a5cc728a
 ms.date: 08/14/2018
 ms.topic: method
+f1_keywords:
+ - "dbgmodel/IModelKeyReference2.OverrideContextObject"
 ms.keywords: IModelKeyReference2::OverrideContextObject, OverrideContextObject, IModelKeyReference2.OverrideContextObject, IModelKeyReference2::OverrideContextObject, IModelKeyReference2.OverrideContextObject
 req.header: dbgmodel.h
 req.include-header:
@@ -43,7 +45,7 @@ ms.custom: RS5
 
 ## -description
 
-The OverrideContextObject method (only present on IModelKeyReference2) is an advanced method which is used to permanently alter the context object which this key reference will pass to any underlying property accessor's GetValue or SetValue methods. The object passed to this method will also be returned from a call to GetContextObject. This method can be used by script providers to replicate certain dynamic language behaviors. Most clients should not call this method. 
+The OverrideContextObject method (only present on [IModelKeyReference2](nn-dbgmodel-imodelkeyreference2.md)) is an advanced method which is used to permanently alter the context object which this key reference will pass to any underlying property accessor's GetValue or SetValue methods. The object passed to this method will also be returned from a call to GetContextObject. This method can be used by script providers to replicate certain dynamic language behaviors. Most clients should not call this method. 
 
 ## -parameters
 

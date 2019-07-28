@@ -5,6 +5,8 @@ description: An (IDebugHostSymbol derived) interface to a base class.
 ms.assetid: 3240aa54-97b6-43e1-81e9-41f4eb5bd447
 ms.date: 07/13/2018
 ms.topic: interface
+f1_keywords:
+ - "dbgmodel/IDebugHostBaseClass"
 req.header: dbgmodel.h
 req.include-header:
 req.target-type:
@@ -37,11 +39,11 @@ ms.custom: RS5
 
 ## -description
 
-An (IDebugHostSymbol derived) interface to a base class.
+An ([IDebugHostSymbol](nn-dbgmodel-idebughostsymbol.md) derived) interface to a base class.
 
 
 ## -inheritance
-IDebugHostBaseClass interits from IDebugHostSymbol. 
+IDebugHostBaseClass interits from [IDebugHostSymbol](nn-dbgmodel-idebughostsymbol.md). 
 ## -members
 
 <p>IDebugHostBaseClass has these methods.</p>

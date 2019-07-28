@@ -5,6 +5,8 @@ description: The SetKey method is analogous to the SetKey method on IModelObject
 ms.assetid: ad29e237-ecce-4109-9b5e-24b914ca8bb7
 ms.date: 08/13/2018
 ms.topic: method
+f1_keywords:
+ - "dbgmodel/IKeyStore.SetKey"
 ms.keywords: IKeyStore::SetKey, SetKey, IKeyStore.SetKey, IKeyStore::SetKey, IKeyStore.SetKey
 req.header: dbgmodel.h
 req.include-header:
@@ -43,7 +45,7 @@ ms.custom: RS5
 
 ## -description
 
-The SetKey method is analogous to the SetKey method on IModelObject. It is the only method which is capable of creating a key and associating metadata with it within the key store. 
+The SetKey method is analogous to the SetKey method on [IModelObject](nn-dbgmodel-imodelobject.md). It is the only method which is capable of creating a key and associating metadata with it within the key store. 
 
 ## -parameters
 

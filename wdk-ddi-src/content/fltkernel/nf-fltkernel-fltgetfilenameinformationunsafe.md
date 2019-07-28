@@ -8,6 +8,8 @@ ms.assetid: 3c5ec515-d332-4fef-8b78-b2f04a672fd7
 ms.date: 05/09/2019
 ms.keywords: FltGetFileNameInformationUnsafe, FltGetFileNameInformationUnsafe routine [Installable File System Drivers], fltkernel/FltGetFileNameInformationUnsafe, ifsk.fltgetfilenameinformationunsafe
 ms.topic: function
+f1_keywords:
+ - "fltkernel/FltGetFileNameInformationUnsafe"
 req.header: fltkernel.h
 req.include-header: Fltkernel.h
 req.target-type: Universal
@@ -133,6 +135,16 @@ FLT_FILE_NAME_QUERY_FILESYSTEM_ONLY
 </td>
 <td>
 <b>FltGetFileNameInformationUnsafe</b> queries the file system for the file name information. <b>FltGetFileNameInformationUnsafe</b> does not query the Filter Manager's name cache, and does not cache the result of the file system query.
+
+</td>
+</tr>
+<tr>
+<td>
+FLT_FILE_NAME_QUERY_ALWAYS_ALLOW_CACHE_LOOKUP
+
+</td>
+<td>
+<b>FltGetFileNameInformationUnsafe</b> queries the Filter Manager's name cache for the file name information. If the name is not found in the cache, and it is currently safe to do so, <b>FltGetFileNameInformationUnsafe</b> queries the file system for the file name information and caches the result.
 
 </td>
 </tr>

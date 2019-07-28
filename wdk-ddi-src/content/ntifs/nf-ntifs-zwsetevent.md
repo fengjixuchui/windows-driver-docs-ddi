@@ -1,5 +1,5 @@
 ---
-UID: NF:ntifs.ZwSetEvent
+UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.ZwSetEvent
 title: ZwSetEvent function (ntifs.h)
 description: The ZwSetEvent routine sets an event object to a Signaled state and attempts to satisfy as many waits as possible.
 old-location: kernel\zwsetevent.htm
@@ -8,6 +8,8 @@ ms.assetid: f561fc3e-2233-4237-a88d-bd5a887a1e7a
 ms.date: 04/30/2018
 ms.keywords: NtSetEvent, ZwSetEvent, ZwSetEvent routine [Kernel-Mode Driver Architecture], k111_e01bbbbf-29f9-4c0a-89a2-84cf927aeb47.xml, kernel.zwsetevent, ntifs/NtSetEvent, ntifs/ZwSetEvent
 ms.topic: function
+f1_keywords:
+ - "ntifs/ZwSetEvent"
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal

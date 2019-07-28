@@ -1,5 +1,5 @@
 ---
-UID: NF:ntifs.CcMdlWriteAbort
+UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.CcMdlWriteAbort
 title: CcMdlWriteAbort function (ntifs.h)
 description: The CcMdlWriteAbort routine frees memory descriptor lists (MDL) created by an earlier call to CcPrepareMdlWrite.
 old-location: ifsk\ccmdlwriteabort.htm
@@ -8,6 +8,8 @@ ms.assetid: 32b6fc14-dbaa-41d7-a1a7-a805b9a8795a
 ms.date: 04/16/2018
 ms.keywords: CcMdlWriteAbort, CcMdlWriteAbort routine [Installable File System Drivers], ccref_517f25ce-d707-4611-af24-c66010b0d89e.xml, ifsk.ccmdlwriteabort, ntifs/CcMdlWriteAbort
 ms.topic: function
+f1_keywords:
+ - "ntifs/CcMdlWriteAbort"
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal

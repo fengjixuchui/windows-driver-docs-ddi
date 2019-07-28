@@ -5,6 +5,8 @@ description: The GetDefaultIndexDimensionality method returns the number of dime
 ms.assetid: 877b66bb-4b7a-4e4e-8199-d90a77eabda7
 ms.date: 09/19/2018
 ms.topic: method
+f1_keywords:
+ - "dbgmodel/IIterableConcept.GetDefaultIndexDimensionality"
 ms.keywords: IIterableConcept::GetDefaultIndexDimensionality, GetDefaultIndexDimensionality, IIterableConcept.GetDefaultIndexDimensionality, IIterableConcept::GetDefaultIndexDimensionality, IIterableConcept.GetDefaultIndexDimensionality
 req.header: dbgmodel.h
 req.include-header:
@@ -45,9 +47,9 @@ ms.custom: RS5
 
 The GetDefaultIndexDimensionality method returns the number of dimensions to the default index. If an object is not indexable, this method should return 0 and succeed (S_OK). Any object which returns a non-zero value from this method is declaring support for a protocol contract which states: 
 
-- The object supports the indexable concept via support of IIndexableConcept
-- The GetNext method of the IModelIterator returned from the GetIterator method of the iterable concept will return a unique default index for each produced element. Such index will have the number of dimensions as indicated here.
-- Passing the indicies returned from the GetNext method of the IModelIterator to the GetAt method on the indexable concept (IIndexableConcept) will refer to the same object that GetNext produced. The same value is returned.
+- The object supports the indexable concept via support of [IIndexableConcept](nn-dbgmodel-iindexableconcept.md)
+- The GetNext method of the [IModelIterator](nn-dbgmodel-imodeliterator.md) returned from the GetIterator method of the iterable concept will return a unique default index for each produced element. Such index will have the number of dimensions as indicated here.
+- Passing the indicies returned from the GetNext method of the [IModelIterator](nn-dbgmodel-imodeliterator.md) to the GetAt method on the indexable concept ([IIndexableConcept](nn-dbgmodel-iindexableconcept.md)) will refer to the same object that GetNext produced. The same value is returned.
 
 
 ## -parameters

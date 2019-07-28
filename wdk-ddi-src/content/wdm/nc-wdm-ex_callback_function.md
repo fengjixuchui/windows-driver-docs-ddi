@@ -8,6 +8,8 @@ ms.assetid: 220ce3b8-2820-4753-9659-5ce7b4f4f32d
 ms.date: 04/30/2018
 ms.keywords: DrvrRtns_988f8f3d-4ee8-4351-8fc0-703a88bd8421.xml, EX_CALLBACK_FUNCTION, RegistryCallback, RegistryCallback routine [Kernel-Mode Driver Architecture], kernel.registrycallback, wdm/RegistryCallback
 ms.topic: callback
+f1_keywords:
+ - "wdm/RegistryCallback"
 req.header: wdm.h
 req.include-header: Wdm.h, Ntddk.h, Ntifs.h
 req.target-type: Desktop
@@ -123,11 +125,11 @@ A pointer to a structure that contains information that is specific to the type 
 | **RegNtPostSetKeySecurity** | [REG_POST_OPERATION_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_reg_post_operation_information)  | 
 | **RegNtCallbackObjectContextCleanup** | [REG_CALLBACK_CONTEXT_CLEANUP_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_reg_callback_context_cleanup_information)  | 
 | **RegNtPreRestoreKey** | [REG_RESTORE_KEY_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_reg_restore_key_information)  | 
-| **RegNtPostRestoreKey** | [REG_RESTORE_KEY_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_reg_restore_key_information)  | 
+| **RegNtPostRestoreKey** | [REG_POST_OPERATION_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_reg_post_operation_information)  | 
 | **RegNtPreSaveKey** | [REG_SAVE_KEY_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_reg_save_key_information)  | 
-| **RegNtPostSaveKey** | [REG_SAVE_KEY_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_reg_save_key_information)  | 
+| **RegNtPostSaveKey** | [REG_POST_OPERATION_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_reg_post_operation_information)  | 
 | **RegNtPreReplaceKey** | [REG_REPLACE_KEY_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_reg_replace_key_information)  | 
-| **RegNtPostReplaceKey** | [REG_REPLACE_KEY_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_reg_replace_key_information)  | 
+| **RegNtPostReplaceKey** | [REG_POST_OPERATION_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_reg_post_operation_information)  | 
 | **RegNtPreQueryKeyName** | [REG_QUERY_KEY_NAME](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_reg_query_key_name)  | 
 | **RegNtPostQueryKeyName** | [REG_POST_OPERATION_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_reg_post_operation_information)  | 
  

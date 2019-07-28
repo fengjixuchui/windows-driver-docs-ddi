@@ -5,6 +5,8 @@ description: An interface to a stack frame in the script. The script provider im
 ms.assetid: c0701fe1-41b8-4f51-91e8-74506b344b08
 ms.date: 07/13/2018
 ms.topic: interface
+f1_keywords:
+ - "dbgmodel/IDataModelScriptDebugStackFrame"
 req.header: dbgmodel.h
 req.include-header:
 req.target-type:
@@ -96,7 +98,7 @@ IDataModelScriptDebugStackFrame interits from IUnknown.
 
 ## -remarks
 
-A particular frame of the call stack when broken into the script debugger can be retrieved via a call to the GetStackFrame method on the IDataModelScriptDebugStack interface representing the stack segment where the break occurred. The IDataModelScriptDebugStackFrame interface which is returned to represent this frame. 
+A particular frame of the call stack when broken into the script debugger can be retrieved via a call to the GetStackFrame method on the [IDataModelScriptDebugStack](nn-dbgmodel-idatamodelscriptdebugstack.md) interface representing the stack segment where the break occurred. The IDataModelScriptDebugStackFrame interface which is returned to represent this frame. 
 
 ## -see-also
 

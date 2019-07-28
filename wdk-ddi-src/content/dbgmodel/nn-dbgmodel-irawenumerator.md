@@ -5,6 +5,8 @@ description: An interface which enumerates the raw children (base classes, field
 ms.assetid: 9ffd4c68-726e-41a9-a5d7-523d039dc72f
 ms.date: 07/16/2018
 ms.topic: interface
+f1_keywords:
+ - "dbgmodel/IRawEnumerator"
 req.header: dbgmodel.h
 req.include-header:
 req.target-type:
@@ -37,7 +39,7 @@ ms.custom: RS5
 
 ## -description
 
-An interface which enumerates the raw children (e.g.: base classes, fields, etc...) of an object (and their values and associated metadata).  A raw enumerator can be acquired through the EnumerateRawValues or EnumerateRawReferences methods on IModelObject.
+An interface which enumerates the raw children (e.g.: base classes, fields, etc...) of an object (and their values and associated metadata).  A raw enumerator can be acquired through the EnumerateRawValues or EnumerateRawReferences methods on [IModelObject](nn-dbgmodel-imodelobject.md).
 
 
 ## -inheritance

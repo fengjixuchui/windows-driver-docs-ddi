@@ -8,6 +8,8 @@ ms.assetid: 15df601c-6daf-4db1-8c80-678d6c43ac55
 ms.date: 02/26/2018
 ms.keywords: DFUsbRef_243c98bc-1bef-4da4-8f04-aa9055fb6351.xml, WdfUsbTargetPipeFormatRequestForUrb, WdfUsbTargetPipeFormatRequestForUrb method, kmdf.wdfusbtargetpipeformatrequestforurb, wdf.wdfusbtargetpipeformatrequestforurb, wdfusb/WdfUsbTargetPipeFormatRequestForUrb
 ms.topic: function
+f1_keywords:
+ - "wdfusb/WdfUsbTargetPipeFormatRequestForUrb"
 req.header: wdfusb.h
 req.include-header: Wdfusb.h
 req.target-type: Universal
@@ -173,13 +175,8 @@ For more information about the <b>WdfUsbTargetPipeFormatRequestForUrb</b> method
 
 The following code example creates a memory object that represents a URB. Then, the example initializes the URB, formats a USB request that contains the URB, registers a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nc-wdfrequest-evt_wdf_request_completion_routine">CompletionRoutine</a> callback function, and sends the request.
 
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>URB  urb;
+```cpp
+URB  urb;
 PURB  pUrb = NULL;
 WDFMEMORY  urbMemory
 NTSTATUS status;
@@ -235,12 +232,8 @@ if (!NT_SUCCESS(status)) {
                                       0
                                       );
 }
-return;</pre>
-</td>
-</tr>
-</table></span></div>
-
-
+return;
+```
 
 ## -see-also
 

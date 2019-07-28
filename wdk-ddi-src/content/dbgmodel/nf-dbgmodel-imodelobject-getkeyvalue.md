@@ -5,6 +5,8 @@ description: The GetKeyValue method is the first method a client will turn to in
 ms.assetid: 83daa8ab-3d90-4003-8ce9-7fe10acf2859
 ms.date: 08/09/2018
 ms.topic: method
+f1_keywords:
+ - "dbgmodel/IModelObject.GetKeyValue"
 ms.keywords: IModelObject::GetKeyValue, GetKeyValue, IModelObject.GetKeyValue, IModelObject::GetKeyValue, IModelObject.GetKeyValue
 req.header: dbgmodel.h
 req.include-header:
@@ -43,7 +45,7 @@ ms.custom: RS5
 
 ## -description
 
-The GetKeyValue method is the first method a client will turn to in order to get the value of (and the metadata associated with) a given key by name. If the key is a property accessor -- that is it's value as an IModelObject which is a boxed IModelPropertyAccessor, the GetKeyValue method will automatically call the property accessor's GetValue method in order to retrieve the actual value. 
+The GetKeyValue method is the first method a client will turn to in order to get the value of (and the metadata associated with) a given key by name. If the key is a property accessor -- that is it's value as an [IModelObject](nn-dbgmodel-imodelobject.md) which is a boxed [IModelPropertyAccessor](nn-dbgmodel-imodelpropertyaccessor.md), the GetKeyValue method will automatically call the property accessor's GetValue method in order to retrieve the actual value. 
 
 ## -parameters
 

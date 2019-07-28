@@ -5,6 +5,8 @@ description: The second version of the interface for the data model manager.  Th
 ms.assetid: 3cdf03e0-7682-4b98-906c-b4fcacc844a4
 ms.date: 06/11/2019
 ms.topic: interface
+f1_keywords:
+ - "dbgmodel/IDataModelManager2"
 req.header: dbgmodel.h
 req.include-header:
 req.target-type:
@@ -44,7 +46,7 @@ This interface is never directly implemented by a client.
 This version 2 of the interface supports all of the previous methods with identical signatures and includes additional new methods that provide added functionality. The new methods are listed in the header at the end of the section for that interface.
 
 ## -inheritance
-IDataModelManager2 interits from IDataModelManager. 
+IDataModelManager2 interits from [IDataModelManager](nn-dbgmodel-idatamodelmanager.md). 
 ## -members
 
 <p>IDataModelManager2 has these methods.</p>

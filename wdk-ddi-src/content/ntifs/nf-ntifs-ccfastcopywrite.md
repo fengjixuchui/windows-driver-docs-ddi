@@ -1,5 +1,5 @@
 ---
-UID: NF:ntifs.CcFastCopyWrite
+UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.CcFastCopyWrite
 title: CcFastCopyWrite function (ntifs.h)
 description: The CcFastCopyWrite routine performs a fast copy write from a buffer in memory to a cached file.
 old-location: ifsk\ccfastcopywrite.htm
@@ -8,6 +8,8 @@ ms.assetid: 414d0b36-d7c2-4a01-8ceb-3817a11c422c
 ms.date: 04/16/2018
 ms.keywords: CcFastCopyWrite, CcFastCopyWrite routine [Installable File System Drivers], ccref_f5763242-c6f6-4638-8577-a6c65001a8ca.xml, ifsk.ccfastcopywrite, ntifs/CcFastCopyWrite
 ms.topic: function
+f1_keywords:
+ - "ntifs/CcFastCopyWrite"
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal

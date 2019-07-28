@@ -8,6 +8,8 @@ ms.assetid: 1298a825-16c4-49ab-b038-19247975ea46
 ms.date: 05/02/2018
 ms.keywords: FwpsInjectTransportSendAsync0, FwpsInjectTransportSendAsync0 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsInjectTransportSendAsync0, netvista.fwpsinjecttransportsendasync0, wfp_ref_2_funct_3_fwps_I_76082863-1d74-4916-9766-c65b745dca60.xml
 ms.topic: function
+f1_keywords:
+ - "fwpsk/FwpsInjectTransportSendAsync0"
 req.header: fwpsk.h
 req.include-header: Fwpsk.h
 req.target-type: Universal
@@ -248,6 +250,8 @@ If the return value is not STATUS_SUCCESS, the completion function will not be c
 Callout drivers normally inject data into the network stack when they modify packet data. For more
     information about how a callout driver can modify packet data, see 
     <a href="https://docs.microsoft.com/windows-hardware/drivers/network/callout-driver-operations">Callout Driver Operations</a>.
+
+Due to the TCP protocol locking semantics, TCP can only be injected Out of Band at any transport layer or equivalent layer, so FwpsInjectTransportReceiveAsync0 and FwpsInjectTransportSendAsync0 must be queued and run by a DPC.
 
 The injected packet can be indicated to the callout driver again. To prevent infinite looping, the
     driver should first call the 

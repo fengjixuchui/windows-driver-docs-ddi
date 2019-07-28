@@ -5,6 +5,8 @@ description: An interface which the underlying debugger host must implement in o
 ms.assetid: d0376d3b-d770-44e6-8b8f-5d8cc361bf14
 ms.date: 07/13/2018
 ms.topic: interface
+f1_keywords:
+ - "dbgmodel/IDebugHostScriptHost"
 req.header: dbgmodel.h
 req.include-header:
 req.target-type:
@@ -72,7 +74,7 @@ IDebugHostScriptHost inherits from IUnknown.
 
 ## -remarks
 
-The IDebugHostScriptHost interface is the interface used by a script provider to get a context from the debug host for a newly created script. This context includes an object (provided by the debug host) where the script provider can place any bridges between the data model and the scripting environment. Such bridges might, for instance, be data model methods which invoke script functions. Doing this allows a caller on the data model side to invoke script methods by utilization of the Call method on IModelMethod interface. 
+The IDebugHostScriptHost interface is the interface used by a script provider to get a context from the debug host for a newly created script. This context includes an object (provided by the debug host) where the script provider can place any bridges between the data model and the scripting environment. Such bridges might, for instance, be data model methods which invoke script functions. Doing this allows a caller on the data model side to invoke script methods by utilization of the Call method on [IModelMethod](nn-dbgmodel-imodelmethod.md) interface. 
 
 ## -see-also
 

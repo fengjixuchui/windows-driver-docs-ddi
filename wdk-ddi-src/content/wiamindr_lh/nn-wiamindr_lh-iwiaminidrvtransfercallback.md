@@ -8,6 +8,8 @@ ms.assetid: A3D874CB-1F43-4AA0-975B-35C0C5F7A13C
 ms.date: 05/03/2018
 ms.keywords: IWiaMiniDrvTransferCallback, IWiaMiniDrvTransferCallback interface [Imaging Devices], IWiaMiniDrvTransferCallback interface [Imaging Devices],described, image.iwiaminidrvtransfercallback, wiamindr_lh/IWiaMiniDrvTransferCallback
 ms.topic: interface
+f1_keywords:
+ - "wiamindr_lh/IWiaMiniDrvTransferCallback"
 req.header: wiamindr_lh.h
 req.include-header: 
 req.target-type: Desktop
@@ -59,9 +61,9 @@ The **IWiaMiniDrvTransferCallback** interface has these methods.
 
 ## -see-also
 
-[Cancellation of Data Transfers in Windows Vista](https://docs.microsoft.com/windows-hardware/drivers/image/cancellation-of-data-transfers-in-windows-vista)
+[Cancellation of Data Transfers](https://docs.microsoft.com/windows-hardware/drivers/image/cancellation-of-data-transfers-in-windows-vista)
 
-[Data Transfer Between Legacy Application and Windows Vista Driver](https://docs.microsoft.com/windows-hardware/drivers/image/data-transfer-between-legacy-application-and-windows-vista-driver)
+[Data Transfer Between Legacy Application and Windows Driver](https://docs.microsoft.com/windows-hardware/drivers/image/data-transfer-between-legacy-application-and-windows-vista-driver)
 
 [IStream Transfer Driver Example](https://docs.microsoft.com/windows-hardware/drivers/image/istream-transfer-driver-example)
 

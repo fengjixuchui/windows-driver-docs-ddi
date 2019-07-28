@@ -5,6 +5,8 @@ description: The GetLocation method will return the location of the native objec
 ms.assetid: d66a6e6d-bd87-46fe-a09e-04b7d5632180
 ms.date: 06/10/2019
 ms.topic: method
+f1_keywords:
+ - "dbgmodel/IModelObject.GetLocation"
 ms.keywords: IModelObject::GetLocation, GetLocation, IModelObject.GetLocation, IModelObject::GetLocation, IModelObject.GetLocation
 req.header: dbgmodel.h
 req.include-header:
@@ -44,7 +46,7 @@ ms.custom: RS5
 
 The GetLocation method will return the location of the native object. While such a location is typically a virtual address within the address space of the debug target, it is not necessarily so. The location returned by this method is an abstract location that may be a virtual address, may indicate placement within a register or sub-register, or may indicate some other arbitrary address space as defined by the debug host. If the HostDefined field of the resulting Location object is 0, it indicates that the location is actually a virtual address. Such virtual address may be retrieved by examining the Offset field of the resulting location. Any non-zero value of the HostDefined field indicates an alternate address space where the Offset field is the offset within that address space. The exact meaning of non-zero HostDefined values here are private to the debug host. 
 
-If the IModelObject on which this method is called is not a native construct with a location in some abstract address space of the debug target, this method will return E_FAIL. 
+If the [IModelObject](nn-dbgmodel-imodelobject.md) on which this method is called is not a native construct with a location in some abstract address space of the debug target, this method will return E_FAIL. 
 
 ## -parameters
 

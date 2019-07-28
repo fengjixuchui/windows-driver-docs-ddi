@@ -8,6 +8,8 @@ ms.assetid: 271794f2-20f8-410d-b6fb-b624f3cb38b2
 ms.author: windowsdriverdev
 ms.date: 03-07-2019
 ms.topic: ioctl
+f1_keywords:
+ - "ntddscsi/IOCTL_MINIPORT_SIGNATURE_SET_PROTOCOL"
 req.header: ntddscsi.h
 req.include-header:
 req.target-type:
@@ -47,7 +49,8 @@ For this signature, IOCTL_SCSI_MINIPORT's input buffer will contain an [SRB_IO_C
 
 * The **ControlCode** member is set to [IOCTL_STORAGE_SET_PROPERTY](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ni-ntddstor-ioctl_storage_set_property)
 
-If the miniport recognizes and supports the IOCTL_MINIPORT_SIGNATURE_SET_PROTOCOL signature, it should update its device using the protocol information specified in a [STORAGE_PROTOCOL_DATA_DESCRIPTOR](ns-ntddscsi-storage_protocol_data_descriptor.md) structure. For this signature, the STORAGE_PROTOCOL_DATA_DESCRIPTOR structure is found in IOCTL_SCSI_MINIPORT's input buffer immediately following the SRB_IO_CONTROL structure.
+If the miniport recognizes and supports the IOCTL_MINIPORT_SIGNATURE_SET_PROTOCOL signature, it should update its device using the protocol information specified in a [STORAGE_PROTOCOL_DATA_DESCRIPTOR](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddstor/ns-ntddstor-_storage_protocol_data_descriptor)
+structure. For this signature, the STORAGE_PROTOCOL_DATA_DESCRIPTOR structure is found in IOCTL_SCSI_MINIPORT's input buffer immediately following the SRB_IO_CONTROL structure.
 
 ## -see-also
 

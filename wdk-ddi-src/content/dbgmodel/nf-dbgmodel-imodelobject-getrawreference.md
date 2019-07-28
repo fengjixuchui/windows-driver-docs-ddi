@@ -5,6 +5,8 @@ description: The GetRawReference method finds a native construct within the give
 ms.assetid: 2a886a30-3403-4276-be7c-93348e2b9eea
 ms.date: 08/09/2018
 ms.topic: method
+f1_keywords:
+ - "dbgmodel/IModelObject.GetRawReference"
 ms.keywords: IModelObject::GetRawReference, GetRawReference, IModelObject.GetRawReference, IModelObject::GetRawReference, IModelObject.GetRawReference
 req.header: dbgmodel.h
 req.include-header:
@@ -57,7 +59,7 @@ The name of the native construct to fetch.
 An optional set of flags specifying the behavior of the search for the native construct.
 
 ### -param object
-An IModelObject representing the fetched native construct will be returned here. Note that in some circumstances, extended error information may be returned in this argument even if the HRESULT indicates failure. 
+An [IModelObject](nn-dbgmodel-imodelobject.md) representing the fetched native construct will be returned here. Note that in some circumstances, extended error information may be returned in this argument even if the HRESULT indicates failure. 
 
 
 ## -returns

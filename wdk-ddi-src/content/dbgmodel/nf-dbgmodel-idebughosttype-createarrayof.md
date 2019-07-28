@@ -5,6 +5,8 @@ description: For any given type, this returns a new IDebugHostType which is an a
 ms.assetid: bb8de044-1e9d-4357-8419-44016942f386
 ms.date: 09/11/2018
 ms.topic: method
+f1_keywords:
+ - "dbgmodel/IDebugHostType.CreateArrayOf"
 ms.keywords: IDebugHostType::CreateArrayOf, CreateArrayOf, IDebugHostType.CreateArrayOf, IDebugHostType::CreateArrayOf, IDebugHostType.CreateArrayOf
 req.header: dbgmodel.h
 req.include-header:
@@ -43,7 +45,7 @@ ms.custom: RS5
 
 ## -description
 
-For any given type, this returns a new IDebugHostType which is an array of this type.
+For any given type, this returns a new [IDebugHostType](nn-dbgmodel-idebughosttype.md) which is an array of this type.
 The dimensions of the array must be supplied via the "dimensions" and "pDimensions" arguments.
 
 ## -parameters

@@ -1,5 +1,5 @@
 ---
-UID: NF:ntifs.FsRtlTeardownPerStreamContexts
+UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.FsRtlTeardownPerStreamContexts
 title: FsRtlTeardownPerStreamContexts function (ntifs.h)
 description: The FsRtlTeardownPerStreamContexts routine frees all per-stream context structures associated with a given FSRTL_ADVANCED_FCB_HEADER structure.
 old-location: ifsk\fsrtlteardownperstreamcontexts.htm
@@ -8,6 +8,8 @@ ms.assetid: a37a921c-748a-4ac2-99c7-a6cf987a8f54
 ms.date: 04/16/2018
 ms.keywords: FsRtlTeardownPerStreamContexts, FsRtlTeardownPerStreamContexts routine [Installable File System Drivers], fsrtlref_15f597e3-b397-497b-9839-a61b6cf27745.xml, ifsk.fsrtlteardownperstreamcontexts, ntifs/FsRtlTeardownPerStreamContexts
 ms.topic: function
+f1_keywords:
+ - "ntifs/FsRtlTeardownPerStreamContexts"
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal

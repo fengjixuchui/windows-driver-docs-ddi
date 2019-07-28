@@ -5,6 +5,8 @@ description: A data model can be registered as the canonical visualizer or as an
 ms.assetid: 39dd2497-1650-4bf4-9aa1-71ed154182ba
 ms.date: 09/11/2018
 ms.topic: method
+f1_keywords:
+ - "dbgmodel/IDataModelConcept.InitializeObject"
 ms.keywords: IDataModelConcept::InitializeObject, InitializeObject, IDataModelConcept.InitializeObject, IDataModelConcept::InitializeObject, IDataModelConcept.InitializeObject
 req.header: dbgmodel.h
 req.include-header:
@@ -55,7 +57,7 @@ The instance object which is being initialized.
 The type signature against which the native type of modelObject matched that caused the attachment of the data model.
 
 ### -param wildcardMatches
-If the matching type signature includes wildcards, this argument will contain an enumerator which will enumerate how each wildcard matched. Typically, each IDebugHostSymbol enumerated here is an IDebugHostType. That is, not, however a requirement. Non-type template arguments (amongst other things) can match wildcards and may produce symbols such as IDebugHostConstant.
+If the matching type signature includes wildcards, this argument will contain an enumerator which will enumerate how each wildcard matched. Typically, each [IDebugHostSymbol](nn-dbgmodel-idebughostsymbol.md) enumerated here is an [IDebugHostType](nn-dbgmodel-idebughosttype.md). That is, not, however a requirement. Non-type template arguments (amongst other things) can match wildcards and may produce symbols such as [IDebugHostConstant](nn-dbgmodel-idebughostconstant.md).
 
 
 ## -returns
@@ -63,7 +65,7 @@ This method returns HRESULT that indicates success or failure. Failing this meth
 
 
 ## -remarks
-Note that a given data model implementation cannot assume that the InitializeObject call will be made for every object to which the data model is attached. As the data model is a completely dynamic system, it is entirely possible for a caller to directly acquire a model (via, for example, the GetParentModel method on IModelObject) and attach it manually. In such a circumstance, the InitializeObject call will not have been made and the implementation must be prepared to do such. The calling of this method is an optimization to allow expensive implementations to prefill and preinitialize requisite caches. 
+Note that a given data model implementation cannot assume that the InitializeObject call will be made for every object to which the data model is attached. As the data model is a completely dynamic system, it is entirely possible for a caller to directly acquire a model (via, for example, the GetParentModel method on [IModelObject](nn-dbgmodel-imodelobject.md)) and attach it manually. In such a circumstance, the InitializeObject call will not have been made and the implementation must be prepared to do such. The calling of this method is an optimization to allow expensive implementations to prefill and preinitialize requisite caches. 
 
 **Implementation Example**
 

@@ -1,5 +1,5 @@
 ---
-UID: NF:ntifs.FsRtlGetSectorSizeInformation
+UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.FsRtlGetSectorSizeInformation
 title: FsRtlGetSectorSizeInformation function (ntifs.h)
 description: The FsRtlGetSectorSizeInformation routine retrieves the physical and logical sector size information for a storage volume.
 old-location: ifsk\fsrtlgetsectorsizeinformation.htm
@@ -8,6 +8,8 @@ ms.assetid: 337E5450-8C90-48B7-B344-FB9420498D4F
 ms.date: 04/16/2018
 ms.keywords: FsRtlGetSectorSizeInformation, FsRtlGetSectorSizeInformation routine [Installable File System Drivers], ifsk.fsrtlgetsectorsizeinformation, ntifs/FsRtlGetSectorSizeInformation
 ms.topic: function
+f1_keywords:
+ - "ntifs/FsRtlGetSectorSizeInformation"
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal
