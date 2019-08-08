@@ -1,5 +1,5 @@
 ---
-UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.FsRtlNotifyVolumeEventEx~r2
+UID: NF:ntifs.FsRtlNotifyVolumeEventEx~r2
 title: FsRtlNotifyVolumeEventEx function (ntifs.h)
 description: The FsRtlNotifyVolumeEventEx routine notifies any registered applications that a volume event is occurring. Volume events include the volume being locked, unlocked, mounted, or made read-only.
 old-location: ifsk\fsrtlnotifyvolumeeventex.htm
@@ -26,7 +26,7 @@ req.assembly:
 req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: "<=DISPATCH_LEVEL"
+req.irql: <=DISPATCH_LEVEL
 topic_type:
 - APIRef
 - kbSyntax

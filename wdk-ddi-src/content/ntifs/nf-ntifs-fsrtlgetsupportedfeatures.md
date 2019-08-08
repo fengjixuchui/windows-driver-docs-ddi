@@ -1,5 +1,5 @@
 ---
-UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.FsRtlGetSupportedFeatures
+UID: NF:ntifs.FsRtlGetSupportedFeatures
 title: FsRtlGetSupportedFeatures function (ntifs.h)
 description: The FsRtlGetSupportedFeatures routine returns the supported features of a volume attached to the specified device object.
 old-location: ifsk\fsrtlgetsupportedfeatures.htm
@@ -26,7 +26,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: "<= APC_LEVEL"
+req.irql: <= APC_LEVEL
 topic_type:
 - APIRef
 - kbSyntax

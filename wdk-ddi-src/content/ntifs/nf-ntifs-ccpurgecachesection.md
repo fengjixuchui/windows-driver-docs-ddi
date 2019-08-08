@@ -1,5 +1,5 @@
 ---
-UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.CcPurgeCacheSection
+UID: NF:ntifs.CcPurgeCacheSection
 title: CcPurgeCacheSection function (ntifs.h)
 description: The CcPurgeCacheSection routine purges all or a portion of a cached file from the system cache.
 old-location: ifsk\ccpurgecachesection.htm
@@ -26,7 +26,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: "< DISPATCH_LEVEL"
+req.irql: < DISPATCH_LEVEL
 topic_type:
 - APIRef
 - kbSyntax

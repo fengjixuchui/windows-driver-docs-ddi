@@ -1,5 +1,5 @@
 ---
-UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.FsRtlFreeFileLock(PFILE_LOCK)
+UID: NF:ntifs.FsRtlFreeFileLock(PFILE_LOCK)
 title: FsRtlFreeFileLock function (ntifs.h)
 description: The FsRtlFreeFileLock routine uninitializes and frees a file lock structure.
 old-location: ifsk\fsrtlfreefilelock.htm
@@ -26,7 +26,7 @@ req.assembly:
 req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: "<= APC_LEVEL"
+req.irql: <= APC_LEVEL
 topic_type:
 - APIRef
 - kbSyntax

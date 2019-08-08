@@ -1,5 +1,5 @@
 ---
-UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.FsRtlFreeExtraCreateParameterList
+UID: NF:ntifs.FsRtlFreeExtraCreateParameterList
 title: FsRtlFreeExtraCreateParameterList function (ntifs.h)
 description: The FsRtlFreeExtraCreateParameterList routine frees an extra create parameter (ECP) list structure.
 old-location: ifsk\fsrtlfreeextracreateparameterlist.htm
@@ -26,7 +26,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: "<= APC_LEVEL"
+req.irql: <= APC_LEVEL
 topic_type:
 - APIRef
 - kbSyntax

@@ -1,5 +1,5 @@
 ---
-UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.FsRtlAreVolumeStartupApplicationsComplete
+UID: NF:ntifs.FsRtlAreVolumeStartupApplicationsComplete
 title: FsRtlAreVolumeStartupApplicationsComplete function (ntifs.h)
 description: The FsRtlAreVolumeStartupApplicationsComplete function determines whether volume startup applications have completed processing.
 old-location: ifsk\fsrtlarevolumestartupapplicationscomplete.htm
@@ -26,7 +26,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: "<= APC_LEVEL"
+req.irql: <= APC_LEVEL
 topic_type:
 - APIRef
 - kbSyntax

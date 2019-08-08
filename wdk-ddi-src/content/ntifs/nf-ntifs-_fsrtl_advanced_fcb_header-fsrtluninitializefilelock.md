@@ -1,5 +1,5 @@
 ---
-UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.FsRtlUninitializeFileLock
+UID: NF:ntifs.FsRtlUninitializeFileLock
 title: FsRtlUninitializeFileLock function (ntifs.h)
 description: The FsRtlUninitializeFileLock routine uninitializes a FILE_LOCK structure.
 old-location: ifsk\fsrtluninitializefilelock.htm
@@ -26,7 +26,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: "<= APC_LEVEL"
+req.irql: <= APC_LEVEL
 topic_type:
 - APIRef
 - kbSyntax

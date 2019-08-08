@@ -1,5 +1,5 @@
 ---
-UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.FsRtlIncrementCcFastMdlReadWait
+UID: NF:ntifs.FsRtlIncrementCcFastMdlReadWait
 title: FsRtlIncrementCcFastMdlReadWait function (ntifs.h)
 description: The FsRtlIncrementCcFastMdlReadWait routine increments the cache manager's CcFastMdlReadWait performance counter member in a processor control block (PRCB) object.
 old-location: ifsk\fsrtlincrementccfastmdlreadwait.htm
@@ -26,7 +26,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: "<= APC_LEVEL"
+req.irql: <= APC_LEVEL
 topic_type:
 - APIRef
 - kbSyntax

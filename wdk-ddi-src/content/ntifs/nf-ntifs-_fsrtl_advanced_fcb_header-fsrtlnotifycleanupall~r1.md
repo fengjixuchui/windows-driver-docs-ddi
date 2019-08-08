@@ -1,5 +1,5 @@
 ---
-UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.FsRtlNotifyCleanupAll~r1
+UID: NF:ntifs.FsRtlNotifyCleanupAll~r1
 title: FsRtlNotifyCleanupAll function (ntifs.h)
 description: The FsRtlNotifyCleanupAll routine removes all members of the specified notification list.
 old-location: ifsk\fsrtlnotifycleanupall.htm
@@ -26,7 +26,7 @@ req.assembly:
 req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: "<=APC_LEVEL"
+req.irql: <=APC_LEVEL
 topic_type:
 - APIRef
 - kbSyntax

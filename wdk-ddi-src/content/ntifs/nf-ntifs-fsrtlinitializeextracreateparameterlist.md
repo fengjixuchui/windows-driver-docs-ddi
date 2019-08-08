@@ -1,5 +1,5 @@
 ---
-UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.FsRtlInitializeExtraCreateParameterList
+UID: NF:ntifs.FsRtlInitializeExtraCreateParameterList
 title: FsRtlInitializeExtraCreateParameterList function (ntifs.h)
 description: The FsRtlInitializeExtraCreateParameterList routine initializes an extra create parameter (ECP) context structure list.
 old-location: ifsk\fsrtlinitializeextracreateparameterlist.htm
@@ -26,7 +26,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: "<= APC_LEVEL"
+req.irql: <= APC_LEVEL
 topic_type:
 - APIRef
 - kbSyntax

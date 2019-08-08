@@ -1,5 +1,5 @@
 ---
-UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.CcFastCopyRead
+UID: NF:ntifs.CcFastCopyRead
 title: CcFastCopyRead function (ntifs.h)
 description: The CcFastCopyRead routine performs a fast copy read from a cached file to a buffer in memory.
 old-location: ifsk\ccfastcopyread.htm
@@ -26,7 +26,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: "< DISPATCH_LEVEL"
+req.irql: < DISPATCH_LEVEL
 topic_type:
 - APIRef
 - kbSyntax

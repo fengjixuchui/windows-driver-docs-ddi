@@ -1,5 +1,5 @@
 ---
-UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.CcCopyRead
+UID: NF:ntifs.CcCopyRead
 title: CcCopyRead function (ntifs.h)
 description: The CcCopyRead routine copies data from a cached file to a user buffer.
 old-location: ifsk\cccopyread.htm
@@ -26,7 +26,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: "<= APC_LEVEL"
+req.irql: <= APC_LEVEL
 topic_type:
 - APIRef
 - kbSyntax

@@ -1,5 +1,5 @@
 ---
-UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.FsRtlIssueDeviceIoControl
+UID: NF:ntifs.FsRtlIssueDeviceIoControl
 title: FsRtlIssueDeviceIoControl function (ntifs.h)
 description: The FsRtlIssueDeviceIoControl routine sends a synchronous device I/O control request to a target device object.
 old-location: ifsk\fsrtlissuedeviceiocontrol.htm
@@ -26,7 +26,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ntoskrnl.lib
 req.dll: 
-req.irql: "<= APC_LEVEL"
+req.irql: <= APC_LEVEL
 topic_type:
 - APIRef
 - kbSyntax

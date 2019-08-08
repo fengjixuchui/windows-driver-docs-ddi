@@ -33,13 +33,14 @@ topic_type:
 api_type: 
  - 
 api_location: 
- - 
+- fltkernel.h
 api_name: 
  - FltRetrieveFileInfoOnCreateCompletionEx
 product: 
  - Windows
 targetos: Windows
-
+dev_langs:
+- c++
 ms.custom: 19H1
 ---
 

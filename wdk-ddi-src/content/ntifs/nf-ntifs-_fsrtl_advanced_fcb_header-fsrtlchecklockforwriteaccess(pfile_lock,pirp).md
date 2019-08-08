@@ -1,5 +1,5 @@
 ---
-UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.FsRtlCheckLockForWriteAccess(PFILE_LOCK,PIRP)
+UID: NF:ntifs.FsRtlCheckLockForWriteAccess(PFILE_LOCK,PIRP)
 title: FsRtlCheckLockForWriteAccess function (ntifs.h)
 description: The FsRtlCheckLockForWriteAccess routine determines whether the process associated with a given IRP has write access to a locked region of a file.
 old-location: ifsk\fsrtlchecklockforwriteaccess.htm
@@ -26,7 +26,7 @@ req.assembly:
 req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: "<= APC_LEVEL"
+req.irql: <= APC_LEVEL
 topic_type:
 - APIRef
 - kbSyntax

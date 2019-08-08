@@ -25,7 +25,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: "<= DISPATCH_LEVEL"
+req.irql: <= DISPATCH_LEVEL
 topic_type:
 - APIRef
 - kbSyntax
@@ -104,7 +104,7 @@ kd> !wdfdevice <handle> f
 
 [**WdfDeviceStopIdle**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicestopidle)
 
-[**WdfDeviceStopIdleWithTag**](wdfdevicestopidlewithtag.md)
+[**WdfDeviceStopIdleWithTag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicestopidlewithtag)
 
  
 

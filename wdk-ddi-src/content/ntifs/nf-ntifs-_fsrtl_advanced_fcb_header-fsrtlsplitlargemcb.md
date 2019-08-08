@@ -1,5 +1,5 @@
 ---
-UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.FsRtlSplitLargeMcb
+UID: NF:ntifs.FsRtlSplitLargeMcb
 title: FsRtlSplitLargeMcb function (ntifs.h)
 description: The FsRtlSplitLargeMcb routine inserts a hole into the mappings in a map control block (MCB).
 old-location: ifsk\fsrtlsplitlargemcb.htm
@@ -26,7 +26,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: "<= APC_LEVEL"
+req.irql: <= APC_LEVEL
 topic_type:
 - APIRef
 - kbSyntax

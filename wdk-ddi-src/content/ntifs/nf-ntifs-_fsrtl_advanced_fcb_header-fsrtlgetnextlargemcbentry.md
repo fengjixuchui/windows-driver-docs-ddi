@@ -1,5 +1,5 @@
 ---
-UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.FsRtlGetNextLargeMcbEntry
+UID: NF:ntifs.FsRtlGetNextLargeMcbEntry
 title: FsRtlGetNextLargeMcbEntry function (ntifs.h)
 description: The FsRtlGetNextLargeMcbEntry routine retrieves a mapping run from a map control block (MCB).
 old-location: ifsk\fsrtlgetnextlargemcbentry.htm
@@ -26,7 +26,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: "<= APC_LEVEL"
+req.irql: <= APC_LEVEL
 topic_type:
 - APIRef
 - kbSyntax

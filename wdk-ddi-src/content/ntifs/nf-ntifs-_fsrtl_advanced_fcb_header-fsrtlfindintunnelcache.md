@@ -1,5 +1,5 @@
 ---
-UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.FsRtlFindInTunnelCache
+UID: NF:ntifs.FsRtlFindInTunnelCache
 title: FsRtlFindInTunnelCache function (ntifs.h)
 description: The FsRtlFindInTunnelCache routine searches for a matching entry in the tunnel cache that matches the specified name.
 old-location: ifsk\fsrtlfindintunnelcache.htm
@@ -26,7 +26,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: "<= APC_LEVEL"
+req.irql: <= APC_LEVEL
 topic_type:
 - APIRef
 - kbSyntax

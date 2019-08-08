@@ -1,5 +1,5 @@
 ---
-UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.FsRtlNotifyUninitializeSync
+UID: NF:ntifs.FsRtlNotifyUninitializeSync
 title: FsRtlNotifyUninitializeSync function (ntifs.h)
 description: The FsRtlNotifyUninitializeSync routine deallocates the synchronization object for a notify list.
 old-location: ifsk\fsrtlnotifyuninitializesync.htm
@@ -26,7 +26,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: "<= APC_LEVEL"
+req.irql: <= APC_LEVEL
 topic_type:
 - APIRef
 - kbSyntax

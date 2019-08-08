@@ -1,5 +1,5 @@
 ---
-UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.FsRtlLookupPerFileContext
+UID: NF:ntifs.FsRtlLookupPerFileContext
 title: FsRtlLookupPerFileContext function (ntifs.h)
 description: The FsRtlLookupPerFileContext routine returns a pointer to a FSRTL_PER_FILE_CONTEXT object that is associated with a specified file.
 old-location: ifsk\fsrtllookupperfilecontext.htm
@@ -26,7 +26,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: "<=  APC_LEVEL"
+req.irql: <=  APC_LEVEL
 topic_type:
 - APIRef
 - kbSyntax

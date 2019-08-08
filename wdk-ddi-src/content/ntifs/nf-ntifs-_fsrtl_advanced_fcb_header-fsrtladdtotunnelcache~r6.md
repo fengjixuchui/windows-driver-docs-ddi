@@ -1,5 +1,5 @@
 ---
-UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.FsRtlAddToTunnelCache~r6
+UID: NF:ntifs.FsRtlAddToTunnelCache~r6
 title: FsRtlAddToTunnelCache function (ntifs.h)
 description: The FsRtlAddToTunnelCache routine caches a file name that is removed from a directory when a file is renamed or deleted.
 old-location: ifsk\fsrtladdtotunnelcache.htm
@@ -26,7 +26,7 @@ req.assembly:
 req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: "<= APC_LEVEL"
+req.irql: <= APC_LEVEL
 topic_type:
 - APIRef
 - kbSyntax

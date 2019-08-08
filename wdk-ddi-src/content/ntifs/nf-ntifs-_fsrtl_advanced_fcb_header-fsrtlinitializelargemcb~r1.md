@@ -1,5 +1,5 @@
 ---
-UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.FsRtlInitializeLargeMcb~r1
+UID: NF:ntifs.FsRtlInitializeLargeMcb~r1
 title: FsRtlInitializeLargeMcb function (ntifs.h)
 description: The FsRtlInitializeLargeMcb routine initializes a map control block (MCB) structure.
 old-location: ifsk\fsrtlinitializelargemcb.htm
@@ -26,7 +26,7 @@ req.assembly:
 req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: "<= APC_LEVEL"
+req.irql: <= APC_LEVEL
 topic_type:
 - APIRef
 - kbSyntax

@@ -1,5 +1,5 @@
 ---
-UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.FsRtlAllocateFileLock~r1
+UID: NF:ntifs.FsRtlAllocateFileLock~r1
 title: FsRtlAllocateFileLock function (ntifs.h)
 description: The FsRtlAllocateFileLock routine allocates and initializes a new FILE_LOCK structure.
 old-location: ifsk\fsrtlallocatefilelock.htm
@@ -26,7 +26,7 @@ req.assembly:
 req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: "<= APC_LEVEL"
+req.irql: <= APC_LEVEL
 topic_type:
 - APIRef
 - kbSyntax

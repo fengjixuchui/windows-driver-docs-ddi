@@ -33,12 +33,13 @@ topic_type:
 api_type: 
 - 
 api_location: 
-- 
+- fltkernel.h
 api_name: 
 - FltFlushBuffers2
 product: Windows
 targetos: Windows
-
+dev_langs:
+- c++
 ms.custom: 19H1
 ---
 

@@ -1,5 +1,5 @@
 ---
-UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.FsRtlIsHpfsDbcsLegal~r3
+UID: NF:ntifs.FsRtlIsHpfsDbcsLegal~r3
 title: FsRtlIsHpfsDbcsLegal function (ntifs.h)
 description: The FsRtlIsHpfsDbcsLegal routine determines whether the specified ANSI or double-byte character set (DBCS) string is a legal HPFS file name.
 old-location: ifsk\fsrtlishpfsdbcslegal.htm
@@ -26,7 +26,7 @@ req.assembly:
 req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: "<= APC_LEVEL"
+req.irql: <= APC_LEVEL
 topic_type:
 - APIRef
 - kbSyntax

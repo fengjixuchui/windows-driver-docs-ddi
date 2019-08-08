@@ -1,5 +1,5 @@
 ---
-UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.CcZeroData
+UID: NF:ntifs.CcZeroData
 title: CcZeroData function (ntifs.h)
 description: The CcZeroData routine zeros the specified range of bytes in a cached or noncached file.
 old-location: ifsk\cczerodata.htm
@@ -26,7 +26,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: "<=APC_LEVEL"
+req.irql: <=APC_LEVEL
 topic_type:
 - APIRef
 - kbSyntax

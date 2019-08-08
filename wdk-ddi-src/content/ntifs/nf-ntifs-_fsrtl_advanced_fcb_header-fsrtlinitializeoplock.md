@@ -1,5 +1,5 @@
 ---
-UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.FsRtlInitializeOplock
+UID: NF:ntifs.FsRtlInitializeOplock
 title: FsRtlInitializeOplock function (ntifs.h)
 description: FsRtlInitializeOplock initializes an opportunistic lock (oplock) pointer.
 old-location: ifsk\fsrtlinitializeoplock.htm
@@ -26,7 +26,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: "<= APC_LEVEL"
+req.irql: <= APC_LEVEL
 topic_type:
 - APIRef
 - kbSyntax
