@@ -65,19 +65,13 @@ The <b>WdfDeviceResumeIdle</b> method informs the framework that the specified d
 
 A handle to a framework device object.
 
-## -returns
 
-None.
+## -remarks
 
 A bug check occurs if the driver supplies an invalid object handle.
 
 
-
-## -remarks
-
-
-
-Every call to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicestopidle">WdfDeviceStopIdle</a> must eventually be followed by a call to <b>WdfDeviceResumeIdle</b>, or else the device will never return to a low-power state if it again becomes idle.
+Every call to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicestopidle">WdfDeviceStopIdle</a> must eventually be followed by a call to <b>WdfDeviceResumeIdle</b>, or else the device will never return to a low-power state if it again becomes idle.
 
 Calling <a href="https://docs.microsoft.com/windows-hardware/drivers/wdf/wdfdeviceresumeidlewithtag">WdfDeviceResumeIdleWithTag</a> instead of <b>WdfDeviceResumeIdle</b> provides additional information (tag value, line number, and file name) that you can view in Microsoft debuggers.
 
@@ -86,16 +80,9 @@ Calling <a href="https://docs.microsoft.com/windows-hardware/drivers/wdf/wdfdevi
 
 The following code example informs the framework that the specified device is not in use and can be placed in a device low-power state if it remains idle.
 
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>WdfDeviceResumeIdle(device);</pre>
-</td>
-</tr>
-</table></span></div>
+```cpp
+WdfDeviceResumeIdle(device);
+```
 
 
 
@@ -112,7 +99,7 @@ The following code example informs the framework that the specified device is no
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicestopidle">WdfDeviceStopIdle</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicestopidle">WdfDeviceStopIdle</a>
 
 
 

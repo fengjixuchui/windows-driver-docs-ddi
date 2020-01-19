@@ -61,15 +61,6 @@ The <b>IoFreeMdl</b> routine releases a caller-allocated memory descriptor list 
 Pointer to the MDL to be released. 
 
 
-## -returns
-
-
-
-None
-
-
-
-
 ## -remarks
 
 
@@ -90,11 +81,11 @@ This routine frees only the specified MDL. Any MDLs that are chained to this MDL
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioallocatemdl">IoAllocateMdl</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocatemdl">IoAllocateMdl</a>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iobuildpartialmdl">IoBuildPartialMdl</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuildpartialmdl">IoBuildPartialMdl</a>
  
 
  

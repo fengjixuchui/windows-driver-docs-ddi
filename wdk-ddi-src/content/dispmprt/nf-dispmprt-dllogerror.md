@@ -40,7 +40,8 @@ api_name:
 product: 
 - Windows
 targetos: Windows
-
+dev_langs:
+ - c++
 ms.custom: 19H1
 ---
 
@@ -68,10 +69,6 @@ Specifies a miniport driver-defined error code that indicates the type of hardwa
 ### -param UniqueId
 
 Specifies a unique identifier for the error.
-
-## -returns
-
-This function returns VOID.
 
 ## -remarks
 

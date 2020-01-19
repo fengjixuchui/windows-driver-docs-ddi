@@ -69,15 +69,6 @@ True to enable tracing in the miniport. Otherwise, false.
 A pointer to the miniport driver's per-HBA storage area. 
 
 
-## -returns
-
-
-
-None.
-
-
-
-
 ## -remarks
 
 
@@ -107,7 +98,7 @@ HW_TRACING_ENABLED (
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/strmini/ns-strmini-_hw_initialization_data">HW_INITIALIZATION_DATA</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/strmini/ns-strmini-_hw_initialization_data">HW_INITIALIZATION_DATA</a>
  
 
  

@@ -69,18 +69,10 @@ A handle to a framework resource-requirements-list object that represents a devi
 A zero-based value that is used as an index into the resource requirements list that <i>RequirementsList</i> specifies. 
 
 
-## -returns
-
-
-
-None.
-
-A system bug check occurs if the driver supplies an invalid object handle.
-
-
-
-
 ## -remarks
+
+A bug check occurs if the driver supplies an invalid object handle.
+
 
 
 
@@ -95,13 +87,8 @@ For more information about resource requirements lists, see <a href="https://doc
 
 The following code example removes the second logical configuration from a resource requirements list.
 
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>NTSTATUS
+```cpp
+NTSTATUS
 Example_EvtDeviceFilterRemoveResourceRequirements(
     IN WDFDEVICE Device,
     IN WDFIORESREQLIST RequirementsList
@@ -113,10 +100,8 @@ Example_EvtDeviceFilterRemoveResourceRequirements(
                                         1
                                         );
 ...
-}</pre>
-</td>
-</tr>
-</table></span></div>
+}
+```
 
 
 
@@ -125,7 +110,7 @@ Example_EvtDeviceFilterRemoveResourceRequirements(
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfresource/nf-wdfresource-wdfioresourcerequirementslistremovebyioreslist">WdfIoResourceRequirementsListRemoveByIoResList</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfresource/nf-wdfresource-wdfioresourcerequirementslistremovebyioreslist">WdfIoResourceRequirementsListRemoveByIoResList</a>
  
 
  

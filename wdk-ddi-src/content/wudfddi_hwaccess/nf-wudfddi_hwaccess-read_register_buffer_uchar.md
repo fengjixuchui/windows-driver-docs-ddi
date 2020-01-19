@@ -60,7 +60,7 @@ The <b>READ_REGISTER_BUFFER_UCHAR</b> function reads a number of bytes from the 
 
 ### -param pDevice [in]
 
-Specifies a pointer to the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nn-wudfddi-iwdfdevice3">IWDFDevice3</a> interface for the device object of the device to access.
+Specifies a pointer to the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice3">IWDFDevice3</a> interface for the device object of the device to access.
 
 
 ### -param Register [in]
@@ -76,15 +76,6 @@ A pointer to a buffer into which an array of UCHAR values is read.
 ### -param Count [in]
 
 Specifies the number of bytes to be read into the buffer.
-
-
-## -returns
-
-
-
-This function does not return a value.
-
-
 
 
 ## -remarks

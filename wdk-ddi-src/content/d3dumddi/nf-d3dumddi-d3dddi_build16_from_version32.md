@@ -36,8 +36,8 @@ api_name:
 product:
 - Windows
 targetos: Windows
-
-
+dev_langs:
+ - c++
 ms.custom: RS5
 tech.root: display
 ---
@@ -54,10 +54,6 @@ Converts a 16 bit build from a 32 bit version.
 ### -param v
 
 The current version.
-
-## -returns
-
-
 
 ## -remarks
 

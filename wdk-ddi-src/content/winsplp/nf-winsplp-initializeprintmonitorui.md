@@ -51,21 +51,11 @@ req.typenames:
 A port monitor UI DLL's <b>InitializePrintMonitorUI</b> function supplies the print spooler with addresses of DLL functions.
 
 
-## -parameters
-
-
-
-
-
-
-#### - void
-
-
 ## -returns
 
 
 
-The function should return a pointer to an initialized <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/ns-winsplp-_monitorui">MONITORUI</a> structure.
+The function should return a pointer to an initialized <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/winsplp/ns-winsplp-_monitorui">MONITORUI</a> structure.
 
 
 
@@ -84,11 +74,11 @@ Port monitor UI DLLs are required to export an <b>InitializePrintMonitorUI</b> f
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-initializeprintmonitor">InitializePrintMonitor</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/winsplp/nf-winsplp-initializeprintmonitor">InitializePrintMonitor</a>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/ns-winsplp-_monitorui">MONITORUI</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/winsplp/ns-winsplp-_monitorui">MONITORUI</a>
  
 
  

@@ -8,8 +8,6 @@ ms.assetid: e245f6f9-f4ea-429d-8421-be4fef1bf17e
 ms.date: 05/10/2018
 ms.keywords: FinishSessionKeyRefresh, FinishSessionKeyRefresh callback function [Display Devices], PFND3DDDI_FINISHSESSIONKEYREFRESH, PFND3DDDI_FINISHSESSIONKEYREFRESH callback, UserModeDisplayDriver_Functions_6b7be711-8539-4b49-99d0-efbd424b33cc.xml, d3dumddi/FinishSessionKeyRefresh, display.finishsessionkeyrefresh
 ms.topic: callback
-f1_keywords:
- - "d3dumddi/FinishSessionKeyRefresh"
 req.header: d3dumddi.h
 req.include-header: D3dumddi.h
 req.target-type: Desktop
@@ -27,57 +25,42 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-topic_type:
-- APIRef
-- kbSyntax
-api_type:
-- UserDefined
-api_location:
-- d3dumddi.h
-api_name:
-- FinishSessionKeyRefresh
-product:
-- Windows
 targetos: Windows
 req.typenames: 
+f1_keywords:
+ - "d3dumddi/FinishSessionKeyRefresh"
+topic_type:
+ - APIRef
+ - kbSyntax
+api_type:
+ - UserDefined
+api_location:
+ - d3dumddi.h
+api_name:
+ - FinishSessionKeyRefresh
+product:
+ - Windows
 ---
 
 # PFND3DDDI_FINISHSESSIONKEYREFRESH callback function
 
-
 ## -description
 
-
-The <i>FinishSessionKeyRefresh</i> function indicates that all buffers from that point in time use the updated session key value. 
-
+The <i>FinishSessionKeyRefresh</i> function indicates that all buffers from that point in time use the updated session key value.
 
 ## -parameters
 
-
-
-
-### -param hDevice [in]
+### -param hDevice
 
 A handle to the display device (graphics context).
 
-
-### -param *
-
-
-
-
-
-
-
+### -param Arg2
 
 *pData* [in]
 
-A pointer to a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/ns-d3dumddi-_d3dddiarg_finishsessionkeyrefresh">D3DDDIARG_FINISHSESSIONKEYREFRESH</a> structure that describes the session. 
-
+A pointer to a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_finishsessionkeyrefresh">D3DDDIARG_FINISHSESSIONKEYREFRESH</a> structure that describes the session.
 
 ## -returns
-
-
 
 <i>FinishSessionKeyRefresh</i> returns one of the following values:
 
@@ -86,35 +69,23 @@ A pointer to a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/
 |S_OK|The session is successfully updated.|
 |D3DDDIERR_NOTAVAILABLE|The driver does not support the FinishSessionKeyRefresh function.|
 
-
 ## -remarks
-
-
 
 The hardware and driver can optionally support the <i>FinishSessionKeyRefresh</i> function for all crypto types.
 
-When the Direct3D runtime calls the driver's <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_startsessionkeyrefresh">StartSessionKeyRefresh</a> function, the driver generates and saves a random number and returns the random number in the buffer that the <b>pRandomNumber</b> member of the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/ns-d3dumddi-_d3dddiarg_startsessionkeyrefresh">D3DDDIARG_STARTSESSIONKEYREFRESH</a> structure points to. 
+When the Direct3D runtime calls the driver's <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_startsessionkeyrefresh">StartSessionKeyRefresh</a> function, the driver generates and saves a random number and returns the random number in the buffer that the <b>pRandomNumber</b> member of the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_startsessionkeyrefresh">D3DDDIARG_STARTSESSIONKEYREFRESH</a> structure points to. 
 
 When the runtime subsequently calls the driver's <i>FinishSessionKeyRefresh</i> function, the driver performs an XOR operation of the random number with the session key.
 
-
-
-
 ## -see-also
 
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_finishsessionkeyrefresh">D3DDDIARG_FINISHSESSIONKEYREFRESH</a>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/ns-d3dumddi-_d3dddiarg_finishsessionkeyrefresh">D3DDDIARG_FINISHSESSIONKEYREFRESH</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_startsessionkeyrefresh">D3DDDIARG_STARTSESSIONKEYREFRESH</a>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dumddi/ns-d3dumddi-_d3dddiarg_startsessionkeyrefresh">D3DDDIARG_STARTSESSIONKEYREFRESH</a>
-
-
-
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_startsessionkeyrefresh">StartSessionKeyRefresh</a>
- 
-
- 
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_startsessionkeyrefresh">StartSessionKeyRefresh</a>
 

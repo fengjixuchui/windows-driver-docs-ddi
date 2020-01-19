@@ -81,22 +81,14 @@ A numeric value that represents a line number in a driver source file.
 A pointer to a null-terminated constant character string that represents the name of a driver source file. This parameter is optional and can be <b>NULL</b>.
 
 
-## -returns
-
-
-
-None.
+## -remarks
 
 A bug check occurs if the driver supplies an invalid object handle.
 
 
 
 
-## -remarks
-
-
-
-If your driver calls <b>WdfObjectReferenceActual</b> to increment a reference count, the driver must call <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfobject/nf-wdfobject-wdfobjectdereferenceactual">WdfObjectDereferenceActual</a> to decrement the count.
+If your driver calls <b>WdfObjectReferenceActual</b> to increment a reference count, the driver must call <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfobject/nf-wdfobject-wdfobjectdereferenceactual">WdfObjectDereferenceActual</a> to decrement the count.
 
 Calling <b>WdfObjectReferenceActual</b> or <a href="https://docs.microsoft.com/windows-hardware/drivers/wdf/wdfobjectreferencewithtag">WdfObjectReferenceWithTag</a> instead of <a href="https://docs.microsoft.com/windows-hardware/drivers/wdf/wdfobjectreference">WdfObjectReference</a> provides additional information (tag value, line number, and file name) to Microsoft debuggers. <b>WdfObjectReferenceActual</b> allows your driver to specify the line number and file name, while <b>WdfObjectReferenceWithTag</b> uses the driver's current line number and file name.
 
@@ -110,21 +102,14 @@ For more information about the cleanup rules for a framework object hierarchy, s
 
 The following code example increments an object's reference count and assigns a tag value, line number, and file name to the reference.
 
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>WdfObjectReferenceActual(
+```cpp
+WdfObjectReferenceActual(
                          object,
                          pTag,
                          line,
                          FILE_NAME
-                         );</pre>
-</td>
-</tr>
-</table></span></div>
+                         );
+```
 
 
 

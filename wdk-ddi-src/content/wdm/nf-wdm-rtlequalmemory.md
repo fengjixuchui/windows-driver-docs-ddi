@@ -36,7 +36,7 @@ api_location:
 - Wdm.h
 api_name:
 - RtlEqualMemory
--   memcmp
+- memcmp
 product:
 - Windows
 targetos: Windows
@@ -82,12 +82,11 @@ Datatype: void*. A pointer to a caller-allocated block of memory that is compare
 
 Datatype: size_t. Specifies the number of bytes to be compared.
 
-## -returns
-**RtlEqualMemory** returns TRUE if Source1 and Source2 are equivalent; otherwise, it returns FALSE. 
 
 
 ## -remarks
 
+**RtlEqualMemory** returns TRUE if Source1 and Source2 are equivalent; otherwise, it returns FALSE. 
 
 
 <b>RtlEqualMemory</b> begins the comparison with byte zero of each block.
@@ -102,7 +101,7 @@ Callers of <b>RtlEqualMemory</b> can be running at any IRQL if both blocks of me
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-rtlcomparememory">RtlCompareMemory</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlcomparememory">RtlCompareMemory</a>
  
 
  

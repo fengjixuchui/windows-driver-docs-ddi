@@ -63,7 +63,7 @@ The <b>WdfUsbInterfaceGetEndpointInformation</b> method retrieves information ab
 
 ### -param UsbInterface [in]
 
-A handle to a USB interface object that was obtained by calling <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfusb/nf-wdfusb-wdfusbtargetdevicegetinterface">WdfUsbTargetDeviceGetInterface</a>. 
+A handle to a USB interface object that was obtained by calling <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicegetinterface">WdfUsbTargetDeviceGetInterface</a>. 
 
 
 ### -param SettingIndex [in]
@@ -78,23 +78,12 @@ An index value that identifies an endpoint that is associated with the specified
 
 ### -param EndpointInfo [out]
 
-A pointer to a caller-allocated <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfusb/ns-wdfusb-_wdf_usb_pipe_information">WDF_USB_PIPE_INFORMATION</a> structure that the framework fills in.
-
-
-## -returns
-
-
-
-None.
-
-A bug check occurs if the driver supplies an invalid object handle.
-
-
-
-
+A pointer to a caller-allocated <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/ns-wdfusb-_wdf_usb_pipe_information">WDF_USB_PIPE_INFORMATION</a> structure that the framework fills in.
 
 
 ## -remarks
+
+A bug check occurs if the driver supplies an invalid object handle.
 
 
 
@@ -105,13 +94,8 @@ For more information about the <b>WdfUsbInterfaceGetEndpointInformation</b> meth
 
 The following code example obtains the number of endpoints that a USB interface supports and then calls <b>WdfUsbInterfaceGetEndpointInformation</b> for each endpoint.
 
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>WDF_USB_PIPE_INFORMATION endPointInfo;
+```cpp
+WDF_USB_PIPE_INFORMATION endPointInfo;
 BYTE settingIndex, i;
 
 settingIndex = 0;
@@ -133,10 +117,8 @@ for (i = 0; i < numEndpoints; i++){
     // Examine endpoint information here.
     //
 ...
-}</pre>
-</td>
-</tr>
-</table></span></div>
+}
+```
 
 
 
@@ -145,15 +127,15 @@ for (i = 0; i < numEndpoints; i++){
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfusb/ns-wdfusb-_wdf_usb_pipe_information">WDF_USB_PIPE_INFORMATION</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/ns-wdfusb-_wdf_usb_pipe_information">WDF_USB_PIPE_INFORMATION</a>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfusb/nf-wdfusb-wdfusbinterfacegetnumendpoints">WdfUsbInterfaceGetNumEndpoints</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbinterfacegetnumendpoints">WdfUsbInterfaceGetNumEndpoints</a>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfusb/nf-wdfusb-wdfusbtargetdevicegetinterface">WdfUsbTargetDeviceGetInterface</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicegetinterface">WdfUsbTargetDeviceGetInterface</a>
  
 
  

@@ -61,15 +61,6 @@ The <b>CWiauDbgFn::CWiauDbgFn</b> method is used for tracing when a function or 
 Specifies the name of the function or method being entered.
 
 
-## -returns
-
-
-
-This method does not return a value.
-
-
-
-
 ## -see-also
 
 
@@ -79,7 +70,7 @@ This method does not return a value.
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiautil/nf-wiautil-cwiaudbgfn-~cwiaudbgfn">CWiauDbgFn::~CWiauDbgFn</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wiautil/nf-wiautil-cwiaudbgfn-~cwiaudbgfn">CWiauDbgFn::~CWiauDbgFn</a>
  
 
  

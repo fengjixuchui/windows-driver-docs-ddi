@@ -51,13 +51,6 @@ req.typenames:
 The <b>IoGetInitialStack</b> routine returns the base address of the current thread's stack.
 
 
-## -parameters
-
-
-
-
-
-
 ## -returns
 
 
@@ -81,11 +74,11 @@ Highest-level drivers can call this routine, particularly file systems attemptin
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetremainingstacksize">IoGetRemainingStackSize</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetremainingstacksize">IoGetRemainingStackSize</a>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetstacklimits">IoGetStackLimits</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetstacklimits">IoGetStackLimits</a>
  
 
  

@@ -69,20 +69,10 @@ A handle to a framework resource-list object that represents a list of hardware 
 A zero-based value that is used as an index into the resource list that <i>List</i> specifies.
 
 
-## -returns
-
-
-
-None.
-
-A system bug check occurs if the driver supplies an invalid object handle.
-
-
-
-
-
-
 ## -remarks
+
+A bug check occurs if the driver supplies an invalid object handle.
+
 
 
 
@@ -95,15 +85,10 @@ For more information about resource lists, see <a href="https://docs.microsoft.c
 
 #### Examples
 
-The following code example removes the third resource descriptor from the raw and translated lists of hardware resources that an <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdffdo/nc-wdffdo-evt_wdf_device_remove_added_resources">EvtDeviceRemoveAddedResources</a> callback function receives.
+The following code example removes the third resource descriptor from the raw and translated lists of hardware resources that an <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdffdo/nc-wdffdo-evt_wdf_device_remove_added_resources">EvtDeviceRemoveAddedResources</a> callback function receives.
 
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>NTSTATUS
+```cpp
+NTSTATUS
 MyEvtDeviceRemoveAddedResources(
     WDFDEVICE Device,
     WDFCMRESLIST ResourcesRaw,
@@ -121,10 +106,8 @@ MyEvtDeviceRemoveAddedResources(
                             );
 ...
 
-}</pre>
-</td>
-</tr>
-</table></span></div>
+}
+```
 
 
 
@@ -133,7 +116,7 @@ MyEvtDeviceRemoveAddedResources(
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfresource/nf-wdfresource-wdfcmresourcelistremovebydescriptor">WdfCmResourceListRemoveByDescriptor</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfresource/nf-wdfresource-wdfcmresourcelistremovebydescriptor">WdfCmResourceListRemoveByDescriptor</a>
  
 
  

@@ -40,6 +40,8 @@ product:
 - Windows
 targetos: Windows
 req.typenames: VOLUME_READ_PLEX_INPUT, *PVOLUME_READ_PLEX_INPUT
+dev_langs:
+ - c++
 ms.custom: RS5
 ---
 
@@ -49,7 +51,7 @@ ms.custom: RS5
 ## -description
 
 
-The <b>FsRtlAcquireFileExclusive</b> routine is reserved for system use. Do not use this routine in your driver. See <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-fsrtlregisterfilesystemfiltercallbacks">FsRtlRegisterFileSystemFilterCallbacks</a>.
+The <b>FsRtlAcquireFileExclusive</b> routine is reserved for system use. Do not use this routine in your driver. See <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlregisterfilesystemfiltercallbacks">FsRtlRegisterFileSystemFilterCallbacks</a>.
 
 
 ## -parameters

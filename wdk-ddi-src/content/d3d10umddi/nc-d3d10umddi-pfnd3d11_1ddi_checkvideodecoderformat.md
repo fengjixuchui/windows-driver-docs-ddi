@@ -59,32 +59,23 @@ Determines whether a specified format can be used as a video decoder output form
 
 A handle to the display device (graphics context).
 
-### -param *
+### -param Arg2
 
 *pDecoderProfile* [in]
 
 A pointer to a GUID that identifies the DXVA profile. 
 
-### -param Arg2
+### -param Arg3
 
 *Format* [in]
 
 A DXGI_FORMAT value that specifies the output format. Typical values include DXGI_FORMAT_NV12 and DXGI_FORMAT_420_OPAQUE.
 
-### -param *
+### -param Arg4
 
 *pBool* [out]
 
 A BOOL value that, if TRUE, specifies that the specified format can be used  for the specified DXVA profile.
-
-
-## -returns
-
-
-
-This callback function does not return a value.
-
-
 
 
 ## -remarks

@@ -34,8 +34,10 @@ api_location:
 api_name: 
 - SRB_STATUS
 product: 
--   Windows
+- Windows
 targetos: Windows
+dev_langs:
+ - c++
 ms.custom: RS5
 ---
 

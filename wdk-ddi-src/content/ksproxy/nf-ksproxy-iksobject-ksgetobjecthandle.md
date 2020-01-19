@@ -51,13 +51,6 @@ req.typenames:
 The <b>KsGetObjectHandle</b> method retrieves a file handle to a KS object. 
 
 
-## -parameters
-
-
-
-
-
-
 ## -returns
 
 
@@ -81,7 +74,7 @@ Applications can use the handle that <b>KsGetObjectHandle</b> returns to send co
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksproxy/nf-ksproxy-kssynchronousdevicecontrol">KsSynchronousDeviceControl</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksproxy/nf-ksproxy-kssynchronousdevicecontrol">KsSynchronousDeviceControl</a>
  
 
  

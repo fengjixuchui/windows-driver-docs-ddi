@@ -46,13 +46,10 @@ ms.custom: RS5
 ## -description
 Returns the offset of the location.
 
-## -parameters
-None 
-
 ## -returns
 This function returns ULONG64.
 
 ## -remarks
 
 ## -see-also
-[dbgmodel.h header](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/)
+[dbgmodel.h header](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgmodel/)

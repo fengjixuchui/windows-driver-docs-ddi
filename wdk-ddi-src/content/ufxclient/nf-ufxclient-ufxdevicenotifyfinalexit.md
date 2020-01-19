@@ -31,7 +31,7 @@ api_type:
 - DllExport
 api_location:
 - NtosKrnl.exe
--   ufxstub.lib
+- ufxstub.lib
 api_name: 
 - UfxDeviceNotifyFinalExit
 product:
@@ -52,8 +52,6 @@ Notifies UFX that the device is detached.
 ### -param UfxDevice
 A handle to a UFX device object that the driver created by calling [**UfxDeviceCreate**](../ufxclient/nf-ufxclient-ufxdevicecreate.md).
 
-## -returns
-This function returns VOID.
 ## -remarks
 
 ## -see-also

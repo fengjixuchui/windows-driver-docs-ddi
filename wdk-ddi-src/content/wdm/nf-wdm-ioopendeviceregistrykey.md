@@ -87,12 +87,14 @@ A driver's software key is also called its *driver key* because the registry con
 
 #### PLUGPLAY_REGKEY_CURRENT_HWPROFILE
 
+**Note**: Hardware profiles are deprecated and state should not be stored relative to a hardware profile.
+
 Open a key relative to the current hardware profile for device or driver information. This allows the driver to access configuration information that is hardware-profile-specific. The caller must specify either PLUGPLAY_REGKEY_DEVICE or PLUGPLAY_REGKEY_DRIVER with this flag. For more information, see [HKLM\SYSTEM\CurrentControlSet\HardwareProfiles Registry Tree](https://docs.microsoft.com/windows-hardware/drivers/install/hklm-system-currentcontrolset-hardwareprofiles-registry-tree).
 
 
 ### -param DesiredAccess [in]
 
-Specifies the [ACCESS_MASK](https://docs.microsoft.com/windows-hardware/drivers/kernel/access-mask) value that represents the access the caller needs to the key. See the [ZwCreateKey](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwcreatekey) routine for a description of each KEY_*XXX* access right.
+Specifies the [ACCESS_MASK](https://docs.microsoft.com/windows-hardware/drivers/kernel/access-mask) value that represents the access the caller needs to the key. See the [ZwCreateKey](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-zwcreatekey) routine for a description of each KEY_*XXX* access right.
 
 
 ### -param DeviceRegKey [out]
@@ -141,7 +143,7 @@ Possibly indicates that the <i>DeviceObject</i> is not a valid PDO.
 
 
 
-The driver must call [ZwClose](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwclose) to close the handle returned from this routine when access is no longer required.
+The driver must call [ZwClose](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-zwclose) to close the handle returned from this routine when access is no longer required.
 
 The registry keys opened by this routine are nonvolatile.
 
@@ -160,8 +162,8 @@ Callers of **IoOpenDeviceRegistryKey** must be running at IRQL = PASSIVE_LEVEL i
 
 [ACCESS_MASK](https://docs.microsoft.com/windows-hardware/drivers/kernel/access-mask)
 
-[ZwCreateKey](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwcreatekey)
+[ZwCreateKey](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-zwcreatekey)
  
-[ZwClose](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-zwclose)
+[ZwClose](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-zwclose)
  
 

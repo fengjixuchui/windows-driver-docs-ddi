@@ -61,15 +61,6 @@ The <b>PsDereferencePrimaryToken</b> routine decrements the reference count of a
 Pointer to the primary token whose reference count is to be decremented.
 
 
-## -returns
-
-
-
-None
-
-
-
-
 ## -remarks
 
 
@@ -86,7 +77,7 @@ For more information about security and access control, see the documentation on
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-psdereferenceimpersonationtoken">PsDereferenceImpersonationToken</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-psdereferenceimpersonationtoken">PsDereferenceImpersonationToken</a>
  
 
  

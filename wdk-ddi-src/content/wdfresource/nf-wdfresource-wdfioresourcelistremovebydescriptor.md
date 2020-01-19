@@ -66,23 +66,13 @@ A handle to a framework resource-range-list object that represents a logical con
 
 ### -param Descriptor [in]
 
-A pointer to an <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_resource_descriptor">IO_RESOURCE_DESCRIPTOR</a> structure that describes a hardware resource.
-
-
-## -returns
-
-
-
-None.
-
-A system bug check occurs if the driver supplies an invalid object handle.
-
-
-
-
+A pointer to an <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_resource_descriptor">IO_RESOURCE_DESCRIPTOR</a> structure that describes a hardware resource.
 
 
 ## -remarks
+
+A bug check occurs if the driver supplies an invalid object handle.
+
 
 
 
@@ -97,13 +87,8 @@ For more information about resource requirements lists and logical configuration
 
 The following code example searches a logical configuration for a resource descriptor that contains a specified port address, and it removes that resource descriptor.
 
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>IO_RESOURCE_DESCRIPTOR descriptor;
+```cpp
+IO_RESOURCE_DESCRIPTOR descriptor;
 ULONG resCount, j;
 
 //
@@ -136,10 +121,8 @@ for (j = 0; j < resCount; j++) {
                break;
         }
     }
-}</pre>
-</td>
-</tr>
-</table></span></div>
+}
+```
 
 
 
@@ -148,11 +131,11 @@ for (j = 0; j < resCount; j++) {
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_io_resource_descriptor">IO_RESOURCE_DESCRIPTOR</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_resource_descriptor">IO_RESOURCE_DESCRIPTOR</a>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfresource/nf-wdfresource-wdfioresourcelistremove">WdfIoResourceListRemove</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfresource/nf-wdfresource-wdfioresourcelistremove">WdfIoResourceListRemove</a>
  
 
  

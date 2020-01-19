@@ -6,7 +6,7 @@ description: This function fills a block of memory with the specified fill value
 tech.root:
 ms.assetid: dd55904e-f4ba-4501-9cb8-d653376ebb2f
 ms.author: windowsdriverdev
-ms.date: 
+ms.date: 08/19/2019
 ms.topic: function
 f1_keywords:
  - "wdm/RtlFillMemoryNonTemporal"
@@ -31,8 +31,8 @@ req.type-library:
 topic_type: 
 - apiref
 api_type: 
-- 
-api_location: 
+- DllExport
+api_location:
 - wdm.h
 api_name: 
 - RtlFillMemoryNonTemporal
@@ -69,8 +69,8 @@ The value to fill the destination memory block with. This value is copied to eve
 This function returns NTSYSAPI VOID.
 ## -remarks
 
-**RtlFillMemoryNonTemporal** only performs a non-temporal fill for x64-based systems, and only when the *Length* parameter is 8 bytes or greater. Otherwise, this function is equivalent to [**RtlFillMemory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-rtlfillmemory).
+**RtlFillMemoryNonTemporal** only performs a non-temporal fill for x64-based systems, and only when the *Length* parameter is 8 bytes or greater. Otherwise, this function is equivalent to [**RtlFillMemory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlfillmemory).
 
 ## -see-also
 
-[**RtlFillMemory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-rtlfillmemory)
+[**RtlFillMemory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlfillmemory)

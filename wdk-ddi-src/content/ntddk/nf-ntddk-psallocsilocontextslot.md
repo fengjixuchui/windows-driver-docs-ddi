@@ -60,8 +60,6 @@ This routine allocates a slot that can be used to insert, retrieve, and delete a
 
 This parameter is reserved for future use and <b>must be set to zero</b>. 
 
-<div class="alert"><b>Warning</b>  Setting <i>Reserved</i> to a non-zero value causes the system to execute an <b>ASSERT</b> on a checked build.</div>
-<div> </div>
 
 ### -param ReturnedContextSlot [out]
 
@@ -111,7 +109,7 @@ The operation completed successfully.
 
 
 
-Use of this API is uncommon because all silo monitors are assigned a storage slot when calling the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-psregistersilomonitor">PsRegisterSiloMonitor</a> routine.  That slot can be retrieved with the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-psgetsilomonitorcontextslot">PsGetSiloMonitorContextSlot</a> routine and used by a driver for its context operations.
+Use of this API is uncommon because all silo monitors are assigned a storage slot when calling the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-psregistersilomonitor">PsRegisterSiloMonitor</a> routine.  That slot can be retrieved with the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-psgetsilomonitorcontextslot">PsGetSiloMonitorContextSlot</a> routine and used by a driver for its context operations.
 
 
 
@@ -121,7 +119,7 @@ Use of this API is uncommon because all silo monitors are assigned a storage slo
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-psfreesilocontextslot">PsFreeSiloContextSlot</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-psfreesilocontextslot">PsFreeSiloContextSlot</a>
  
 
  

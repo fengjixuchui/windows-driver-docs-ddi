@@ -31,8 +31,8 @@ req.type-library:
 topic_type: 
 - apiref
 api_type: 
-- 
-api_location: 
+- DllExport
+api_location:
 - NtosKrnl.exe
 api_name: 
 - IoRemoveLinkShareAccessEx
@@ -62,7 +62,7 @@ A pointer to the common share-access data structure that is associated with <i>F
 
 ### -param LinkShareAccess [in, out, optional]
 
-A pointer to the common link share-access data structure (<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_link_share_access">LINK_SHARE_ACCESS</a>) that is associated with <i>FileObject</i>. Drivers should treat this structure as opaque.
+A pointer to the common link share-access data structure (<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_link_share_access">LINK_SHARE_ACCESS</a>) that is associated with <i>FileObject</i>. Drivers should treat this structure as opaque.
 
 ### -param IoShareAccessFlags
 
@@ -70,9 +70,6 @@ A bitmask of these flags:
 
 IO_SHARE_ACCESS_NON_PRIMARY_STREAM         (0x00000080) specifies that the stream is neither the primary data stream nor a directory stream.
 
-
-## -returns
-This function returns VOID.
 
 ## -remarks
 

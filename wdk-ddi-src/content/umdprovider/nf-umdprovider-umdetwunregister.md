@@ -48,12 +48,6 @@ req.typenames:
 
 Unregisters the event trace provider. Call this function before the user-mode driver is unloaded. After this function is called, the driver should not make any other calls to log events.
 
-## -parameters
-
-## -returns
-
-This function does not return a value.
-
 ## -remarks
 
 <b>UMDEtwUnregister</b> is defined inline in Umdprovider.h as:
@@ -72,4 +66,4 @@ The <a href="https://docs.microsoft.com/windows/desktop/api/evntprov/nf-evntprov
 
 ## -see-also
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/umdprovider/nf-umdprovider-umdetwregister">UMDEtwRegister</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/umdprovider/nf-umdprovider-umdetwregister">UMDEtwRegister</a>

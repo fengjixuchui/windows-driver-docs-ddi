@@ -27,13 +27,13 @@ req.namespace:
 req.assembly:
 req.type-library: 
 topictype: 
--	apiref
+- apiref
 apitype: 
--	DllExport
+- DllExport
 apilocation: 
--	NtosKrnl.exe
+- NtosKrnl.exe
 apiname: 
--	NetPacketIsIpv4
+- NetPacketIsIpv4
 product:
 - Windows
 targetos: Windows
@@ -44,10 +44,7 @@ targetos: Windows
 
 
 ## -description
-> [!WARNING]
-> Some information in this topic relates to prereleased product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
->
-> NetAdapterCx is preview only in Windows 10, version 1903.
+
 
 The **NetPacketIsIpv4** method determines if a [**NET_PACKET**](ns-packet-_net_packet.md) is an IPv4 packet. 
 

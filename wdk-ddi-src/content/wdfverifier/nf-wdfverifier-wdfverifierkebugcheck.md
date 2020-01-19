@@ -86,15 +86,6 @@ For information about this parameter, see the specified bug check code's descrip
 For information about this parameter, see the specified bug check code's description.
 
 
-## -returns
-
-
-
-None
-
-
-
-
 ## -remarks
 
 
@@ -110,22 +101,15 @@ For more information about debugging your driver, see <a href="https://docs.micr
 
 The following code example creates a bug check that uses the <a href="https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0x44--multiple-irp-complete-requests">MULTIPLE_IRP_COMPLETE_REQUESTS</a> bug check code.
 
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>WdfVerifierKeBugCheck(
+```cpp
+WdfVerifierKeBugCheck(
                       MULTIPLE_IRP_COMPLETE_REQUESTS,
                       (ULONG_PTR) irp,
                       (ULONG_PTR) srb,
                       0,
                       0
-                      );</pre>
-</td>
-</tr>
-</table></span></div>
+                      );
+```
 
 
 
@@ -134,7 +118,7 @@ The following code example creates a bug check that uses the <a href="https://do
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfverifier/nf-wdfverifier-wdfverifierdbgbreakpoint">WdfVerifierDbgBreakPoint</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfverifier/nf-wdfverifier-wdfverifierdbgbreakpoint">WdfVerifierDbgBreakPoint</a>
  
 
  

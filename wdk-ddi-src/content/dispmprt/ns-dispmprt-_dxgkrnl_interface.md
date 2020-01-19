@@ -40,6 +40,8 @@ product:
 - Windows
 targetos: Windows
 req.typenames: DXGKRNL_INTERFACE, *PDXGKRNL_INTERFACE
+dev_langs:
+ - c++
 ms.custom: 19H1
 ---
 
@@ -264,7 +266,7 @@ Supported starting with Windows 8.
 
 ### -field DxgkCbAcquirePostDisplayOwnership
 
-A pointer to the display port driver's <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkcb_acquire_post_display_ownership">DxgkCbAcquirePostDisplayOwnership</a> function.
+A pointer to the display port driver's <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkcb_acquire_post_display_ownership">DxgkCbAcquirePostDisplayOwnership</a> function.
 
 Supported starting with Windows 8.
 
@@ -463,7 +465,7 @@ Supported starting with WDDM 2.6.
 
 ## -see-also
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index">Dxgkrnl Interface</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/index">Dxgkrnl Interface</a>
 
 
 

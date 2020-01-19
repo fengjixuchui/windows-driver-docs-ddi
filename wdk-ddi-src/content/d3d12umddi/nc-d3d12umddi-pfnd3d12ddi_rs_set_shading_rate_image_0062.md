@@ -38,6 +38,8 @@ api_name:
 product:
 - Windows
 targetos: Windows
+dev_langs:
+ - c++
 ms.custom: D3D12 Release 6, Build rev 2., 19H1
 ---
 
@@ -74,10 +76,6 @@ A handle to the command list.
 ### -param hShadingRateImage
 
 A handle to the resource that contains the shading rate image.
-
-## -returns
-
-Returns VOID.
 
 ## -remarks
 

@@ -50,19 +50,6 @@ req.typenames:
 The RequestService method is called to forward a service request to an IServiceSink object.
 
 
-## -parameters
-
-
-#### - None
-
-
-
-## -returns
-
-None
-
-
-
 ## -remarks
 
 
@@ -73,11 +60,11 @@ None
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iservicegroup">IServiceGroup</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nn-portcls-iservicegroup">IServiceGroup</a>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portcls/nn-portcls-iservicesink">IServiceSink</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nn-portcls-iservicesink">IServiceSink</a>
  
 
  

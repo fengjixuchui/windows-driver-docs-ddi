@@ -35,6 +35,8 @@ api_name:
 product:
 - Windows
 targetos: Windows
+dev_langs:
+ - c++
 ms.custom: DXGKDDI_INTERFACE_VERSION_WDDM2_6, 19H1
 ---
 
@@ -54,9 +56,9 @@ Arguments used to restore memory for driver hot update.
 
 [in] The MDL (memory descriptor list), which describes the memory pages to restore.
 
-If the driver returns STATUS_SUCCESS from this function, the driver assumes the ownership of the MDL. The driver can keep the pointer to the MDL until it is no longer used. After that the driver must free the MDL pages and the MDL itself by calling [MmFreePagesFromMdl(pDataMdl)](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmfreepagesfrommdl) and [ExFreePool(pDataMdl)](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exfreepool).
+If the driver returns STATUS_SUCCESS from this function, the driver assumes the ownership of the MDL. The driver can keep the pointer to the MDL until it is no longer used. After that the driver must free the MDL pages and the MDL itself by calling [MmFreePagesFromMdl(pDataMdl)](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-mmfreepagesfrommdl) and [ExFreePool(pDataMdl)](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exfreepool).
 
-The driver can use [MmMapLockedPagesSpecifyCache](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmmaplockedpagesspecifycache) or [MmGetSystemAddressForMdlSafe](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmgetsystemaddressformdl) to get a CPU pointer to the buffer.
+The driver can use [MmMapLockedPagesSpecifyCache](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-mmmaplockedpagesspecifycache) or [MmGetSystemAddressForMdlSafe](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetsystemaddressformdl) to get a CPU pointer to the buffer.
 
 Here is an example of how you would get a CPU pointer to the buffer:
 

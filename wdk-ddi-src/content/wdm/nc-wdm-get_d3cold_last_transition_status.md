@@ -58,12 +58,12 @@ The <i>GetLastTransitionStatus</i> routine enables the driver for a device to qu
 
 ### -param Context [in, optional]
 
-A pointer to interface-specific context information. The caller sets this parameter to the value of the <b>Context</b> member of the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_d3cold_support_interface">D3COLD_SUPPORT_INTERFACE</a> structure for the interface.
+A pointer to interface-specific context information. The caller sets this parameter to the value of the <b>Context</b> member of the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_d3cold_support_interface">D3COLD_SUPPORT_INTERFACE</a> structure for the interface.
 
 
 ### -param LastTransitionStatus [out]
 
-A pointer to a variable into which the routine writes one of the following <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ne-wdm-_d3cold_last_transition_status">D3COLD_LAST_TRANSITION_STATUS</a> enumeration values:
+A pointer to a variable into which the routine writes one of the following <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ne-wdm-_d3cold_last_transition_status">D3COLD_LAST_TRANSITION_STATUS</a> enumeration values:
 
 <ul>
 <li><b>LastDStateTransitionStatusUnknown</b></li>
@@ -73,22 +73,13 @@ A pointer to a variable into which the routine writes one of the following <a hr
  The <b>LastDStateTransitionD3cold</b> value indicates that the most recent transition to D3hot was followed by a transition to D3cold. For more information, see Remarks.
 
 
-## -returns
-
-
-
-None.
-
-
-
-
 ## -remarks
 
 
 
 This routine tries to get the information needed to answer the caller's query from the parent bus driver and platform firmware. If this information is not available, the routine writes the value <b>LastDStateTransitionStatusUnknown</b> to the location pointed to by <i>the LastTransitionStatus</i> parameter.
 
-For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ne-wdm-_d3cold_last_transition_status">D3COLD_LAST_TRANSITION_STATUS</a>.
+For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ne-wdm-_d3cold_last_transition_status">D3COLD_LAST_TRANSITION_STATUS</a>.
 
 
 
@@ -98,11 +89,11 @@ For more information, see <a href="https://docs.microsoft.com/windows-hardware/d
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ne-wdm-_d3cold_last_transition_status">D3COLD_LAST_TRANSITION_STATUS</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ne-wdm-_d3cold_last_transition_status">D3COLD_LAST_TRANSITION_STATUS</a>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_d3cold_support_interface">D3COLD_SUPPORT_INTERFACE</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_d3cold_support_interface">D3COLD_SUPPORT_INTERFACE</a>
  
 
  

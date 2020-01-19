@@ -66,15 +66,6 @@ Pointer to the base virtual address to which the physical pages were mapped.
 Specifies the number of bytes that were mapped. 
 
 
-## -returns
-
-
-
-None
-
-
-
-
 ## -remarks
 
 
@@ -89,7 +80,7 @@ If a driver calls <b>MmMapIoSpace</b> during device start-up, it must call <b>Mm
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmmapiospace">MmMapIoSpace</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-mmmapiospace">MmMapIoSpace</a>
  
 
  

@@ -90,18 +90,11 @@ For more information about <b>WdfRequestGetIoQueue</b>, see <a href="https://doc
 
 The following code example obtains a handle to the device object that represents the device that a request belongs to.
 
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>WDFDEVICE  device;
+```cpp
+WDFDEVICE  device;
 
-device = WdfIoQueueGetDevice(WdfRequestGetIoQueue(Request));</pre>
-</td>
-</tr>
-</table></span></div>
+device = WdfIoQueueGetDevice(WdfRequestGetIoQueue(Request));
+```
 
 
 
@@ -110,7 +103,7 @@ device = WdfIoQueueGetDevice(WdfRequestGetIoQueue(Request));</pre>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfio/nf-wdfio-wdfioqueuegetdevice">WdfIoQueueGetDevice</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfio/nf-wdfio-wdfioqueuegetdevice">WdfIoQueueGetDevice</a>
  
 
  

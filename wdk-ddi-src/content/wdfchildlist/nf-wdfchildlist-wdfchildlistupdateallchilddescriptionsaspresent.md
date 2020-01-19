@@ -64,19 +64,10 @@ The <b>WdfChildListUpdateAllChildDescriptionsAsPresent</b> method informs the fr
 A handle to a child list object.
 
 
-## -returns
-
-
-
-None.
-
-A system bug check occurs if the driver supplies an invalid object handle.
-
-
-
-
-
 ## -remarks
+
+A bug check occurs if the driver supplies an invalid object handle.
+
 
 
 
@@ -89,15 +80,8 @@ For more information about child lists, see <a href="https://docs.microsoft.com/
 
 The following code example informs the framework that all of the devices that a device list represents are plugged in and available.
 
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>WdfChildListUpdateAllChildDescriptionsAsPresent(DeviceList);</pre>
-</td>
-</tr>
-</table></span></div>
+```cpp
+WdfChildListUpdateAllChildDescriptionsAsPresent(DeviceList);
+```
 
 

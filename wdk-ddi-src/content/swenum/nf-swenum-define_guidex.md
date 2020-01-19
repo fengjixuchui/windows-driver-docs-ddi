@@ -34,7 +34,7 @@ api_location:
 api_name: 
 - DEFINE_GUIDEX
 product: 
--   Windows
+- Windows
 targetos: Windows
 
 
@@ -48,8 +48,6 @@ ms.custom: RS5
 ## -parameters
 
 ### -param Arg1
-
-## -returns
 
 ## -remarks
 

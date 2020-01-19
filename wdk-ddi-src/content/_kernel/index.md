@@ -25,9 +25,9 @@ Here are the required and optional routines that you must implement in your driv
     The following routines are required for all drivers:
 
     -    [DriverEntry](../wdm/nc-wdm-driver_initialize.md)
-    -    [AddDevice](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_add_device)
-    -    [DispatchXxx (routines beginning with "Dispatch" such as DispatchCreate)](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) 
-    -    [DriverUnload](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_unload)
+    -    [AddDevice](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device)
+    -    [DispatchXxx (routines beginning with "Dispatch" such as DispatchCreate)](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) 
+    -    [DriverUnload](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_unload)
 
     The other routines are optional, but you may need to implement them depending on your driver type and the location of your driver in the device stack.
 
@@ -128,10 +128,10 @@ The following obsolete routines are exported only to support existing drivers:
 
 |Obsolete routine|Replacement |
 |---|---|
-|HalAllocateCommonBuffer |See [AllocateCommonBuffer](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-pallocate_common_buffer) instead.|
+|HalAllocateCommonBuffer |See [AllocateCommonBuffer](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-pallocate_common_buffer) instead.|
 |HalAssignSlotResources| Drivers of PnP devices are assigned resources by the PnP manager, which passes resource lists with each IRP_MN_START_DEVICE request. Drivers that must support a legacy device that cannot be enumerated by the PnP manager should use IoReportDetectedDevice and IoReportResourceForDetection.|
-|HalFreeCommonBuffer |See [FreeCommonBuffer](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-pfree_common_buffer) instead.|
-|HalGetAdapter |See [IoGetDmaAdapter](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdmaadapter) instead.|
+|HalFreeCommonBuffer |See [FreeCommonBuffer](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-pfree_common_buffer) instead.|
+|HalGetAdapter |See [IoGetDmaAdapter](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdmaadapter) instead.|
 |HalGetBusData| Instead, use [IRP_MN_QUERY_INTERFACE](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-interface) to query the GUID_BUS_INTERFACE_STANDARD interface. This query request returns a function pointer to GetBusData, which can be used to read from the configuration space of a given device. |
 |HalGetBusDataByOffset |Instead, use IRP_MN_QUERY_INTERFACE to query the GUID_BUS_INTERFACE_STANDARD interface. This query request returns a function pointer to GetBusData, which can be used to read from the configuration space of a given device.|
 |HalGetDmaAlignmentRequirement| See GetDmaAlignment instead.|
@@ -245,7 +245,7 @@ Used for setting up and freeing the objects and resources that drivers might use
 |ZwDeleteKey |Deletes an existing, open key in the registry after the last handle for the key is closed.|
 |ZwMakeTemporaryObject |Resets the "permanent" attribute of an opened object, so that the object and its name can be deleted when the reference count for the object becomes zero.|
 |ZwClose |Releases the handle for an opened object, causing the handle to become invalid, and decrements the reference count of the object handle.|
-|PsGetVersion |Indicates whether the driver is running on a free or checked build, and optionally supplies information about the operating system version and build number. |
+|PsGetVersion |Supplies information about the operating system version and build number. |
 |ObGetObjectSecurity |Returns a buffered security descriptor for a given object. |
 |ObReleaseObjectSecurity |Releases the security descriptor returned by ObGetObjectSecurity.|
 
@@ -610,17 +610,17 @@ Your driver can use System-Supplied Driver Interfaces to send IRPs to other driv
 
 In addition to the Standard IRP Codes, there are three additional types of IRPs for specific technologies:
 
--   Plug and Play IRPs, see [Plug and Play Minor IRPs](https://docs.microsoft.com/windows-hardware/drivers/kernel/plug-and-play-minor-irps)
--   Power Management IRPs, see [Power Management Minor IRPs](https://docs.microsoft.com/windows-hardware/drivers/kernel/power-management-minor-irps)
--   Windows Management Instrumentation (WMI) IRPs, see [WMI Minor IRPs](https://docs.microsoft.com/windows-hardware/drivers/kernel/wmi-minor-irps)
+- Plug and Play IRPs, see [Plug and Play Minor IRPs](https://docs.microsoft.com/windows-hardware/drivers/kernel/plug-and-play-minor-irps)
+- Power Management IRPs, see [Power Management Minor IRPs](https://docs.microsoft.com/windows-hardware/drivers/kernel/power-management-minor-irps)
+- Windows Management Instrumentation (WMI) IRPs, see [WMI Minor IRPs](https://docs.microsoft.com/windows-hardware/drivers/kernel/wmi-minor-irps)
 
 This section describes kernel-mode support routines that drivers can call:
 
--   While processing IRPs. 
+- While processing IRPs. 
 
--   To allocate and set up IRPs for requests from higher-level drivers to lower drivers.
+- To allocate and set up IRPs for requests from higher-level drivers to lower drivers.
 
--   To use file objects.
+- To use file objects.
 
 ### Processing IRPs
 
@@ -757,11 +757,11 @@ These DDIs are helpful for working with silo objects.
 ## Synchronization
 This section describes the kernel-mode support routines that drivers can call to:
 
--   Synchronize the execution of their own standard driver routines (Driver Routines and I/O Objects). 
--   Temporarily change the current IRQL for a call to a support routine or that return the current IRQL (IRQL). 
--   Synchronize access to resources with spin locks or to perform interlocked operations without spin locks (Spin Locks and Interlocks). 
--   Manage time-outs or determine system time (Timers). 
--   Use system threads or to manage synchronization within a nonarbitrary thread context (Driver Threads, Dispatcher Objects, and Resources). 
+- Synchronize the execution of their own standard driver routines (Driver Routines and I/O Objects). 
+- Temporarily change the current IRQL for a call to a support routine or that return the current IRQL (IRQL). 
+- Synchronize access to resources with spin locks or to perform interlocked operations without spin locks (Spin Locks and Interlocks). 
+- Manage time-outs or determine system time (Timers). 
+- Use system threads or to manage synchronization within a nonarbitrary thread context (Driver Threads, Dispatcher Objects, and Resources). 
 
 ### Driver Routines and I/O Objects
 |Function|Description|
@@ -1175,7 +1175,7 @@ This section summarizes kernel-mode support routines that drivers can use to int
 
 The categories of support routines include those that drivers can call to:
 
--   Process IRPs that a driver receives (WMI IRP Processing Routines).
+- Process IRPs that a driver receives (WMI IRP Processing Routines).
 |Function|Description|
 |---|---|
 |WmiCompleteRequest |If a driver uses WmiSystemControl to dispatch the WMI IRP to a callback routine, then the callback routine can use WmiCompleteRequest to complete the IRP.
@@ -1186,7 +1186,7 @@ The categories of support routines include those that drivers can call to:
 |WmiTraceMessage| The WmiTraceMessage routine adds a message to the output log of a WPP software tracing session.
 |WmiTraceMessageVa| The WmiTraceMessageVa routine adds a message to the output log of a WPP software tracing session.
 
--   Drivers can use these routines in processing WMI IRPs.
+- Drivers can use these routines in processing WMI IRPs.
 Drivers use these routines to send WMI IRPs.
 |Function|Description|
 |---|---|
@@ -1482,27 +1482,27 @@ Drivers performing DMA operations use IoGetDmaAdapter to get a pointer to the DM
 ### Best practices for implementing process and thread-related callback functions
 This set of guidelines applies to these callback routines:
 
--   PCREATE_PROCESS_NOTIFY_ROUTINE 
--   PCREATE_PROCESS_NOTIFY_ROUTINE_EX 
--   PCREATE_THREAD_NOTIFY_ROUTINE 
--   PLOAD_IMAGE_NOTIFY_ROUTINE 
+- PCREATE_PROCESS_NOTIFY_ROUTINE 
+- PCREATE_PROCESS_NOTIFY_ROUTINE_EX 
+- PCREATE_THREAD_NOTIFY_ROUTINE 
+- PLOAD_IMAGE_NOTIFY_ROUTINE 
 
 Keep notify routines short and simple. 
--   Do not make calls into a user mode service to validate the process, thread, or image. 
--   Do not make registry calls. 
--   Do not make blocking and/or Interprocess Communication (IPC) function calls. 
--   Do not synchronize with other threads because it can lead to reentrancy deadlocks. 
--   Use System Worker Threads to queue work especially work involving: 
+- Do not make calls into a user mode service to validate the process, thread, or image. 
+- Do not make registry calls. 
+- Do not make blocking and/or Interprocess Communication (IPC) function calls. 
+- Do not synchronize with other threads because it can lead to reentrancy deadlocks. 
+- Use System Worker Threads to queue work especially work involving: 
 
     -   Slow API’s or API’s that call into other process. 
     -   Any blocking behavior which could interrupt threads in core services. 
 
--   Be considerate of best practices for kernel mode stack usage. For examples, see How do I keep my driver from running out of kernel-mode stack? and Key Driver Concepts and Tips. 
+- Be considerate of best practices for kernel mode stack usage. For examples, see How do I keep my driver from running out of kernel-mode stack? and Key Driver Concepts and Tips. 
       
 
 
 ## Run-Time Library (RTL) Routines
-For information about functions that copy, concatenate, and format strings in a manner that prevents buffer overrun errors, see [Safe String Functions](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_kernel/#safe-string-functions-for-unicode-and-ansi-characters), below. Other string manipulation functions include the following:
+For information about functions that copy, concatenate, and format strings in a manner that prevents buffer overrun errors, see [Safe String Functions](https://docs.microsoft.com/windows-hardware/drivers/ddi/_kernel/#safe-string-functions-for-unicode-and-ansi-characters), below. Other string manipulation functions include the following:
 
 |Function|Description|
 |---|---|

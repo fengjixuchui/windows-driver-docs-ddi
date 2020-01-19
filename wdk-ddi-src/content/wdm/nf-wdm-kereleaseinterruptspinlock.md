@@ -66,15 +66,6 @@ Specifies the value of the <i>Interrupt</i> parameter passed to <a href="https:/
 Specifies the IRQL value returned by <b>KeAcquireInterruptSpinLock</b>. 
 
 
-## -returns
-
-
-
-None
-
-
-
-
 ## -remarks
 
 
@@ -93,7 +84,7 @@ The <b>KeReleaseInterruptSpinLock</b> releases the interrupt spin lock, and lowe
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kesynchronizeexecution">KeSynchronizeExecution</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kesynchronizeexecution">KeSynchronizeExecution</a>
  
 
  

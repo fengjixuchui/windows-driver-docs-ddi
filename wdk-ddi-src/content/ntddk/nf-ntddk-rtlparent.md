@@ -60,12 +60,10 @@ The <b>RtlParent</b> routine returns a pointer to the parent of the specified no
 
 Pointer to the node. The node must have been initialized by calling <b>RtlInitializeSplayLinks</b>.
 
-## -returns
-**RtlParent** returns a pointer to the parent of the node at Links, or it returns the Links pointer if the given node is the root node of the tree. 
-
 
 ## -remarks
 
+**RtlParent** returns a pointer to the parent of the node at Links, or it returns the Links pointer if the given node is the root node of the tree. 
 
 
 <b>RtlParent</b> can be called repeatedly in conjunction with <b>RtlLeftChild</b> and <b>RtlRightChild</b> to walk a splay link tree. 
@@ -82,27 +80,27 @@ Callers of <b>RtlParent</b> must be running at IRQL <= DISPATCH_LEVEL if the tre
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-rtlinitializesplaylinks">RtlInitializeSplayLinks</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-rtlinitializesplaylinks">RtlInitializeSplayLinks</a>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-rtlinsertasleftchild">RtlInsertAsLeftChild</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-rtlinsertasleftchild">RtlInsertAsLeftChild</a>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-rtlinsertasrightchild">RtlInsertAsRightChild</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-rtlinsertasrightchild">RtlInsertAsRightChild</a>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-rtlisroot">RtlIsRoot</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-rtlisroot">RtlIsRoot</a>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-rtlleftchild">RtlLeftChild</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-rtlleftchild">RtlLeftChild</a>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-rtlrightchild">RtlRightChild</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-rtlrightchild">RtlRightChild</a>
  
 
  

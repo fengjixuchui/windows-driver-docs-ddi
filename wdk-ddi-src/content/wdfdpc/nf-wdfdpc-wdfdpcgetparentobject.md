@@ -81,25 +81,18 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 
 
-A driver might call <b>WdfDpcGetParentObject</b> from within its <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdpc/nc-wdfdpc-evt_wdf_dpc">EvtDpcFunc</a> callback function.
+A driver might call <b>WdfDpcGetParentObject</b> from within its <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdpc/nc-wdfdpc-evt_wdf_dpc">EvtDpcFunc</a> callback function.
 
 
 #### Examples
 
-The following code example returns a handle to the parent object of a specified DPC object. The <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdpc/nf-wdfdpc-wdfdpccreate">WdfDpcCreate</a> code example shows how the specified DPC object was created.
+The following code example returns a handle to the parent object of a specified DPC object. The <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdpc/nf-wdfdpc-wdfdpccreate">WdfDpcCreate</a> code example shows how the specified DPC object was created.
 
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>WDFDEVICE Device;
+```cpp
+WDFDEVICE Device;
 
-Device = WdfDpcGetParentObject(PDevExt->CompleteWriteDpc);</pre>
-</td>
-</tr>
-</table></span></div>
+Device = WdfDpcGetParentObject(PDevExt->CompleteWriteDpc);
+```
 
 
 
@@ -108,7 +101,7 @@ Device = WdfDpcGetParentObject(PDevExt->CompleteWriteDpc);</pre>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdpc/nc-wdfdpc-evt_wdf_dpc">EvtDpcFunc</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdpc/nc-wdfdpc-evt_wdf_dpc">EvtDpcFunc</a>
  
 
  

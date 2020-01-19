@@ -36,6 +36,8 @@ product:
 - Windows
 targetos: Windows
 tech.root: display
+dev_langs:
+ - c++
 ms.custom: RS5
 ---
 
@@ -82,10 +84,6 @@ The index of the parameter.
 ### -param Arg4
 
 A pointer to a [D3D12DDIARG_METACOMMAND_REQUIRED_PARAMETER_INFO](ns-d3d12umddi-d3d12ddiarg_metacommand_required_parameter_info.md) structure that contains the meta-command's required parameter info.
-
-## -returns
-
-Returns VOID.
 
 ## -remarks
 

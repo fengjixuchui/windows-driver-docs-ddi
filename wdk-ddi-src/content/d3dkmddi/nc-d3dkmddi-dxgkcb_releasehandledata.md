@@ -35,6 +35,8 @@ api_name:
 product:
 - Windows
 targetos: Windows
+dev_langs:
+ - c++
 ms.custom: RS5
 tech.root: display
 ---
@@ -61,11 +63,3 @@ VOID DxgkcbReleasehandledata
 
 ```
 
-## -parameters
-
-
-
-
-## -returns
-
-Returns VOID.

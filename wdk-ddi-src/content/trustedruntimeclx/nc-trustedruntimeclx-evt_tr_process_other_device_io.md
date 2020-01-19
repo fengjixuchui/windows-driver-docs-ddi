@@ -44,7 +44,7 @@ ms.custom: RS5
 
  
 
-## -prototype
+## -syntax
 
 ```cpp
 //Declaration
@@ -66,10 +66,6 @@ VOID EvtTrProcessOtherDeviceIo
 
 ### -param MasterDevice: 
 ### -param Request: 
-
-
-
-## -returns
 
 
 

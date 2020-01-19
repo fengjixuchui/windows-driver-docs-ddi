@@ -152,13 +152,8 @@ If the source or destination buffer was allocated from the pageable memory pool,
 
 The following code example obtains a handle to the framework memory object that represents an I/O request's output buffer, and then it copies the contents of another buffer into the I/O request's output buffer.
 
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>WDFMEMORY  memoryBuffer;
+```cpp
+WDFMEMORY  memoryBuffer;
 NTSTATUS  status;
 
 status = WdfRequestRetrieveOutputMemory(
@@ -176,10 +171,8 @@ status = WdfMemoryCopyFromBuffer(
                                  );
 if (!NT_SUCCESS(status)) {
     goto Error;
-}</pre>
-</td>
-</tr>
-</table></span></div>
+}
+```
 
 
 
@@ -188,11 +181,11 @@ if (!NT_SUCCESS(status)) {
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfmemory/nf-wdfmemory-wdfmemorycopytobuffer">WdfMemoryCopyToBuffer</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfmemory/nf-wdfmemory-wdfmemorycopytobuffer">WdfMemoryCopyToBuffer</a>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestretrieveoutputmemory">WdfRequestRetrieveOutputMemory</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestretrieveoutputmemory">WdfRequestRetrieveOutputMemory</a>
  
 
  

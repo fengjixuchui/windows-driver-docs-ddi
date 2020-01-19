@@ -63,7 +63,7 @@ The <b>WdfUsbTargetPipeIsInEndpoint</b> method determines whether a specified US
 
 ### -param Pipe [in]
 
-A handle to a framework pipe object that represents a bulk pipe or interrupt pipe and was obtained by calling <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfusb/nf-wdfusb-wdfusbinterfacegetconfiguredpipe">WdfUsbInterfaceGetConfiguredPipe</a>. 
+A handle to a framework pipe object that represents a bulk pipe or interrupt pipe and was obtained by calling <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbinterfacegetconfiguredpipe">WdfUsbInterfaceGetConfiguredPipe</a>. 
 
 
 ## -returns
@@ -90,18 +90,11 @@ For more information about the <b>WdfUsbTargetPipeIsInEndpoint</b> method and US
 
 The following code example determines whether a specified USB pipe is connected to an input endpoint.
 
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>BOOLEAN isInEndPoint;
+```cpp
+BOOLEAN isInEndPoint;
 
-isInEndPoint = WdfUsbTargetPipeIsInEndpoint(usbPipe);</pre>
-</td>
-</tr>
-</table></span></div>
+isInEndPoint = WdfUsbTargetPipeIsInEndpoint(usbPipe);
+```
 
 
 
@@ -110,15 +103,15 @@ isInEndPoint = WdfUsbTargetPipeIsInEndpoint(usbPipe);</pre>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfusb/nf-wdfusb-wdf_usb_pipe_direction_in">WDF_USB_PIPE_DIRECTION_IN</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdf_usb_pipe_direction_in">WDF_USB_PIPE_DIRECTION_IN</a>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfusb/nf-wdfusb-wdfusbinterfacegetconfiguredpipe">WdfUsbInterfaceGetConfiguredPipe</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbinterfacegetconfiguredpipe">WdfUsbInterfaceGetConfiguredPipe</a>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfusb/nf-wdfusb-wdfusbtargetpipeisoutendpoint">WdfUsbTargetPipeIsOutEndpoint</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetpipeisoutendpoint">WdfUsbTargetPipeIsOutEndpoint</a>
  
 
  

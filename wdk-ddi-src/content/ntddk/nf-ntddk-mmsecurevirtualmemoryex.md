@@ -6,7 +6,7 @@ description: This routine probes the requested address range and protects the sp
 tech.root:
 ms.assetid: b8dbb7ce-6bc8-4899-92b6-7499b26e8539
 ms.author: windowsdriverdev
-ms.date: 
+ms.date: 08/19/2019
 ms.topic: function
 f1_keywords:
  - "ntddk/MmSecureVirtualMemoryEx"
@@ -31,7 +31,7 @@ req.type-library:
 topic_type: 
 - apiref
 api_type: 
-- 
+- DllExport
 api_location: 
 - ntddk.h
 api_name: 
@@ -87,11 +87,11 @@ If the range could not be locked because of protection problems, noncommitted me
 
 ## -remarks
 
-Use **MmSecureVirtualMemoryEx** instead of [**MmSecureVirtualMemory **](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-mmsecurevirtualmemory) if you need to specify **MM_SECURE_NO_CHANGE** so that no protection change will be allowed on the supplied view.
+Use **MmSecureVirtualMemoryEx** instead of [**MmSecureVirtualMemory **](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-mmsecurevirtualmemory) if you need to specify **MM_SECURE_NO_CHANGE** so that no protection change will be allowed on the supplied view.
 
-The return value from this function can only be used with [**MmUnsecureVirtualMemory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-mmunsecurevirtualmemory). The driver calls that routine to return the range to a normal state.
+The return value from this function can only be used with [**MmUnsecureVirtualMemory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-mmunsecurevirtualmemory). The driver calls that routine to return the range to a normal state.
 
 ## -see-also
 
-- [**MmSecureVirtualMemory **](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-mmsecurevirtualmemory)
-- [**MmUnsecureVirtualMemory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-mmunsecurevirtualmemory)
+- [**MmSecureVirtualMemory **](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-mmsecurevirtualmemory)
+- [**MmUnsecureVirtualMemory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-mmunsecurevirtualmemory)

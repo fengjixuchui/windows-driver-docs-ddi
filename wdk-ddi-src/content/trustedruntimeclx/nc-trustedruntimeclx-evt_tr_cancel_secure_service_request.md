@@ -44,7 +44,7 @@ ms.custom: RS5
 
  
 
-## -prototype
+## -syntax
 
 ```cpp
 //Declaration
@@ -70,10 +70,6 @@ VOID EvtTrCancelSecureServiceRequest
 ### -param SessionContext: 
 ### -param RequestHandle: 
 ### -param RequestContext: 
-
-
-
-## -returns
 
 
 

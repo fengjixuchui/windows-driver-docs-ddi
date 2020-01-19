@@ -68,7 +68,7 @@ A handle to a framework object.
 
 ### -param Tag [in, optional]
 
-A driver-defined value that identifies an object reference. The tag value must match a tag value that the driver previously supplied to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfobject/nf-wdfobject-wdfobjectreferenceactual">WdfObjectReferenceActual</a>.
+A driver-defined value that identifies an object reference. The tag value must match a tag value that the driver previously supplied to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfobject/nf-wdfobject-wdfobjectreferenceactual">WdfObjectReferenceActual</a>.
 
 
 ### -param Line [in]
@@ -81,18 +81,10 @@ A numeric value that represents a line number in a driver source file.
 A pointer to a null-terminated constant character string that represents the name of a driver source file. This parameter is optional and can be <b>NULL</b>.
 
 
-## -returns
-
-
-
-None.
+## -remarks
 
 A bug check occurs if the driver supplies an invalid object handle.
 
-
-
-
-## -remarks
 
 
 
@@ -108,21 +100,14 @@ For more information about object reference counts and the cleanup rules for a f
 
 The following code example decrements an object's reference count and assigns a tag value, line number, and file name to the reference.
 
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>WdfObjectDereferenceActual(
+```cpp
+WdfObjectDereferenceActual(
                            object,
                            pTag,
                            line,
                            FILE_NAME
-                           );</pre>
-</td>
-</tr>
-</table></span></div>
+                           );
+```
 
 
 
@@ -135,7 +120,7 @@ The following code example decrements an object's reference count and assigns a 
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfobject/nf-wdfobject-wdfobjectreferenceactual">WdfObjectReferenceActual</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfobject/nf-wdfobject-wdfobjectreferenceactual">WdfObjectReferenceActual</a>
  
 
  

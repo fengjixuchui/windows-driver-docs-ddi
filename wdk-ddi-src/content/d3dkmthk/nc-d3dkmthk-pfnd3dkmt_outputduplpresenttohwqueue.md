@@ -40,6 +40,8 @@ api_name:
 product: 
  - Windows
 targetos: Windows
+dev_langs:
+ - c++
 ms.custom: DXGKDDI_INTERFACE_VERSION_WDDM2_6, 19H1
 ---
 
@@ -70,13 +72,12 @@ NTSTATUS Pfnd3dkmtOutputduplpresenttohwqueue
 
 ### -param *
 
-Pointer to a [D3DKMT_OUTPUTDUPLPRESENTTOHWQUEUE](ns-d3dkmthk-d3dkmt_outputduplpresenttohwqueue.md) structure.
+Pointer to a [D3DKMT_OUTPUTDUPLPRESENTTOHWQUEUE](ns-d3dkmthk-_d3dkmt_outputduplpresenttohwqueue.md) structure.
 
 ## -returns
 
 Return STATUS_SUCCESS if the operation succeeds.
 
 ## -remarks
-
 
 ## -see-also

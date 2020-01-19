@@ -51,13 +51,6 @@ req.typenames:
 The <b>MmQuerySystemSize</b> routine returns an estimate of the amount of memory in the system.
 
 
-## -parameters
-
-
-
-
-
-
 ## -returns
 
 
@@ -81,7 +74,7 @@ This routine can be called during driver initialization to determine how much me
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-mmisthisanntassystem">MmIsThisAnNtAsSystem</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-mmisthisanntassystem">MmIsThisAnNtAsSystem</a>
  
 
  

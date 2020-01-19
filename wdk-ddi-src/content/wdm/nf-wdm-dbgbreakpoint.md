@@ -52,13 +52,6 @@ req.typenames:
 The <b>DbgBreakPoint</b> routine breaks into the kernel debugger.
 
 
-## -parameters
-
-
-
-
-
-
 ## -returns
 
 
@@ -86,7 +79,7 @@ In kernel mode, a break exception that is not handled will cause a bug check. Yo
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-dbgbreakpointwithstatus">DbgBreakPointWithStatus</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-dbgbreakpointwithstatus">DbgBreakPointWithStatus</a>
 
 
 
@@ -94,7 +87,7 @@ In kernel mode, a break exception that is not handled will cause a bug check. Yo
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kdbreakpointwithstatus">KdBreakPointWithStatus</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kdbreakpointwithstatus">KdBreakPointWithStatus</a>
  
 
  

@@ -63,7 +63,7 @@ The <b>WdfUsbTargetDeviceGetNumInterfaces</b> method returns the number of USB d
 
 ### -param UsbDevice [in]
 
-A handle to a USB device object that was obtained from a previous call to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfusb/nf-wdfusb-wdfusbtargetdevicecreatewithparameters">WdfUsbTargetDeviceCreateWithParameters</a>.
+A handle to a USB device object that was obtained from a previous call to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicecreatewithparameters">WdfUsbTargetDeviceCreateWithParameters</a>.
 
 
 ## -returns
@@ -88,18 +88,11 @@ For more information about the <b>WdfUsbTargetDeviceGetNumInterfaces</b> method 
 
 The following code example obtains the number of USB device interfaces that a specified USB device supports.
 
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>UCHAR numInterfaces;
+```cpp
+UCHAR numInterfaces;
 
-numInterfaces = WdfUsbTargetDeviceGetNumInterfaces(UsbDevice);</pre>
-</td>
-</tr>
-</table></span></div>
+numInterfaces = WdfUsbTargetDeviceGetNumInterfaces(UsbDevice);
+```
 
 
 
@@ -108,7 +101,7 @@ numInterfaces = WdfUsbTargetDeviceGetNumInterfaces(UsbDevice);</pre>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfusb/nf-wdfusb-wdfusbtargetdevicecreatewithparameters">WdfUsbTargetDeviceCreateWithParameters</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicecreatewithparameters">WdfUsbTargetDeviceCreateWithParameters</a>
  
 
  

@@ -80,7 +80,7 @@ Pointer to a caller-allocated buffer to receive the generated short file name. T
 
 
 
-None
+This routine returns STATUS_SUCCESS if a short name is successfully generated. It returns STATUS_FILE_SYSTEM_LIMITATION if the system can not generate a unique short name for a given file. It returns this error after 1 million retry attempts for a single given long name.
 
 
 
@@ -117,7 +117,7 @@ Square brackets
 
 </li>
 </ul>
-For information about other string-handling routines, see <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index">Strings</a>. 
+For information about other string-handling routines, see <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/index">Strings</a>. 
 
 
 
@@ -127,11 +127,11 @@ For information about other string-handling routines, see <a href="https://docs.
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-rtlisnamelegaldos8dot3">RtlIsNameLegalDOS8Dot3</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-rtlisnamelegaldos8dot3">RtlIsNameLegalDOS8Dot3</a>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-rtlisvalidoemcharacter">RtlIsValidOemCharacter</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-rtlisvalidoemcharacter">RtlIsValidOemCharacter</a>
 
 
 

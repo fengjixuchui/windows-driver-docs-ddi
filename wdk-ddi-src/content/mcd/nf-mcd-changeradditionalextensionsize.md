@@ -51,13 +51,6 @@ req.typenames:
 <b>ChangerAdditionalExtensionSize</b> indicates the number of bytes the changer miniclass driver requires to store device-specific information in the device extension.
 
 
-## -parameters
-
-
-
-
-
-
 ## -returns
 
 
@@ -83,7 +76,7 @@ The device-specific information stored by a changer miniclass driver is determin
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mcd/nf-mcd-changerinitialize">ChangerInitialize</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/mcd/nf-mcd-changerinitialize">ChangerInitialize</a>
  
 
  

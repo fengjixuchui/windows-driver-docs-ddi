@@ -63,7 +63,7 @@ The <b>WdfUsbInterfaceGetConfiguredSettingIndex</b> method returns the alternate
 
 ### -param Interface [in]
 
-A handle to a USB interface object that was obtained by calling <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfusb/nf-wdfusb-wdfusbtargetdevicegetinterface">WdfUsbTargetDeviceGetInterface</a>. 
+A handle to a USB interface object that was obtained by calling <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicegetinterface">WdfUsbTargetDeviceGetInterface</a>. 
 
 
 ## -returns
@@ -90,18 +90,11 @@ For more information about the <b>WdfUsbInterfaceGetConfiguredSettingIndex</b> m
 
 The following code example obtains the index for the currently selected alternate setting of a specified USB interface.
 
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>BYTE settingIndex;
+```cpp
+BYTE settingIndex;
 
-settingIndex = WdfUsbInterfaceGetConfiguredSettingIndex(UsbInterface);</pre>
-</td>
-</tr>
-</table></span></div>
+settingIndex = WdfUsbInterfaceGetConfiguredSettingIndex(UsbInterface);
+```
 
 
 
@@ -110,7 +103,7 @@ settingIndex = WdfUsbInterfaceGetConfiguredSettingIndex(UsbInterface);</pre>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfusb/nf-wdfusb-wdfusbtargetdevicegetinterface">WdfUsbTargetDeviceGetInterface</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicegetinterface">WdfUsbTargetDeviceGetInterface</a>
  
 
  

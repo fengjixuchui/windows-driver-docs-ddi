@@ -51,18 +51,6 @@ req.typenames:
 Commits the operation.
 
 
-## -parameters
-
-
-
-
-
-
-#### - Void
-
-This method has no parameters.
-
-
 ## -returns
 
 
@@ -77,7 +65,7 @@ This method returns an <b>HRESULT</b> value.
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nn-printerextension-iprinterscriptablestream">IPrinterScriptableStream</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptablestream">IPrinterScriptableStream</a>
  
 
  

@@ -68,21 +68,13 @@ A handle to a framework device object.
 
 ### -param DeviceState [in]
 
-A pointer to a driver-allocated <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/ns-wdfdevice-_wdf_device_state">WDF_DEVICE_STATE</a> structure that contains the device's state information.
-
-
-## -returns
-
-
-
-None.
-
-A bug check occurs if the driver supplies an invalid object handle.
-
-
+A pointer to a driver-allocated <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_device_state">WDF_DEVICE_STATE</a> structure that contains the device's state information.
 
 
 ## -remarks
+
+A bug check occurs if the driver supplies an invalid object handle.
+
 
 
 
@@ -93,23 +85,16 @@ When a driver calls <b>WdfDeviceSetDeviceState</b>, the framework notifies the P
 
 The following code example informs the PnP manager that a specified device is disabled.
 
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>WDF_DEVICE_STATE    deviceState;
+```cpp
+WDF_DEVICE_STATE    deviceState;
 
 WDF_DEVICE_STATE_INIT (&deviceState);
 deviceState.Disabled = WdfTrue;
 WdfDeviceSetDeviceState (
                          Device,
                          &deviceState
-                         );</pre>
-</td>
-</tr>
-</table></span></div>
+                         );
+```
 
 
 
@@ -118,7 +103,7 @@ WdfDeviceSetDeviceState (
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdf_device_state_init">WDF_DEVICE_STATE_INIT</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdf_device_state_init">WDF_DEVICE_STATE_INIT</a>
  
 
  

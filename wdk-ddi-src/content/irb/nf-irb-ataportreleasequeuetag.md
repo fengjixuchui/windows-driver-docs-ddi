@@ -79,20 +79,11 @@ Specifies the logical unit number of the device.
 Specifies the queue tag to be freed.
 
 
-## -returns
-
-
-
-None 
-
-
-
-
 ## -remarks
 
 
 
-The miniport driver should call <b>AtaPortReleaseQueueTag</b> to free allocated queue tags by using <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/irb/nf-irb-ataportallocatequeuetag">AtaPortAllocateQueueTag</a>. 
+The miniport driver should call <b>AtaPortReleaseQueueTag</b> to free allocated queue tags by using <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/irb/nf-irb-ataportallocatequeuetag">AtaPortAllocateQueueTag</a>. 
 
 
 
@@ -102,11 +93,11 @@ The miniport driver should call <b>AtaPortReleaseQueueTag</b> to free allocated 
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/irb/nf-irb-ataportallocatequeuetag">AtaPortAllocateQueueTag</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/irb/nf-irb-ataportallocatequeuetag">AtaPortAllocateQueueTag</a>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/irb/nf-irb-ataportinitializequeuetag">AtaPortInitializeQueueTag</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/irb/nf-irb-ataportinitializequeuetag">AtaPortInitializeQueueTag</a>
  
 
  

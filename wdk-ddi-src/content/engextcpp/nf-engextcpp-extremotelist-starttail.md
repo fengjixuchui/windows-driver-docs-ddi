@@ -51,18 +51,3 @@ req.typenames:
 The <b>StartTail</b> method initializes the list for iterating backward, starting at the head.
 
 
-## -parameters
-
-
-
-
-
-
-## -returns
-
-
-
-This method does not return a value.
-
-
-

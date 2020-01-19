@@ -48,7 +48,7 @@ req.typenames:
 ## -description
 
 
-The <code>IMasterClock</code> interface provides Microsoft DirectMusic streams with access to the current reference time from the <a href="https://docs.microsoft.com/windows-hardware/drivers/stream/master-clocks">master clock</a>. The DMus port driver implements this interface to support accurate timing in the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/nn-dmusicks-imxf">IMXF</a> and <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/nn-dmusicks-iallocatormxf">IAllocatorMXF</a> interfaces that make up the MIDI-transport part of the filter graph. When calling a DMus miniport driver's <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/nf-dmusicks-iminiportdmus-newstream">IMiniportDMus::NewStream</a> method, the DMus port driver passes an <code>IMasterClock</code> reference as a call parameter. The <code>IMasterClock</code> interface wraps the master clock, as described in <a href="https://docs.microsoft.com/windows-hardware/drivers/audio/latency-clocks">Latency Clocks</a>. 
+The <code>IMasterClock</code> interface provides Microsoft DirectMusic streams with access to the current reference time from the <a href="https://docs.microsoft.com/windows-hardware/drivers/stream/master-clocks">master clock</a>. The DMus port driver implements this interface to support accurate timing in the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/dmusicks/nn-dmusicks-imxf">IMXF</a> and <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/dmusicks/nn-dmusicks-iallocatormxf">IAllocatorMXF</a> interfaces that make up the MIDI-transport part of the filter graph. When calling a DMus miniport driver's <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/dmusicks/nf-dmusicks-iminiportdmus-newstream">IMiniportDMus::NewStream</a> method, the DMus port driver passes an <code>IMasterClock</code> reference as a call parameter. The <code>IMasterClock</code> interface wraps the master clock, as described in <a href="https://docs.microsoft.com/windows-hardware/drivers/audio/latency-clocks">Latency Clocks</a>. 
 
 
 ## -inheritance
@@ -57,23 +57,4 @@ The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IMasterClock</b> interface in
 <ul>
 <li><a href="https://docs.microsoft.com/">Methods</a></li>
 </ul>
-
-## -members
-
-The <b>IMasterClock</b> interface has these methods.
-<table class="members" id="memberListMethods">
-<tr>
-<th align="left" width="37%">Method</th>
-<th align="left" width="63%">Description</th>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dmusicks/nf-dmusicks-imasterclock-gettime">IMasterClock::GetTime</a>
-</td>
-<td align="left" width="63%">
-The <code>GetTime</code> method retrieves the current reference time read from the master clock.
-
-</td>
-</tr>
-</table> 
 

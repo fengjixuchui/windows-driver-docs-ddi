@@ -79,16 +79,9 @@ The number of milliseconds to convert.
 
 An absolute time value is a time value that specifies a specific date and time. Absolute times are relative to 00:00, January 1, 1601. If an absolute time value is passed to the system, the system adds the absolute time value to the time value that represents 00:00, January 1, 1601.
 
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre></pre>
-</td>
-</tr>
-</table></span></div>
+```cpp
+
+```
 
 
 
@@ -97,7 +90,7 @@ An absolute time value is a time value that specifies a specific date and time. 
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfcore/nf-wdfcore-wdf_rel_timeout_in_ms">WDF_REL_TIMEOUT_IN_MS</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfcore/nf-wdfcore-wdf_rel_timeout_in_ms">WDF_REL_TIMEOUT_IN_MS</a>
  
 
  

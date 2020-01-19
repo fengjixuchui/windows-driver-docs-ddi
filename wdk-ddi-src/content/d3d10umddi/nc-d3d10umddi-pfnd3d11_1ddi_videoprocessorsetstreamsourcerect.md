@@ -68,7 +68,7 @@ A handle to the display device (graphics context).
 
 *hVideoProcessor* [in]
 
-A handle to the video processor object that was created through a call to the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessor">CreateVideoProcessor</a> function.
+A handle to the video processor object that was created through a call to the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessor">CreateVideoProcessor</a> function.
 
 ### -param Arg3
 
@@ -87,7 +87,7 @@ If <b>TRUE</b>, the specified source rectangle must be applied to the input stre
 If <b>FALSE</b>, no source rectangle is applied to the input stream.
 
 
-### -param *
+### -param Arg5
 
 *pSourceRect* [in]
 
@@ -96,15 +96,6 @@ A pointer to a <a href="https://docs.microsoft.com/windows/desktop/api/windef/ns
 <div class="alert"><b>Note</b>  If the <i>Enable</i> parameter is FALSE, this parameter is ignored.
 </div>
 <div> </div>
-
-## -returns
-
-
-
-This callback function does not return a value.
-
-
-
 
 ## -remarks
 
@@ -126,7 +117,7 @@ If the <b>VideoProcessorSetStreamSourceRect</b> function is never called, or if 
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessor">CreateVideoProcessor</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessor">CreateVideoProcessor</a>
 
 
 

@@ -6,7 +6,7 @@ description: This structure is used in conjunction with IOCTL_STORAGE_QUERY_PROP
 tech.root: storage
 ms.assetid: 30dd37a2-037c-4805-898e-5d98f5e6c00d
 ms.author: windowsdriverdev
-ms.date: 3/20/19
+ms.date: 03/20/2019
 ms.topic: struct
 f1_keywords:
  - "ntddstor/STORAGE_PROTOCOL_DATA_DESCRIPTOR_EXT"
@@ -65,7 +65,5 @@ Size, in bytes, of the buffer containing the descriptor, including the space for
 [IOCTL_STORAGE_QUERY_PROPERTY](ni-ntddstor-ioctl_storage_query_property.md)
 
 [IOCTL_STORAGE_SET_PROPERTY](ni-ntddstor-ioctl_storage_set_property.md)
-
-[STORAGE_PROTOCOL_DATA_DESCRIPTOR](ns-ntddstor-_storage_data_descriptor.md)
 
 [STORAGE_PROTOCOL_SPECIFIC_DATA_EXT](ns-ntddstor-storage_protocol_specific_data_ext.md)

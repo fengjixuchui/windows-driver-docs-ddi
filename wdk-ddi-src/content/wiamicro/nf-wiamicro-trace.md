@@ -34,7 +34,7 @@ api_location:
 api_name: 
 - Trace
 product: 
--   Windows
+- Windows
 targetos: Windows
 
 ms.custom: RS5
@@ -49,10 +49,6 @@ ms.custom: RS5
 ### -param Format
 
 ### -param
-
-## -returns
-
-This function returns VOID.
 
 ## -remarks
 

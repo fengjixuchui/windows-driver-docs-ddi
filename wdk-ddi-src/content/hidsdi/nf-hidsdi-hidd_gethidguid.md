@@ -61,15 +61,6 @@ The <b>HidD_GetHidGuid</b> routine returns the <a href="https://docs.microsoft.c
 Pointer to a caller-allocated GUID buffer that the routine uses to return the device interface GUID for HIDClass devices.
 
 
-## -returns
-
-
-
-None.
-
-
-
-
 ## -remarks
 
 
@@ -86,7 +77,7 @@ For more information, see <a href="https://docs.microsoft.com/windows-hardware/d
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetdeviceinterfaces">IoGetDeviceInterfaces</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceinterfaces">IoGetDeviceInterfaces</a>
  
 
  

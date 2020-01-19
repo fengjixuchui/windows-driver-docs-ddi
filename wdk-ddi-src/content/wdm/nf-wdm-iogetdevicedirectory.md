@@ -65,17 +65,18 @@ Returns a handle to a directory on disk, in which drivers can store files. The f
 
 ## -returns
 Returns an appropriate [NTSTATUS value](https://docs.microsoft.com/windows-hardware/drivers/kernel/ntstatus-values). Possible values include:
-| Error code               | Description                                                                                        |
-| ------------------------ | -------------------------------------------------------------------------------------------------- |
-| STATUS_SUCCESS           | The call successfully opened a handle to the requested device directory.                           |
+
+| Error code | Description |
+| --- | --- |
+| STATUS_SUCCESS | The call successfully opened a handle to the requested device directory. |
 | STATUS_INVALID_PARAMETER | An input value to this function is invalid. For example, _PhysicalDeviceObject_ or _DeviceDirectoryHandle_ is NULL;  _Flags_ is not 0;  _Reserved_ is not NULL. |
 
 ## -remarks
 If **IoGetDeviceDirectory** is called before the required disks and volumes have been started, the function does not open a handle and returns an error. 
 
-Drivers typically use [**ZwOpenFile**](nf-wdm-zwopenfile.md) and [**ZwCreateFile**](nf-wdm-zwcreatefile.md) to access/create files. One of the parameters for those functions is an [OBJECT_ATTRIBUTES](../wudfwdm/ns-wudfwdm-_object_attributes.md) structure, which contains the object name and a root directory. If the root directory is NULL, then the object name must be a fully qualified path. However, if you provide a handle for the root directory, then the object name must be relative to the object (in the case of files, the directory), that the handle represents. 
+Drivers typically use [**ZwOpenFile**](nf-wdm-zwopenfile.md) and [**ZwCreateFile**](nf-wdm-zwcreatefile.md) to access/create files. One of the parameters for those functions is an [**OBJECT_ATTRIBUTES**](https:://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block) structure, which contains the object name and a root directory. If the root directory is NULL, then the object name must be a fully qualified path. However, if you provide a handle for the root directory, then the object name must be relative to the object (in the case of files, the directory), that the handle represents. 
 
-After the **IoGetDeviceDirectory** call succeeds, use the received HANDLE as a root directory in the [OBJECT_ATTRIBUTES](../wudfwdm/ns-wudfwdm-_object_attributes.md) that you are passing to a [**ZwOpenFile**](nf-wdm-zwopenfile.md) and [**ZwCreateFile**](nf-wdm-zwcreatefile.md).
+After the **IoGetDeviceDirectory** call succeeds, use the received HANDLE as a root directory in the [**OBJECT_ATTRIBUTES**](https:://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block) that you are passing to a [**ZwOpenFile**](nf-wdm-zwopenfile.md) and [**ZwCreateFile**](nf-wdm-zwcreatefile.md).
 
 
 The driver must call [**ZwClose**](nf-wdm-zwclose.md) to close the received handle when access is no longer required.
@@ -91,6 +92,6 @@ Callers of **IoGetDeviceDirectory** must be running at IRQL = PASSIVE_LEVEL in t
 
 [**_DEVICE_DIRECTORY_TYPE**](ne-wdm-_device_directory_type.md)
 
-[OBJECT_ATTRIBUTES](../wudfwdm/ns-wudfwdm-_object_attributes.md)
+[**OBJECT_ATTRIBUTES**](https:://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block)
 
 [**InitializeObjectAttributes**](https://docs.microsoft.com/windows/desktop/api/ntdef/nf-ntdef-initializeobjectattributes) 

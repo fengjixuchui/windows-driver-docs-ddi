@@ -36,6 +36,8 @@ product:
 - Windows
 targetos: Windows
 ms.custom: RS5
+dev_langs:
+ - c++
 tech.root: display
 ---
 
@@ -73,10 +75,6 @@ A handle to a command list.
 
 A handle to a root signature.
 
-
-## -returns
-
-Returns VOID.
 
 ## -remarks
 

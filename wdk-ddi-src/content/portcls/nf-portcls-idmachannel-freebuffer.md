@@ -47,12 +47,6 @@ targetos: Windows
 
 The FreeBuffer method frees the buffer that was allocated by the previous call to IDmaChannel::AllocateBuffer.
 
-## -parameters
-void
-
-## -returns
-This method returns void.
-
 ## -remarks
 
 Because the buffer is automatically freed when the DMA-channel object is deleted, the FreeBuffer method is not typically used.

@@ -71,18 +71,10 @@ A handle to a collection object.
 A handle to the framework object that will be removed from the collection.
 
 
-## -returns
-
-
-
-None.
-
-A system bug check occurs if the driver supplies an invalid object handle.
-
-
-
-
 ## -remarks
+
+A bug check occurs if the driver supplies an invalid object handle.
+
 
 
 
@@ -95,19 +87,12 @@ For more information about object collections, see <a href="https://docs.microso
 
 The following code example removes a specified object from a specified object collection.
 
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>WdfCollectionRemove(
+```cpp
+WdfCollectionRemove(
                     hCollection,
                     hObject
-                    );</pre>
-</td>
-</tr>
-</table></span></div>
+                    );
+```
 
 
 
@@ -116,7 +101,7 @@ The following code example removes a specified object from a specified object co
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfcollection/nf-wdfcollection-wdfcollectionremoveitem">WdfCollectionRemoveItem</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfcollection/nf-wdfcollection-wdfcollectionremoveitem">WdfCollectionRemoveItem</a>
  
 
  

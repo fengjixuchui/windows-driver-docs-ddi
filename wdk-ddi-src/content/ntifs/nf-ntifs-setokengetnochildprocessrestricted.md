@@ -78,21 +78,12 @@ A pointer to a boolean that returns whether secure process creation is enabled e
 A pointer to a boolean that returns whether the mitigation is in audit-only mode.
 
 
-## -returns
-
-
-
-This function does not return a value.
-
-
-
-
 ## -see-also
 
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-setokensetnochildprocessrestricted">SeTokenSetNoChildProcessRestricted</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-setokensetnochildprocessrestricted">SeTokenSetNoChildProcessRestricted</a>
  
 
  

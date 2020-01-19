@@ -66,15 +66,6 @@ A pointer to a variable set to the unbiased, GMT system time.
 A pointer to the returned value for the current locale.
 
 
-## -returns
-
-
-
-None
-
-
-
-
 ## -remarks
 
 
@@ -89,7 +80,7 @@ None
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exlocaltimetosystemtime">ExLocalTimeToSystemTime</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exlocaltimetosystemtime">ExLocalTimeToSystemTime</a>
  
 
  

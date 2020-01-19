@@ -23,13 +23,13 @@ req.unicode-ansi:
 req.max-support:
 req.typenames: NET_ADAPTER_RX_CAPABILITIES, *PNET_ADAPTER_RX_CAPABILITIES
 topictype: 
--	apiref
+- apiref
 apitype: 
--	HeaderDef
+- HeaderDef
 apilocation: 
--	netadapter.h
+- netadapter.h
 apiname: 
--	_NET_ADAPTER_RX_CAPABILITIES
+- _NET_ADAPTER_RX_CAPABILITIES
 product:
 - Windows
 targetos: Windows
@@ -39,10 +39,7 @@ targetos: Windows
 
 ## -description
 
-> [!WARNING]
-> Some information in this topic relates to prereleased product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
->
-> NetAdapterCx is preview only in Windows 10, version 1903.
+
 
 The **NET_ADAPTER_RX_CAPABILITIES** structure describes the receive capabilities of a net adapter.
 

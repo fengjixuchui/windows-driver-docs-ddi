@@ -82,23 +82,16 @@ A relative time is a time value that is relative to the current system time. For
 
 #### Examples
 
-The following code example starts a timer. The framework will call the timer's <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdftimer/nc-wdftimer-evt_wdf_timer">EvtTimerFunc</a> callback function after ten milliseconds. 
+The following code example starts a timer. The framework will call the timer's <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdftimer/nc-wdftimer-evt_wdf_timer">EvtTimerFunc</a> callback function after ten milliseconds. 
 
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>BOOLEAN inTimerQueue;
+```cpp
+BOOLEAN inTimerQueue;
 
 inTimerQueue = WdfTimerStart(
                              timerHandle,
                              WDF_REL_TIMEOUT_IN_MS(10)
-                             );</pre>
-</td>
-</tr>
-</table></span></div>
+                             );
+```
 
 
 
@@ -107,7 +100,7 @@ inTimerQueue = WdfTimerStart(
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfcore/nf-wdfcore-wdf_abs_timeout_in_ms">WDF_ABS_TIMEOUT_IN_MS</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfcore/nf-wdfcore-wdf_abs_timeout_in_ms">WDF_ABS_TIMEOUT_IN_MS</a>
  
 
  

@@ -38,6 +38,8 @@ api_name:
 product: 
  - Windows
 targetos: Windows
+dev_langs:
+ - c++
 ms.custom: 19H1
 ---
 
@@ -74,10 +76,6 @@ VOID DxgkddiQueryprobedbars
 ### -param pArgs
 
 [in, out] Pointer to the DXGKARG_QUERYPROBEDBARS structure.
-
-## -returns
-
-Returns VOID.
 
 ## -remarks
 

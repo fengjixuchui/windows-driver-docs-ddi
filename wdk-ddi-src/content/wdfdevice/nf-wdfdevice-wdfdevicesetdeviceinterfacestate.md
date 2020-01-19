@@ -81,18 +81,10 @@ A pointer to a <a href="https://docs.microsoft.com/windows/desktop/api/ntdef/ns-
 A Boolean value that, if <b>TRUE</b>, enables the specified device interface instance or, if <b>FALSE</b>, disables it.
 
 
-## -returns
-
-
-
-None.
+## -remarks
 
 A bug check occurs if the driver supplies an invalid object handle.
 
-
-
-
-## -remarks
 
 
 
@@ -103,21 +95,14 @@ For more information about device interfaces and the <b>WdfDeviceSetDeviceInterf
 
 The following code example disables a driver's COM port interface.
 
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>WdfDeviceSetDeviceInterfaceState (
+```cpp
+WdfDeviceSetDeviceInterfaceState (
                                   Device,
                                   (LPGUID) &GUID_DEVINTERFACE_COMPORT,
                                   NULL,
                                   FALSE
-                                  );</pre>
-</td>
-</tr>
-</table></span></div>
+                                  );
+```
 
 
 
@@ -130,7 +115,7 @@ The following code example disables a driver's COM port interface.
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicecreatedeviceinterface">WdfDeviceCreateDeviceInterface</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreatedeviceinterface">WdfDeviceCreateDeviceInterface</a>
  
 
  

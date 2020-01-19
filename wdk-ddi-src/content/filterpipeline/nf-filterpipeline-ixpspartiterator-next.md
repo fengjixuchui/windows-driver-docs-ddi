@@ -51,21 +51,3 @@ req.typenames:
 The <code>Next</code> method advances the iterator to the next part.
 
 
-## -parameters
-
-
-
-
-
-
-#### - None
-
-
-## -returns
-
-
-
-None
-
-
-

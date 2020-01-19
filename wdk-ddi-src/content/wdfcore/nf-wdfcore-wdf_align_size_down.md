@@ -82,24 +82,17 @@ WDF_ALIGN_SIZE_DOWN returns the aligned buffer size, in bytes.
 
 
 
-Drivers can use <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfcore/nf-wdfcore-wdf_align_size_up">WDF_ALIGN_SIZE_UP</a> or <b>WDF_ALIGN_SIZE_DOWN</b> to calculate a buffer size that is aligned to a specified alignment offset. This calculation is useful if your driver must allocate multiple contiguous buffers, if each buffer must begin at an address alignment boundary.
+Drivers can use <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfcore/nf-wdfcore-wdf_align_size_up">WDF_ALIGN_SIZE_UP</a> or <b>WDF_ALIGN_SIZE_DOWN</b> to calculate a buffer size that is aligned to a specified alignment offset. This calculation is useful if your driver must allocate multiple contiguous buffers, if each buffer must begin at an address alignment boundary.
 
 
 #### Examples
 
 The following code example receives a buffer size and returns the size (either the current size or the next-lower size) that aligns to a DWORD address boundary.
 
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>bufferSizeAligned = WDF_ALIGN_SIZE_DOWN(bufferSize,
-                                        sizeof(DWORD));</pre>
-</td>
-</tr>
-</table></span></div>
+```cpp
+bufferSizeAligned = WDF_ALIGN_SIZE_DOWN(bufferSize,
+                                        sizeof(DWORD));
+```
 
 
 
@@ -108,7 +101,7 @@ The following code example receives a buffer size and returns the size (either t
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfcore/nf-wdfcore-wdf_align_size_up">WDF_ALIGN_SIZE_UP</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfcore/nf-wdfcore-wdf_align_size_up">WDF_ALIGN_SIZE_UP</a>
  
 
  

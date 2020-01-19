@@ -61,7 +61,7 @@ The <b>WdfCommonBufferGetLength</b> method returns the length of a specified com
 
 ### -param CommonBuffer [in]
 
-A handle to a common buffer object that the driver obtained by a previous call to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfcommonbuffer/nf-wdfcommonbuffer-wdfcommonbuffercreate">WdfCommonBufferCreate</a>.  
+A handle to a common buffer object that the driver obtained by a previous call to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfcommonbuffer/nf-wdfcommonbuffer-wdfcommonbuffercreate">WdfCommonBufferCreate</a>.  
 
 
 ## -returns
@@ -89,18 +89,11 @@ For more information about common buffers, see <a href="https://docs.microsoft.c
 
 The following code example obtains the length of a specified common buffer.
 
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>size_t bufferLength;
+```cpp
+size_t bufferLength;
 
-bufferLength = WdfCommonBufferGetLength(DevExt->CommonBuffer); </pre>
-</td>
-</tr>
-</table></span></div>
+bufferLength = WdfCommonBufferGetLength(DevExt->CommonBuffer); 
+```
 
 
 
@@ -109,7 +102,7 @@ bufferLength = WdfCommonBufferGetLength(DevExt->CommonBuffer); </pre>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfcommonbuffer/nf-wdfcommonbuffer-wdfcommonbuffercreate">WdfCommonBufferCreate</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfcommonbuffer/nf-wdfcommonbuffer-wdfcommonbuffercreate">WdfCommonBufferCreate</a>
  
 
  

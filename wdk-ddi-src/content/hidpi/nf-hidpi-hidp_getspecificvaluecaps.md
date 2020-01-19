@@ -59,7 +59,7 @@ The <b>HidP_GetSpecificValueCaps</b> routine returns a <a href="https://docs.mic
 
 ### -param ReportType [in]
 
-Specifies a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hidpi/ne-hidpi-_hidp_report_type">HIDP_REPORT_TYPE</a> enumerator value that identifies the report type.
+Specifies a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/ne-hidpi-_hidp_report_type">HIDP_REPORT_TYPE</a> enumerator value that identifies the report type.
 
 
 ### -param UsagePage [in]
@@ -100,33 +100,53 @@ Pointer to a <a href="https://docs.microsoft.com/windows-hardware/drivers/hid/to
 
 <table>
 <tr>
-<th>Return code</th>
-<th>Description</th>
+    <th>Return code</th>
+    <th>NT Status Value</th>
+    <th>Description</th>
 </tr>
+ 
 <tr>
-<td width="40%">
-<dl>
-<dt><b>HIDP_STATUS_SUCCESS</b></dt>
-</dl>
-</td>
-<td width="60%">
-The routine successfully returned the capability data.
-
-</td>
+    <td width="40%">
+        <dl>
+            <dt><b>HIDP_STATUS_SUCCESS</b></dt>
+        </dl>
+    </td>
+    <td width="10%">
+        <dt><b>0x00110000</b></dt>
+    </td>
+    <td width="50%">
+        The routine successfully returned the capability data.
+    </td>
 </tr>
-<tr>
-<td width="40%">
-<dl>
-<dt><b>HIDP_STATUS_INVALID_PREPARSED_DATA</b></dt>
-</dl>
-</td>
-<td width="60%">
-The preparsed data is not valid.
 
-</td>
+<tr>
+    <td width="40%">
+        <dl>
+            <dt><b>HIDP_STATUS_INVALID_PREPARSED_DATA</b></dt>
+        </dl>
+    </td>
+    <td width="10%">
+        <dt><b>0xc0110001</b></dt>
+    </td>
+    <td width="50%">
+        The preparsed data is not valid.
+    </td>
+</tr>
+
+<tr>
+    <td width="40%">
+        <dl>
+            <dt><b>HIDP_STATUS_USAGE_NOT_FOUND</b></dt>
+        </dl>
+    </td>
+    <td width="10%">
+        <dt><b>0xc0110004</b></dt>
+    </td>
+    <td width="60%">
+        The usage does not exist in any report of the specified report type.
+    </td>
 </tr>
 </table>
- 
 
 
 
@@ -135,7 +155,7 @@ The preparsed data is not valid.
 
 
 
-The required size of the <i>ValueCaps</i> buffer is specified by the <b>Number</b><i>Xxx</i><b>ValueCaps </b>members of a top-level collection's <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hidpi/ns-hidpi-_hidp_caps">HIDP_CAPS</a> structure.
+The required size of the <i>ValueCaps</i> buffer is specified by the <b>Number</b><i>Xxx</i><b>ValueCaps </b>members of a top-level collection's <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/ns-hidpi-_hidp_caps">HIDP_CAPS</a> structure.
 
 When calling <b>HidP_GetSpecificValueCaps</b>, specifying zero for <i>UsagePage</i>, <i>Usage</i>, and <i>LinkCollection</i> is equivalent to calling <b>HidP_GetValueCaps</b>.
 
@@ -151,23 +171,23 @@ See also <a href="https://docs.microsoft.com/windows-hardware/drivers/hid/hid-co
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hidpi/ns-hidpi-_hidp_caps">HIDP_CAPS</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/ns-hidpi-_hidp_caps">HIDP_CAPS</a>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hidpi/ns-hidpi-_hidp_value_caps">HIDP_VALUE_CAPS</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/ns-hidpi-_hidp_value_caps">HIDP_VALUE_CAPS</a>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hidpi/nf-hidpi-hidp_getcaps">HidP_GetCaps</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getcaps">HidP_GetCaps</a>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hidpi/nf-hidpi-hidp_getvaluecaps">HidP_GetValueCaps</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getvaluecaps">HidP_GetValueCaps</a>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/hidsdi/nf-hidsdi-hidd_getpreparseddata">_HIDP_PREPARSED_DATA</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_getpreparseddata">_HIDP_PREPARSED_DATA</a>
  
 
  

@@ -44,36 +44,8 @@ req.typenames:
 
 # IKsDeviceFunctions interface
 
-
 ## -description
 
-
-The IKsDeviceFunctions interface is a COM-style interface implemented on AVStream devices. This interface is available in Windows Server 2003 SP1 and later versions of Windows.
-
+The **IKsDeviceFunctions** interface is a COM-style interface implemented on AVStream devices.
 
 ## -inheritance
-
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IKsDeviceFunctions</b> interface inherits from the <a href="https://docs.microsoft.com/windows/desktop/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IKsDeviceFunctions</b> also has these types of members:
-<ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-</ul>
-
-## -members
-
-The <b>IKsDeviceFunctions</b> interface has these methods.
-<table class="members" id="memberListMethods">
-<tr>
-<th align="left" width="37%">Method</th>
-<th align="left" width="63%">Description</th>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-iksdevicefunctions-registeradapterobjectex">RegisterAdapterObjectEx</a>
-</td>
-<td align="left" width="63%">
-Registers a DMA adapter object with AVStream. All drivers compiled for Win64 should use this method instead of <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-ksdeviceregisteradapterobject">KsDeviceRegisterAdapterObject</a>.
-
-</td>
-</tr>
-</table> 
-

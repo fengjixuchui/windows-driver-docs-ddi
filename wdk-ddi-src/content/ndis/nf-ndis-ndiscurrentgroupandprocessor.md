@@ -26,7 +26,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ndis.lib
 req.dll: 
-req.irql: >= DISPATCH_LEVEL
+req.irql: Greater than or equal to DISPATCH_LEVEL
 topic_type:
 - APIRef
 - kbSyntax
@@ -52,13 +52,6 @@ req.typenames:
 The
   <b>NdisCurrentGroupAndProcessor</b> function returns the group-relative processor number and group number of
   the current processor.
-
-
-## -parameters
-
-
-
-
 
 
 ## -returns

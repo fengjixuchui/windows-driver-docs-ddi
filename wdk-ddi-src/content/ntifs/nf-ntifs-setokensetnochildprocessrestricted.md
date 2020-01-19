@@ -48,7 +48,7 @@ req.typenames:
 ## -description
 
 
-The <b>SeTokenSetNoChildProcessRestricted</b> routine sets the <b>TOKEN_AUDIT_NO_CHILD_PROCESS</b> or <b>TOKEN_AUDIT_NO_CHILD_PROCESS</b>
+The <b>SeTokenSetNoChildProcessRestricted</b> routine sets the <b>TOKEN_NO_CHILD_PROCESS_UNLESS_SECURE</b> or <b>TOKEN_AUDIT_NO_CHILD_PROCESS</b>
     flags in the token.  
 
 
@@ -64,22 +64,13 @@ Specifies a pointer to the access token.
 
 ### -param UnlessSecure [in]
 
-A pointer to a boolean that indicates that secure process creation shoudl always be enabled.
+A pointer to a boolean that indicates that secure process creation should always be enabled.
 
 
 ### -param AuditOnly [in]
 
 A pointer to a boolean that indicates if the mitigation should be enabled in
                 audit-only mode.
-
-
-## -returns
-
-
-
-This function does not return a value.
-
-
 
 
 ## -remarks
@@ -98,7 +89,7 @@ Note that both flags cannot be set at the same time
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-setokengetnochildprocessrestricted">SeTokenGetNoChildProcessRestricted</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-setokengetnochildprocessrestricted">SeTokenGetNoChildProcessRestricted</a>
  
 
  

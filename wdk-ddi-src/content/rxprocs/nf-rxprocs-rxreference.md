@@ -61,15 +61,6 @@ req.typenames:
 A pointer to the reference-counted data structure to be referenced (incremented). 
 
 
-## -returns
-
-
-
-None 
-
-
-
-
 ## -remarks
 
 
@@ -96,7 +87,7 @@ If <b>RxReference</b> is called with any other type of RDBSS data structure, the
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/rxprocs/nf-rxprocs-rxdereference">RxDereference</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/rxprocs/nf-rxprocs-rxdereference">RxDereference</a>
  
 
  

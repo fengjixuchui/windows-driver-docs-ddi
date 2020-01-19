@@ -38,6 +38,8 @@ api_name:
 product: 
  - Windows
 targetos: Windows
+dev_langs:
+ - c++
 ms.custom: 19H1
 ---
 
@@ -74,10 +76,6 @@ VOID DxgkddiGetvendoranddevice
 ### -param pArgs 
 
 [in, out] A pointer to the DXGKARG_GETVENDORANDDEVICE structure.
-
-## -returns
-
-Returns VOID.
 
 ## -remarks
 

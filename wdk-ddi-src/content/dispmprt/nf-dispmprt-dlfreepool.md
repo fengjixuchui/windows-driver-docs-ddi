@@ -40,7 +40,8 @@ api_name:
 product: 
 - Windows
 targetos: Windows
-
+dev_langs:
+ - c++
 ms.custom: 19H1
 ---
 
@@ -61,10 +62,6 @@ A handle that represents a display adapter.
 
 Pointer to a memory pool.
 
-
-## -returns
-
-This function returns VOID.
 
 ## -remarks
 

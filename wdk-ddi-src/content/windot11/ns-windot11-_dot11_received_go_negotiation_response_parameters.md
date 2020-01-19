@@ -36,8 +36,6 @@ api_location:
 - Windot11.h
 api_name:
 - DOT11_RECEIVED_GO_NEGOTIATION_RESPONSE_PARAMETERS
-product:
-- Windows
 targetos: Windows
 req.typenames: DOT11_RECEIVED_GO_NEGOTIATION_RESPONSE_PARAMETERS, *PDOT11_RECEIVED_GO_NEGOTIATION_RESPONSE_PARAMETERS
 product:
@@ -127,7 +125,7 @@ The length, in bytes, of the array of IEs provided at <b>uIEsOffset</b>.
 
 
 
-If  <b>RequestContext</b> is a pointer, the data pointed to must remain valid until the call to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndismindicatestatusex">NdisMIndicateStatusEx</a> returns.
+If  <b>RequestContext</b> is a pointer, the data pointed to must remain valid until the call to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatestatusex">NdisMIndicateStatusEx</a> returns.
 
 
 

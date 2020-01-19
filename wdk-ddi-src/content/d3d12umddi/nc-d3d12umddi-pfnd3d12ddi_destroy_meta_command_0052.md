@@ -38,6 +38,8 @@ product:
 - Windows
 targetos: Windows
 tech.root: display
+dev_langs:
+ - c++
 ms.custom: RS5
 ---
 
@@ -74,10 +76,6 @@ A handle to the display device (graphics context).
 ### -param Arg2
 
 Handle to a meta-command.
-
-## -returns
-
-Returns VOID.
 
 ## -remarks
 

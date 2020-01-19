@@ -26,7 +26,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ndis.lib
 req.dll: 
-req.irql: >= DISPATCH_LEVEL
+req.irql: DISPATCH_LEVEL
 topic_type:
 - APIRef
 - kbSyntax
@@ -52,13 +52,6 @@ req.typenames:
 The 
   <b>NdisCurrentProcessorIndex</b> function returns the system-assigned number of the current processor that
   the caller is running on.
-
-
-## -parameters
-
-
-
-
 
 
 ## -returns
@@ -88,7 +81,7 @@ NDIS drivers call the
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-kegetcurrentprocessornumber">KeGetCurrentProcessorNumber</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-kegetcurrentprocessornumber">KeGetCurrentProcessorNumber</a>
 
 
 

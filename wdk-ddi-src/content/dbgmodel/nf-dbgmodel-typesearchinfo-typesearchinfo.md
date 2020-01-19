@@ -47,9 +47,6 @@ ms.custom: RS5
 
 The search record passed to EnumerateChildrenEx specifically for SymbolType searches.
 
-## -parameters
-None
-
 ## -returns
 This function is a constructor and does not return a value.
 
@@ -58,4 +55,4 @@ This function is a constructor and does not return a value.
 
 ## -see-also
 
-[dbgmodel.h header](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/)
+[dbgmodel.h header](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgmodel/)

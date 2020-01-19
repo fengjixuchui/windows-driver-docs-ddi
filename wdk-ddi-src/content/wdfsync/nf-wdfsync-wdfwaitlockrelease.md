@@ -64,23 +64,12 @@ The <b>WdfWaitLockRelease</b> method releases a specified wait lock.
 
 ### -param Lock [in]
 
-A handle to a framework wait-lock object, obtained by a previous call to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfsync/nf-wdfsync-wdfwaitlockcreate">WdfWaitLockCreate</a>.
-
-
-## -returns
-
-
-
-None.
-
-A bug check occurs if the driver supplies an invalid object handle.
-
-
-
-
+A handle to a framework wait-lock object, obtained by a previous call to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfsync/nf-wdfsync-wdfwaitlockcreate">WdfWaitLockCreate</a>.
 
 
 ## -remarks
+
+A bug check occurs if the driver supplies an invalid object handle.
 
 
 
@@ -106,7 +95,7 @@ For a code example that uses <b>WdfWaitLockRelease</b>, see <a href="https://msd
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfsync/nf-wdfsync-wdfwaitlockcreate">WdfWaitLockCreate</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfsync/nf-wdfsync-wdfwaitlockcreate">WdfWaitLockCreate</a>
  
 
  

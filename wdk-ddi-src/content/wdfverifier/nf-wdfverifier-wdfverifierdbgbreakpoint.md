@@ -56,22 +56,6 @@ req.typenames:
 The <b>WdfVerifierDbgBreakPoint</b> function breaks into a kernel debugger, if a debugger is running.
 
 
-## -parameters
-
-
-
-
-
-
-## -returns
-
-
-
-None
-
-
-
-
 ## -remarks
 
 
@@ -93,13 +77,8 @@ For more information about debugging your driver, see <a href="https://docs.micr
 
 The following code example shows how a driver might handle a failure to obtain an I/O request's output buffer.
 
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>Status = WdfRequestRetrieveOutputMemory(
+```cpp
+Status = WdfRequestRetrieveOutputMemory(
                                         Request,
                                         &memory
                                         );
@@ -112,10 +91,8 @@ if( !NT_SUCCESS(Status) ) {
                                       0L
                                       );
     return;
-}</pre>
-</td>
-</tr>
-</table></span></div>
+}
+```
 
 
 
@@ -124,7 +101,7 @@ if( !NT_SUCCESS(Status) ) {
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfverifier/nf-wdfverifier-wdfverifierkebugcheck">WdfVerifierKeBugCheck</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfverifier/nf-wdfverifier-wdfverifierkebugcheck">WdfVerifierKeBugCheck</a>
  
 
  

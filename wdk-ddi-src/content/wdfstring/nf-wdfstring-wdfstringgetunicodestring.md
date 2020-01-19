@@ -71,20 +71,9 @@ A handle to a framework string object.
 A pointer to a <a href="https://docs.microsoft.com/windows/desktop/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> structure that receives a pointer to the Unicode string that is currently assigned to the string object that <i>String</i> specifies.
 
 
-## -returns
-
-
-
-None.
+## -remarks
 
 A bug check occurs if the driver supplies an invalid object handle.
-
-
-
-
-
-
-## -remarks
 
 
 
@@ -99,21 +88,14 @@ For more information about framework string objects, see <a href="https://docs.m
 
 The following code example obtains the Unicode string that is assigned to a specified framework string object.
 
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>UNICODE_STRING StringName;
+```cpp
+UNICODE_STRING StringName;
 
 WdfStringGetUnicodeString(
                           stringHandle,
                           &StringName
-                          );</pre>
-</td>
-</tr>
-</table></span></div>
+                          );
+```
 
 
 
@@ -126,7 +108,7 @@ WdfStringGetUnicodeString(
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfstring/nf-wdfstring-wdfstringcreate">WdfStringCreate</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfstring/nf-wdfstring-wdfstringcreate">WdfStringCreate</a>
  
 
  

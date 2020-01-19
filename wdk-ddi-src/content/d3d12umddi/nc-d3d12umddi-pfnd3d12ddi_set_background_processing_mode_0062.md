@@ -38,6 +38,8 @@ api_name:
 product:
 - Windows
 targetos: Windows
+dev_langs:
+ - c++
 ms.custom: D3D12 Release 6, Build rev 2., 19H1
 ---
 
@@ -79,10 +81,6 @@ A [D3D12DDI_BACKGROUND_PROCESSING_MODE_0062](ne-d3d12umddi-d3d12ddi_background_p
 ### -param MeasurementsAction
 
 A [D3D12DDI_MEASUREMENTS_ACTION_0062](ne-d3d12umddi-d3d12ddi_measurements_action_0062.md) enumeration that represents the measurement action.
-
-## -returns
-
-Returns void.
 
 ## -remarks
 

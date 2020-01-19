@@ -40,6 +40,8 @@ product:
 - Windows
 targetos: Windows
 req.typenames: 
+dev_langs:
+ - c++
 ms.custom: RS5
 ---
 
@@ -112,7 +114,7 @@ HPFS file names are case-preserving, but not case insensitive. Lowercase file na
 
 </li>
 </ol>
-For information about other string-handling routines, see <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index">Strings</a>. 
+For information about other string-handling routines, see <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/index">Strings</a>. 
 
 
 

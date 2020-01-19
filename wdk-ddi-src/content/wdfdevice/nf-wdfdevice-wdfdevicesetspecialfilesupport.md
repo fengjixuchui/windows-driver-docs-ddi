@@ -66,7 +66,7 @@ A handle to a framework device object.
 
 ### -param FileType [in]
 
-A <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/ne-wdfdevice-_wdf_special_file_type">WDF_SPECIAL_FILE_TYPE</a>-typed enumerator that identifies the type of special file that the driver supports.
+A <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/ne-wdfdevice-_wdf_special_file_type">WDF_SPECIAL_FILE_TYPE</a>-typed enumerator that identifies the type of special file that the driver supports.
 
 
 ### -param FileTypeIsSupported [in]
@@ -74,22 +74,14 @@ A <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfde
 Supplies a Boolean value which, if <b>TRUE</b>, enables support for the special file type and, if <b>FALSE</b>, disables support the special file type.
 
 
-## -returns
-
-
-
-None.
+## -remarks
 
 A bug check occurs if the driver supplies an invalid object handle.
 
 
 
 
-## -remarks
-
-
-
-A function driver typically calls <b>WdfDeviceSetSpecialFileSupport</b> from within its <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add">EvtDriverDeviceAdd</a> callback function.
+A function driver typically calls <b>WdfDeviceSetSpecialFileSupport</b> from within its <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add">EvtDriverDeviceAdd</a> callback function.
 
 Each driver's support for special files is initially disabled until the driver calls <b>WdfDeviceSetSpecialFileSupport</b>.
 
@@ -100,13 +92,8 @@ For more information, see <a href="https://docs.microsoft.com/windows-hardware/d
 
 The following code example enables support for paging, hibernation, and dump files on a device.
 
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>WdfDeviceSetSpecialFileSupport(
+```cpp
+WdfDeviceSetSpecialFileSupport(
                                device,
                                WdfSpecialFilePaging,
                                TRUE
@@ -120,10 +107,8 @@ WdfDeviceSetSpecialFileSupport(
                                device,
                                WdfSpecialFileDump,
                                TRUE
-                               );</pre>
-</td>
-</tr>
-</table></span></div>
+                               );
+```
 
 
 
@@ -132,11 +117,11 @@ WdfDeviceSetSpecialFileSupport(
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add">EvtDriverDeviceAdd</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add">EvtDriverDeviceAdd</a>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/ne-wdfdevice-_wdf_special_file_type">WDF_SPECIAL_FILE_TYPE</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/ne-wdfdevice-_wdf_special_file_type">WDF_SPECIAL_FILE_TYPE</a>
  
 
  

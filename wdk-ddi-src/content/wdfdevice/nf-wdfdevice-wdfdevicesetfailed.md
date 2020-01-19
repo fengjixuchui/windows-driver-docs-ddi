@@ -68,21 +68,13 @@ A handle to a framework device object.
 
 ### -param FailedAction [in]
 
-A <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/ne-wdfdevice-_wdf_device_failed_action">WDF_DEVICE_FAILED_ACTION</a>-typed enumerator that indicates whether the framework should attempt to reload the specified device's drivers.
-
-
-## -returns
-
-
-
-None.
-
-A bug check occurs if the driver supplies an invalid object handle.
-
-
+A <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/ne-wdfdevice-_wdf_device_failed_action">WDF_DEVICE_FAILED_ACTION</a>-typed enumerator that indicates whether the framework should attempt to reload the specified device's drivers.
 
 
 ## -remarks
+
+A bug check occurs if the driver supplies an invalid object handle.
+
 
 
 
@@ -99,18 +91,11 @@ For more information about <b>WdfDeviceSetFailed</b>, see <a href="https://docs.
 
 The following code example informs the framework that a failure has occurred. If the specified device's drivers are not supporting other devices, the framework will unload the drivers and then attempt to reload them.
 
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>WdfDeviceSetFailed(
+```cpp
+WdfDeviceSetFailed(
                    device,
                    WdfDeviceFailedAttemptRestart
-                   );</pre>
-</td>
-</tr>
-</table></span></div>
+                   );
+```
 
 

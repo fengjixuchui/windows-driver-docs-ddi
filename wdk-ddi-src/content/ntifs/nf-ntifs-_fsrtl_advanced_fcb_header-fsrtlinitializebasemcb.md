@@ -36,7 +36,8 @@ api_name:
 product:
 - Windows
 targetos: Windows
-
+dev_langs:
+ - c++
 ms.custom: RS5
 ---
 
@@ -56,10 +57,6 @@ Contains a pointer to the Mcb structure to initialize.
 
 ### -param PoolType
 Specifies the pool type to use when allocating additional internal Mcb memory.
-
-## -returns
-
-None.
 
 ## -remarks
 

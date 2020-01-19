@@ -63,7 +63,7 @@ The <b>WdfUsbInterfaceGetNumEndpoints</b> method returns the number of endpoints
 
 ### -param UsbInterface [in]
 
-A handle to a USB interface object that was obtained by calling <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfusb/nf-wdfusb-wdfusbtargetdevicegetinterface">WdfUsbTargetDeviceGetInterface</a>. 
+A handle to a USB interface object that was obtained by calling <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicegetinterface">WdfUsbTargetDeviceGetInterface</a>. 
 
 
 ### -param SettingIndex [in]
@@ -95,20 +95,13 @@ For more information about the <b>WdfUsbInterfaceGetNumEndpoints</b> method and 
 
 The following code example obtains the number of endpoints for alternate setting 0 of a specified USB interface.
 
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>BYTE  numEndpoints;
+```cpp
+BYTE  numEndpoints;
 numEndpoints = WdfUsbInterfaceGetNumEndpoints(
                                               UsbInterface,
                                               0
-                                              );</pre>
-</td>
-</tr>
-</table></span></div>
+                                              );
+```
 
 
 
@@ -117,7 +110,7 @@ numEndpoints = WdfUsbInterfaceGetNumEndpoints(
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfusb/nf-wdfusb-wdfusbtargetdevicegetinterface">WdfUsbTargetDeviceGetInterface</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicegetinterface">WdfUsbTargetDeviceGetInterface</a>
  
 
  

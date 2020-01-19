@@ -51,9 +51,6 @@ req.typenames:
 The <b>ExtRemoteData</b> constructor creates a new instance of the [ExtRemoteData](nl-engextcpp-extremotedata.md) class.
 
 
-## -parameters
-
-
 ## -remarks
 
 If a memory region is specified, the contents of the region are read from the target and cached.  The data can be retrieved using [ExtRemoteData::GetData](nf-engextcpp-extremotedata-getdata.md).
@@ -67,7 +64,7 @@ The constructor is called by the ExtRemoteData::Set(Typed) or ExtRemoteData::Set
 
 [ExtRemoteData::GetData](nf-engextcpp-extremotedata-getdata.md)
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/engextcpp/nf-engextcpp-extremotedata-extremotedata(pcstr_ulong64_ulong)">ExtRemoteData::ExtRemoteData (Name, Offset, Bytes)</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/engextcpp/nf-engextcpp-extremotedata-extremotedata(pcstr_ulong64_ulong)">ExtRemoteData::ExtRemoteData (Name, Offset, Bytes)</a>
 
 
  

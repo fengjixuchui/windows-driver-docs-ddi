@@ -104,22 +104,15 @@ For more information about device interfaces and the <b>WdfDeviceCreateDeviceInt
 
 The following example registers the COM port interface class for a device.
 
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>NTSTATUS  status;
+```cpp
+NTSTATUS  status;
 
 status = WdfDeviceCreateDeviceInterface(
                                         Device,
                                         (LPGUID) &GUID_DEVINTERFACE_COMPORT,
                                         NULL
-                                        );</pre>
-</td>
-</tr>
-</table></span></div>
+                                        );
+```
 
 
 
@@ -132,7 +125,7 @@ status = WdfDeviceCreateDeviceInterface(
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicesetdeviceinterfacestate">WdfDeviceSetDeviceInterfaceState</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicesetdeviceinterfacestate">WdfDeviceSetDeviceInterfaceState</a>
  
 
  

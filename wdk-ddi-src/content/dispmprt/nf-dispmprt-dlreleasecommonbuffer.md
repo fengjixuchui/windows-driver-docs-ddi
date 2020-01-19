@@ -40,7 +40,8 @@ api_name:
 product: 
 - Windows
 targetos: Windows
-
+dev_langs:
+ - c++
 ms.custom: 19H1
 ---
 
@@ -77,10 +78,6 @@ Pointer to the corresponding virtual address of the allocated memory range.
 
 Indicates whether the allocated memory is cached.
 
-
-## -returns
-
-This function returns VOID.
 
 ## -remarks
 

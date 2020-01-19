@@ -76,15 +76,6 @@ Specifies the logical unit number (LUN) of the device.
 Specifies the time, in seconds, for which the device is presumed to be busy.
 
 
-## -returns
-
-
-
-None 
-
-
-
-
 ## -remarks
 
 
@@ -93,7 +84,7 @@ When the port driver receives this call, it pauses the request queue for the ind
 
 The port driver automatically resumes paused queues after the time-out interval expires.
 
-The miniport driver must not call <b>AtaPortDeviceBusy</b> from its <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/irb/nc-irb-ide_hw_interrupt">IdeHwInterrupt</a> routine.
+The miniport driver must not call <b>AtaPortDeviceBusy</b> from its <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/irb/nc-irb-ide_hw_interrupt">IdeHwInterrupt</a> routine.
 
 
 
@@ -103,11 +94,11 @@ The miniport driver must not call <b>AtaPortDeviceBusy</b> from its <a href="htt
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/irb/nf-irb-ataportdeviceready">AtaPortDeviceReady</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/irb/nf-irb-ataportdeviceready">AtaPortDeviceReady</a>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/irb/nc-irb-ide_hw_interrupt">IdeHwInterrupt</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/irb/nc-irb-ide_hw_interrupt">IdeHwInterrupt</a>
  
 
  

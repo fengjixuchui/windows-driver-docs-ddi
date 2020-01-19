@@ -63,7 +63,7 @@ The <b>WdfUsbTargetDeviceGetIoTarget</b> method returns a handle to the I/O targ
 
 ### -param UsbDevice [in]
 
-A handle to a USB device object that was obtained from a previous call to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfusb/nf-wdfusb-wdfusbtargetdevicecreatewithparameters">WdfUsbTargetDeviceCreateWithParameters</a>.
+A handle to a USB device object that was obtained from a previous call to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicecreatewithparameters">WdfUsbTargetDeviceCreateWithParameters</a>.
 
 
 ## -returns
@@ -88,20 +88,13 @@ For more information about the <b>WdfUsbTargetDeviceGetIoTarget</b> method and U
 
 The following code example creates a request object and verifies that the framework can send a request to the I/O target object that is associated with a specified USB device. 
 
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>status = WdfRequestCreate(
+```cpp
+status = WdfRequestCreate(
                           &attributes,
                           WdfUsbTargetDeviceGetIoTarget(deviceContext->UsbTargetDevice),
                           &request
-                          );</pre>
-</td>
-</tr>
-</table></span></div>
+                          );
+```
 
 
 
@@ -110,11 +103,11 @@ The following code example creates a request object and verifies that the framew
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfusb/nf-wdfusb-wdfusbtargetdevicecreatewithparameters">WdfUsbTargetDeviceCreateWithParameters</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicecreatewithparameters">WdfUsbTargetDeviceCreateWithParameters</a>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfusb/nf-wdfusb-wdfusbtargetpipegetiotarget">WdfUsbTargetPipeGetIoTarget</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetpipegetiotarget">WdfUsbTargetPipeGetIoTarget</a>
  
 
  

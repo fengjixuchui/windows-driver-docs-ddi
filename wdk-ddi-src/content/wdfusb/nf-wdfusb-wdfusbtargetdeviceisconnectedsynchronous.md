@@ -61,7 +61,7 @@ The <b>WdfUsbTargetDeviceIsConnectedSynchronous</b> method determines if the spe
 
 ### -param UsbDevice [in]
 
-A handle to a USB device object that was obtained from a previous call to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfusb/nf-wdfusb-wdfusbtargetdevicecreatewithparameters">WdfUsbTargetDeviceCreateWithParameters</a>.
+A handle to a USB device object that was obtained from a previous call to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicecreatewithparameters">WdfUsbTargetDeviceCreateWithParameters</a>.
 
 
 ## -returns
@@ -131,18 +131,11 @@ For more information about the <b>WdfUsbTargetDeviceIsConnectedSynchronous</b> m
 
 The following code example determines if a specified USB device is connected.
 
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>NTSTATUS status;
+```cpp
+NTSTATUS status;
 
-status = WdfUsbTargetDeviceIsConnectedSynchronous(UsbDevice);</pre>
-</td>
-</tr>
-</table></span></div>
+status = WdfUsbTargetDeviceIsConnectedSynchronous(UsbDevice);
+```
 
 
 
@@ -151,7 +144,7 @@ status = WdfUsbTargetDeviceIsConnectedSynchronous(UsbDevice);</pre>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfusb/nf-wdfusb-wdfusbtargetdevicecreatewithparameters">WdfUsbTargetDeviceCreateWithParameters</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicecreatewithparameters">WdfUsbTargetDeviceCreateWithParameters</a>
  
 
  

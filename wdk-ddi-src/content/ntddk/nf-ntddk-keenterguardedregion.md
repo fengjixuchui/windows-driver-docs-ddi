@@ -51,22 +51,6 @@ req.typenames:
 The <b>KeEnterGuardedRegion</b> routine enters a guarded region, which disables all kernel-mode APC delivery to the current thread. 
 
 
-## -parameters
-
-
-
-
-
-
-## -returns
-
-
-
-None
-
-
-
-
 ## -remarks
 
 
@@ -83,7 +67,7 @@ For more information about guarded regions, see <a href="https://docs.microsoft.
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-keleaveguardedregion">KeLeaveGuardedRegion</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-keleaveguardedregion">KeLeaveGuardedRegion</a>
  
 
  

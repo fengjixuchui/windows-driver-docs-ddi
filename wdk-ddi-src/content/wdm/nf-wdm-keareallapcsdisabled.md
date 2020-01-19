@@ -51,13 +51,6 @@ req.typenames:
 The <b>KeAreAllApcsDisabled</b> routine indicates whether the calling thread is inside a guarded region or running at IRQL >= APC_LEVEL, which disables all APC delivery.
 
 
-## -parameters
-
-
-
-
-
-
 ## -returns
 
 
@@ -81,7 +74,7 @@ A thread inside a guarded region or running at IRQL >= APC_LEVEL has all APCs di
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-keareapcsdisabled">KeAreApcsDisabled</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-keareapcsdisabled">KeAreApcsDisabled</a>
  
 
  

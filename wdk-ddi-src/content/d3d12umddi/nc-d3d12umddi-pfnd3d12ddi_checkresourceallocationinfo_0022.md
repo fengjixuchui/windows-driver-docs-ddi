@@ -62,13 +62,13 @@ The <i>pfnCheckResourceAllocationInfo</i> callback function supports checking re
 
 A handle to the display device (graphics context).
 
-### -param *
+### -param Arg2
 
 *CreateResource* [in]
 
 A pointer to a create resource.
 
-### -param Arg2
+### -param Arg3
 
 *ResourceOptimizationFlags*
 
@@ -83,20 +83,11 @@ An alignment restriction value.
 
 A visible node mask.
 
-### -param *
+### -param Arg6
 
 *pInfo* [out]
 
 Information for resource allocation.
-
-
-## -returns
-
-
-
-This callback function does not return a value.
-
-
 
 
 ## -remarks
@@ -105,7 +96,7 @@ This callback function does not return a value.
 
 This callback function is part of a two step process of resource creation. This function determines the sizes and alignments of the resource data, additional data header, and additional data is determined, along with the texture layout. When the resource description is passed into this function, the layout of the resource description may be set to _UNDEFINED. This allows the driver to choose any texture layout. When the ayout of the resource description is <b>STANDARD_SWIZZLE</b> or <b>ROW_MAJOR</b>, the driver must return out the corresponding value as its choice.
 
-This callback function is accessed by using the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d12umddi/ns-d3d12umddi-d3d12ddi_device_funcs_core_0010">D3D12DDI_DEVICE_FUNCS_CORE_0010</a> structure.
+This callback function is accessed by using the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi_device_funcs_core_0010">D3D12DDI_DEVICE_FUNCS_CORE_0010</a> structure.
 
 
 

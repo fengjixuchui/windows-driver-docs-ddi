@@ -40,6 +40,8 @@ product:
 - Windows
 targetos: Windows
 req.typenames: 
+dev_langs:
+ - c++
 ms.custom: RS5
 ---
 
@@ -49,7 +51,7 @@ ms.custom: RS5
 ## -description
 
 
-The <b>FsRtlGetNextMcbEntry</b> routine is obsolete, but is exported to support existing driver binaries. Use <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlgetnextlargemcbentry">FsRtlGetNextLargeMcbEntry</a> instead.
+The <b>FsRtlGetNextMcbEntry</b> routine is obsolete, but is exported to support existing driver binaries. Use <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlgetnextlargemcbentry">FsRtlGetNextLargeMcbEntry</a> instead.
 
 
 ## -parameters

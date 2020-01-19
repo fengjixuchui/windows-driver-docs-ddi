@@ -66,7 +66,7 @@ A handle to the display device (graphics context).
 
 *hVideoProcessor* [in]
 
-A handle to the video processor object that was created through a call to the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessor">CreateVideoProcessor</a> function.
+A handle to the video processor object that was created through a call to the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessor">CreateVideoProcessor</a> function.
 
 ### -param Arg3
 
@@ -74,13 +74,13 @@ A handle to the video processor object that was created through a call to the <a
 
 The zero-based index of the input stream.
 
-### -param *
+### -param Arg4
 
 *pGuid* [in]
 
 A pointer to a GUID that identifies the private state data. The meaning of this GUID is defined by the graphics driver.
 
-### -param Arg4
+### -param Arg5
 
 *DataSize* [in]
 
@@ -88,7 +88,7 @@ The size, in bytes, of the private state data in the buffer referenced by the <i
 
 
 
-### -param *
+### -param Arg6
 
 *pData* [in, out]
 
@@ -124,7 +124,7 @@ A pointer to a buffer that contains the private state data.
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessor">CreateVideoProcessor</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessor">CreateVideoProcessor</a>
  
 
  

@@ -112,7 +112,7 @@ In the paging I/O path.
 </li>
 
 <li>
-When the <b>TopLevelIrp</b> field of the current thread is not <b>NULL</b>, because the resulting file system recursion could cause deadlocks or stack overflows. (For more information about this issue, see <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-iogettoplevelirp">IoGetTopLevelIrp</a>.)
+When the <b>TopLevelIrp</b> field of the current thread is not <b>NULL</b>, because the resulting file system recursion could cause deadlocks or stack overflows. (For more information about this issue, see <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iogettoplevelirp">IoGetTopLevelIrp</a>.)
 </li>
 
 <li>
@@ -135,7 +135,7 @@ In a postoperation callback routine for IRP_MJ_ACQUIRE_FOR_SECTION_SYNCHRONIZATI
 </li>
 
 <li>
-When all APCs are disabled; that is, when <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-keareallapcsdisabled">KeAreAllApcsDisabled</a> returns TRUE.
+When all APCs are disabled; that is, when <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-keareallapcsdisabled">KeAreAllApcsDisabled</a> returns TRUE.
 </li>
 
 </ul>
@@ -232,7 +232,7 @@ If **FltGetFileNameInformation** is called in the preoperation callback routine 
 
 In create, hard-link, and rename operations, file name tunneling can cause the final component in normalized file name information that a minifilter driver retrieves in a preoperation callback routine to be invalidated. If a minifilter driver retrieves normalized file name information in a preoperation callback ([PFLT_PRE_OPERATION_CALLBACK](nc-fltkernel-pflt_pre_operation_callback.md)) routine by calling a routine such as **FltGetFileNameInformation**, it must call [FltGetTunneledName](nf-fltkernel-fltgettunneledname.md) from its postoperation callback ([PFLT_POST_OPERATION_CALLBACK](nc-fltkernel-pflt_post_operation_callback.md)) routine to retrieve the correct file name information for the file.
 
-For Windows 8.1 and earlier, **FltGetFileNameInformation** can include a [stream type](https://docs.microsoft.com/en-us/windows/desktop/FileIO/file-streams) *only* when called from a filter’s pre-create callback. To distinguish between a file’s default stream and metadata streams, this call should be made in the pre-create operation. The resulting stream type will remain valid across the lifetime of the file.
+For Windows 8.1 and earlier, **FltGetFileNameInformation** can include a [stream type](https://docs.microsoft.com/windows/desktop/FileIO/file-streams) *only* when called from a filter’s pre-create callback. To distinguish between a file’s default stream and metadata streams, this call should be made in the pre-create operation. The resulting stream type will remain valid across the lifetime of the file.
 
  Prior to Windows 8, Filter Manager obtained the normalized name for a file or directory by collecting the name information for each component of  the file path. This required multiple queries to the file system to compile the complete path. Starting with Windows 8, local file systems support the  **FileNormalizedNameInformation** file information class and only a single query is necessary to obtain the normalized name. Remote file systems may not support the **FileNormalizedNameInformation** file information class. When this is the case, a query for each component of the file path is still required to assemble the normalized name. Under certain network conditions, a full name query can require a significant amount of time to complete.
 
@@ -256,7 +256,7 @@ The following paired operations can cause the file name *name* to be tunneled:
 
 [FLT_FILE_NAME_OPTIONS](https://docs.microsoft.com/windows-hardware/drivers/ifs/flt-file-name-options)
 
-[FltGetDestinationFileNameInformation](f-fltkernel-fltgetdestinationfilenameinformation.md)
+[FltGetDestinationFileNameInformation](nf-fltkernel-fltgetdestinationfilenameinformation.md)
 
 [FltGetFileNameInformationUnsafe](nf-fltkernel-fltgetfilenameinformationunsafe.md)
 
@@ -268,7 +268,7 @@ The following paired operations can cause the file name *name* to be tunneled:
 
 [FltReleaseFileNameInformation](nf-fltkernel-fltreleasefilenameinformation.md)
 
-[IoGetTopLevelIrp](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-iogettoplevelirp)
+[IoGetTopLevelIrp](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iogettoplevelirp)
 
 [PFLT_POST_OPERATION_CALLBACK](nc-fltkernel-pflt_post_operation_callback.md)
 

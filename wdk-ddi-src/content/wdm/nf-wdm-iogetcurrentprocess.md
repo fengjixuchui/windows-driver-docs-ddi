@@ -49,8 +49,6 @@ req.typenames:
 
 The **IoGetCurrentProcess** routine returns a pointer to the current process. Call **PsGetCurrentProcess** instead of **IoGetCurrentProcess**.
 
-## -parameters
-
 ## -returns
 
 **IoGetCurrentProcess** returns a pointer to the current process.
@@ -63,4 +61,4 @@ This routine is identical to **PsGetCurrentProcess**.
 
 ## -see-also
 
-[PsGetCurrentThread](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-psgetcurrentthread)
+[PsGetCurrentThread](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-psgetcurrentthread)

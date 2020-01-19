@@ -49,25 +49,15 @@ ms.custom: 19H1
 
 The **IKsControl** interface is a COM-style interface implemented on AVStream filters and pins. It enables clients in kernel mode to access AVStream automation objects (properties, methods, and events).
 
-See the [IKsControl (ksproxy.h)](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksproxy/nn-ksproxy-ikscontrol) kernel-streaming proxy COM interface for information about the kernel-mode equivalent of this interface.
+See the [IKsControl (ksproxy.h)](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksproxy/nn-ksproxy-ikscontrol) kernel-streaming proxy COM interface for information about the kernel-mode equivalent of this interface.
 
 ## -inheritance
 
 The **IKsControl** interface inherits from the [IUnknown](https://docs.microsoft.com/windows/desktop/api/unknwn/nn-unknwn-iunknown) interface.
 
-## -members
-
-The **IKsControl** interface has these methods.
-
-| Method | Description  |
-| --- | --- |
-| KsEvent | Enables or disables an event. |
-| KsMethod | Sends a method to a KS object. |
-| KsProperty | Sets a property or retrieves property information. |
-
 ## -remarks
 
-Minidrivers typically acquire the **IKsControl** interface through a call to [KsPinGetConnectedFilterInterface](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-kspingetconnectedfilterinterface) or [KsPinGetConnectedPinInterface](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-kspingetconnectedpininterface). Because this is a COM-style interface, the function call to obtain this interface calls the **QueryInterface** method, which in turn calls the **AddRef** method. Therefore, the minidriver does not have to perform these steps.
+Minidrivers typically acquire the **IKsControl** interface through a call to [KsPinGetConnectedFilterInterface](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nf-ks-kspingetconnectedfilterinterface) or [KsPinGetConnectedPinInterface](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nf-ks-kspingetconnectedpininterface). Because this is a COM-style interface, the function call to obtain this interface calls the **QueryInterface** method, which in turn calls the **AddRef** method. Therefore, the minidriver does not have to perform these steps.
 
 However, as soon as the client is finished with the **IKsControl** interface, it must release **IKsControl** with a call to the **Release** method.
 
@@ -109,8 +99,8 @@ For more information, see [AVStream Overview](https://docs.microsoft.com/windows
 
 ## -see-also
 
-[IKsControl(ksproxy.h)](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksproxy/nn-ksproxy-ikscontrol)
+[IKsControl(ksproxy.h)](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksproxy/nn-ksproxy-ikscontrol)
 
-[KsPinGetConnectedFilterInterface](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-kspingetconnectedfilterinterface)
+[KsPinGetConnectedFilterInterface](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nf-ks-kspingetconnectedfilterinterface)
 
-[KsPinGetConnectedPinInterface](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/nf-ks-kspingetconnectedpininterface)
+[KsPinGetConnectedPinInterface](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nf-ks-kspingetconnectedpininterface)

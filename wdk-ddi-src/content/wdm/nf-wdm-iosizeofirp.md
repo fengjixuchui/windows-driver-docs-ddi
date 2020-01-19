@@ -60,11 +60,10 @@ The <b>IoSizeOfIrp</b> routine determines the size in bytes for an IRP, given th
 
 Specifies the number of stack locations for the IRP. 
 
-## -returns
-**IoSizeOfIrp** returns the size, in bytes, of the IRP.
 
 ## -remarks
 
+**IoSizeOfIrp** returns the size, in bytes, of the IRP.
 
 
 The input <i>StackSize</i> value is either that of the next-lower driver's device object or one more than that value.
@@ -77,11 +76,11 @@ The input <i>StackSize</i> value is either that of the next-lower driver's devic
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioallocateirp">IoAllocateIrp</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocateirp">IoAllocateIrp</a>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-iomakeassociatedirp">IoMakeAssociatedIrp</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-iomakeassociatedirp">IoMakeAssociatedIrp</a>
  
 
  

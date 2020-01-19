@@ -61,7 +61,7 @@ The <b>WdfUsbTargetDeviceRetrieveCurrentFrameNumber</b> method retrieves the cur
 
 ### -param UsbDevice [in]
 
-A handle to a USB device object that was obtained from a previous call to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfusb/nf-wdfusb-wdfusbtargetdevicecreatewithparameters">WdfUsbTargetDeviceCreateWithParameters</a>.
+A handle to a USB device object that was obtained from a previous call to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicecreatewithparameters">WdfUsbTargetDeviceCreateWithParameters</a>.
 
 
 ### -param CurrentFrameNumber [out]
@@ -125,13 +125,8 @@ For more information about the <b>WdfUsbTargetDeviceRetrieveCurrentFrameNumber</
 
 The following code example calls <b>WdfUsbTargetDeviceRetrieveCurrentFrameNumber</b>. The example obtains a USB device object handle from driver-defined context space.
 
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>ULONG  frameNumber;
+```cpp
+ULONG  frameNumber;
 PMY_DEVICE_CONTEXT  pMyDeviceContext;
 
 pMyDeviceContext = GetDeviceContext(Device);
@@ -139,10 +134,8 @@ pMyDeviceContext = GetDeviceContext(Device);
 status = WdfUsbTargetDeviceRetrieveCurrentFrameNumber(
                                               pMyDeviceContext->UsbTargetDevice,
                                               &frameNumber
-                                              );</pre>
-</td>
-</tr>
-</table></span></div>
+                                              );
+```
 
 
 
@@ -151,7 +144,7 @@ status = WdfUsbTargetDeviceRetrieveCurrentFrameNumber(
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfusb/nf-wdfusb-wdfusbtargetdevicecreatewithparameters">WdfUsbTargetDeviceCreateWithParameters</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicecreatewithparameters">WdfUsbTargetDeviceCreateWithParameters</a>
  
 
  

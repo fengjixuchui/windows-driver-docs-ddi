@@ -40,6 +40,8 @@ product:
 targetos: Windows
 tech.root: display
 req.typenames: D3D12DDI_CORELAYER_DEVICECALLBACKS_0022
+dev_langs:
+ - c++
 ms.custom: 19H1
 ---
 
@@ -149,10 +151,10 @@ A function pointer for WDDM versions less than 2.0.
 
 ### -field pfnAllocateCb
 
-A pointer to the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_allocate_cb_0022">pfnAllocateCb</a> function.
+A pointer to the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_allocate_cb_0022">pfnAllocateCb</a> function.
 
 
 ### -field pfnDeallocateCb
 
-A pointer to the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_deallocate_cb_0022">pfnDeallocateCb</a> function.
+A pointer to the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_deallocate_cb_0022">pfnDeallocateCb</a> function.
 

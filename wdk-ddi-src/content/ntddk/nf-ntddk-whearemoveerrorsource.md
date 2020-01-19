@@ -6,7 +6,7 @@ description: Reserved for system use.
 tech.root:
 ms.assetid: 6efc418b-cb45-409d-9ad7-9dbdfeba59bb
 ms.author: windowsdriverdev
-ms.date: 
+ms.date: 08/19/2019
 ms.topic: function
 f1_keywords:
  - "ntddk/WheaRemoveErrorSource"
@@ -31,8 +31,8 @@ req.type-library:
 topic_type: 
 - apiref
 api_type: 
-- 
-api_location: 
+- HeaderDef
+api_location:
 - ntddk.h
 api_name: 
 - WheaRemoveErrorSource
@@ -57,8 +57,6 @@ Reserved for system use.
 
 
 
-## -returns
-This function returns VOID.
 ## -remarks
 
 ## -see-also

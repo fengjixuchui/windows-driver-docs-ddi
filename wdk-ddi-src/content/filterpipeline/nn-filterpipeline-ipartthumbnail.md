@@ -53,46 +53,17 @@ The <b>IPartThumbnail</b> interface is an abstraction for thumbnails in an XPS d
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPartThumbnail</b> interface inherits from <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/filterpipeline/nn-filterpipeline-ipartbase">IPartBase</a>. <b>IPartThumbnail</b> also has these types of members:
+The <b xmlns:loc="https://microsoft.com/wdcml/l10n">IPartThumbnail</b> interface inherits from <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/filterpipeline/nn-filterpipeline-ipartbase">IPartBase</a>. <b>IPartThumbnail</b> also has these types of members:
 <ul>
 <li><a href="https://docs.microsoft.com/">Methods</a></li>
 </ul>
-
-## -members
-
-The <b>IPartThumbnail</b> interface has these methods.
-<table class="members" id="memberListMethods">
-<tr>
-<th align="left" width="37%">Method</th>
-<th align="left" width="63%">Description</th>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/filterpipeline/nf-filterpipeline-ipartthumbnail-getthumbnailproperties">IPartThumbnail::GetThumbnailProperties</a>
-</td>
-<td align="left" width="63%">
-The <b>GetThumbnailProperties</b> method gets the thumbnail properties.
-
-</td>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/filterpipeline/nf-filterpipeline-ipartthumbnail-setthumbnailcontent">IPartThumbnail::SetThumbnailContent</a>
-</td>
-<td align="left" width="63%">
-The <b>SetThumbnailContent</b> method sets the thumbnail content for the part.
-
-</td>
-</tr>
-</table> 
-
 
 ## -see-also
 
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/filterpipeline/nn-filterpipeline-ipartbase">IPartBase</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/filterpipeline/nn-filterpipeline-ipartbase">IPartBase</a>
  
 
  

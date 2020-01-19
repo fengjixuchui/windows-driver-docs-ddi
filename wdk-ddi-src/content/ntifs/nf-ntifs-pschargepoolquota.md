@@ -81,15 +81,6 @@ Type of pool quota to charge, which can be one of the following:
 Number of bytes to charge against the pool quota for this process. 
 
 
-## -returns
-
-
-
-None
-
-
-
-
 ## -remarks
 
 
@@ -108,7 +99,7 @@ For more information about memory management, see <a href="https://docs.microsof
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-psreturnpoolquota">PsReturnPoolQuota</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-psreturnpoolquota">PsReturnPoolQuota</a>
  
 
  

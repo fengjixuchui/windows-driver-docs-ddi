@@ -68,16 +68,7 @@ A handle to a DMA transaction object that specifies the transaction to modify.
 
 ### -param Offset [in]
 
-The offset of the register, from the <b>DeviceAddress</b> specified in <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdmaenabler/ns-wdfdmaenabler-_wdf_dma_system_profile_config">WDF_DMA_SYSTEM_PROFILE_CONFIG</a>, to or from which DMA should be performed.
-
-
-## -returns
-
-
-
-This method does not return a value.
-
-
+The offset of the register, from the <b>DeviceAddress</b> specified in <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdmaenabler/ns-wdfdmaenabler-_wdf_dma_system_profile_config">WDF_DMA_SYSTEM_PROFILE_CONFIG</a>, to or from which DMA should be performed.
 
 
 ## -remarks
@@ -101,13 +92,8 @@ If your driver calls this method on an operating system earlier than Windows 8,
 
 The following code example initializes a DMA transaction.  It then sets the offset of the register that the system DMA controller will access, provides a transfer completion callback routine, and executes the DMA transaction.
 
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>status = WdfDmaTransactionInitialize(
+```cpp
+status = WdfDmaTransactionInitialize(
                                      RequestContext->DmaTransaction,
                                      EvtProgramDma,
                                      direction,
@@ -145,10 +131,8 @@ Complete:
 
 WdfDmaTransactionRelease(
                          RequestContext->DmaTransaction
-                         );</pre>
-</td>
-</tr>
-</table></span></div>
+                         );
+```
 
 
 
@@ -157,7 +141,7 @@ WdfDmaTransactionRelease(
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdmaenabler/ns-wdfdmaenabler-_wdf_dma_system_profile_config">WDF_DMA_SYSTEM_PROFILE_CONFIG</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdmaenabler/ns-wdfdmaenabler-_wdf_dma_system_profile_config">WDF_DMA_SYSTEM_PROFILE_CONFIG</a>
  
 
  

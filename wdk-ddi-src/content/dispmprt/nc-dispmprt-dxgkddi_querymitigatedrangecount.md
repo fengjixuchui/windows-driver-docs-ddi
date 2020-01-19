@@ -38,6 +38,8 @@ api_name:
 product: 
  - Windows
 targetos: Windows
+dev_langs:
+ - c++
 ms.custom: 19H1
 ---
 
@@ -74,10 +76,6 @@ The miniport context that is returned by the driver in the [DXGKDDI_GPU_PARTITIO
 ### -param pArgs
 
 A pointer to the DXGKARG_QUERYMITIGATEDRANGECOUNT structure.
-
-## -returns
-
-Returns VOID.
 
 ## -remarks
 

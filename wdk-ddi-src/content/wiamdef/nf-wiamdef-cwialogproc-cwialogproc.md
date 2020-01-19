@@ -46,7 +46,7 @@ req.typenames:
 
 ## -description
 
-The [CWiaLogProc](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-cwialogproc-~cwialogproc) constructor is called when the function or method being logged is entered.
+The [CWiaLogProc](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamdef/nf-wiamdef-cwialogproc-~cwialogproc) constructor is called when the function or method being logged is entered.
 
 ## -parameters
 
@@ -70,10 +70,6 @@ Defines the **IWiaLog** parameter _*pIWiaLog_.
 
 Defines the **CHAR** parameter _*pszMsg_.
 
-## -returns
-
-This method does not return a value.
-
 ## -see-also
 
-[CWiaLogProc](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiamdef/nf-wiamdef-cwialogproc-cwialogproc)
+[CWiaLogProc](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamdef/nf-wiamdef-cwialogproc-cwialogproc)

@@ -51,13 +51,6 @@ req.typenames:
 The <b>Initialize</b> method is called by the engine to initialize an EngExtCpp extension library after loading it.
 
 
-## -parameters
-
-
-
-
-
-
 ## -returns
 
 
@@ -114,7 +107,7 @@ There may or may not be a debugging session active when this function is called,
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portabledeviceclassextension/nf-portabledeviceclassextension-iportabledeviceclassextension-uninitialize">Uninitialize</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/portabledeviceclassextension/nf-portabledeviceclassextension-iportabledeviceclassextension-uninitialize">Uninitialize</a>
  
 
  

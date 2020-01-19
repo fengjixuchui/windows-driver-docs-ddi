@@ -49,14 +49,6 @@ ms.custom: RS5
 
 3d vectors class constructor used in sensor driver development.
 
-## -parameters
-
-No parameters.
-
-## -returns
-
-Void.
-
 ## -remarks
 
 ## -see-also

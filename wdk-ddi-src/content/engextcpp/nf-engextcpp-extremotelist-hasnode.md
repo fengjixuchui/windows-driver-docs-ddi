@@ -51,13 +51,6 @@ req.typenames:
 The <b>HasNode</b> method determines if there is a current item in the list iteration.
 
 
-## -parameters
-
-
-
-
-
-
 ## -returns
 
 
@@ -71,9 +64,9 @@ The <b>HasNode</b> method determines if there is a current item in the list iter
 
 
 
-Before you call <b>HasNode</b>, you must initialize the list for iteration by calling <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/engextcpp/nf-engextcpp-extremotelist-starthead">StartHead</a> or <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/engextcpp/nf-engextcpp-extremotelist-starttail">StartTail</a>.
+Before you call <b>HasNode</b>, you must initialize the list for iteration by calling <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/engextcpp/nf-engextcpp-extremotelist-starthead">StartHead</a> or <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/engextcpp/nf-engextcpp-extremotelist-starttail">StartTail</a>.
 
-If this method returns <code>true</code>, <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/engextcpp/nf-engextcpp-extremotelist-getnodeoffset">ExtRemoteList::GetNodeOffset</a> can be used to return the current item in the list.
+If this method returns <code>true</code>, <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/engextcpp/nf-engextcpp-extremotelist-getnodeoffset">ExtRemoteList::GetNodeOffset</a> can be used to return the current item in the list.
 
 
 
@@ -83,11 +76,11 @@ If this method returns <code>true</code>, <a href="https://docs.microsoft.com/wi
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/engextcpp/nl-engextcpp-extremotelist">ExtRemoteList</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/engextcpp/nl-engextcpp-extremotelist">ExtRemoteList</a>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/engextcpp/nf-engextcpp-extremotelist-getnodeoffset">ExtRemoteList::GetNodeOffset</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/engextcpp/nf-engextcpp-extremotelist-getnodeoffset">ExtRemoteList::GetNodeOffset</a>
  
 
  

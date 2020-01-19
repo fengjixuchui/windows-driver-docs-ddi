@@ -51,13 +51,6 @@ req.typenames:
 The <b>KsPropagateAcquire</b> method directs all the pins on the filter to attain the Acquire state. 
 
 
-## -parameters
-
-
-
-
-
-
 ## -returns
 
 
@@ -83,7 +76,7 @@ This method is for proxy use and is not recommended for application use.
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ksproxy/nn-ksproxy-ikspin">IKsPin</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksproxy/nn-ksproxy-ikspin">IKsPin</a>
  
 
  

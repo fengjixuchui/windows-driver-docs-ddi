@@ -29,8 +29,6 @@ api_location:
 - netrequestqueue.h
 api_name: 
 - NET_REQUEST_QUEUE_TYPE
-product:
-- Windows
 targetos: Windows
 product:
 - Windows
@@ -40,10 +38,7 @@ product:
 
 ## -description
 
-> [!WARNING]
-> Some information in this topic relates to prereleased product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
->
-> NetAdapterCx is preview only in Windows 10, version 1903.
+
 
 Specifies the type of net request queue.
 

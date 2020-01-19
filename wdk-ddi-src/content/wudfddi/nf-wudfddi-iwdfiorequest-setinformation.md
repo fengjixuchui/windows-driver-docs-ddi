@@ -63,21 +63,12 @@ The <b>SetInformation</b> method sets the size of information for a request.
 A ULONG_PTR value that specifies the size of information to set for the request.
 
 
-## -returns
-
-
-
-None
-
-
-
-
 ## -see-also
 
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nn-wudfddi-iwdfiorequest">IWDFIoRequest</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiorequest">IWDFIoRequest</a>
  
 
  

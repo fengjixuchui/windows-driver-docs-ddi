@@ -6,7 +6,7 @@ description: Waits for synchronization object.
 tech.root: display
 ms.assetid: 61c6c871-5b24-4034-9540-9e20b2f668ce
 ms.author: windowsdriverdev
-ms.date: 
+ms.date: 08/19/2019
 ms.topic: struct
 f1_keywords:
  - "d3d12umddi/D3D12DDICB_WAITFORSYNCHRONIZATIONOBJECT2"
@@ -37,6 +37,8 @@ api_name:
 product: 
  - Windows
 targetos: Windows
+dev_langs:
+ - c++
 ms.custom: UMD DDI Min Version D3D12DDI_SUPPORTED_0021, 19H1
 ---
 

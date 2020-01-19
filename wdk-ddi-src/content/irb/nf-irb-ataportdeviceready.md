@@ -71,15 +71,6 @@ Specifies the target identifier of the device.
 Specifies the logical unit number (LUN) of the device.
 
 
-## -returns
-
-
-
-None 
-
-
-
-
 ## -remarks
 
 
@@ -94,7 +85,7 @@ The port driver resumes the paused request queue for the indicated device. If th
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/irb/nf-irb-ataportdevicebusy">AtaPortDeviceBusy</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/irb/nf-irb-ataportdevicebusy">AtaPortDeviceBusy</a>
  
 
  

@@ -58,23 +58,14 @@ req.typenames:
 
 ### -param Context [in]
 
-Pointer to a minidriver-allocated buffer. The minidriver provides a pointer to this buffer in the Context parameter of its call to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/strmini/nf-strmini-streamclasscallatnewpriority">StreamClassCallAtNewPriority</a>.
-
-
-## -returns
-
-
-
-None
-
-
+Pointer to a minidriver-allocated buffer. The minidriver provides a pointer to this buffer in the Context parameter of its call to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/strmini/nf-strmini-streamclasscallatnewpriority">StreamClassCallAtNewPriority</a>.
 
 
 ## -remarks
 
 
 
-The minidriver provides a pointer to this routine in the <b>Priority</b> parameter of a call to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/strmini/nf-strmini-streamclasscallatnewpriority">StreamClassCallAtNewPriority</a>.
+The minidriver provides a pointer to this routine in the <b>Priority</b> parameter of a call to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/strmini/nf-strmini-streamclasscallatnewpriority">StreamClassCallAtNewPriority</a>.
 
 
 
@@ -84,7 +75,7 @@ The minidriver provides a pointer to this routine in the <b>Priority</b> paramet
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/strmini/nf-strmini-streamclasscallatnewpriority">StreamClassCallAtNewPriority</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/strmini/nf-strmini-streamclasscallatnewpriority">StreamClassCallAtNewPriority</a>
  
 
  

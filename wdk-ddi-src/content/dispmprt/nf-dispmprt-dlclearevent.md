@@ -40,7 +40,8 @@ api_name:
 product: 
 - Windows
 targetos: Windows
-
+dev_langs:
+ - c++
 ms.custom: 19H1
 ---
 
@@ -61,10 +62,6 @@ A handle to the device.
 
 Pointer to an event to clear.
 
-
-## -returns
-
-This function returns VOID.
 
 ## -remarks
 

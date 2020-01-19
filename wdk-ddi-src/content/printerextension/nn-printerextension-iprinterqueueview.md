@@ -53,36 +53,16 @@ Provides a way to change the range of print jobs being monitored.
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPrinterQueueView</b> interface inherits from the <a href="ebbff4bc-36b2-4861-9efa-ffa45e013eb5">IDispatch</a> interface. <b>IPrinterQueueView</b> also has these types of members:
+The <b xmlns:loc="https://microsoft.com/wdcml/l10n">IPrinterQueueView</b> interface inherits from the <a href="ebbff4bc-36b2-4861-9efa-ffa45e013eb5">IDispatch</a> interface. <b>IPrinterQueueView</b> also has these types of members:
 <ul>
 <li><a href="https://docs.microsoft.com/">Methods</a></li>
 </ul>
-
-## -members
-
-The <b>IPrinterQueueView</b> interface has these methods.
-<table class="members" id="memberListMethods">
-<tr>
-<th align="left" width="37%">Method</th>
-<th align="left" width="63%">Description</th>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nf-printerextension-iprinterqueueview-setviewrange">SetViewRange</a>
-</td>
-<td align="left" width="63%">
-Sets the range of print jobs being monitored.
-
-</td>
-</tr>
-</table> 
-
 
 ## -remarks
 
 
 
-An event is raised whenever the status of the print queue changes. So when a client uses <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nf-printerextension-iprinterqueueview-setviewrange">SetViewRange</a> to specify the range of print jobs (the view) to be monitored, the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nf-printerextension-iprinterqueueviewevent-onchanged">IPrinterQueueViewEvent::OnChanged</a> event method fires, and the live queue is returned in response.
+An event is raised whenever the status of the print queue changes. So when a client uses <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nf-printerextension-iprinterqueueview-setviewrange">SetViewRange</a> to specify the range of print jobs (the view) to be monitored, the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nf-printerextension-iprinterqueueviewevent-onchanged">IPrinterQueueViewEvent::OnChanged</a> event method fires, and the live queue is returned in response.
 
 And also, note that job enumeration starts when the first event handler is added and stops when the last event handler is removed.
 
@@ -96,7 +76,7 @@ And also, note that job enumeration starts when the first event handler is added
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/printerextension/nf-printerextension-iprinterqueueviewevent-onchanged">IPrinterQueueViewEvent::OnChanged</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nf-printerextension-iprinterqueueviewevent-onchanged">IPrinterQueueViewEvent::OnChanged</a>
 
 
 

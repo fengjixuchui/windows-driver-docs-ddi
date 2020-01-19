@@ -6,7 +6,7 @@ description: The NetOffloadIsLsoIPv6Enabled method determines whether a net adap
 tech.root: netvista
 ms.assetid: 74d6ba64-7825-488f-818d-e54994d56930
 ms.author: windowsdriverdev
-ms.date: 01/17/19
+ms.date: 01/17/2019
 ms.topic: function
 f1_keywords:
  - "netadapteroffload/NetOffloadIsLsoIPv6Enabled"
@@ -36,7 +36,8 @@ api_location:
 - netadaptercxstub.lib
 api_name: 
 - NetOffloadIsLsoIPv6Enabled
-product: Windows
+product:
+- Windows
 targetos: Windows
 ---
 

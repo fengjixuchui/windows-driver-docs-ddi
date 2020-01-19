@@ -40,7 +40,8 @@ api_name:
 product: 
 - Windows
 targetos: Windows
-
+dev_langs:
+ - c++
 ms.custom: 19H1
 ---
 
@@ -65,10 +66,6 @@ Pointer to a string containing the debug message to be printed.
 
 
 
-
-## -returns
-
-This function returns VOID.
 
 ## -remarks
 

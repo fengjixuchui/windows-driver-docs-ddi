@@ -51,22 +51,6 @@ req.typenames:
 The <b>KeLeaveGuardedRegion</b> routine exits a guarded region entered by <b>KeEnterGuardedRegion</b>.
 
 
-## -parameters
-
-
-
-
-
-
-## -returns
-
-
-
-None
-
-
-
-
 ## -remarks
 
 
@@ -83,7 +67,7 @@ For more information about guarded regions, see <a href="https://docs.microsoft.
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-keenterguardedregion">KeEnterGuardedRegion</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-keenterguardedregion">KeEnterGuardedRegion</a>
  
 
  

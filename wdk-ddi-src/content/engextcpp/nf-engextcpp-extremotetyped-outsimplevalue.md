@@ -51,13 +51,6 @@ req.typenames:
 The <b>OutSimpleValue</b> method prints the value of the typed data represented by this object.
 
 
-## -parameters
-
-
-
-
-
-
 ## -returns
 
 
@@ -71,7 +64,7 @@ This method does not return a value.
 
 
 
-The <b>OutSimpleValue</b> method does not print as much detail as the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/engextcpp/nf-engextcpp-extremotetyped-outfullvalue">ExtRemoteTyped::OutFullValue</a> method.
+The <b>OutSimpleValue</b> method does not print as much detail as the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/engextcpp/nf-engextcpp-extremotetyped-outfullvalue">ExtRemoteTyped::OutFullValue</a> method.
 
 The value is sent to the debugger engine's output callbacks.
 
@@ -83,11 +76,11 @@ The value is sent to the debugger engine's output callbacks.
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/engextcpp/nl-engextcpp-extremotetyped">ExtRemoteTyped</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/engextcpp/nl-engextcpp-extremotetyped">ExtRemoteTyped</a>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/engextcpp/nf-engextcpp-extremotetyped-outfullvalue">ExtRemoteTyped::OutFullValue</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/engextcpp/nf-engextcpp-extremotetyped-outfullvalue">ExtRemoteTyped::OutFullValue</a>
  
 
  

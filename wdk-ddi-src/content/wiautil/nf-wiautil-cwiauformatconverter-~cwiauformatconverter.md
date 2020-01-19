@@ -51,22 +51,6 @@ req.typenames:
 The <b>CWiauFormatConverter::~CWiauFormatConverter</b> method is the destructor for the <b>CWiauFormatConverter</b> class.
 
 
-## -parameters
-
-
-
-
-
-
-## -returns
-
-
-
-This method does not return a value.
-
-
-
-
 ## -see-also
 
 
@@ -76,7 +60,7 @@ This method does not return a value.
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiautil/nf-wiautil-cwiauformatconverter-cwiauformatconverter">CWiauFormatConverter::CWiauFormatConverter</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wiautil/nf-wiautil-cwiauformatconverter-cwiauformatconverter">CWiauFormatConverter::CWiauFormatConverter</a>
  
 
  

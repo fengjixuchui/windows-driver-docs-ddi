@@ -62,15 +62,6 @@ The <b>ExConvertExclusiveToSharedLite</b> routine converts a given resource from
 A pointer to the resource for which the access should be converted.
 
 
-## -returns
-
-
-
-None
-
-
-
-
 ## -remarks
 
 
@@ -85,7 +76,7 @@ The caller must have exclusive access to the given resource. During this convers
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-exisresourceacquiredexclusivelite">ExIsResourceAcquiredExclusiveLite</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exisresourceacquiredexclusivelite">ExIsResourceAcquiredExclusiveLite</a>
  
 
  

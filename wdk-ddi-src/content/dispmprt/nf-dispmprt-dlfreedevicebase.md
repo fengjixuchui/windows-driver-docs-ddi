@@ -40,7 +40,8 @@ api_name:
 product: 
 - Windows
 targetos: Windows
-
+dev_langs:
+ - c++
 ms.custom: 19H1
 ---
 
@@ -60,10 +61,6 @@ A handle that represents a display adapter.
 ### -param MappedAddress
 
 Specifies the base address of the mapped range to be freed.
-
-## -returns
-
-This function returns VOID.
 
 ## -remarks
 

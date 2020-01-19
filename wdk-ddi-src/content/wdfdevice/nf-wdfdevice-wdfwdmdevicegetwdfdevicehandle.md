@@ -61,7 +61,7 @@ The <b>WdfWdmDeviceGetWdfDeviceHandle</b> method returns a handle to the framewo
 
 ### -param DeviceObject [in]
 
-A pointer to a WDM <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_device_object">DEVICE_OBJECT</a> structure that the calling driver created.
+A pointer to a WDM <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object">DEVICE_OBJECT</a> structure that the calling driver created.
 
 
 ## -returns
@@ -77,25 +77,18 @@ If the specified WDM device object is valid, <b>WdfWdmDeviceGetWdfDeviceHandle</
 
 
 
-The WDM DEVICE_OBJECT structure that the driver specifies for the <i>DeviceObject</i> parameter must represent a device object that the calling driver created. For example, the structure cannot represent any of the WDM device objects that the driver specified in a previous call to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfminiport/nf-wdfminiport-wdfdeviceminiportcreate">WdfDeviceMiniportCreate</a>.
+The WDM DEVICE_OBJECT structure that the driver specifies for the <i>DeviceObject</i> parameter must represent a device object that the calling driver created. For example, the structure cannot represent any of the WDM device objects that the driver specified in a previous call to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfminiport/nf-wdfminiport-wdfdeviceminiportcreate">WdfDeviceMiniportCreate</a>.
 
 
 #### Examples
 
 The following code example obtains a handle to the framework device object that is associated with a WDM device object that the calling driver created.
 
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>WDFDEVICE  device;
+```cpp
+WDFDEVICE  device;
 
-device = WdfWdmDeviceGetWdfDeviceHandle(pWdmDeviceObject);</pre>
-</td>
-</tr>
-</table></span></div>
+device = WdfWdmDeviceGetWdfDeviceHandle(pWdmDeviceObject);
+```
 
 
 
@@ -104,7 +97,7 @@ device = WdfWdmDeviceGetWdfDeviceHandle(pWdmDeviceObject);</pre>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfminiport/nf-wdfminiport-wdfdeviceminiportcreate">WdfDeviceMiniportCreate</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfminiport/nf-wdfminiport-wdfdeviceminiportcreate">WdfDeviceMiniportCreate</a>
  
 
  

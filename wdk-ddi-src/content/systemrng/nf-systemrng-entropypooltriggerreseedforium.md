@@ -28,9 +28,9 @@ req.type-library:
 topic_type: 
 - apiref
 api_type:
--   HeaderDef
+- HeaderDef
 api_location:
--   systemrng.h
+- systemrng.h
 api_name: 
 - EntropyPoolTriggerReseedForIum
 product:
@@ -53,8 +53,6 @@ ms.custom: RS5
 ### -param fPerformCallbacks
 
 
-## -returns
-This function returns VOID.
 ## -remarks
 
 ## -see-also

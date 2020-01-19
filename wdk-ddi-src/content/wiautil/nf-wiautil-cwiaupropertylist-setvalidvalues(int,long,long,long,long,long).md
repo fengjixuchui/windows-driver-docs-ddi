@@ -75,10 +75,6 @@ Specifies the maximum value in the range of values.
 
 Specifies the increment between two successive values in the range of values.
 
-## -returns
-
-This method does not return a value.
-
 ## -see-also
 
 [CWiauPropertyList](nl-wiautil-cwiaupropertylist.md)
@@ -87,4 +83,4 @@ This method does not return a value.
 
 [CWiauPropertyList::SendToWia](nf-wiautil-cwiaupropertylist-sendtowia.md)
 
-[CWiauPropertyList::SetValidValues(INT,LONG,LONG,INT,PLONG)](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wiautil/nf-wiautil-cwiaupropertylist-setvalidvalues(int_long_long_int_plong))
+[CWiauPropertyList::SetValidValues(INT,LONG,LONG,INT,PLONG)](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiautil/nf-wiautil-cwiaupropertylist-setvalidvalues(int_long_long_int_plong))

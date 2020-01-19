@@ -53,18 +53,11 @@ req.typenames:
 The <b>GetCompletedRequestType</b> method retrieves the type of operation that the request to be completed contains.
 
 
-## -parameters
-
-
-
-
-
-
 ## -returns
 
 
 
-<b>GetCompletedRequestType</b> returns a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/ne-wdfrequest-_wdf_request_type">WDF_REQUEST_TYPE</a>-typed value that identifies the request type and why the request was sent to the driver.
+<b>GetCompletedRequestType</b> returns a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfrequest/ne-wdfrequest-_wdf_request_type">WDF_REQUEST_TYPE</a>-typed value that identifies the request type and why the request was sent to the driver.
 
 
 
@@ -74,11 +67,11 @@ The <b>GetCompletedRequestType</b> method retrieves the type of operation that t
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wudfddi/nn-wudfddi-iwdfrequestcompletionparams">IWDFRequestCompletionParams</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfrequestcompletionparams">IWDFRequestCompletionParams</a>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/ne-wdfrequest-_wdf_request_type">WDF_REQUEST_TYPE</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfrequest/ne-wdfrequest-_wdf_request_type">WDF_REQUEST_TYPE</a>
  
 
  

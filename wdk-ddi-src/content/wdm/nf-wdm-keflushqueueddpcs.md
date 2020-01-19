@@ -48,23 +48,7 @@ req.typenames:
 ## -description
 
 
-The <b>KeFlushQueuedDpcs</b> routine returns after all queued DPCs on all processors have executed.
-
-
-## -parameters
-
-
-
-
-
-
-## -returns
-
-
-
-None
-
-
+The <b>KeFlushQueuedDpcs</b> routine returns after all currently queued DPCs on all processors have executed their DPC routines to completion.
 
 
 ## -remarks
@@ -73,7 +57,7 @@ None
 
 Drivers can use this routine to wait until all currently-queued DPCs are run. Note that <b>KeFlushQueuedDpcs</b> can take a long time to return, so drivers should not use it along any critical code paths.
 
-
+Only DPCs queued prior to the call to **KeFlushQueuedDpcs** are guaranteed to have been executed to completion upon return. No guarantee is made for DPCs that are queued during the call to **KeFlushQueuedDpcs**.
 
 
 ## -see-also
@@ -81,19 +65,19 @@ Drivers can use this routine to wait until all currently-queued DPCs are run. No
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioinitializedpcrequest">IoInitializeDpcRequest</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinitializedpcrequest">IoInitializeDpcRequest</a>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iorequestdpc">IoRequestDpc</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iorequestdpc">IoRequestDpc</a>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-keinitializedpc">KeInitializeDpc</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializedpc">KeInitializeDpc</a>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-keinsertqueuedpc">KeInsertQueueDpc</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-keinsertqueuedpc">KeInsertQueueDpc</a>
  
 
  

@@ -66,24 +66,13 @@ The <b>WdfRegistryClose</b> method closes the registry key that is associated wi
 A handle to a registry-key object that represents an opened registry key.
 
 
-## -returns
-
-
-
-None.
+## -remarks
 
 A bug check occurs if the driver supplies an invalid object handle.
 
 
 
-
-
-
-## -remarks
-
-
-
-After your driver has finished accessing a registry key, it must call <b>WdfRegistryClose</b> or <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfobject/nf-wdfobject-wdfobjectdelete">WdfObjectDelete</a>. Both of these methods close the registry key and delete the registry-key object. 
+After your driver has finished accessing a registry key, it must call <b>WdfRegistryClose</b> or <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfobject/nf-wdfobject-wdfobjectdelete">WdfObjectDelete</a>. Both of these methods close the registry key and delete the registry-key object. 
 
 For more information about registry-key objects, see <a href="https://docs.microsoft.com/windows-hardware/drivers/wdf/using-the-registry-in-wdf-drivers">Using the Registry in Framework-Based Drivers</a>.
 
@@ -92,16 +81,9 @@ For more information about registry-key objects, see <a href="https://docs.micro
 
 The following code example closes a registry key and deletes the registry-key object.
 
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>WdfRegistryClose(Key);</pre>
-</td>
-</tr>
-</table></span></div>
+```cpp
+WdfRegistryClose(Key);
+```
 
 
 
@@ -110,7 +92,7 @@ The following code example closes a registry key and deletes the registry-key ob
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfobject/nf-wdfobject-wdfobjectdelete">WdfObjectDelete</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfobject/nf-wdfobject-wdfobjectdelete">WdfObjectDelete</a>
  
 
  

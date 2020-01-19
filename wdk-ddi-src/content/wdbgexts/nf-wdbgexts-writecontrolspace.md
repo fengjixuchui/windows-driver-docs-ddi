@@ -76,15 +76,6 @@ Specifies the data to be written to the control space.
 Specifies the number of bytes to be written.  This is the number of bytes in the <i>buf</i> buffer.
 
 
-## -returns
-
-
-
-None
-
-
-
-
 ## -remarks
 
 
@@ -99,11 +90,11 @@ This function can only be called in kernel-mode debugging.
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nf-wdbgexts-readcontrolspace">ReadControlSpace</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdbgexts/nf-wdbgexts-readcontrolspace">ReadControlSpace</a>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdbgexts/nf-wdbgexts-readcontrolspace64">ReadControlSpace64</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdbgexts/nf-wdbgexts-readcontrolspace64">ReadControlSpace64</a>
  
 
  

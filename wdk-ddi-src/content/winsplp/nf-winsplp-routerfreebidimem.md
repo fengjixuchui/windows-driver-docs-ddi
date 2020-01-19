@@ -48,7 +48,7 @@ req.typenames:
 ## -description
 
 
-<code>RouterFreeBidiMem</code> frees a block of memory that was previously allocated by <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-routerallocbidimem">RouterAllocBidiMem</a>.
+<code>RouterFreeBidiMem</code> frees a block of memory that was previously allocated by <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/winsplp/nf-winsplp-routerallocbidimem">RouterAllocBidiMem</a>.
 
 
 ## -parameters
@@ -61,21 +61,12 @@ req.typenames:
 Pointer to the memory to be freed.
 
 
-## -returns
-
-
-
-None
-
-
-
-
 ## -see-also
 
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-routerallocbidimem">RouterAllocBidiMem</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/winsplp/nf-winsplp-routerallocbidimem">RouterAllocBidiMem</a>
  
 
  

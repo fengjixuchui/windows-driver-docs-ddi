@@ -53,36 +53,8 @@ The <code>IXpsDocument</code> interface represents the root of an XPS document.
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IXpsDocument</b> interface inherits from the <a href="https://docs.microsoft.com/windows/desktop/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IXpsDocument</b> also has these types of members:
+The <b xmlns:loc="https://microsoft.com/wdcml/l10n">IXpsDocument</b> interface inherits from the <a href="https://docs.microsoft.com/windows/desktop/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IXpsDocument</b> also has these types of members:
 <ul>
 <li><a href="https://docs.microsoft.com/">Methods</a></li>
 </ul>
-
-## -members
-
-The <b>IXpsDocument</b> interface has these methods.
-<table class="members" id="memberListMethods">
-<tr>
-<th align="left" width="37%">Method</th>
-<th align="left" width="63%">Description</th>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/filterpipeline/nf-filterpipeline-ixpsdocument-getthumbnail">IXpsDocument::GetThumbnail</a>
-</td>
-<td align="left" width="63%">
-The <code>GetThumbnail</code> method gets the document thumbnail object. 
-
-</td>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/filterpipeline/nf-filterpipeline-ixpsdocument-setthumbnail">IXpsDocument::SetThumbnail</a>
-</td>
-<td align="left" width="63%">
-The <code>SetThumbnail</code> method removes the current thumbnail object from the document and inserts a new one.
-
-</td>
-</tr>
-</table> 
 

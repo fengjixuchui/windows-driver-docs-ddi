@@ -36,7 +36,8 @@ api_name:
 product:
 - Windows
 targetos: Windows
-
+dev_langs:
+ - c++
 ms.custom: RS5
 ---
 
@@ -51,11 +52,8 @@ The **FsRtlUninitializeBaseMcb** function uninitializes a map control block (MCB
 ### -param Mcb
 Supplies a pointer to the Mcb structure to uninitialize.
 
-## -returns
-None.
-
 ## -remarks
 
 ## -see-also
 
-[**FsRtlInitializeLargeMcb**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlinitializelargemcb)
+[**FsRtlInitializeLargeMcb**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlinitializelargemcb)

@@ -88,15 +88,10 @@ For more information about handling interrupts in framework-based drivers, see <
 
 #### Examples
 
-The following code example shows how an <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfinterrupt/nc-wdfinterrupt-evt_wdf_interrupt_isr">EvtInterruptIsr</a> callback function can obtain a pointer to driver-defined context space for the device object that an interrupt object belongs to.
+The following code example shows how an <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfinterrupt/nc-wdfinterrupt-evt_wdf_interrupt_isr">EvtInterruptIsr</a> callback function can obtain a pointer to driver-defined context space for the device object that an interrupt object belongs to.
 
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>BOOLEAN
+```cpp
+BOOLEAN
 MyEvtInterruptIsr(
     IN WDFINTERRUPT Interrupt,
     IN ULONG  MessageID
@@ -106,10 +101,8 @@ MyEvtInterruptIsr(
 
     devExt = GetMyDeviceContext(WdfInterruptGetDevice(Interrupt));
 ...
-}</pre>
-</td>
-</tr>
-</table></span></div>
+}
+```
 
 
 
@@ -118,7 +111,7 @@ MyEvtInterruptIsr(
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfinterrupt/nc-wdfinterrupt-evt_wdf_interrupt_isr">EvtInterruptIsr</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfinterrupt/nc-wdfinterrupt-evt_wdf_interrupt_isr">EvtInterruptIsr</a>
  
 
  

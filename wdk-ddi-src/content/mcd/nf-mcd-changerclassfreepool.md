@@ -49,7 +49,7 @@ req.typenames:
 ## -description
 
 
-The <b>ChangerClassFreePool</b> routine frees pool memory previously allocated using <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mcd/nf-mcd-changerclassallocatepool">ChangerClassAllocatePool</a>. 
+The <b>ChangerClassFreePool</b> routine frees pool memory previously allocated using <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/mcd/nf-mcd-changerclassallocatepool">ChangerClassAllocatePool</a>. 
 
 
 ## -parameters
@@ -62,21 +62,12 @@ The <b>ChangerClassFreePool</b> routine frees pool memory previously allocated u
 Pointer to the block of memory to be freed.
 
 
-## -returns
-
-
-
-None
-
-
-
-
 ## -see-also
 
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/mcd/nf-mcd-changerclassallocatepool">ChangerClassAllocatePool</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/mcd/nf-mcd-changerclassallocatepool">ChangerClassAllocatePool</a>
  
 
  

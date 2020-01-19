@@ -51,22 +51,6 @@ req.typenames:
 The <b>Release</b> method releases any resources held by this object.
 
 
-## -parameters
-
-
-
-
-
-
-## -returns
-
-
-
-This method does not return a value.
-
-
-
-
 ## -remarks
 
 

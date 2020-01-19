@@ -49,14 +49,7 @@ req.typenames:
 ## -description
 
 
-The <b>AuxKlibInitialize</b> routine initializes the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/aux_klib/">Auxiliary Kernel-Mode Library</a>.
-
-
-## -parameters
-
-
-
-
+The <b>AuxKlibInitialize</b> routine initializes the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/aux_klib/">Auxiliary Kernel-Mode Library</a>.
 
 
 ## -returns

@@ -52,6 +52,13 @@ The <b>MmGetSystemAddressForMdl</b> routine is <u>obsolete</u> for Windows 2000 
 
 <b>MmGetSystemAddressForMdl</b> is a macro that returns a nonpaged system-space virtual address for the buffer described by the MDL. It maps the physical pages described by a given MDL into system space, if they are not already mapped to system space. 
 
+## -syntax
+
+```cpp
+PVOID MmGetSystemAddressForMdl(
+   MDL
+);
+```
 
 ## -parameters
 
@@ -62,17 +69,16 @@ The <b>MmGetSystemAddressForMdl</b> routine is <u>obsolete</u> for Windows 2000 
 
 Pointer to a buffer whose corresponding base virtual address is to be mapped. 
 
-## -returns
-**MmGetSystemAddressForMdl** returns the base system-space virtual address that maps the physical pages described by the given MDL.
 
 
 ## -remarks
 
+**MmGetSystemAddressForMdl** returns the base system-space virtual address that maps the physical pages described by the given MDL.
 
 
 Drivers of PIO devices call this routine to translate a virtual address range, described by the MDL at <b>Irp->MdlAddress</b>, for a user buffer to a system-space address range.
 
-The MDL must describe nonpageable memory. In other words, the input MDL must describe an already locked-down user-space buffer returned by <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmprobeandlockpages">MmProbeAndLockPages</a>, a locked-down buffer returned by <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmbuildmdlfornonpagedpool">MmBuildMdlForNonPagedPool</a>, or system-space memory allocated from nonpaged pool, contiguous memory, or noncached memory.
+The MDL must describe nonpageable memory. In other words, the input MDL must describe an already locked-down user-space buffer returned by <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-mmprobeandlockpages">MmProbeAndLockPages</a>, a locked-down buffer returned by <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-mmbuildmdlfornonpagedpool">MmBuildMdlForNonPagedPool</a>, or system-space memory allocated from nonpaged pool, contiguous memory, or noncached memory.
 
 The returned base address has the same offset as the virtual address in the MDL.
 
@@ -86,7 +92,7 @@ Windows 2000 issues a bug check if the attempt to map to system space fails. (Th
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmbuildmdlfornonpagedpool">MmBuildMdlForNonPagedPool</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-mmbuildmdlfornonpagedpool">MmBuildMdlForNonPagedPool</a>
 
 
 
@@ -94,7 +100,7 @@ Windows 2000 issues a bug check if the attempt to map to system space fails. (Th
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-mmprobeandlockpages">MmProbeAndLockPages</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-mmprobeandlockpages">MmProbeAndLockPages</a>
  
 
  

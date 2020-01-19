@@ -65,16 +65,7 @@ A handle to a framework request object that represents the I/O request that requ
 
 ### -param Context [in, optional]
 
-A pointer to a context that was previously supplied in the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestimpersonate">WdfRequestImpersonate</a> method. This parameter is optional and can be NULL if a context is not required. 
-
-
-
-
-## -returns
-
-
-
-This callback function does not return a value.
+A pointer to a context that was previously supplied in the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestimpersonate">WdfRequestImpersonate</a> method. This parameter is optional and can be NULL if a context is not required. 
 
 
 
@@ -132,7 +123,7 @@ The <b>EVT_WDF_REQUEST_IMPERSONATE</b> function type is defined in the Wdfreques
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfrequest/nf-wdfrequest-wdfrequestimpersonate">WdfRequestImpersonate</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestimpersonate">WdfRequestImpersonate</a>
  
 
  

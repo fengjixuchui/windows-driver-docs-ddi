@@ -58,7 +58,7 @@ This IO control function authenticates the magnetic stripe reader (MSR).
 
 ### -input-buffer
 
-Pointer to the input buffer, a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/pointofservicedriverinterface/ns-pointofservicedriverinterface-_msr_authenticate_device">MSR_AUTHENTICATE_DEVICE</a> variable.
+Pointer to the input buffer, a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/pointofservicedriverinterface/ns-pointofservicedriverinterface-_msr_authenticate_device">MSR_AUTHENTICATE_DEVICE</a> variable.
 
 
 ### -input-buffer-length
@@ -98,27 +98,10 @@ Not used with this operation; set to <b>0</b> (zero).
 
 Returns <b>TRUE</b> if successful; otherwise, returns <b>FALSE</b>.
 
-To get extended error information, call <a href="https://go.microsoft.com/fwlink/p/?LinkId=316871">GetLastError</a>. The following are common error values:
-
-
-
-
-#### -STATUS_ACCESS_DENIED
-
-The device is currently claimed by another client.
-
-
-#### -STATUS_NOT_SUPPORTED
-
-The device does not support authentication.
-
-
 ## -remarks
 
+To get extended error information, call <a href="https://go.microsoft.com/fwlink/p/?LinkId=316871">GetLastError</a>. The following are common error values:
 
+- STATUS_ACCESS_DENIED: The device is currently claimed by another client.
 
-<h3><a id="Parameters"></a><a id="parameters"></a><a id="PARAMETERS"></a>Parameters</h3>
-
-
-
-
+- STATUS_NOT_SUPPORTED: The device does not support authentication.

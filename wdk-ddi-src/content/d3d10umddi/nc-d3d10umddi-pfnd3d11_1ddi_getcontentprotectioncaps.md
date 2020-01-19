@@ -7,8 +7,6 @@ ms.assetid: 51024d63-f58c-45a7-bd6f-9f24a6805878
 ms.date: 05/10/2018
 ms.keywords: PFND3D11_1DDI_GETCONTENTPROTECTIONCAPS, PFND3D11_1DDI_GETCONTENTPROTECTIONCAPS callback, d3d10umddi/pfnGetContentProtectionCaps, display.getcontentprotectioncaps, pfnGetContentProtectionCaps, pfnGetContentProtectionCaps callback function [Display Devices]
 ms.topic: callback
-f1_keywords:
- - "d3d10umddi/pfnGetContentProtectionCaps"
 req.header: d3d10umddi.h
 req.include-header: D3d10umddi.h
 req.target-type: Desktop
@@ -26,61 +24,49 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-topic_type:
-- APIRef
-- kbSyntax
-api_type:
-- UserDefined
-api_location:
-- D3d10umddi.h
-api_name:
-- pfnGetContentProtectionCaps
-product:
-- Windows
 targetos: Windows
 tech.root: display
 req.typenames: 
+f1_keywords:
+ - "d3d10umddi/pfnGetContentProtectionCaps"
+topic_type:
+ - APIRef
+ - kbSyntax
+api_type:
+ - UserDefined
+api_location:
+ - D3d10umddi.h
+api_name:
+ - pfnGetContentProtectionCaps
+product:
+ - Windows
 ---
 
 # PFND3D11_1DDI_GETCONTENTPROTECTIONCAPS callback function
 
-
 ## -description
-
 
 Queries the available content protection for a specified encryption algorithm and video decoder profile.
 
-
 ## -parameters
 
-
-
-
-### -param hDevice [in]
+### -param hDevice
 
 A handle to the display device (graphics context).
 
-
-
-
-### -param *pCryptoType [in]
+### -param pCryptoType
 
 A pointer to a GUID that specifies the type of encryption algorithm to query.
 
-
-### -param *pDecodeProfile [in]
+### -param pDecodeProfile
 
 A pointer to a GUID that specifies the decoder profile to query.
 
+### -param pCaps
 
-### -param *pCaps [out]
-
-A pointer to a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/ns-d3d10umddi-d3d11_1ddi_video_content_protection_caps">D3D11_1DDI_VIDEO_CONTENT_PROTECTION_CAPS</a> structure that contains the protection capabilities for the specified encryption algorithm and decoder profile.
-
+A pointer to a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11_1ddi_video_content_protection_caps">D3D11_1DDI_VIDEO_CONTENT_PROTECTION_CAPS</a> structure that contains the protection capabilities for the specified encryption algorithm and decoder profile.
 
 ## -returns
-
-
 
 <b>GetContentProtectionCaps</b> returns one of the following values:
 
@@ -91,8 +77,6 @@ A pointer to a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/
 
 ## -remarks
 
-
-
 The *pCryptoType* parameter can contain one of the following values:
 
 * D3DCRYPTOTYPE_AES128_CTR if the driver is configured to use the 128-bit Advanced Encryption Standard CTR mode (AES-CTR) block cipher.
@@ -102,17 +86,9 @@ The *pCryptoType* parameter can contain one of the following values:
 * NULL_GUID if the driver is not configured to use any encryption algorithm.
 
 > [!NOTE]
-> The Microsoft Direct3D runtime verifies that the  *pDecodeProfile* and *pCryptoType* parameter data is valid before it calls the [GetContentProtectionCaps](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_getcontentprotectioncaps) function.
-
-
+> The Microsoft Direct3D runtime verifies that the  *pDecodeProfile* and *pCryptoType* parameter data is valid before it calls the [GetContentProtectionCaps](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_getcontentprotectioncaps) function.
 
 ## -see-also
 
-
-
-
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3d10umddi/ns-d3d10umddi-d3d11_1ddi_video_content_protection_caps">D3D11_1DDI_VIDEO_CONTENT_PROTECTION_CAPS</a>
- 
-
- 
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11_1ddi_video_content_protection_caps">D3D11_1DDI_VIDEO_CONTENT_PROTECTION_CAPS</a>
 

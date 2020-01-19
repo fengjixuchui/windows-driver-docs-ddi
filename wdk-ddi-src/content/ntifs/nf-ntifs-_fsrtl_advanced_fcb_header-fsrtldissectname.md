@@ -40,6 +40,8 @@ product:
 - Windows
 targetos: Windows
 req.typenames: 
+dev_langs:
+ - c++
 ms.custom: RS5
 ---
 
@@ -70,15 +72,6 @@ Pointer to the first file name in the pathname string.
 ### -param RemainingName [out]
 
 Pointer to the remaining unparsed portion of the pathname string.
-
-
-## -returns
-
-
-
-None
-
-
 
 
 ## -remarks
@@ -228,7 +221,7 @@ FsRtlDissectName (FullPathName, &CurrentComponent, &RemainingComponent);
 </td>
 </tr>
 </table></span></div>
-For information about other string-handling routines, see <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index">Strings</a>. 
+For information about other string-handling routines, see <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/index">Strings</a>. 
 
 
 

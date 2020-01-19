@@ -6,7 +6,7 @@ description: The PPHYSICAL_COUNTER_OVERFLOW_HANDLER is implemented by the client
 tech.root:
 ms.assetid: 49f5213b-3b7e-4bdc-9f4d-16c06e602fba
 ms.author: windowsdriverdev
-ms.date:
+ms.date: 08/19/2019
 ms.topic: callback
 f1_keywords:
  - "ntddk/PPHYSICAL_COUNTER_OVERFLOW_HANDLER"
@@ -35,7 +35,8 @@ api_location:
  - ntddk.h
 api_name:
  - PPHYSICAL_COUNTER_OVERFLOW_HANDLER
-product: Windows
+product:
+- Windows
 targetos: Windows
 ms.custom: 19H1
 ---
@@ -55,10 +56,6 @@ Provides a bitmap describing which counters overflowed.
 ### -param OwningHandle
 
 Provides the <b>HANDLE</b> corresponding to the resource set the overflowing counters belong to.
-
-## -returns
-
-None.
 
 ## -remarks
 

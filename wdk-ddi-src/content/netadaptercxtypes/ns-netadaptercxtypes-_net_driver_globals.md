@@ -32,8 +32,6 @@ api_location:
 - netadaptercxtypes.h
 api_name: 
 - NET_DRIVER_GLOBALS
-product:
-- Windows
 targetos: Windows
 product:
 - Windows
@@ -43,10 +41,7 @@ product:
 
 ## -description
 
-> [!WARNING]
-> Some information in this topic relates to prereleased product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
->
-> NetAdapterCx is preview only in Windows 10, version 1903.
+
 
 Call NET_DRIVER_GLOBALS_INIT to initialize this structure.
 

@@ -36,6 +36,8 @@ product:
 - Windows
 targetos: Windows
 tech.root: display
+dev_langs:
+ - c++
 ms.custom: RS5
 ---
 
@@ -72,10 +74,6 @@ A handle to the command list.
 ### -param Arg2
 
 A handle to the state object.
-
-## -returns
-
-Returns VOID.
 
 ## -remarks
 

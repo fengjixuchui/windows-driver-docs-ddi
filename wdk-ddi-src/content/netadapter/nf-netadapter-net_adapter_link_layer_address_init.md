@@ -37,8 +37,6 @@ api_location:
 - netadapter.h
 api_name: 
 - NET_ADAPTER_LINK_LAYER_ADDRESS_INIT
-product:
-- Windows
 targetos: Windows
 product:
 - Windows
@@ -49,10 +47,7 @@ product:
 
 ## -description
 
-> [!WARNING]
-> Some information in this topic relates to prereleased product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
->
-> NetAdapterCx is preview only in Windows 10, version 1903.
+
 
 The **NET_ADAPTER_LINK_LAYER_ADDRESS_INIT** method initializes a link layer address.
 
@@ -66,10 +61,6 @@ The length of the link layer address, in bytes.
 
 ### -param AddressBuffer
 A pointer to the buffer containing the link layer address.
-
-## -returns
-
-This method does not return a value.
 
 ## -remarks
 

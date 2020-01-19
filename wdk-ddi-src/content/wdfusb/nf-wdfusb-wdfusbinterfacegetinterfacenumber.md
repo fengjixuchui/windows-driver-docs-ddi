@@ -63,7 +63,7 @@ The <b>WdfUsbInterfaceGetInterfaceNumber</b> method returns the interface number
 
 ### -param UsbInterface [in]
 
-A handle to a USB interface object that was obtained by calling <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfusb/nf-wdfusb-wdfusbtargetdevicegetinterface">WdfUsbTargetDeviceGetInterface</a>. 
+A handle to a USB interface object that was obtained by calling <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicegetinterface">WdfUsbTargetDeviceGetInterface</a>. 
 
 
 ## -returns
@@ -92,18 +92,11 @@ For more information about the <b>WdfUsbInterfaceGetInterfaceNumber</b> method a
 
 The following code example obtains the interface number of a specified USB interface object.
 
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>BYTE interfaceNumber; 
+```cpp
+BYTE interfaceNumber; 
 
-interfaceNumber = WdfUsbInterfaceGetInterfaceNumber(UsbInterface);</pre>
-</td>
-</tr>
-</table></span></div>
+interfaceNumber = WdfUsbInterfaceGetInterfaceNumber(UsbInterface);
+```
 
 
 
@@ -112,7 +105,7 @@ interfaceNumber = WdfUsbInterfaceGetInterfaceNumber(UsbInterface);</pre>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfusb/nf-wdfusb-wdfusbtargetdevicegetinterface">WdfUsbTargetDeviceGetInterface</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicegetinterface">WdfUsbTargetDeviceGetInterface</a>
  
 
  

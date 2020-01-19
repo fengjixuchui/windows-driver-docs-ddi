@@ -1,6 +1,6 @@
 ---
-UID: NF:netadapter.NetAdapterSetCurrentLinkState
-title: NetAdapterSetCurrentLinkState function (netadapter.h)
+UID: NF:netadapter.NetAdapterSetLinkState
+title: NetAdapterSetLinkState function (netadapter.h)
 description: Sets the current link state of the of the network adapter.
 tech.root: netvista
 ms.assetid: 5c06c275-4eb8-46ba-9b90-50ca192c9a47
@@ -30,15 +30,13 @@ req.alt-api:
 req.alt-loc:
 req.typenames: NetAdapterSetLinkState
 topictype: 
--	apiref
+- apiref
 apitype: 
--	HeaderDef
+- HeaderDef
 apilocation: 
--	netadapter.h
+- netadapter.h
 apiname: 
--	NetAdapterSetLinkState
-product:
-- Windows
+- NetAdapterSetLinkState
 targetos: Windows
 product:
 - Windows
@@ -49,10 +47,7 @@ product:
 
 ## -description
 
-> [!WARNING]
-> Some information in this topic relates to prereleased product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
->
-> NetAdapterCx is preview only in Windows 10, version 1903.
+
 
 Sets the link state of the of the network adapter.
 
@@ -65,10 +60,6 @@ The network adapter object that the client created in a prior call to [**NetAdap
 ### -param State
 
 A pointer to an allocated and initialized [**NET_ADAPTER_LINK_STATE**](ns-netadapter-_net_adapter_link_state.md) structure that describes the link state of the adapter.
-
-## -returns
-
-This method does not return a value.
 
 ## -remarks
 

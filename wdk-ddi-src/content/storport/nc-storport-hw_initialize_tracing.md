@@ -58,21 +58,12 @@ The <b>HwStorInitializeTracing</b> callback routine allows the Storport virtual 
 
 ### -param Arg1
 
-The first parameter that is passed to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportinitialize">StorPortInitialize</a>.
+The first parameter that is passed to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/storport/nf-storport-storportinitialize">StorPortInitialize</a>.
 
 
 ### -param Arg2
 
-The second parameter that is passed to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/storport/nf-storport-storportinitialize">StorPortInitialize</a>.
-
-
-## -returns
-
-
-
-None
-
-
+The second parameter that is passed to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/storport/nf-storport-storportinitialize">StorPortInitialize</a>.
 
 
 ## -remarks

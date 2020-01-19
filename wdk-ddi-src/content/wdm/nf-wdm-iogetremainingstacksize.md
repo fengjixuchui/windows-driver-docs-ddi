@@ -51,13 +51,6 @@ req.typenames:
 The <b>IoGetRemainingStackSize</b> routine returns the current amount of available kernel-mode stack space.
 
 
-## -parameters
-
-
-
-
-
-
 ## -returns
 
 
@@ -83,11 +76,11 @@ For Windows Server 2003 Service Pack 1 (SP1) and later versions of Windows, call
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetinitialstack">IoGetInitialStack</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetinitialstack">IoGetInitialStack</a>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iogetstacklimits">IoGetStackLimits</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetstacklimits">IoGetStackLimits</a>
  
 
  

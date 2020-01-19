@@ -37,6 +37,8 @@ api_name:
 product: 
  - Windows
 targetos: Windows
+dev_langs:
+ - c++
 ms.custom: 19H1
 ---
 
@@ -52,7 +54,7 @@ These capabilities are queried by the OS during device initialization after [Dxg
 
 ### -field WDDMVersion
  
-The capabilities of a display miniport driver that the driver provides through a call to its DxgkDdiQueryAdapterInfo function. This value is the same as the **WDDMVersion** value in [DXGK_DRIVERCAPS](../d3dkmddi/ns-d3dkmddi-_dxgk_drivercaps) structure.
+The capabilities of a display miniport driver that the driver provides through a call to its DxgkDdiQueryAdapterInfo function. This value is the same as the **WDDMVersion** value in [DXGK_DRIVERCAPS](../d3dkmddi/ns-d3dkmddi-_dxgk_drivercaps.md) structure.
 
 ## -remarks
 

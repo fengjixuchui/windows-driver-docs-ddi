@@ -6,7 +6,7 @@ description: A Directed Power Framework (DFx) client driver calls this function 
 tech.root:
 ms.assetid: c4ce7279-b8d7-4215-a9d2-e09b73d3ecfd
 ms.author: windowsdriverdev
-ms.date: 
+ms.date: 08/19/2019
 ms.topic: function
 f1_keywords:
  - "wdm/PoFxCompleteDirectedPowerDown"
@@ -31,8 +31,8 @@ req.type-library:
 topic_type: 
 - apiref
 api_type: 
-- 
-api_location: 
+- DllExport
+api_location:
 - wdm.h
 api_name: 
 - PoFxCompleteDirectedPowerDown
@@ -53,12 +53,8 @@ A DFx (Directed [PoFx](https://docs.microsoft.com/windows-hardware/drivers/kerne
 
 ### -param Handle
 
-A POHANDLE value that represents the registration of the processor (as a device) with <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index">power management framework</a> (PoFx).
+A POHANDLE value that represents the registration of the processor (as a device) with <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/index">power management framework</a> (PoFx).
 
-
-## -returns
-
-This function returns VOID.
 
 ## -remarks
 

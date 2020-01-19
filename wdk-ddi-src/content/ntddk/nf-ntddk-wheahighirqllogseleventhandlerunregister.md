@@ -6,7 +6,7 @@ description: Reserved for system use.
 tech.root:
 ms.assetid: d017ad63-f9d5-413f-9dc6-aba5fb873c93
 ms.author: windowsdriverdev
-ms.date: 
+ms.date: 08/19/2019
 ms.topic: function
 f1_keywords:
  - "ntddk/WheaHighIrqlLogSelEventHandlerUnregister"
@@ -31,8 +31,8 @@ req.type-library:
 topic_type: 
 - apiref
 api_type: 
-- 
-api_location: 
+- HeaderDef
+api_location:
 - ntddk.h
 api_name: 
 - WheaHighIrqlLogSelEventHandlerUnregister
@@ -51,11 +51,6 @@ ms.custom: 19H1
 Reserved for system use.
 
 
-## -parameters
-
-
-## -returns
-This function returns VOID.
 ## -remarks
 
 ## -see-also

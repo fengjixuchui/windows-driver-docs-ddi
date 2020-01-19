@@ -1,7 +1,7 @@
 ---
 UID: NF:dbgeng.IDebugEventCallbacks.CreateProcess
 title: IDebugEventCallbacks::CreateProcess (dbgeng.h)
-description: The CreateProcess callback method is called by the engine when a create-processdebugging event occurs in the target.
+description: The CreateProcess callback method is called by the engine when a create-process debugging event occurs in the target.
 old-location: debugger\idebugeventcallbacks_createprocess.htm
 tech.root: debugger
 ms.assetid: a826782a-67ca-4b90-b7b5-caddeae6d2dc
@@ -48,7 +48,7 @@ req.typenames:
 ## -description
 
 
-The <b>CreateProcess</b> callback method is called by the engine when a create-processdebugging event occurs in the target.
+The <b>CreateProcess</b> callback method is called by the engine when a create-process debugging event occurs in the target.
 
 
 ## -parameters
@@ -124,7 +124,7 @@ This method returns a <a href="https://docs.microsoft.com/windows-hardware/drive
 
 
 
-This method is only called by the engine if the DEBUG_EVENT_CREATE_PROCESS flag is set in the mask returned by <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nf-dbgeng-idebugeventcallbacks-getinterestmask">IDebugEventCallbacks::GetInterestMask</a>.
+This method is only called by the engine if the DEBUG_EVENT_CREATE_PROCESS flag is set in the mask returned by <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugeventcallbacks-getinterestmask">IDebugEventCallbacks::GetInterestMask</a>.
 
 For more information about handling events, see <a href="https://docs.microsoft.com/windows-hardware/drivers/debugger/monitoring-events">Monitoring Events</a>.  For information about threads, see <a href="https://docs.microsoft.com/windows-hardware/drivers/debugger/threads-and-processes">Threads and Processes</a>.
 

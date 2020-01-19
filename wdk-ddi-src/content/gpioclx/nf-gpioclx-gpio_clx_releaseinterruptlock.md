@@ -67,20 +67,11 @@ A pointer to the GPIO controller driver's <a href="https://docs.microsoft.com/wi
 The identifier for this bank of GPIO pins. If N is the number of banks in the GPIO controller, <b>BankId</b> is an integer in the range 0 to N–1.
 
 
-## -returns
-
-
-
-None.
-
-
-
-
 ## -remarks
 
 
 
-This method releases the interrupt lock that the caller acquired in a previous call to the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/gpioclx/nf-gpioclx-gpio_clx_acquireinterruptlock">GPIO_CLX_AcquireInterruptLock</a> method.
+This method releases the interrupt lock that the caller acquired in a previous call to the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/gpioclx/nf-gpioclx-gpio_clx_acquireinterruptlock">GPIO_CLX_AcquireInterruptLock</a> method.
 
 If the previous call to the <b>GPIO_CLX_AcquireInterruptLock</b> method raised the calling thread's IRQL, <b>GPIO_CLX_ReleaseInterruptLock</b> restores this IRQL to its original level.
 
@@ -94,7 +85,7 @@ If the <i>Context</i> parameter is NULL or points to an invalid GPIO device cont
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/gpioclx/nf-gpioclx-gpio_clx_acquireinterruptlock">GPIO_CLX_AcquireInterruptLock</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/gpioclx/nf-gpioclx-gpio_clx_acquireinterruptlock">GPIO_CLX_AcquireInterruptLock</a>
  
 
  

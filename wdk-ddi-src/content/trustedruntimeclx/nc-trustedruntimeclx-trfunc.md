@@ -44,7 +44,7 @@ ms.custom: RS5
 
  
 
-## -prototype
+## -syntax
 
 ```cpp
 //Declaration
@@ -64,10 +64,6 @@ VOID Trfunc
 ## -parameters
 
 ### -param Arg1: 
-
-
-
-## -returns
 
 
 

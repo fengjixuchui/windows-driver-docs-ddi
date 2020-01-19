@@ -6,7 +6,7 @@ description:
 tech.root:
 ms.assetid: 147f40bd-4000-4fdd-b6ac-a305fc581d29
 ms.author: windowsdriverdev
-ms.date: 
+ms.date: 08/19/2019
 ms.topic: enum
 f1_keywords:
  - "wdm/DRIVER_REGKEY_TYPE"
@@ -29,7 +29,8 @@ api_location:
  - wdm.h
 api_name: 
  - DRIVER_REGKEY_TYPE
-product: Windows
+product:
+- Windows
 targetos: Windows
 ms.custom: 19H1
 ---

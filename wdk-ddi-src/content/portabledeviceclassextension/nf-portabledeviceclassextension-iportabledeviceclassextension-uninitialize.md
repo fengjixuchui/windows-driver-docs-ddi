@@ -55,13 +55,6 @@ The Uninitialize interface disables the WPD interface, any private interfaces, a
 
 
 
-## -parameters
-
-
-
-
-
-
 ## -returns
 
 
@@ -104,7 +97,7 @@ To be supplied.
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/portabledeviceclassextension/nn-portabledeviceclassextension-iportabledeviceclassextension">IPortableDeviceClassExtension Interface</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/portabledeviceclassextension/nn-portabledeviceclassextension-iportabledeviceclassextension">IPortableDeviceClassExtension Interface</a>
  
 
  

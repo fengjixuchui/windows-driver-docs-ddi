@@ -86,15 +86,6 @@ The number of write operations to update in the Write Operation counter.
 The number of flush operations to update in the Flush Operation counter.
 
 
-## -returns
-
-
-
-This routine does not return a value.
-
-
-
-
 ## -remarks
 
 
@@ -109,7 +100,7 @@ File system drivers use <b>PsUpdateDiskCounters</b> to update counts for disk I/
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-psisdiskcountersenabled">PsIsDiskCountersEnabled</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-psisdiskcountersenabled">PsIsDiskCountersEnabled</a>
  
 
  

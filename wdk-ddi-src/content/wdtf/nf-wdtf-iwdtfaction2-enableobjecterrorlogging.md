@@ -51,13 +51,6 @@ req.typenames:
 Enables object error logging for the action.
 
 
-## -parameters
-
-
-
-
-
-
 ## -returns
 
 
@@ -72,7 +65,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdtf/nn-wdtf-iwdtfaction2">IWDTFAction2</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iwdtfaction2">IWDTFAction2</a>
  
 
  

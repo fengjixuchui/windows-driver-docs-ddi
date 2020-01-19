@@ -51,7 +51,7 @@ req.typenames:
 
 A filter drivers calls the
   <b>NdisFDeregisterFilterDriver</b> function to release resources that it previously allocated with the 
-  <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfregisterfilterdriver">
+  <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfregisterfilterdriver">
   NdisFRegisterFilterDriver</a> function.
 
 
@@ -65,15 +65,6 @@ A filter drivers calls the
 The filter driver handle that identifies this filter driver. NDIS returned the handle to the
      filter driver in a call to 
      <b>NdisFRegisterFilterDriver</b>.
-
-
-## -returns
-
-
-
-None
-
-
 
 
 ## -remarks
@@ -96,7 +87,7 @@ A filter driver must call
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisfregisterfilterdriver">NdisFRegisterFilterDriver</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfregisterfilterdriver">NdisFRegisterFilterDriver</a>
  
 
  

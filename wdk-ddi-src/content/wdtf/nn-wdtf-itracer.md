@@ -58,33 +58,13 @@ The <b xmlns:loc="http://microsoft.com/wdcml/l10n">ITracer</b> interface inherit
 <li><a href="https://docs.microsoft.com/">Methods</a></li>
 </ul>
 
-## -members
-
-The <b>ITracer</b> interface has these methods.
-<table class="members" id="memberListMethods">
-<tr>
-<th align="left" width="37%">Method</th>
-<th align="left" width="63%">Description</th>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index">GetBits</a>
-</td>
-<td align="left" width="63%">
-Retrieves the tracing bit mask for this coclass, given a specified trace-level.
-
-</td>
-</tr>
-</table> 
-
-
 ## -remarks
 
 
 
-You will typically never see the <b>ITracer</b> interface. In fact, even if you are building WDTF action plug-ins, you will probably not need to use this interface. <b>ITracer</b> is implemented in WDTF.dll and provides the global definitions for the specific settings that are associated with each <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index">TTraceLevel </a> enumeration value.
+You will typically never see the <b>ITracer</b> interface. In fact, even if you are building WDTF action plug-ins, you will probably not need to use this interface. <b>ITracer</b> is implemented in WDTF.dll and provides the global definitions for the specific settings that are associated with each <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/index">TTraceLevel </a> enumeration value.
 
-The following table describes the internal flags for WDTF tracing. The individual levels within the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index">TTraceLevel</a> enumeration correspond to a set of internal tracing flags. The registry key that is listed in TraceLevel Path (in the following Implementation Details section) contains the bit masks for each TTraceLevel, as the following table shows.
+The following table describes the internal flags for WDTF tracing. The individual levels within the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/index">TTraceLevel</a> enumeration correspond to a set of internal tracing flags. The registry key that is listed in TraceLevel Path (in the following Implementation Details section) contains the bit masks for each TTraceLevel, as the following table shows.
 
 Trace2_Medium contains all of the Trace1_Low flags, and Trace3_High contains all of the Trace2_Medium flags.
 
@@ -330,11 +310,11 @@ TraceLevel Path: HKCR\WDTF.Tracer.1\
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index">ITracing</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/index">ITracing</a>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/index">TTraceLevel</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/index">TTraceLevel</a>
  
 
  

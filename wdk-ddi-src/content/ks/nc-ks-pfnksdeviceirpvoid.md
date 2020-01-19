@@ -78,21 +78,12 @@ An AVStream minidriver's IRP handling routine is called when these IRPs are disp
 
 ### -param Device [in]
 
-Pointer to the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-_ksdevice">KSDEVICE</a> that dispatched the IRP.
+Pointer to the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-_ksdevice">KSDEVICE</a> that dispatched the IRP.
 
 
 ### -param Irp [in]
 
 The IRP issued by <i>Device</i>.
-
-
-## -returns
-
-
-
-None
-
-
 
 
 ## -remarks
@@ -109,7 +100,7 @@ None
 <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-cancel-stop-device">IRP_MN_CANCEL_STOP_DEVICE</a>
 </td>
 <td>
-The minidriver specifies this routine's address in the <b>CancelStop</b> member of its <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-_ksdevice_dispatch">KSDEVICE_DISPATCH</a> structure.
+The minidriver specifies this routine's address in the <b>CancelStop</b> member of its <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-_ksdevice_dispatch">KSDEVICE_DISPATCH</a> structure.
 
 This routine is optional.
 
@@ -120,7 +111,7 @@ This routine is optional.
 <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-cancel-remove-device">IRP_MN_CANCEL_REMOVE_DEVICE</a>
 </td>
 <td>
-The minidriver specifies this routine's address in the <b>CancelRemove</b> member of its <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-_ksdevice_dispatch">KSDEVICE_DISPATCH</a> structure.
+The minidriver specifies this routine's address in the <b>CancelRemove</b> member of its <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-_ksdevice_dispatch">KSDEVICE_DISPATCH</a> structure.
 
 This routine is called when an <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-cancel-remove-device">IRP_MN_CANCEL_REMOVE_DEVICE</a> is dispatched by the device.
 
@@ -133,7 +124,7 @@ This routine is optional.
 <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-remove-device">IRP_MN_REMOVE_DEVICE</a>
 </td>
 <td>
-The minidriver specifies this routine's address in the <b>MiniRemove</b> member of its <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-_ksdevice_dispatch">KSDEVICE_DISPATCH</a> structure.
+The minidriver specifies this routine's address in the <b>MiniRemove</b> member of its <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-_ksdevice_dispatch">KSDEVICE_DISPATCH</a> structure.
 
 AVStream calls this routine when an <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-remove-device">IRP_MN_REMOVE_DEVICE</a> is dispatched by the device. Typically, it will be provided by minidrivers that must free device-associated resources upon device removal. This routine is optional.
 
@@ -144,7 +135,7 @@ AVStream calls this routine when an <a href="https://docs.microsoft.com/windows-
 <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-stop-device">IRP_MN_STOP_DEVICE</a>
 </td>
 <td>
-The minidriver specifies this routine's address in the <b>Stop</b> member of its <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-_ksdevice_dispatch">KSDEVICE_DISPATCH</a> structure.
+The minidriver specifies this routine's address in the <b>Stop</b> member of its <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-_ksdevice_dispatch">KSDEVICE_DISPATCH</a> structure.
 
 This is usually provided by minidrivers that need to detach from previously assigned resources before completing a stop operation.
 
@@ -157,7 +148,7 @@ This routine is optional.
 <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-surprise-removal">IRP_MN_SURPRISE_REMOVAL</a>
 </td>
 <td>
-The minidriver specifies this routine's address in the <b>SurpriseRemoval</b> member of its <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-_ksdevice_dispatch">KSDEVICE_DISPATCH</a> structure.
+The minidriver specifies this routine's address in the <b>SurpriseRemoval</b> member of its <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-_ksdevice_dispatch">KSDEVICE_DISPATCH</a> structure.
 
 This routine is optional.
 
@@ -174,11 +165,11 @@ This routine is optional.
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-_ksdevice">KSDEVICE</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-_ksdevice">KSDEVICE</a>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-_ksdevice_dispatch">KSDEVICE_DISPATCH</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-_ksdevice_dispatch">KSDEVICE_DISPATCH</a>
  
 
  

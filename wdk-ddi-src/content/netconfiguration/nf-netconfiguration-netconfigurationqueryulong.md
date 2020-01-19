@@ -36,8 +36,6 @@ api_location:
 - netconfiguration.h
 api_name: 
 - NetConfigurationQueryUlong
-product:
-- Windows
 targetos: Windows
 product:
 - Windows
@@ -48,10 +46,7 @@ product:
 
 ## -description
 
-> [!WARNING]
-> Some information in this topic relates to prereleased product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
->
-> NetAdapterCx is preview only in Windows 10, version 1903.
+
 
 Retrieves the specified unsigned long word (REG_DWORD) data from the adapter configuration object and copies the data to a specified location.
 
@@ -64,7 +59,7 @@ Handle to a NETCONFIGURATION object that represents an opened registry key.
 A valid bitwise OR of [NET_CONFIGURATION_QUERY_ULONG_FLAGS](ne-netconfiguration-_net_configuration_query_ulong_flags.md)-typed flags.
 
 ### -param ValueName
-A pointer to a [**UNICODE_STRING**](../wudfwdm/ns-wudfwdm-_unicode_string.md) structure that contains a name for the ULONG value.
+A pointer to a [**UNICODE_STRING**](https://docs.microsoft.com/windows/win32/api/ntdef/ns-ntdef-_unicode_string) structure that contains a name for the ULONG value.
 
 ### -param Value
 A pointer to a location that receives the data that is assigned to the value that *ValueName* specifies.

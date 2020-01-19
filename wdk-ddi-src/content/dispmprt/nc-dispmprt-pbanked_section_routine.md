@@ -38,6 +38,8 @@ api_name:
 product: 
  - Windows
 targetos: Windows
+dev_langs:
+ - c++
 ms.custom: 19H1
 ---
 
@@ -77,10 +79,6 @@ VOID PbankedSectionRoutine
 ### -param Context 
 
 
-
-## -returns
-
-Returns VOID.
 
 ## -remarks
 

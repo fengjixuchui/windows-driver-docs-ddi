@@ -51,15 +51,6 @@ req.typenames:
 The <b>IoGetTopLevelIrp</b> routine returns the value of the <b>TopLevelIrp</b> field of the current thread.
 
 
-## -parameters
-
-
-
-
-
-
-
-
 ## -returns
 
 
@@ -137,7 +128,7 @@ The cache manager is the top-level component for the current thread, and the cur
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/nf-ntifs-iosettoplevelirp">IoSetTopLevelIrp</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iosettoplevelirp">IoSetTopLevelIrp</a>
  
 
  

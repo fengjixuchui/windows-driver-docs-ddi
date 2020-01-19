@@ -6,7 +6,7 @@ description:
 tech.root:
 ms.assetid: ee478611-d2a5-4651-b83b-98939cb6a400
 ms.author: windowsdriverdev
-ms.date: 3/5/2019
+ms.date: 03/05/2019
 ms.topic: callback
 f1_keywords:
  - "ntddk/_WHEA_ERROR_SOURCE_UNINITIALIZE_DEVICE_DRIVER"
@@ -69,10 +69,6 @@ VOID WheaErrorSourceUninitializeDeviceDriver
 ### -param Context: 
 
 A pointer to the context that the driver supplied when it called [**WheaAddErrorSourceDeviceDriver**](nf-ntddk-wheaadderrorsourcedevicedriver.md).
-
-## -returns
-
-Returns VOID.
 
 ## -remarks
 

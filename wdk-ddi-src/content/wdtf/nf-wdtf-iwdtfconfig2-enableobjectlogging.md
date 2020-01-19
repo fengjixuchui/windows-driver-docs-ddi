@@ -51,13 +51,6 @@ req.typenames:
 Enables object logging for all objects.
 
 
-## -parameters
-
-
-
-
-
-
 ## -returns
 
 
@@ -83,7 +76,7 @@ test scripts log.
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdtf/nn-wdtf-iwdtfconfig2">IWDTFCONFIG2</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iwdtfconfig2">IWDTFCONFIG2</a>
  
 
  

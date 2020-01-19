@@ -44,7 +44,7 @@ ms.custom: RS5
 
  
 
-## -prototype
+## -syntax
 
 ```cpp
 //Declaration
@@ -68,10 +68,6 @@ VOID EvtTrProcessOtherSecureServiceIo
 ### -param ServiceDevice: 
 ### -param SessionContext: 
 ### -param Request: 
-
-
-
-## -returns
 
 
 

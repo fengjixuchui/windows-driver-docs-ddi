@@ -53,91 +53,17 @@ A filter uses the <b>IFixedPage</b> interface to work with fixed pages in an XPS
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IFixedPage</b> interface inherits from <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/filterpipeline/nn-filterpipeline-ipartbase">IPartBase</a>. <b>IFixedPage</b> also has these types of members:
+The <b xmlns:loc="https://microsoft.com/wdcml/l10n">IFixedPage</b> interface inherits from <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/filterpipeline/nn-filterpipeline-ipartbase">IPartBase</a>. <b>IFixedPage</b> also has these types of members:
 <ul>
 <li><a href="https://docs.microsoft.com/">Methods</a></li>
 </ul>
-
-## -members
-
-The <b>IFixedPage</b> interface has these methods.
-<table class="members" id="memberListMethods">
-<tr>
-<th align="left" width="37%">Method</th>
-<th align="left" width="63%">Description</th>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/filterpipeline/nf-filterpipeline-ifixedpage-deleteresource">IFixedPage::DeleteResource</a>
-</td>
-<td align="left" width="63%">
-The <b>DeleteResource</b> method deletes a resource that is associated with the page.
-
-</td>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/filterpipeline/nf-filterpipeline-ifixedpage-getpagepart">IFixedPage::GetPagePart</a>
-</td>
-<td align="left" width="63%">
-The <b>GetPagePart</b> method gets the images, thumbnails, fonts, and so on in a page by using the URI.
-
-</td>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/filterpipeline/nf-filterpipeline-ifixedpage-getprintticket">IFixedPage::GetPrintTicket</a>
-</td>
-<td align="left" width="63%">
-The <b>GetPrintTicket</b> method gets the print ticket object for the fixed page.
-
-</td>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/filterpipeline/nf-filterpipeline-ifixedpage-getwritestream">IFixedPage::GetWriteStream</a>
-</td>
-<td align="left" width="63%">
-The <b>GetWriteStream</b> method retrieves the stream object to write page markup to  read . You can use this stream to change page markup.
-
-</td>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/filterpipeline/nf-filterpipeline-ifixedpage-getxpspartiterator">IFixedPage::GetXpsPartIterator</a>
-</td>
-<td align="left" width="63%">
-The <b>GetXpsPartIterator</b> method gets an iterator to enumerate all of the parts that are associated with the page. 
-
-</td>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/filterpipeline/nf-filterpipeline-ifixedpage-setpagepart">IFixedPage::SetPagePart</a>
-</td>
-<td align="left" width="63%">
-The <b>SetPagePart</b> method associates a new part with the page.
-
-</td>
-</tr>
-<tr data="declared;">
-<td align="left" width="37%">
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/filterpipeline/nf-filterpipeline-ifixedpage-setprintticket">IFixedPage::SetPrintTicket</a>
-</td>
-<td align="left" width="63%">
-The <b>SetPrintTicket</b> method associates a print ticket with the page.
-
-</td>
-</tr>
-</table> 
-
 
 ## -see-also
 
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/filterpipeline/nn-filterpipeline-ipartbase">IPartBase</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/filterpipeline/nn-filterpipeline-ipartbase">IPartBase</a>
  
 
  

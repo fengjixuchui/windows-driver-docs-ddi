@@ -53,6 +53,35 @@ The FWPS_FIELDS_ALE_FLOW_ESTABLISHED_V6 enumeration type specifies the data fiel
   <a href="https://docs.microsoft.com/windows/desktop/FWP/management-filtering-layer-identifiers-">run-time filtering layers</a>.
 
 
+## -syntax
+
+
+```cpp
+typedef enum FWPS_FIELDS_ALE_FLOW_ESTABLISHED_V6_ {
+  FWPS_FIELD_ALE_FLOW_ESTABLISHED_V6_ALE_APP_ID,
+  FWPS_FIELD_ALE_FLOW_ESTABLISHED_V6_ALE_USER_ID,
+  FWPS_FIELD_ALE_FLOW_ESTABLISHED_V6_IP_LOCAL_ADDRESS,
+  FWPS_FIELD_ALE_FLOW_ESTABLISHED_V6_IP_LOCAL_ADDRESS_TYPE,
+  FWPS_FIELD_ALE_FLOW_ESTABLISHED_V6_IP_LOCAL_PORT,
+  FWPS_FIELD_ALE_FLOW_ESTABLISHED_V6_IP_PROTOCOL,
+  FWPS_FIELD_ALE_FLOW_ESTABLISHED_V6_IP_REMOTE_ADDRESS,
+  FWPS_FIELD_ALE_FLOW_ESTABLISHED_V6_IP_REMOTE_PORT,
+  FWPS_FIELD_ALE_FLOW_ESTABLISHED_V6_ALE_REMOTE_USER_ID,
+  FWPS_FIELD_ALE_FLOW_ESTABLISHED_V6_ALE_REMOTE_MACHINE_ID,
+  FWPS_FIELD_ALE_FLOW_ESTABLISHED_V6_IP_DESTINATION_ADDRESS_TYPE,
+  FWPS_FIELD_ALE_FLOW_ESTABLISHED_V6_IP_LOCAL_INTERFACE,
+  FWPS_FIELD_ALE_FLOW_ESTABLISHED_V6_DIRECTION,
+  FWPS_FIELD_ALE_FLOW_ESTABLISHED_V6_INTERFACE_TYPE,
+  FWPS_FIELD_ALE_FLOW_ESTABLISHED_V6_TUNNEL_TYPE,
+  FWPS_FIELD_ALE_FLOW_ESTABLISHED_V6_FLAGS,
+  FWPS_FIELD_ALE_FLOW_ESTABLISHED_V6_ALE_ORIGINAL_APP_ID,
+  FWPS_FIELD_ALE_FLOW_ESTABLISHED_V6_ALE_PACKAGE_ID,
+  FWPS_FIELD_ALE_FLOW_ESTABLISHED_V6_ALE_SECURITY_ATTRIBUTE_FQBN_VALUE,
+  FWPS_FIELD_ALE_FLOW_ESTABLISHED_V6_COMPARTMENT_ID,
+  FWPS_FIELD_ALE_FLOW_ESTABLISHED_V6_MAX
+} FWPS_FIELDS_ALE_FLOW_ESTABLISHED_V6;
+```
+
 ## -enum-fields
 
 
@@ -117,7 +146,7 @@ The destination IP address type. The possible values are defined by the
 
 ### -field FWPS_FIELD_ALE_FLOW_ESTABLISHED_V6_IP_LOCAL_INTERFACE
 
-The locally unique identifier (<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/igpupvdev/ns-igpupvdev-_luid">LUID</a>) for the network interface associated with the
+The locally unique identifier (<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/igpupvdev/ns-igpupvdev-_luid">LUID</a>) for the network interface associated with the
      local IP address.
 
 
@@ -181,22 +210,6 @@ The compartment that the network interface belongs to.
 <div class="alert"><b>Note</b>  Supported starting with Windows 10, version 1703.</div>
 <div> </div>
 
-### -field FWPS_FIELD_ALE_FLOW_ESTABLISHED_V6_BITMAP_IP_LOCAL_ADDRESS
-
-A bitmap of the local IP address.
-
-### -field FWPS_FIELD_ALE_FLOW_ESTABLISHED_V6_BITMAP_IP_LOCAL_PORT
-
-A bitmap of the local transport protocol port number.
-
-### -field FWPS_FIELD_ALE_FLOW_ESTABLISHED_V6_BITMAP_IP_REMOTE_ADDRESS
-
-A bitmap of the remote IP address.
-
-### -field FWPS_FIELD_ALE_FLOW_ESTABLISHED_V6_BITMAP_IP_REMOTE_PORT
-
-A bitmap of the remote transport protocol port number.
-
 ### -field FWPS_FIELD_ALE_FLOW_ESTABLISHED_V6_MAX
 
 The maximum value for this enumeration. This value might change in future versions of the NDIS
@@ -241,7 +254,7 @@ The ICMP code field, as specified in RFC 792.
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/igpupvdev/ns-igpupvdev-_luid">LUID</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/igpupvdev/ns-igpupvdev-_luid">LUID</a>
 
 
 

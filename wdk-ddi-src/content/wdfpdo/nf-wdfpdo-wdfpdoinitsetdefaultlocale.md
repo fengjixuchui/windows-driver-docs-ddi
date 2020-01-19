@@ -69,41 +69,25 @@ A pointer to a <a href="https://docs.microsoft.com/windows-hardware/drivers/wdf/
 A locale identifier (LCID) that represents the default locale. For more information, see <a href="https://docs.microsoft.com/windows/desktop/Intl/locale-identifiers">Locale Identifiers</a>.
 
 
-## -returns
-
-
-
-None
-
-
-
-
 ## -remarks
 
 
 
 When the system requests device description text from a driver, it specifies a locale. If text for the specified locale is not available, the framework returns device text for the driver's default locale.
 
-The driver must call <b>WdfPdoInitSetDefaultLocale</b> before calling <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdevicecreate">WdfDeviceCreate</a>. For more information about calling <b>WdfDeviceCreate</b>, see <a href="https://docs.microsoft.com/windows-hardware/drivers/wdf/creating-a-framework-device-object">Creating a Framework Device Object</a>.
+The driver must call <b>WdfPdoInitSetDefaultLocale</b> before calling <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate">WdfDeviceCreate</a>. For more information about calling <b>WdfDeviceCreate</b>, see <a href="https://docs.microsoft.com/windows-hardware/drivers/wdf/creating-a-framework-device-object">Creating a Framework Device Object</a>.
 
 
 #### Examples
 
 The following code example sets a device's default locale to United States English (0x409).
 
-<div class="code"><span codelanguage=""><table>
-<tr>
-<th></th>
-</tr>
-<tr>
-<td>
-<pre>WdfPdoInitSetDefaultLocale(
+```cpp
+WdfPdoInitSetDefaultLocale(
                            pDeviceInit,
                            0x409
-                           );</pre>
-</td>
-</tr>
-</table></span></div>
+                           );
+```
 
 
 
@@ -112,7 +96,7 @@ The following code example sets a device's default locale to United States Engli
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfpdo/nf-wdfpdo-wdfpdoinitadddevicetext">WdfPdoInitAddDeviceText</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfpdo/nf-wdfpdo-wdfpdoinitadddevicetext">WdfPdoInitAddDeviceText</a>
  
 
  

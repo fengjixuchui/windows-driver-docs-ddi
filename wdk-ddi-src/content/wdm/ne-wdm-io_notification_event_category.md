@@ -6,7 +6,7 @@ description:
 tech.root:
 ms.assetid: 9dbe9f82-a042-4d9e-b8e5-98725fb55e06
 ms.author: windowsdriverdev
-ms.date: 
+ms.date: 08/19/2019
 ms.topic: enum
 f1_keywords:
  - "wdm/IO_NOTIFICATION_EVENT_CATEGORY"
@@ -39,7 +39,7 @@ ms.custom: 19H1
 
 ## -description
 
-Specifies the category of PnP event for which the callback routine is being registered.  Used in [**IoRegisterPlugPlayNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioregisterplugplaynotification).
+Specifies the category of PnP event for which the callback routine is being registered.  Used in [**IoRegisterPlugPlayNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterplugplaynotification).
 
 ## -enum-fields
 
@@ -67,4 +67,4 @@ Reserved for system use.
 
 ## -see-also
 
-[**IoRegisterPlugPlayNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-ioregisterplugplaynotification)
+[**IoRegisterPlugPlayNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterplugplaynotification)

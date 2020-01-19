@@ -36,6 +36,8 @@ product:
 - Windows
 targetos: Windows
 tech.root: display
+dev_langs:
+ - c++
 ms.custom: RS5
 ---
 
@@ -72,10 +74,6 @@ A handle to the state object.
 ### -param Arg2
 
 Stack size in bytes to use during pipeline execution for each shader thread (of which there can be many thousands in flight on the GPU).
-
-## -returns
-
-Returns void.
 
 ## -remarks
 

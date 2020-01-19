@@ -60,16 +60,14 @@ The <b>RtlUnicodeStringToAnsiSize</b> routine returns the number of bytes requir
 
 Pointer to the Unicode string for which to compute the number of bytes required for an equivalent null-terminated ANSI string.
 
-## -returns
-If the Unicode string can be translated into an ANSI string using the current system locale information, [**RtlUnicodeStringToAnsiSize**](nf-wdm-rtlunicodestringtoansisize.md) returns the number of bytes required for an equivalent null-terminated ANSI string. Otherwise, [**RtlUnicodeStringToAnsiSize**](nf-wdm-rtlunicodestringtoansisize.md) returns zero.
-
 ## -remarks
 
+If the Unicode string can be translated into an ANSI string using the current system locale information, [**RtlUnicodeStringToAnsiSize**](nf-wdm-rtlunicodestringtoansisize.md) returns the number of bytes required for an equivalent null-terminated ANSI string. Otherwise, [**RtlUnicodeStringToAnsiSize**](nf-wdm-rtlunicodestringtoansisize.md) returns zero.
 
 
 The Unicode string is interpreted for the current system locale.
 
-<b>RtlUnicodeStringToAnsiSize</b> performs the same operation as <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-rtlxunicodestringtoansisize">RtlxUnicodeStringToAnsiSize</a>, but executes faster if the system does not use multibyte code pages.
+<b>RtlUnicodeStringToAnsiSize</b> performs the same operation as <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlxunicodestringtoansisize">RtlxUnicodeStringToAnsiSize</a>, but executes faster if the system does not use multibyte code pages.
 
 
 
@@ -79,7 +77,7 @@ The Unicode string is interpreted for the current system locale.
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-rtlxunicodestringtoansisize">RtlxUnicodeStringToAnsiSize</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlxunicodestringtoansisize">RtlxUnicodeStringToAnsiSize</a>
  
 
  

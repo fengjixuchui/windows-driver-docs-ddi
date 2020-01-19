@@ -55,13 +55,6 @@ Starts a trace session for power state transitions and saves the trace message f
 Starts a trace for power state transitions and saves an .etl file in the current working directory
 
 
-## -parameters
-
-
-
-
-
-
 ## -returns
 
 
@@ -76,7 +69,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdtfsystemaction/nn-wdtfsystemaction-iwdtfsystemaction2">IWDTFSystemAction2</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdtfsystemaction/nn-wdtfsystemaction-iwdtfsystemaction2">IWDTFSystemAction2</a>
  
 
  

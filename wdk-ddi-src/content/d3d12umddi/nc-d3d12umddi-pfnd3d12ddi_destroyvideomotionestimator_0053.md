@@ -36,6 +36,8 @@ product:
 - Windows
 targetos: Windows
 tech.root: display
+dev_langs:
+ - c++
 ms.custom: RS5
 ---
 
@@ -72,10 +74,6 @@ A handle to the display device (graphics context) that the Direct3D runtime uses
 ### -param hDrvMotionEstimator
 
 A handle to the user mode driver motion estimator type.
-
-## -returns
-
-Returns VOID.
 
 ## -remarks
 

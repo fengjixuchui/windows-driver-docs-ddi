@@ -29,15 +29,13 @@ req.type-library:
 req.alt-api:
 req.alt-loc:
 topictype: 
--	apiref
+- apiref
 apitype: 
--	HeaderDef
+- HeaderDef
 apilocation: 
--	ringcollection.h
+- ringcollection.h
 apiname: 
--	NetRingCollectionGetFragmentRing
-product:
-- Windows
+- NetRingCollectionGetFragmentRing
 targetos: Windows
 product:
 - Windows
@@ -48,10 +46,7 @@ product:
 
 ## -description
 
-> [!WARNING]
-> Some information in this topic relates to prereleased product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
->
-> NetAdapterCx is preview only in Windows 10, version 1903.
+
 
 The **NetRingCollectionGetFragmentRing** gets the fragment ring for a packet queue.
 
@@ -73,4 +68,4 @@ For examples of using this method, see the [Realtek sample driver](https://githu
 
 ## -see-also
 
-[Net rings and net ring iterators](https://docs.microsoft.com/windows-hardware/drivers/netcx/net-rings-and-net-ring-iterators)
+[Introduction to net rings](https://docs.microsoft.com/windows-hardware/drivers/netcx/introduction-to-net-rings)

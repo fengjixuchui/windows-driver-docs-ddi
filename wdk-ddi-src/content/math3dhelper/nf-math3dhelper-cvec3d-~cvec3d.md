@@ -47,13 +47,4 @@ ms.custom: RS5
 
 Destructor for the vector 3d class used in sensor driver development.
 
-## -parameters
-
-No parameters.
-
-## -returns
-
-Void.
-
-
 ## -see-also

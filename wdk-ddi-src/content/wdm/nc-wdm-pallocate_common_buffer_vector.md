@@ -6,7 +6,7 @@ description:
 tech.root:
 ms.assetid: be2dd87e-6c09-4493-82ef-152dfce0917e
 ms.author: windowsdriverdev
-ms.date: 
+ms.date: 08/19/2019
 ms.topic: callback
 f1_keywords:
  - "wdm/PALLOCATE_COMMON_BUFFER_VECTOR"
@@ -89,7 +89,7 @@ NTSTATUS PallocateCommonBufferVector
 ## -returns
 
 Returns NTSTATUS that ...
-Return STATUS_SUCCESS if the operation succeeds. Otherwise, return an appropriate NTSTATUS Values error code. For more information, see [NTSTATUS Values](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/ntstatus-values).
+Return STATUS_SUCCESS if the operation succeeds. Otherwise, return an appropriate NTSTATUS Values error code. For more information, see [NTSTATUS Values](https://docs.microsoft.com/windows-hardware/drivers/kernel/ntstatus-values).
 
 ## -remarks
 

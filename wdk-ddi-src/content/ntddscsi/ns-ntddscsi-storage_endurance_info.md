@@ -6,7 +6,7 @@ description: A miniport uses the **STORAGE_ENDURANCE_INFO** structure to report 
 tech.root: storage
 ms.assetid: e64f996f-b10a-4f7f-9246-2ab9e2b7e92d
 ms.author: windowsdriverdev
-ms.date: 3/15/2019
+ms.date: 03/15/2019
 ms.topic: struct
 f1_keywords:
  - "ntddscsi/STORAGE_ENDURANCE_INFO"
@@ -32,7 +32,8 @@ api_location:
  - ntddscsi.h
 api_name: 
  - STORAGE_ENDURANCE_INFO
-product: Windows
+product:
+ - Windows
 targetos: Windows
 ms.custom: 19H1
 ---
@@ -49,31 +50,12 @@ A miniport uses the **STORAGE_ENDURANCE_INFO** structure to report a device's en
 
 Bitmask that indicates which of the remaining members contain valid data. Can be any of the combination of the following bits:
 
-<table>
-<tr>
-<th>Bit</th><th>Meaning</th>
-</tr>
-
-<tr>
-<td>0</td>
-<td>The <i>GroupId</i> member contains valid data.</td>
-
-<tr>
-<td>1</td>
-<td>The <i>Flags</i> member contains valid data.</td>
-
-<tr>
-<td>2</td>
-<td>The <i>LifePercentage</i> member contains valid data.</td>
-
-<tr>
-<td>3</td>
-<td>The <i>BytesReadCount</i> member contains valid data.</td>
-
-<tr>
-<td>4</td>
-<td>The <i>ByteWriteCount</i> member contains valid data.</td>
-</table>
+| Bit | Meaning |
+| 0 | The *GroupId* member contains valid data. |
+| 1 | The *Flags* member contains valid data. |
+| 2 | The *LifePercentage* member contains valid data. |
+| 3 | The *BytesReadCount* member contains valid data. |
+| 4 | The *ByteWriteCount* member contains valid data. |
 
 ### -field GroupId
 

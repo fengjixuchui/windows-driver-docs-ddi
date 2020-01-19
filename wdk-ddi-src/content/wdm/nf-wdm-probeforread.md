@@ -71,15 +71,6 @@ Specifies the length, in bytes, of the user-mode buffer.
 Specifies the required alignment, in bytes, of the beginning of the user-mode buffer.
 
 
-## -returns
-
-
-
-None
-
-
-
-
 ## -remarks
 
 
@@ -104,7 +95,7 @@ If <i>Length</i> = 0, <b>ProbeForRead</b> does no checking of the address. In th
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-probeforwrite">ProbeForWrite</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforwrite">ProbeForWrite</a>
  
 
  

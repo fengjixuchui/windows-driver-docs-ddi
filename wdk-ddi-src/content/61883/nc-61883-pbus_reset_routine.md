@@ -66,21 +66,12 @@ Pointer to the context supplied by the caller at the <b>Context</b> member of th
 The bus reset information. 
 
 
-## -returns
-
-
-
-This callback does not return a value.
-
-
-
-
 ## -see-also
 
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/61883/ns-61883-_av_61883_request">AV_61883_REQUEST</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/61883/ns-61883-_av_61883_request">AV_61883_REQUEST</a>
  
 
  

@@ -80,7 +80,7 @@ A pointer to a variable to which **KeQueryPerformanceCounter** writes the perfor
 
 To obtain the frequency of the performance counter, specify a non-**NULL** pointer value for the *PerformanceFrequency* parameter. The frequency of the performance counter is fixed at system boot and is consistent across all processors. Therefore, a driver can cache the frequency of the performance counter during initialization.  
 
-For more info about this function and its usage, see [Acquiring high-resolution time stamps](https://docs.microsoft.com/en-us/windows/desktop/SysInfo/acquiring-high-resolution-time-stamps). 
+For more info about this function and its usage, see [Acquiring high-resolution time stamps](https://docs.microsoft.com/windows/desktop/SysInfo/acquiring-high-resolution-time-stamps). 
 
 
 
@@ -88,19 +88,19 @@ For more info about this function and its usage, see [Acquiring high-resolution 
 ## -see-also
 
 
-[KeQueryInterruptTime](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kequeryinterrupttime)
+[KeQueryInterruptTime](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kequeryinterrupttime)
 
 
 
-[KeQuerySystemTime](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kequerysystemtime~r1)
+[KeQuerySystemTime](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kequerysystemtime~r1)
 
 
 
-[KeQueryTickCount](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntddk/nf-ntddk-kequerytickcount)
+[KeQueryTickCount](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-kequerytickcount)
 
 
 
-[KeQueryTimeIncrement](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-kequerytimeincrement)
+[KeQueryTimeIncrement](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kequerytimeincrement)
 
 
 

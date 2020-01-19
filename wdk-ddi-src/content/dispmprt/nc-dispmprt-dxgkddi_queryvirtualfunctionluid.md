@@ -38,6 +38,8 @@ api_name:
 product: 
  - Windows
 targetos: Windows
+dev_langs:
+ - c++
 ms.custom: 19H1
 ---
 
@@ -74,10 +76,6 @@ A handle to the context.
 ### -param pArgs
 
 Pointer to a DXGKARG_QUERYVIRTUALFUNCTIONLUID structure.
-
-## -returns
-
-Returns VOID.
 
 ## -remarks
 

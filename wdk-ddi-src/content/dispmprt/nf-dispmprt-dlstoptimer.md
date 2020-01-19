@@ -40,7 +40,8 @@ api_name:
 product: 
 - Windows
 targetos: Windows
-
+dev_langs:
+ - c++
 ms.custom: 19H1
 ---
 
@@ -49,7 +50,7 @@ ms.custom: 19H1
 
 ## -description
 
-Disables calls to a miniport driver's [HwVidTimer](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/video/nc-video-pvideo_hw_timer) function.
+Disables calls to a miniport driver's [HwVidTimer](https://docs.microsoft.com/windows-hardware/drivers/ddi/video/nc-video-pvideo_hw_timer) function.
 
 ## -parameters
 
@@ -57,10 +58,6 @@ Disables calls to a miniport driver's [HwVidTimer](https://docs.microsoft.com/wi
 
 A handle that represents a display adapter.
 
-
-## -returns
-
-This function returns VOID.
 
 ## -remarks
 

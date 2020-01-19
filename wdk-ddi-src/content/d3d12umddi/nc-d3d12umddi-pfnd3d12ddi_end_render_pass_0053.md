@@ -36,6 +36,8 @@ product:
 - Windows
 targetos: Windows
 tech.root: display
+dev_langs:
+ - c++
 ms.custom: RS5
 ---
 
@@ -67,10 +69,6 @@ VOID Pfnd3d12ddiEndRenderPass0053
 ### -param Arg1
 
 A D3D12DDI_HCOMMANDLIST (command list) that contains the Render Pass.
-
-## -returns
-
-Returns VOID.
 
 ## -remarks
 

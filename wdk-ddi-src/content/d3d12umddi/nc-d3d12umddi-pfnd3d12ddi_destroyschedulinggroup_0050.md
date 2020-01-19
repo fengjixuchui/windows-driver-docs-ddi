@@ -36,6 +36,8 @@ product:
 - Windows
 targetos: Windows
 tech.root: display
+dev_langs:
+ - c++
 ms.custom: RS5
 ---
 
@@ -72,10 +74,6 @@ A handle to the display device (graphics context).
 ### -param Arg2
 
 A D3D12DDI_HSCHEDULINGGROUP_0050 user mode driver handle type that represents a hardware scheduling group.
-
-## -returns
-
-Returns VOID.
 
 ## -remarks
 

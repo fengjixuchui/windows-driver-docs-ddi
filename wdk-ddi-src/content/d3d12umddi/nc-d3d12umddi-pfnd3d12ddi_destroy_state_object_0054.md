@@ -36,6 +36,8 @@ product:
 - Windows
 targetos: Windows
 tech.root: display
+dev_langs:
+ - c++
 ms.custom: RS5
 ---
 
@@ -72,10 +74,6 @@ A handle to the device.
 ### -param Arg2
 
 A handle to the state object to destroy.
-
-## -returns
-
-Returns VOID.
 
 ## -remarks
 

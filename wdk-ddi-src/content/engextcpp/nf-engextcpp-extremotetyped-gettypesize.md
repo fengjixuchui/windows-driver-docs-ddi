@@ -51,13 +51,6 @@ req.typenames:
 The <b>GetTypeSize</b> method returns the size of the type represented by this object.
 
 
-## -parameters
-
-
-
-
-
-
 ## -returns
 
 
@@ -72,11 +65,11 @@ The <b>GetTypeSize</b> method returns the size of the type represented by this o
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/engextcpp/nl-engextcpp-extremotetyped">ExtRemoteTyped</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/engextcpp/nl-engextcpp-extremotetyped">ExtRemoteTyped</a>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nf-dbgeng-idebugsymbols3-gettypesize">GetTypeSize</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsymbols3-gettypesize">GetTypeSize</a>
  
 
  

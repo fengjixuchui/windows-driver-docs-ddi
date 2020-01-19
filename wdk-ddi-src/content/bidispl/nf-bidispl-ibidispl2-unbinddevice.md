@@ -51,13 +51,6 @@ req.typenames:
 The <b>UnbindDevice</b> method releases a printer from a bidirectional printer communication (bidi communication) request.
 
 
-## -parameters
-
-
-
-
-
-
 ## -returns
 
 
@@ -113,7 +106,7 @@ The <b>HRESULT</b> contains an error code that corresponds to the last error.
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_print/index">Bidirectional Communication Interfaces</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/_print/index">Bidirectional Communication Interfaces</a>
 
 
 
@@ -121,7 +114,7 @@ The <b>HRESULT</b> contains an error code that corresponds to the last error.
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/bidispl/nn-bidispl-ibidispl2">IBidiSpl2</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/bidispl/nn-bidispl-ibidispl2">IBidiSpl2</a>
 
 
 
