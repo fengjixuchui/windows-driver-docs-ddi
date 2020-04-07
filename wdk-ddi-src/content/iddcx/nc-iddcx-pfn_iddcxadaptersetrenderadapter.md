@@ -7,7 +7,7 @@ tech.root: display
 ms.assetid: 0a4cd4b6-a6a2-4f23-9775-bddab232fded
 ms.author: windowsdriverdev
 ms.date: 08/19/2019
-ms.topic: callback
+keywords: ["*PFN_IDDCXADAPTERSETRENDERADAPTER callback function"]
 f1_keywords:
  - "iddcx/*PFN_IDDCXADAPTERSETRENDERADAPTER"
 ms.prod: windows-hardware
@@ -36,7 +36,7 @@ api_type:
 api_location: 
  - iddcx.h
 api_name: 
- - *PFN_IDDCXADAPTERSETRENDERADAPTER
+ - PFN_IDDCXADAPTERSETRENDERADAPTER
 product: 
  - Windows
 targetos: Windows

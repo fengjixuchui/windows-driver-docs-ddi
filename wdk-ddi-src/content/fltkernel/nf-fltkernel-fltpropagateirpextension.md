@@ -5,8 +5,8 @@ description: The FltPropagateIrpExtension routine copies the IRP extension from 
 tech.root: ifsk
 ms.assetid: d74bc90e-5118-49ea-8aab-70d172eb0196
 ms.date: 01/02/2020
+keywords: ["FltPropagateIrpExtension function"]
 ms.keywords: FltPropagateIrpExtension, FltPropagateIrpExtension routine, fltkernel/FltPropagateIrpExtension
-ms.topic: function
 f1_keywords:
  - "fltkernel/FltPropagateIrpExtension"
 req.header: fltkernel.h

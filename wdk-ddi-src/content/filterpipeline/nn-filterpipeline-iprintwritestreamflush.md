@@ -6,8 +6,8 @@ old-location: print\iprintwritestreamflush.htm
 tech.root: print
 ms.assetid: DB3E1127-B3B1-4C48-9819-EEF705B9985A
 ms.date: 04/20/2018
+keywords: ["IPrintWriteStreamFlush interface"]
 ms.keywords: IPrintWriteStreamFlush, IPrintWriteStreamFlush interface [Print Devices], IPrintWriteStreamFlush interface [Print Devices],described, filterpipeline/IPrintWriteStreamFlush, print.iprintwritestreamflush
-ms.topic: interface
 f1_keywords:
  - "filterpipeline/IPrintWriteStreamFlush"
 req.header: filterpipeline.h

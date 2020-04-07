@@ -6,8 +6,8 @@ old-location: print\iprintschemacapabilities_getfeature.htm
 tech.root: print
 ms.assetid: AC6434F5-0892-4426-98BB-BC02AD17917B
 ms.date: 04/20/2018
+keywords: ["IPrintSchemaCapabilities::GetFeature"]
 ms.keywords: GetFeature, GetFeature method [Print Devices], GetFeature method [Print Devices],IPrintSchemaCapabilities interface, IPrintSchemaCapabilities, IPrintSchemaCapabilities interface [Print Devices],GetFeature method, IPrintSchemaCapabilities.GetFeature, IPrintSchemaCapabilities::GetFeature, print.iprintschemacapabilities_getfeature, printerextension/IPrintSchemaCapabilities::GetFeature
-ms.topic: method
 f1_keywords:
  - "printerextension/IPrintSchemaCapabilities.GetFeature"
 req.header: printerextension.h

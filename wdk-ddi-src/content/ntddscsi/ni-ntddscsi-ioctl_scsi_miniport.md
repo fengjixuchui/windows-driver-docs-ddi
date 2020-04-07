@@ -6,8 +6,8 @@ old-location: storage\ioctl_scsi_miniport.htm
 tech.root: storage
 ms.assetid: 5a9facc7-c83e-4dd4-9fb4-e3385c1b94ea
 ms.date: 12/20/2019
+keywords: ["IOCTL_SCSI_MINIPORT IOCTL"]
 ms.keywords: IOCTL_SCSI_MINIPORT, IOCTL_SCSI_MINIPORT control, IOCTL_SCSI_MINIPORT control code [Storage Devices], k307_49b821f3-1a79-44aa-a6a1-92543177181d.xml, ntddscsi/IOCTL_SCSI_MINIPORT, storage.ioctl_scsi_miniport
-ms.topic: ioctl
 f1_keywords:
  - "ntddscsi/IOCTL_SCSI_MINIPORT"
 req.header: ntddscsi.h
@@ -51,7 +51,7 @@ Sends a special control function to a host bus adapter-specific (HBA) miniport d
 The prescribed way to open the HBA is use the [SetupDi*Xxx* APIs](https://docs.microsoft.com/windows-hardware/drivers/install/using-device-installation-functions#ddk-setupdi-setup-class-functions-dg) to get all the ScsiAdapter class devices that are running. Get the properties of each for their device instance name and open the HBA directly. SCSI%d (for example, \\\\.\Scsi0:) is a symbolic link and not ALL storage drivers create the link.
 
 > [!NOTE]
-> The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the [Storport driver](https://docs.microsoft.com/windows-hardware/drivers/storage/storport-driver) and [Storport miniport](https://docs.microsoft.com/windows-hardware/drivers/storage/storport-miniport-drivers) driver models.
+> The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the [Storport driver](https://docs.microsoft.com/windows-hardware/drivers/storage/storport-driver-overview) and [Storport miniport](https://docs.microsoft.com/windows-hardware/drivers/storage/storport-miniport-drivers) driver models.
 
 ## -ioctlparameters
 

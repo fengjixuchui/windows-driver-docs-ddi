@@ -6,8 +6,8 @@ old-location: print\ibidiasyncnotifychannel_sendnotification.htm
 tech.root: print
 ms.assetid: FADB79BD-0404-4116-9EE8-AE7C063DBF26
 ms.date: 04/20/2018
+keywords: ["IBidiAsyncNotifyChannel::SendNotification"]
 ms.keywords: IBidiAsyncNotifyChannel interface [Print Devices],SendNotification method, IBidiAsyncNotifyChannel.SendNotification, IBidiAsyncNotifyChannel::SendNotification, SendNotification, SendNotification method [Print Devices], SendNotification method [Print Devices],IBidiAsyncNotifyChannel interface, print.ibidiasyncnotifychannel_sendnotification, prnasntp/IBidiAsyncNotifyChannel::SendNotification
-ms.topic: method
 f1_keywords:
  - "prnasntp/IBidiAsyncNotifyChannel.SendNotification"
 req.header: prnasntp.h

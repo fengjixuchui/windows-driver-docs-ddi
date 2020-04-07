@@ -6,8 +6,8 @@ old-location: print\iprintschemafeature_interface.htm
 tech.root: print
 ms.assetid: AAC2A60B-9E70-4809-969A-68783A91B093
 ms.date: 04/20/2018
+keywords: ["IPrintSchemaFeature interface"]
 ms.keywords: IPrintSchemaFeature, IPrintSchemaFeature interface [Print Devices], IPrintSchemaFeature interface [Print Devices],described, print.iprintschemafeature_interface, printerextension/IPrintSchemaFeature
-ms.topic: interface
 f1_keywords:
  - "printerextension/IPrintSchemaFeature"
 req.header: printerextension.h
