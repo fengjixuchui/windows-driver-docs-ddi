@@ -2,14 +2,15 @@
 UID: NE:ksmedia.__unnamed_enum_92
 title: KSPROPERTY_NETWORKCAMERACONTROL_NTPINFO_TYPE  (ksmedia.h)
 author: windows-driver-content
-description: The **KSPROPERTY_NETWORKCAMERACONTROL_NTPINFO_TYPE** enumeration defines the network camera control NTP types.
+description: The KSPROPERTY_NETWORKCAMERACONTROL_NTPINFO_TYPE enumeration defines the network camera control NTP types.
 tech.root: stream
 ms.author: windowsdriverdev
-ms.date: 05/11/2020
+ms.date: 07/08/2020
 ms.topic: enum
 ms.keywords: KSPROPERTY_NETWORKCAMERACONTROL_NTPINFO_TYPE
 f1_keywords:
 - "ksmedia/KSPROPERTY_NETWORKCAMERACONTROL_NTPINFO_TYPE"
+ - "KSPROPERTY_NETWORKCAMERACONTROL_NTPINFO_TYPE"
 req.header: ksmedia.h
 req.include-header: Ksmedia.h
 req.construct-type: structure
@@ -41,8 +42,6 @@ targetos: Windows
 ## -description
 
 The **KSPROPERTY_NETWORKCAMERACONTROL_NTPINFO_TYPE** enumeration defines the network camera control NTP types.
-
-## -syntax
 
 ## -enum-fields
 

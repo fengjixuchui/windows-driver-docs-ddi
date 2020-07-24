@@ -10,6 +10,7 @@ keywords: ["IoConnectInterrupt function"]
 ms.keywords: IoConnectInterrupt, IoConnectInterrupt routine [Kernel-Mode Driver Architecture], k104_efa094e0-ac29-491b-803a-8470ed39c915.xml, kernel.ioconnectinterrupt, wdm/IoConnectInterrupt
 f1_keywords:
  - "wdm/IoConnectInterrupt"
+ - "IoConnectInterrupt"
 req.header: wdm.h
 req.include-header: Wdm.h, Ntddk.h, Ntifs.h
 req.target-type: Universal
@@ -36,8 +37,6 @@ api_location:
 - NtosKrnl.exe
 api_name:
 - IoConnectInterrupt
-product:
-- Windows
 targetos: Windows
 req.typenames: 
 ---
@@ -117,7 +116,11 @@ Specifies whether to save the floating-point stack when the driver's device inte
 
 <b>IoConnectInterrupt</b> can return one of the following NTSTATUS values:
 
+**STATUS_SUCCESS**
 
+**STATUS_INVALID_PARAMETER**: No processors were specified.
+
+**STATUS_INSUFFICIENT_RESOURCES**: There was not enough nonpaged pool.
 
 
 ## -remarks
