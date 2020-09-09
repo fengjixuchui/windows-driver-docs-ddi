@@ -29,14 +29,14 @@ req.unicode-ansi:
 topic_type:
  - apiref
 api_type:
- - 
+ - DllExport
 api_location:
  - ntddk.h
 api_name:
  - WheaHwErrorReportSetSeverityDeviceDriver
 f1_keywords:
- - ntddk//WheaHwErrorReportSetSeverityDeviceDriver
  - WheaHwErrorReportSetSeverityDeviceDriver
+ - ntddk/WheaHwErrorReportSetSeverityDeviceDriver
 dev_langs:
  - c++
 ---
