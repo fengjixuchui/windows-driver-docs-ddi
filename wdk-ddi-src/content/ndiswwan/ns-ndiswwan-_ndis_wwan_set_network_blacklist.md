@@ -46,6 +46,11 @@ product:
 
 ## -description
 
+> [!IMPORTANT]
+> ### Bias-free communication
+>
+> Microsoft supports a diverse and inclusive environment. This article contains references to terminology that the Microsoft [style guide for bias-free communication](/style-guide/bias-free-communication) recognizes as exclusionary. The word or phrase is used in this article for consistency because it currently appears in the software. When the software is updated to remove the language, this article will be updated to be in alignment.
+
 The **NDIS_WWAN_SET_NETWORK_BLACKLIST** structure describes a list of network blacklist providers that a mobile broadband (MBB) device should use to overwrite any existing blacklist providers in the modem.
 
 ## -struct-fields
@@ -68,17 +73,16 @@ A formatted [**WWAN_NETWORK_BLACKLIST_INFO**](../wwan/ns-wwan-_wwan_network_blac
 
 ## -remarks
 
-This structure is used in an [OID_WWAN_NETWORK_BLACKLIST](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-network-blacklist) Set request.
+This structure is used in an [OID_WWAN_NETWORK_BLACKLIST](/windows-hardware/drivers/network/oid-wwan-network-blacklist) Set request.
 
-After completing the Set request, the modem should return an [NDIS_STATUS_WWAN_NETWORK_BLACKLIST](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-network-blacklist) status notification as a response to inform the OS of the updated network blacklists.
+After completing the Set request, the modem should return an [NDIS_STATUS_WWAN_NETWORK_BLACKLIST](/windows-hardware/drivers/network/ndis-status-wwan-network-blacklist) status notification as a response to inform the OS of the updated network blacklists.
 
 ## -see-also
 
-[MB Network Blacklist Operations](https://docs.microsoft.com/windows-hardware/drivers/network/mb-network-blacklist-operations)
+[MB Network Blacklist Operations](/windows-hardware/drivers/network/mb-network-blacklist-operations)
 
-[OID_WWAN_NETWORK_BLACKLIST](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-network-blacklist)
+[OID_WWAN_NETWORK_BLACKLIST](/windows-hardware/drivers/network/oid-wwan-network-blacklist)
 
-[NDIS_STATUS_WWAN_NETWORK_BLACKLIST](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-network-blacklist)
+[NDIS_STATUS_WWAN_NETWORK_BLACKLIST](/windows-hardware/drivers/network/ndis-status-wwan-network-blacklist)
 
 [**WWAN_NETWORK_BLACKLIST_INFO**](../wwan/ns-wwan-_wwan_network_blacklist_info.md)
-

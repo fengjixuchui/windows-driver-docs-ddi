@@ -2,8 +2,6 @@
 UID: NA:ucmucsispec
 title: Ucmucsispec.h header
 ms.assetid: 6839a2d9-d025-3af4-9d57-2d591f143ae1
-author: mimisasouvanh
-ms.author: misaso
 ms.date: 09/30/2018
 keywords: ["Ucmucsispec.h header"]
 ms.keywords: UCSI Windows
@@ -30,6 +28,5 @@ For information, see [UCSI spec version 1.1](https://www.intel.com/content/dam/w
 
 For more information, see:
 
-- [Write a UcmUcsi client driver](https://docs.microsoft.com/windows-hardware/drivers/usbcon/write-a-ucsi-driver)
-- [Universal Serial Bus (USB)](https://docs.microsoft.com/windows-hardware/drivers/usbcon)
-
+- [Write a UcmUcsi client driver](/windows-hardware/drivers/usbcon/write-a-ucsi-driver)
+- [Universal Serial Bus (USB)](/windows-hardware/drivers/usbcon)

@@ -46,6 +46,11 @@ product:
 
 ## -description
 
+> [!IMPORTANT]
+> ### Bias-free communication
+>
+> Microsoft supports a diverse and inclusive environment. This article contains references to terminology that the Microsoft [style guide for bias-free communication](/style-guide/bias-free-communication) recognizes as exclusionary. The word or phrase is used in this article for consistency because it currently appears in the software. When the software is updated to remove the language, this article will be updated to be in alignment.
+
 The **WWAN_NETWORK_BLACKLIST_PROVIDER** structure represents a network blacklist provider in a mobile broadband (MBB) modem.
 
 ## -struct-fields
@@ -68,9 +73,8 @@ A list of **WWAN_NETWORK_BLACKLIST_PROVIDER** structures follows the **Blacklist
 
 ## -see-also
 
-[MB Network Blacklist Operations](https://docs.microsoft.com/windows-hardware/drivers/network/mb-network-blacklist-operations)
+[MB Network Blacklist Operations](/windows-hardware/drivers/network/mb-network-blacklist-operations)
 
 [**WWAN_NETWORK_BLACKLIST_INFO**](ns-wwan-_wwan_network_blacklist_info.md)
 
 [**WWAN_NETWORK_BLACKLIST_TYPE**](ne-wwan-_wwan_network_blacklist_type.md)
-

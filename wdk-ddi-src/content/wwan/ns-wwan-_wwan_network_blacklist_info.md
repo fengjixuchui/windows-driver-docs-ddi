@@ -46,6 +46,11 @@ product:
 
 ## -description
 
+> [!IMPORTANT]
+> ### Bias-free communication
+>
+> Microsoft supports a diverse and inclusive environment. This article contains references to terminology that the Microsoft [style guide for bias-free communication](/style-guide/bias-free-communication) recognizes as exclusionary. The word or phrase is used in this article for consistency because it currently appears in the software. When the software is updated to remove the language, this article will be updated to be in alignment.
+
 The **WWAN_NETWORK_BLACKLIST_INFO** structure contains a list of network blacklist providers for a mobile broadband (MBB) modem.
 
 ## -struct-fields
@@ -65,9 +70,9 @@ This structure is used in the [**NDIS_WWAN_SET_NETWORK_BLACKLIST**](../ndiswwan/
 
 ## -see-also
 
-[MB Network Blacklist Operations](https://docs.microsoft.com/windows-hardware/drivers/network/mb-network-blacklist-operations)
+[MB Network Blacklist Operations](/windows-hardware/drivers/network/mb-network-blacklist-operations)
 
-[OID_WWAN_NETWORK_BLACKLIST](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-network-blacklist)
+[OID_WWAN_NETWORK_BLACKLIST](/windows-hardware/drivers/network/oid-wwan-network-blacklist)
 
 [**NDIS_WWAN_SET_NETWORK_BLACKLIST**](../ndiswwan/ns-ndiswwan-_ndis_wwan_set_network_blacklist.md)
 
@@ -78,4 +83,3 @@ This structure is used in the [**NDIS_WWAN_SET_NETWORK_BLACKLIST**](../ndiswwan/
 [**WWAN_NETWORK_BLACKLIST_PROVIDER**](ns-wwan-_wwan_network_blacklist_provider.md)
 
 [**WWAN_LIST_HEADER**](ns-wwan-_wwan_list_header.md)
-

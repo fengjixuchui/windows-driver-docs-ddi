@@ -4,7 +4,7 @@ title: _NDIS_UDP_SEGMENTATION_OFFLOAD_NET_BUFFER_LIST_INFO (ndis.h)
 description: Specifies a buffer comprised of one or more NET_PACKET or NET_FRAGMENT structures.
 tech.root: netvista
 ms.assetid: C5EF1D54-AA43-4467-85B4-2134F9BA8E05
-ms.date: 02/27/2030
+ms.date: 02/27/2020
 ms.topic: struct
 ms.keywords: _NDIS_UDP_SEGMENTATION_OFFLOAD_NET_BUFFER_LIST_INFO, NDIS_UDP_SEGMENTATION_OFFLOAD_NET_BUFFER_LIST_INFO, *PNDIS_UDP_SEGMENTATION_OFFLOAD_NET_BUFFER_LIST_INFO,
 req.header: ndis.h
@@ -88,7 +88,6 @@ The TCP/IP transport updates the **MSS** and **UdpHeaderOffset** members of the 
 
 ## -see-also
 
-[UDP Segmentation Offload (USO)](https://docs.microsoft.com/windows-hardware/drivers/network/udp-segmentation-offload-uso-)
+[UDP Segmentation Offload (USO)](/windows-hardware/drivers/network/udp-segmentation-offload-uso-)
 
 [**NET_BUFFER_LIST**](../ndis/ns-ndis-_net_buffer_list.md)
-

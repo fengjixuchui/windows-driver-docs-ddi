@@ -35,9 +35,6 @@ To develop Windows Device Testing Framework (WDTF), you need these headers:
 * tracing.h
 * verify.h
 * wdtf.h
-* wdtfdriverpackageaction.h
-* wdtfdriversetupdeviceaction.h
-* wdtfdriversetupsystemaction.h
 * wdtfedtaction.h
 * wdtfinterfaces.h
 * wdtfinterfacessup.h
@@ -56,5 +53,4 @@ To develop Windows Device Testing Framework (WDTF), you need these headers:
 * wextypes.h
 * wppdefs.h
 
-For the programming guide, see [Windows Device Testing Framework (WDTF)](https://docs.microsoft.com/windows-hardware/drivers/wdtf).
-
+For the programming guide, see [Windows Device Testing Framework (WDTF)](/windows-hardware/drivers/wdtf).

@@ -43,7 +43,6 @@ api_name:
 
 # D3D12DDI_VIDEO_DECODE_TIER_0020 enumeration
 
-
 ## -description
 
 Specifies the video decode tier. Decode video tiers define a set of hardware capabilities. The higher the tier, the more capable the hardware.
@@ -58,7 +57,7 @@ The decode profile is not supported.
 
 Video decode tier 1. In video decode tier 1, hardware requires decode output textures and reference textures for decoding a stream to be physically contiguous when video operations reference them.
 
-The reference resources are allocated by the application as a D3D12 texture array. The driver does not receive explicit hints that the allocation targets video scenarios and may initially allocate non-physically contiguous memory. Drivers are expected to use a new [Update Allocation Properties](https://docs.microsoft.com/windows-hardware/test/hlk/testref/51f5ec4f-bfcb-41c2-bb01-fef1403c93e4) feature provided by the memory manager, to schedule a conversion to physically contiguous upon submission of the video work that actually requires it to be physically contiguous.
+The reference resources are allocated by the application as a D3D12 texture array. The driver does not receive explicit hints that the allocation targets video scenarios and may initially allocate non-physically contiguous memory. Drivers are expected to use a new [Update Allocation Properties](/windows-hardware/test/hlk/testref/51f5ec4f-bfcb-41c2-bb01-fef1403c93e4) feature provided by the memory manager, to schedule a conversion to physically contiguous upon submission of the video work that actually requires it to be physically contiguous.
 
 Hardware characteristics that place hardware in Tier 1:
 
@@ -122,8 +121,8 @@ If decode hardware requires a unique tiling format that is not supported for ope
 
 The following table shows the different capabilities for each tier:
 
-| | Tier 1 | Tier 2 | Tier 3 |
-| -- | -- | -- | -- |
+| Capability | Tier 1 | Tier 2 | Tier 3 |
+| ---------- | ------ | ------ | ------ |
 | Supports individually allocated reference frames and output. | No | No | Required |
 | Supports references and allocated as a texture array. | Required | Required | Required |
 | May optionally require the REFERENCE_ONLY resource flag. Note that all tiers are required to work with flag present, even when its not required. | Optional | Optional | No |
@@ -133,4 +132,3 @@ The following table shows the different capabilities for each tier:
 | Requires compressed bitstream data for slices to be located in a single buffer allocation with no gaps between slices. | Required | Required | Required |
 | Offset to first slice in the  compressed input buffer must be 256 byte aligned. | Required | Required | Required |
 | Drivers must not perform additional copies of the compressed bitstream data. | Required | Required | Required |
-

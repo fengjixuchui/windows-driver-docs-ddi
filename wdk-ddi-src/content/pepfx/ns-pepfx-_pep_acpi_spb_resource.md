@@ -7,7 +7,7 @@ tech.root: kernel
 ms.assetid: D4C0009D-A9D0-4870-86C5-60DC9B5892BC
 ms.date: 04/30/2018
 keywords: ["PEP_ACPI_SPB_RESOURCE structure"]
-ms.keywords: "*PPEP_ACPI_SPB_RESOURCE, 0 - Slave mode, 1 - Consumer/producer mode, 2 to 7 - Reserved, PEP_ACPI_SPB_RESOURCE, PEP_ACPI_SPB_RESOURCE structure [Kernel-Mode Driver Architecture], PPEP_ACPI_SPB_RESOURCE, PPEP_ACPI_SPB_RESOURCE structure pointer [Kernel-Mode Driver Architecture], _PEP_ACPI_SPB_RESOURCE, kernel.pep_acpi_spb_resource, pepfx/PEP_ACPI_SPB_RESOURCE, pepfx/PPEP_ACPI_SPB_RESOURCE"
+ms.keywords: "*PPEP_ACPI_SPB_RESOURCE, PEP_ACPI_SPB_RESOURCE, PEP_ACPI_SPB_RESOURCE structure [Kernel-Mode Driver Architecture], PPEP_ACPI_SPB_RESOURCE, PPEP_ACPI_SPB_RESOURCE structure pointer [Kernel-Mode Driver Architecture], _PEP_ACPI_SPB_RESOURCE, kernel.pep_acpi_spb_resource, pepfx/PEP_ACPI_SPB_RESOURCE, pepfx/PPEP_ACPI_SPB_RESOURCE"
 req.header: pepfx.h
 req.include-header: Pep_x.h
 req.target-type: Windows
@@ -56,11 +56,11 @@ The <b>PEP_ACPI_SPB_RESOURCE</b> structure describes an ACPI serial bus connecti
 
 ### -field Type
 
-A <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/pepfx/ne-pepfx-_pep_acpi_resource_type">PEP_ACPI_RESOURCE_TYPE</a> enumeration value describing this resource.
+A <a href="/windows-hardware/drivers/ddi/pepfx/ne-pepfx-_pep_acpi_resource_type">PEP_ACPI_RESOURCE_TYPE</a> enumeration value describing this resource.
 
 ### -field Flags
 
-A <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_acpi_resource_flags">PEP_ACPI_RESOURCE_FLAGS</a> structure that describes the capabilities of this ACPI resource.
+A <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_acpi_resource_flags">PEP_ACPI_RESOURCE_FLAGS</a> structure that describes the capabilities of this ACPI resource.
 
 ### -field TypeSpecificFlags
 
@@ -72,8 +72,8 @@ Specifies the bit flags that are common to all serial bus connection types.
 <th>Meaning</th>
 </tr>
 <tr>
-<td width="40%"><a id="0_-_Slave_mode"></a><a id="0_-_slave_mode"></a><a id="0_-_SLAVE_MODE"></a><dl>
-<dt><b>0 - Slave mode</b></dt>
+<td width="40%"><dl>
+<dt><b>0 - Subordinate mode</b></dt>
 </dl>
 </td>
 <td width="60%">
@@ -123,4 +123,3 @@ A pointer to optional data that is specific to the serial bus connection type.
 ### -field VendorDataLength
 
 The length of the buffer pointed to by <b>VendorData</b>.
-

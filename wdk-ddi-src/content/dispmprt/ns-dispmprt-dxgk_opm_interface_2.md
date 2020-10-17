@@ -43,10 +43,9 @@ dev_langs:
 
 # DXGK_OPM_INTERFACE_2 structure
 
-
 ## -description
 
-The **DXGK_OPM_INTERFACE_2** structure contains pointers to functions in the [Output Protection Manager (OPM) Interface](https://docs.microsoft.com/windows-hardware/drivers/display/supporting-output-protection-manager), which is implemented by the display miniport driver.
+The **DXGK_OPM_INTERFACE_2** structure contains pointers to functions in the [Output Protection Manager (OPM) Interface](/windows-hardware/drivers/display/supporting-output-protection-manager), which is implemented by the display miniport driver.
 
 ## -struct-fields
 
@@ -64,11 +63,11 @@ A pointer to a private context block. **Context** must be set to **NULL**.
 
 ### -field InterfaceReference
 
-A pointer to an interface reference function that is implemented by the display miniport driver. For more information about the operation of an interface reference function, see the Remarks section of the [**INTERFACE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_interface.md) structure.
+A pointer to an interface reference function that is implemented by the display miniport driver. For more information about the operation of an interface reference function, see the Remarks section of the [**INTERFACE**](../wdm/ns-wdm-_interface.md) structure.
 
 ### -field InterfaceDereference
 
-A pointer to an interface dereference function that is implemented by the display miniport driver. For more information about the operation of an interface dereference function, see the Remarks section of the [**INTERFACE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_interface.md) structure.
+A pointer to an interface dereference function that is implemented by the display miniport driver. For more information about the operation of an interface dereference function, see the Remarks section of the [**INTERFACE**](../wdm/ns-wdm-_interface.md) structure.
 
 ### -field DxgkDdiOPMGetCertificateSize
 
@@ -112,9 +111,9 @@ A pointer to the display miniport driver's [**DxgkDdiOPMCreateProtectedOutputNon
 
 ## -remarks
 
-A kernel-mode component that must use the OPM interface initiates a call to the display miniport driver's [**DxgkDdiQueryInterface**](nc-dispmprt-dxgkddi_query_interface) function to retrieve the interface.
+A kernel-mode component that must use the OPM interface initiates a call to the display miniport driver's [**DxgkDdiQueryInterface**](nc-dispmprt-dxgkddi_query_interface.md) function to retrieve the interface.
 
-For more information on how to use this structure with the OPM interface, see [Retrieving the OPM DDI](https://docs.microsoft.com/windows-hardware/drivers/display/retrieving-the-opm-ddi).
+For more information on how to use this structure with the OPM interface, see [Retrieving the OPM DDI](/windows-hardware/drivers/display/retrieving-the-opm-ddi).
 
 ## -see-also
 
@@ -140,5 +139,4 @@ For more information on how to use this structure with the OPM interface, see [R
 
 [**DxgkDdiQueryInterface**](nc-dispmprt-dxgkddi_query_interface.md)
 
-[**INTERFACE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_interface.md)
-
+[**INTERFACE**](../wdm/ns-wdm-_interface.md)

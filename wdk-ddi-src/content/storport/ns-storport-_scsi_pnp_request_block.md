@@ -47,14 +47,13 @@ api_name:
 
 # _SCSI_PNP_REQUEST_BLOCK structure (storport.h)
 
-
 ## -description
 
 The**SCSI_PNP_REQUEST_BLOCK** structure is a special version of a [**SCSI_REQUEST_BLOCK**](../srb/ns-srb-_scsi_request_block.md) that is used for plug and play (PNP) requests.
 
 > [!NOTE]
 >
-> The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the [Storport driver](https://docs.microsoft.com/windows-hardware/drivers/storage/storport-driver) and [Storport miniport driver](https://docs.microsoft.com/windows-hardware/drivers/storage/storport-miniport-drivers) models.
+> The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the [Storport driver](/windows-hardware/drivers/storage/storport-driver) and [Storport miniport driver](/windows-hardware/drivers/storage/storport-miniport-drivers) models.
 
 ## -struct-fields
 
@@ -68,7 +67,7 @@ The operation to perform. For the **SCSI_PNP_REQUEST_BLOCK** structure, this mem
 
 ### -field SrbStatus
 
-The status of the completed request. The miniport driver should set this value before notifying the Storport driver that the request has completed. A miniport driver notifies the Storport driver that the request has completed by calling the [**StorPortNotification**](..nf-storport-storportnotification.md) routine with a notification type of **RequestComplete**. For a list of possible status values, see [**SCSI_REQUEST_BLOCK**](../srb/ns-srb-_scsi_request_block.md).
+The status of the completed request. The miniport driver should set this value before notifying the Storport driver that the request has completed. A miniport driver notifies the Storport driver that the request has completed by calling the [**StorPortNotification**](nf-storport-storportnotification.md) routine with a notification type of **RequestComplete**. For a list of possible status values, see [**SCSI_REQUEST_BLOCK**](../srb/ns-srb-_scsi_request_block.md).
 
 ### -field PnPSubFunction
 
@@ -130,7 +129,7 @@ Miniport driver should ignore this member.
 
 ### -field SrbExtension
 
-A pointer to the SRB extension. A miniport driver must not use this member if it set **SrbExtensionSize** to zero in the [**HW_INITIALIZATION_DATA**](ns-storport-_hw_initialization_data~r1.md) structure. The Storport driver does not initialize the memory that this member points to. The HBA can directly access the data that the miniport driver writes into the SRB extension. A miniport driver can obtain the physical address of the SRB extension by calling the [**StorPortGetPhysicalAddress**](nf-storport-storportgetphysicaladdress.md) routine.
+A pointer to the SRB extension. A miniport driver must not use this member if it set **SrbExtensionSize** to zero in the [**HW_INITIALIZATION_DATA**](ns-storport-_hw_initialization_data-r1.md) structure. The Storport driver does not initialize the memory that this member points to. The HBA can directly access the data that the miniport driver writes into the SRB extension. A miniport driver can obtain the physical address of the SRB extension by calling the [**StorPortGetPhysicalAddress**](nf-storport-storportgetphysicaladdress.md) routine.
 
 ### -field SrbPnPFlags
 
@@ -157,4 +156,3 @@ The Storport driver calls [**HwStorBuildIo**](nc-storport-hw_buildio.md) to pass
 [**SCSI_REQUEST_BLOCK**](../srb/ns-srb-_scsi_request_block.md)
 
 [**StorPortNotification**](nf-storport-storportnotification.md)
-

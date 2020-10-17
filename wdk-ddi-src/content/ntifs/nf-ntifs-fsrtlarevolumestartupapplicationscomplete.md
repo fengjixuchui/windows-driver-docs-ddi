@@ -5,7 +5,7 @@ description: The FsRtlAreVolumeStartupApplicationsComplete function determines w
 old-location: ifsk\fsrtlarevolumestartupapplicationscomplete.htm
 tech.root: ifsk
 ms.assetid: a6ee1b04-7f62-452c-92b7-7325278bcd17
-ms.date: 07/24/20209
+ms.date: 07/24/2020
 keywords: ["FsRtlAreVolumeStartupApplicationsComplete function"]
 ms.keywords: FsRtlAreVolumeStartupApplicationsComplete, FsRtlAreVolumeStartupApplicationsComplete function [Installable File System Drivers], fsrtlref_c0858a3d-5e61-4ba3-bbaf-9ec881042d6a.xml, ifsk.fsrtlarevolumestartupapplicationscomplete, ntifs/FsRtlAreVolumeStartupApplicationsComplete
 req.header: ntifs.h
@@ -43,7 +43,6 @@ api_name:
 
 # FsRtlAreVolumeStartupApplicationsComplete function
 
-
 ## -description
 
 The **FsRtlAreVolumeStartupApplicationsComplete** function determines whether volume startup applications have completed processing.
@@ -58,13 +57,12 @@ The **FsRtlAreVolumeStartupApplicationsComplete** function returns **TRUE** if s
 
 You can use this information to modify the behavior of file system drivers. For example, a file system driver can adversely affect *Autochk.exe* if the driver starts its processing before *Autochck.exe* has fully completed. If **FsRtlAreVolumeStartupApplicationsComplete** returns **TRUE**, *Autochk.exe* is guaranteed to have fully completed.
 
-To retrieve information about the volume that a minifilter instance is attached to, see [**FltQueryVolumeInformation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltqueryvolumeinformation).
+To retrieve information about the volume that a minifilter instance is attached to, see [**FltQueryVolumeInformation**](../fltkernel/nf-fltkernel-fltqueryvolumeinformation.md).
 
-To retrieve information about the volume associated with a given file, directory, or storage device, see [**ZwQueryVolumeInformationFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-zwqueryvolumeinformationfile).
+To retrieve information about the volume associated with a given file, directory, or storage device, see [**ZwQueryVolumeInformationFile**](../ntddk/nf-ntddk-zwqueryvolumeinformationfile.md).
 
 ## -see-also
 
-[**FltQueryVolumeInformation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltqueryvolumeinformation)
+[**FltQueryVolumeInformation**](../fltkernel/nf-fltkernel-fltqueryvolumeinformation.md)
 
-[**ZwQueryVolumeInformationFile**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-zwqueryvolumeinformationfile)
-
+[**ZwQueryVolumeInformationFile**](../ntddk/nf-ntddk-zwqueryvolumeinformationfile.md)

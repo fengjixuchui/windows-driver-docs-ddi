@@ -53,7 +53,7 @@ A pointer to a [**NET_PACKET**](ns-packet-_net_packet.md) structure.
 
 ### -param offset
 
-The offset, in bytes, to the desired [**NET_PACKET_EXTENSION**](../netadapterpacket/ns-netadapterpacket-_net_packet_extension.md) from the beginning of the packet's descriptor.
+The offset, in bytes, to the desired [**NET_EXTENSION**](../extension/ns-extension-_net_extension.md) from the beginning of the packet's descriptor.
 
 ## -returns
 
@@ -61,11 +61,10 @@ Returns a pointer to a structure at the given extension offset that represents p
 
 ## -remarks
 
-NIC client drivers typically query offsets for packet extensions during datapath queue creation, then store them in their queue context space so they don't have to query them too often. For an example of this, see [Transmit and receive queues](https://docs.microsoft.com/windows-hardware/drivers/netcx/transmit-and-receive-queues). These offsets are then passed to **NetPacketGetExtension** to retrieve data for each packet extension.
+NIC client drivers typically query offsets for packet extensions during datapath queue creation, then store them in their queue context space so they don't have to query them too often. For an example of this, see [Transmit and receive queues](/windows-hardware/drivers/netcx/transmit-and-receive-queues). These offsets are then passed to **NetPacketGetExtension** to retrieve data for each packet extension.
 
 ## -see-also
 
-[Packet descriptors and extensions](https://docs.microsoft.com/windows-hardware/drivers/netcx/packet-descriptors-and-extensions)
+[Packet descriptors and extensions](/windows-hardware/drivers/netcx/packet-descriptors-and-extensions)
 
-[Transmit and receive queues](https://docs.microsoft.com/windows-hardware/drivers/netcx/transmit-and-receive-queues)
-
+[Transmit and receive queues](/windows-hardware/drivers/netcx/transmit-and-receive-queues)

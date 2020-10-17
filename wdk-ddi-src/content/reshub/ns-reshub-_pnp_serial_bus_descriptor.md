@@ -77,7 +77,7 @@ The serial bus type. This member is set to 1 (for I2C), 2 (for SPI), or 3 (for U
 
 ### -field GeneralFlags
 
-Flags that are common to all serial bus types. Bit 0 is the slave-mode flag. If this bit is set to 1, the communication of this connection is initiated by the bus controller; otherwise, the communication is initiated by the target device. Bit 1 is the consumer/producer flag, and is always set to 1. No other flag bits are currently defined. For more information, see the ACPI 5.0 specification.
+Flags that are common to all serial bus types. Bit 0 is the subordinate-mode flag. If this bit is set to 1, the communication of this connection is initiated by the bus controller; otherwise, the communication is initiated by the target device. Bit 1 is the consumer/producer flag, and is always set to 1. No other flag bits are currently defined. For more information, see the ACPI 5.0 specification.
 
 ### -field TypeSpecificFlags
 
@@ -111,7 +111,6 @@ typedef struct _PNP_SERIAL_BUS_DESCRIPTOR {
 
 This structure defines the data fields in a serial bus connection descriptor, as described in section 6.4.3.8.2 of the ACPI 5.0 specification. This descriptor describes the bus connection to a target device that is connected to a serial bus (I2C, SPI, or UART).
 
-For example, for a device on an I2C bus, the <b>PNP_SERIAL_BUS_DESCRIPTOR</b> structure (and its bus-type-specific extension) specify the bus address of the device, the address mode (7-bit or 10-bit), and the frequency at which to run the bus clock when the device is accessed. For a code example that shows how an I2C controller driver extracts this information from the structure, see <a href="https://docs.microsoft.com/windows-hardware/drivers/spb/how-to-get-the-connection-settings-for-a-device">How to Get the Connection Settings for a Device</a>.
+For example, for a device on an I2C bus, the <b>PNP_SERIAL_BUS_DESCRIPTOR</b> structure (and its bus-type-specific extension) specify the bus address of the device, the address mode (7-bit or 10-bit), and the frequency at which to run the bus clock when the device is accessed. For a code example that shows how an I2C controller driver extracts this information from the structure, see <a href="/windows-hardware/drivers/spb/how-to-get-the-connection-settings-for-a-device">How to Get the Connection Settings for a Device</a>.
 
 The <b>PNP_SERIAL_BUS_DESCRIPTOR</b> structure definition in the Reshub.h header file is preceded by an include statement for the Pshpack1.h header file, which configures the compiler to pack adjacent structure members to byte boundaries, without intervening gaps. Software can then overlay the packed structure over the memory image of the serial bus connection descriptor to access the individual fields of this descriptor. The USHORT members of the structure might not be aligned to even byte boundaries in memory. The bytes in the USHORT members are stored in little-endian order for the x86, x64, and ARM processor architectures.
-
